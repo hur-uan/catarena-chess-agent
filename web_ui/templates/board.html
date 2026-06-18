@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chess Agent Board</title>
+    <link rel="stylesheet" href="/static/board.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="board-zone" aria-label="Chess board">
+        <div class="board-frame">
+          <div id="board" class="board"></div>
+        </div>
+      </section>
+      <aside class="side-panel">
+        <header class="panel-head">
+          <div>
+            <h1>Chess Agent</h1>
+            <p id="statusText">Loading</p>
+          </div>
+          <div id="turnBadge" class="turn-badge">White</div>
+        </header>
+
+        <div class="controls">
+          <button id="newWhite" type="button">New · White</button>
+          <button id="newBlack" type="button">New · Black</button>
+          <button id="agentStep" type="button">Agent Step</button>
+          <button id="autoPlay" type="button">Auto</button>
+        </div>
+
+        <div id="autoStatus" class="auto-status">Manual mode</div>
+
+        <dl class="position-data">
+          <div>
+            <dt>Human</dt>
+            <dd id="humanColor">White</dd>
+          </div>
+          <div>
+            <dt>Agent</dt>
+            <dd id="agentColor">Black</dd>
+          </div>
+        </dl>
+
+        <section class="history-wrap" aria-label="Move history">
+          <ol id="history" class="history"></ol>
+        </section>
+
+        <textarea id="fenBox" class="fen-box" readonly></textarea>
+      </aside>
+    </main>
+    <script src="/static/board.js"></script>
+  </body>
+</html>

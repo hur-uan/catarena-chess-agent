@@ -1,0 +1,31 @@
+# Python/runtime caches
+__pycache__/
+*.py[cod]
+.pycache/
+.pytest_cache/
+.ruff_cache/
+
+# Local virtual environments
+.venv/
+.venv*/
+
+# OS/editor noise
+.DS_Store
+
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+
+# Generated learning/evaluation artifacts
+reports/
+eval_exports/
+memory/*
+!memory/.gitkeep
+agents/candidates/
+agents/generated/
+agents/archive/
+
+# External/vendor downloads kept outside the published repo
+external/CATArena/
+black_numba-master/

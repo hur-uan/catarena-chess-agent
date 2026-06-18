@@ -1,0 +1,2 @@
+"""Chess playing agents."""
+
