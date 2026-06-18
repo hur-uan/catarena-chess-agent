@@ -67,7 +67,7 @@
 
 ### 轮间自我提升链路
 
-入口是 `optimization/meta_agent.py`。
+入口是 `optimization/meta_agent.py`
 
 正式优化链路固定为：
 
