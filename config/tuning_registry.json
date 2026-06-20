@@ -50,6 +50,58 @@
       ]
     },
     {
+      "name": "eval.weights_no_mobility",
+      "description": "Evaluation-weight subset excluding the already risky mobility-weight downshift.",
+      "tuner": "spsa",
+      "mode_scope": "internal_only",
+      "signal_mode": "static_eval",
+      "prescreen_set": "eval.weights",
+      "research_goal": "Test whether the broad eval-weight signal survives after freezing mobility at the promoted 0.85 value, because mobility 0.85 -> 0.7 previously caused p16 rank regression.",
+      "enabled": false,
+      "parameters": [
+        {
+          "path": "eval.piece_activity_weight",
+          "type": "float",
+          "min": 0.2,
+          "max": 3.0,
+          "step": 0.05
+        },
+        {
+          "path": "eval.pawn_structure_weight",
+          "type": "float",
+          "min": 0.2,
+          "max": 3.0,
+          "step": 0.05
+        },
+        {
+          "path": "eval.king_safety_weight",
+          "type": "float",
+          "min": 0.2,
+          "max": 3.0,
+          "step": 0.05
+        }
+      ]
+    },
+    {
+      "name": "eval.material_weight",
+      "description": "Single-parameter material evaluation weight calibration.",
+      "tuner": "spsa",
+      "mode_scope": "internal_only",
+      "signal_mode": "static_eval",
+      "prescreen_set": "eval.weights",
+      "research_goal": "Test whether material weight alone produces a stable static-eval signal before reopening broad evaluation weights.",
+      "enabled": false,
+      "parameters": [
+        {
+          "path": "eval.material_weight",
+          "type": "float",
+          "min": 0.8,
+          "max": 1.2,
+          "step": 0.02
+        }
+      ]
+    },
+    {
       "name": "eval.mobility_weight",
       "description": "Single-parameter mobility evaluation weight calibration.",
       "tuner": "spsa",
@@ -519,7 +571,7 @@
       "prescreen_set": "search.history_order",
       "prescreen_time_limit_ms": 70,
       "research_goal": "Formal online tuning is restricted to TT move bonus because it is the only parameter in this family with repeatable discrete gate-cross evidence under the current feedback stack.",
-      "enabled": true,
+      "enabled": false,
       "parameters": [
         {
           "path": "search.tt_move_bonus",
@@ -847,10 +899,51 @@
       ]
     },
     {
+      "name": "move_ordering.capture_victim_multiplier",
+      "description": "Single-parameter tactical-ordering calibration for capture victim multiplier.",
+      "tuner": "spsa",
+      "mode_scope": "internal_only",
+      "signal_mode": "line_quality",
+      "prescreen_set": "move_ordering.tactical",
+      "research_goal": "Test whether capture victim multiplier produces a stable line-quality signal after capture base bonus showed no movement.",
+      "enabled": false,
+      "parameters": [
+        {
+          "path": "move_ordering.capture_victim_multiplier",
+          "type": "int",
+          "min": 0,
+          "max": 20,
+          "step": 1
+        }
+      ]
+    },
+    {
+      "name": "move_ordering.capture_attacker_penalty",
+      "description": "Single-parameter tactical-ordering calibration for capture attacker penalty.",
+      "tuner": "spsa",
+      "mode_scope": "internal_only",
+      "signal_mode": "line_quality",
+      "prescreen_set": "move_ordering.tactical",
+      "research_goal": "Test whether capture attacker penalty produces a stable line-quality signal after capture victim multiplier showed no movement.",
+      "enabled": false,
+      "parameters": [
+        {
+          "path": "move_ordering.capture_attacker_penalty",
+          "type": "int",
+          "min": 0,
+          "max": 5,
+          "step": 1
+        }
+      ]
+    },
+    {
       "name": "search.mate_threshold",
       "description": "Mate stopping and mate-score recognition thresholds.",
-      "tuner": "grid",
+      "tuner": "spsa",
       "mode_scope": "internal_only",
+      "signal_mode": "line_quality",
+      "prescreen_set": "search.depth_time",
+      "research_goal": "Test whether root mate stop distance and mate-detection margin have a coupled line-quality signal after both individual faces stalled.",
       "enabled": false,
       "parameters": [
         {
@@ -866,6 +959,82 @@
           "min": 100,
           "max": 5000,
           "step": 50
+        }
+      ]
+    },
+    {
+      "name": "search.quiescence_depth",
+      "description": "Single-parameter quiescence search depth calibration.",
+      "tuner": "spsa",
+      "mode_scope": "internal_only",
+      "signal_mode": "line_quality",
+      "prescreen_set": "search.depth_time",
+      "research_goal": "Test whether quiescence depth alone produces a stable line-quality signal after the broad depth-time block failed to create discrete candidates.",
+      "enabled": false,
+      "parameters": [
+        {
+          "path": "search.quiescence_depth",
+          "type": "int",
+          "min": 4,
+          "max": 12,
+          "step": 1
+        }
+      ]
+    },
+    {
+      "name": "search.min_time_margin_ms",
+      "description": "Single-parameter minimum search time margin calibration.",
+      "tuner": "spsa",
+      "mode_scope": "internal_only",
+      "signal_mode": "line_quality",
+      "prescreen_set": "search.depth_time",
+      "research_goal": "Test whether the internal engine's minimum time margin alone produces a stable line-quality signal after quiescence depth showed no movement.",
+      "enabled": false,
+      "parameters": [
+        {
+          "path": "search.min_time_margin_ms",
+          "type": "int",
+          "min": 1,
+          "max": 20,
+          "step": 1
+        }
+      ]
+    },
+    {
+      "name": "search.default_depth",
+      "description": "Single-parameter default search depth calibration.",
+      "tuner": "spsa",
+      "mode_scope": "internal_only",
+      "signal_mode": "line_quality",
+      "prescreen_set": "search.depth_time",
+      "research_goal": "Test whether default search depth alone produces a stable line-quality signal after timing-margin tuning froze on a negative direction.",
+      "enabled": false,
+      "parameters": [
+        {
+          "path": "search.default_depth",
+          "type": "int",
+          "min": 2,
+          "max": 5,
+          "step": 1
+        }
+      ]
+    },
+    {
+      "name": "search.max_depth",
+      "description": "Single-parameter maximum search depth calibration.",
+      "tuner": "spsa",
+      "mode_scope": "internal_only",
+      "signal_mode": "line_quality",
+      "prescreen_set": "search.depth_time",
+      "research_goal": "Test whether maximum search depth alone produces a stable line-quality signal after default depth showed no movement.",
+      "enabled": false,
+      "parameters": [
+        {
+          "path": "search.max_depth",
+          "type": "int",
+          "min": 3,
+          "max": 6,
+          "step": 1
         }
       ]
     },
@@ -950,8 +1119,11 @@
     {
       "name": "eval.constants",
       "description": "Boundary constants for draw, mate, and king-loss handling.",
-      "tuner": "grid",
+      "tuner": "spsa",
       "mode_scope": "internal_only",
+      "signal_mode": "static_eval",
+      "prescreen_set": "eval.constants",
+      "research_goal": "Test whether the broad draw, mate, and missing-king constants block has any coupled static-eval signal after the individual faces stalled.",
       "enabled": false,
       "parameters": [
         {
@@ -1037,7 +1209,7 @@
     {
       "name": "piece_values",
       "description": "Base piece values, tuned later because they couple strongly with material weight.",
-      "tuner": "grid",
+      "tuner": "spsa",
       "mode_scope": "internal_only",
       "signal_mode": "static_eval",
       "prescreen_set": "piece_values",
@@ -1079,6 +1251,25 @@
           "min": 800,
           "max": 1050,
           "step": 10
+        }
+      ]
+    },
+    {
+      "name": "piece_values.pawn",
+      "description": "Single-parameter pawn piece-value calibration.",
+      "tuner": "spsa",
+      "mode_scope": "internal_only",
+      "signal_mode": "static_eval",
+      "prescreen_set": "piece_values",
+      "research_goal": "Test whether pawn value alone produces a stable static-eval signal after other piece-value subfaces were held.",
+      "enabled": false,
+      "parameters": [
+        {
+          "path": "piece_values.pawn",
+          "type": "int",
+          "min": 80,
+          "max": 120,
+          "step": 5
         }
       ]
     },
@@ -1161,8 +1352,8 @@
     {
       "name": "phase",
       "description": "Phase thresholds shared by development bonuses and external-engine routing.",
-      "tuner": "grid",
-      "mode_scope": "all",
+      "tuner": "spsa",
+      "mode_scope": "internal_only",
       "signal_mode": "static_eval",
       "prescreen_set": "phase",
       "research_goal": "Determine whether opening/endgame thresholds can be studied with dedicated boundary positions rather than generic evaluation samples.",

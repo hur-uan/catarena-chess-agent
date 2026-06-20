@@ -1,0 +1,2521 @@
+{
+  "artifact_paths": {
+    "candidate_profile_path": "agents/candidates/strategy_profile_self_play_p16_piece_center_bonus_promote2_001.json",
+    "evaluation_record_path": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/evaluation_record.json",
+    "feedback_fen_suite_path": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/feedback_fen_suite.json",
+    "optimization_report_path": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/optimization_report.json",
+    "parameter_candidates_dir": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/parameter_candidates",
+    "parameter_record_path": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/parameter_record.json",
+    "round_record_path": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/round_record.json",
+    "strategy_profile_after_path": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/strategy_profile_after.json",
+    "strategy_profile_before_path": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/strategy_profile_before.json"
+  },
+  "backend": "profile",
+  "catarena_message": "CATArena chessgame checkout is present.",
+  "catarena_missing_required_files": [],
+  "catarena_ready": true,
+  "catarena_source_files_seen": 36,
+  "engine_runtime_config": {
+    "enabled": false,
+    "endgame_depth_limit": 5,
+    "endgame_node_limit": 8000000,
+    "endgame_non_king_piece_threshold": 10,
+    "low_time_depth_limit": 2,
+    "low_time_node_limit": 250000,
+    "low_time_threshold_ms": 80,
+    "middlegame_depth_limit": 4,
+    "middlegame_node_limit": 4000000,
+    "minimum_external_budget_ms": 60,
+    "opening_depth_limit": 4,
+    "opening_fullmove_limit": 10,
+    "opening_node_limit": 2000000,
+    "source": "/Users/thinler/Documents/agent/config/strategy_profile.json",
+    "time_buffer_ms": 8
+  },
+  "evolution_metrics": {
+    "global_scores": [
+      0.4688,
+      0.5625,
+      0.5,
+      0.5,
+      0.5,
+      0.5312,
+      0.5,
+      0.5312,
+      0.4375,
+      0.5,
+      0.5312,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.4688,
+      0.5,
+      0.5312,
+      0.4688,
+      0.5312,
+      0.5312,
+      0.5312,
+      0.5312,
+      0.5,
+      0.5312,
+      0.5,
+      0.5,
+      0.5,
+      0.4688,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5312,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "rounds_considered": 66,
+    "same_round_score": 0.5,
+    "sbase": 0.4688,
+    "sevo": -0.00010293288800751492
+  },
+  "failure_report": {
+    "evidence": [
+      "no crashes, illegal moves, or timeout signals found"
+    ],
+    "main_failure_type": "no_clear_failure",
+    "next_actions": [
+      "make one small strategy improvement and validate against fixed FEN set"
+    ],
+    "priority": "low"
+  },
+  "feedback_fen_suite": {
+    "default_positions": 3,
+    "duplicates_removed": 3,
+    "feedback_positions": 12,
+    "positions": [
+      {
+        "fen": "2r2rk1/pp1q1ppp/2n1pn2/2bp4/3P4/2NBPN2/PPQ2PPP/2RR2K1 w - - 0 12",
+        "name": "feedback_failure_001",
+        "source": "catarena_failure_log"
+      },
+      {
+        "fen": "r1bq1rk1/pp1n1pbp/2pp1np1/4p3/2PPP3/2N1BN1P/PPQ2PP1/R3KB1R w KQ - 2 9",
+        "name": "feedback_failure_002",
+        "source": "catarena_failure_log"
+      },
+      {
+        "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+        "name": "feedback_failure_003",
+        "source": "catarena_failure_log"
+      },
+      {
+        "fen": "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+        "name": "feedback_failure_004",
+        "source": "catarena_failure_log"
+      },
+      {
+        "fen": "r2q1k1r/2pnppb1/pp4pn/3N2Np/3P2bP/4B1P1/PPP1PPB1/R2Q1RK1 w - - 0 11",
+        "name": "feedback_failure_005",
+        "source": "catarena_failure_log"
+      },
+      {
+        "fen": "rnb1kbnr/ppp1pppp/8/3q4/8/2N5/PPPP1PPP/R1BQKBNR b KQkq - 1 3",
+        "name": "feedback_failure_006",
+        "source": "catarena_failure_log"
+      },
+      {
+        "fen": "rnbqk2r/ppppppbp/5np1/8/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4",
+        "name": "feedback_failure_007",
+        "source": "catarena_failure_log"
+      },
+      {
+        "fen": "rnbqkb1r/pppp1ppp/5n2/4p3/2P5/2N5/PP1PPPPP/R1BQKBNR w KQkq - 2 3",
+        "name": "feedback_failure_008",
+        "source": "catarena_failure_log"
+      },
+      {
+        "fen": "rnbqkbnr/pp2pppp/2p5/3p4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3",
+        "name": "feedback_failure_009",
+        "source": "catarena_failure_log"
+      },
+      {
+        "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+        "name": "feedback_failure_010",
+        "source": "catarena_failure_log"
+      },
+      {
+        "fen": "rnbqkbnr/pp2pppp/3p4/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
+        "name": "feedback_failure_011",
+        "source": "catarena_failure_log"
+      },
+      {
+        "fen": "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
+        "name": "feedback_failure_012",
+        "source": "catarena_failure_log"
+      },
+      {
+        "fen": "6k1/5Q2/6K1/8/8/8/8/8 w - - 0 1",
+        "name": "mate_in_one_white",
+        "source": "default_prescreen"
+      },
+      {
+        "fen": "8/8/8/8/8/6k1/5q2/6K1 b - - 0 1",
+        "name": "mate_in_one_black",
+        "source": "default_prescreen"
+      },
+      {
+        "fen": "8/5pk1/3p2p1/2pP4/2P1r3/4R1P1/5PK1/8 w - - 0 35",
+        "name": "rook_endgame",
+        "source": "default_prescreen"
+      }
+    ],
+    "total_positions": 15
+  },
+  "feedback_prescreen": {
+    "mean_score_a": 0.45478778537590503,
+    "mean_score_b": 0.45468545469769656,
+    "positions": 15,
+    "results": [
+      {
+        "calibration_gap_a": 100005,
+        "calibration_gap_b": 100005,
+        "cp_loss_a": 100005,
+        "cp_loss_b": 100005,
+        "cutoffs_a": 0,
+        "cutoffs_b": 0,
+        "depth_a": 0,
+        "depth_b": 0,
+        "fen": "2r2rk1/pp1q1ppp/2n1pn2/2bp4/3P4/2NBPN2/PPQ2PPP/2RR2K1 w - - 0 12",
+        "line_score_a_cp": 5,
+        "line_score_b_cp": 5,
+        "move_a": "",
+        "move_b": "",
+        "name": "feedback_failure_001",
+        "nodes_a": 0,
+        "nodes_b": 0,
+        "oracle_line_cp": -100000,
+        "oracle_move": "f3g5",
+        "root_score_a_cp": 5,
+        "root_score_b_cp": 5,
+        "score_a": 0.0017963175490244999,
+        "score_b": 0.0017963175490244999,
+        "tt_hits_a": 0,
+        "tt_hits_b": 0
+      },
+      {
+        "calibration_gap_a": 100057,
+        "calibration_gap_b": 100058,
+        "cp_loss_a": 100057,
+        "cp_loss_b": 100058,
+        "cutoffs_a": 0,
+        "cutoffs_b": 0,
+        "depth_a": 0,
+        "depth_b": 0,
+        "fen": "r1bq1rk1/pp1n1pbp/2pp1np1/4p3/2PPP3/2N1BN1P/PPQ2PP1/R3KB1R w KQ - 2 9",
+        "line_score_a_cp": 57,
+        "line_score_b_cp": 58,
+        "move_a": "",
+        "move_b": "",
+        "name": "feedback_failure_002",
+        "nodes_a": 0,
+        "nodes_b": 0,
+        "oracle_line_cp": -100000,
+        "oracle_move": "f3g5",
+        "root_score_a_cp": 57,
+        "root_score_b_cp": 58,
+        "score_a": 0.0017953858583440558,
+        "score_b": 0.0017953679506872268,
+        "tt_hits_a": 0,
+        "tt_hits_b": 0
+      },
+      {
+        "calibration_gap_a": 16,
+        "calibration_gap_b": 16,
+        "cp_loss_a": 16,
+        "cp_loss_b": 16,
+        "cutoffs_a": 0,
+        "cutoffs_b": 0,
+        "depth_a": 0,
+        "depth_b": 0,
+        "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+        "line_score_a_cp": -6,
+        "line_score_b_cp": -6,
+        "move_a": "",
+        "move_b": "",
+        "name": "feedback_failure_003",
+        "nodes_a": 0,
+        "nodes_b": 0,
+        "oracle_line_cp": -22,
+        "oracle_move": "a2a3",
+        "root_score_a_cp": -6,
+        "root_score_b_cp": -6,
+        "score_a": 0.9333333333333332,
+        "score_b": 0.9333333333333332,
+        "tt_hits_a": 0,
+        "tt_hits_b": 0
+      },
+      {
+        "calibration_gap_a": 99993,
+        "calibration_gap_b": 99993,
+        "cp_loss_a": 99993,
+        "cp_loss_b": 99993,
+        "cutoffs_a": 0,
+        "cutoffs_b": 0,
+        "depth_a": 0,
+        "depth_b": 0,
+        "fen": "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+        "line_score_a_cp": -7,
+        "line_score_b_cp": -7,
+        "move_a": "",
+        "move_b": "",
+        "name": "feedback_failure_004",
+        "nodes_a": 0,
+        "nodes_b": 0,
+        "oracle_line_cp": -100000,
+        "oracle_move": "g8e7",
+        "root_score_a_cp": -7,
+        "root_score_b_cp": -7,
+        "score_a": 0.10179653269190463,
+        "score_b": 0.10179653269190463,
+        "tt_hits_a": 0,
+        "tt_hits_b": 0
+      },
+      {
+        "calibration_gap_a": 300,
+        "calibration_gap_b": 302,
+        "cp_loss_a": 300,
+        "cp_loss_b": 302,
+        "cutoffs_a": 0,
+        "cutoffs_b": 0,
+        "depth_a": 0,
+        "depth_b": 0,
+        "fen": "r2q1k1r/2pnppb1/pp4pn/3N2Np/3P2bP/4B1P1/PPP1PPB1/R2Q1RK1 w - - 0 11",
+        "line_score_a_cp": 159,
+        "line_score_b_cp": 161,
+        "move_a": "",
+        "move_b": "",
+        "name": "feedback_failure_005",
+        "nodes_a": 0,
+        "nodes_b": 0,
+        "oracle_line_cp": -141,
+        "oracle_move": "d5b4",
+        "root_score_a_cp": 159,
+        "root_score_b_cp": 161,
+        "score_a": 0.36000000000000004,
+        "score_b": 0.35856573705179284,
+        "tt_hits_a": 0,
+        "tt_hits_b": 0
+      },
+      {
+        "calibration_gap_a": 20,
+        "calibration_gap_b": 21,
+        "cp_loss_a": 20,
+        "cp_loss_b": 21,
+        "cutoffs_a": 0,
+        "cutoffs_b": 0,
+        "depth_a": 0,
+        "depth_b": 0,
+        "fen": "rnb1kbnr/ppp1pppp/8/3q4/8/2N5/PPPP1PPP/R1BQKBNR b KQkq - 1 3",
+        "line_score_a_cp": 30,
+        "line_score_b_cp": 31,
+        "move_a": "",
+        "move_b": "",
+        "name": "feedback_failure_006",
+        "nodes_a": 0,
+        "nodes_b": 0,
+        "oracle_line_cp": 10,
+        "oracle_move": "d5d7",
+        "root_score_a_cp": 30,
+        "root_score_b_cp": 31,
+        "score_a": 0.9181818181818181,
+        "score_b": 0.9144796380090497,
+        "tt_hits_a": 0,
+        "tt_hits_b": 0
+      },
+      {
+        "calibration_gap_a": 59,
+        "calibration_gap_b": 60,
+        "cp_loss_a": 59,
+        "cp_loss_b": 60,
+        "cutoffs_a": 0,
+        "cutoffs_b": 0,
+        "depth_a": 0,
+        "depth_b": 0,
+        "fen": "rnbqk2r/ppppppbp/5np1/8/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4",
+        "line_score_a_cp": 38,
+        "line_score_b_cp": 39,
+        "move_a": "",
+        "move_b": "",
+        "name": "feedback_failure_007",
+        "nodes_a": 0,
+        "nodes_b": 0,
+        "oracle_line_cp": -21,
+        "oracle_move": "c3b1",
+        "root_score_a_cp": 38,
+        "root_score_b_cp": 39,
+        "score_a": 0.694980694980695,
+        "score_b": 0.6923076923076923,
+        "tt_hits_a": 0,
+        "tt_hits_b": 0
+      },
+      {
+        "calibration_gap_a": 9,
+        "calibration_gap_b": 8,
+        "cp_loss_a": 9,
+        "cp_loss_b": 8,
+        "cutoffs_a": 0,
+        "cutoffs_b": 0,
+        "depth_a": 0,
+        "depth_b": 0,
+        "fen": "rnbqkb1r/pppp1ppp/5n2/4p3/2P5/2N5/PP1PPPPP/R1BQKBNR w KQkq - 2 3",
+        "line_score_a_cp": -4,
+        "line_score_b_cp": -5,
+        "move_a": "",
+        "move_b": "",
+        "name": "feedback_failure_008",
+        "nodes_a": 0,
+        "nodes_b": 0,
+        "oracle_line_cp": -13,
+        "oracle_move": "a1b1",
+        "root_score_a_cp": -4,
+        "root_score_b_cp": -5,
+        "score_a": 0.9612440191387561,
+        "score_b": 0.9653846153846153,
+        "tt_hits_a": 0,
+        "tt_hits_b": 0
+      },
+      {
+        "calibration_gap_a": 80,
+        "calibration_gap_b": 80,
+        "cp_loss_a": 80,
+        "cp_loss_b": 80,
+        "cutoffs_a": 0,
+        "cutoffs_b": 0,
+        "depth_a": 0,
+        "depth_b": 0,
+        "fen": "rnbqkbnr/pp2pppp/2p5/3p4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3",
+        "line_score_a_cp": 5,
+        "line_score_b_cp": 5,
+        "move_a": "",
+        "move_b": "",
+        "name": "feedback_failure_009",
+        "nodes_a": 0,
+        "nodes_b": 0,
+        "oracle_line_cp": -75,
+        "oracle_move": "a2a3",
+        "root_score_a_cp": 5,
+        "root_score_b_cp": 5,
+        "score_a": 0.6428571428571429,
+        "score_b": 0.6428571428571429,
+        "tt_hits_a": 0,
+        "tt_hits_b": 0
+      },
+      {
+        "calibration_gap_a": 99,
+        "calibration_gap_b": 100,
+        "cp_loss_a": 99,
+        "cp_loss_b": 100,
+        "cutoffs_a": 0,
+        "cutoffs_b": 0,
+        "depth_a": 0,
+        "depth_b": 0,
+        "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+        "line_score_a_cp": 21,
+        "line_score_b_cp": 22,
+        "move_a": "",
+        "move_b": "",
+        "name": "feedback_failure_010",
+        "nodes_a": 0,
+        "nodes_b": 0,
+        "oracle_line_cp": -78,
+        "oracle_move": "a2a3",
+        "root_score_a_cp": 21,
+        "root_score_b_cp": 22,
+        "score_a": 0.6020066889632107,
+        "score_b": 0.6,
+        "tt_hits_a": 0,
+        "tt_hits_b": 0
+      },
+      {
+        "calibration_gap_a": 9,
+        "calibration_gap_b": 8,
+        "cp_loss_a": 9,
+        "cp_loss_b": 8,
+        "cutoffs_a": 0,
+        "cutoffs_b": 0,
+        "depth_a": 0,
+        "depth_b": 0,
+        "fen": "rnbqkbnr/pp2pppp/3p4/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
+        "line_score_a_cp": 8,
+        "line_score_b_cp": 9,
+        "move_a": "",
+        "move_b": "",
+        "name": "feedback_failure_011",
+        "nodes_a": 0,
+        "nodes_b": 0,
+        "oracle_line_cp": 17,
+        "oracle_move": "a2a3",
+        "root_score_a_cp": 8,
+        "root_score_b_cp": 9,
+        "score_a": 0.9612440191387561,
+        "score_b": 0.9653846153846153,
+        "tt_hits_a": 0,
+        "tt_hits_b": 0
+      },
+      {
+        "calibration_gap_a": 99984,
+        "calibration_gap_b": 99984,
+        "cp_loss_a": 99984,
+        "cp_loss_b": 99984,
+        "cutoffs_a": 0,
+        "cutoffs_b": 0,
+        "depth_a": 0,
+        "depth_b": 0,
+        "fen": "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
+        "line_score_a_cp": -16,
+        "line_score_b_cp": -16,
+        "move_a": "",
+        "move_b": "",
+        "name": "feedback_failure_012",
+        "nodes_a": 0,
+        "nodes_b": 0,
+        "oracle_line_cp": -100000,
+        "oracle_move": "g8h6",
+        "root_score_a_cp": -16,
+        "root_score_b_cp": -16,
+        "score_a": 0.1017966940828875,
+        "score_b": 0.1017966940828875,
+        "tt_hits_a": 0,
+        "tt_hits_b": 0
+      },
+      {
+        "calibration_gap_a": 98974,
+        "calibration_gap_b": 98974,
+        "cp_loss_a": 98974,
+        "cp_loss_b": 98974,
+        "cutoffs_a": 0,
+        "cutoffs_b": 0,
+        "depth_a": 0,
+        "depth_b": 0,
+        "fen": "6k1/5Q2/6K1/8/8/8/8/8 w - - 0 1",
+        "line_score_a_cp": 1025,
+        "line_score_b_cp": 1025,
+        "move_a": "",
+        "move_b": "",
+        "name": "mate_in_one_white",
+        "nodes_a": 0,
+        "nodes_b": 0,
+        "oracle_line_cp": 99999,
+        "oracle_move": "f7e8",
+        "root_score_a_cp": 1025,
+        "root_score_b_cp": 1025,
+        "score_a": 0.10181499183253676,
+        "score_b": 0.10181499183253676,
+        "tt_hits_a": 0,
+        "tt_hits_b": 0
+      },
+      {
+        "calibration_gap_a": 98974,
+        "calibration_gap_b": 98974,
+        "cp_loss_a": 98974,
+        "cp_loss_b": 98974,
+        "cutoffs_a": 0,
+        "cutoffs_b": 0,
+        "depth_a": 0,
+        "depth_b": 0,
+        "fen": "8/8/8/8/8/6k1/5q2/6K1 b - - 0 1",
+        "line_score_a_cp": 1025,
+        "line_score_b_cp": 1025,
+        "move_a": "",
+        "move_b": "",
+        "name": "mate_in_one_black",
+        "nodes_a": 0,
+        "nodes_b": 0,
+        "oracle_line_cp": 99999,
+        "oracle_move": "f2e1",
+        "root_score_a_cp": 1025,
+        "root_score_b_cp": 1025,
+        "score_a": 0.10181499183253676,
+        "score_b": 0.10181499183253676,
+        "tt_hits_a": 0,
+        "tt_hits_b": 0
+      },
+      {
+        "calibration_gap_a": 559,
+        "calibration_gap_b": 559,
+        "cp_loss_a": 559,
+        "cp_loss_b": 559,
+        "cutoffs_a": 0,
+        "cutoffs_b": 0,
+        "depth_a": 0,
+        "depth_b": 0,
+        "fen": "8/5pk1/3p2p1/2pP4/2P1r3/4R1P1/5PK1/8 w - - 0 35",
+        "line_score_a_cp": 2,
+        "line_score_b_cp": 2,
+        "move_a": "",
+        "move_b": "",
+        "name": "rook_endgame",
+        "nodes_a": 0,
+        "nodes_b": 0,
+        "oracle_line_cp": 561,
+        "oracle_move": "e3a3",
+        "root_score_a_cp": 2,
+        "root_score_b_cp": 2,
+        "score_a": 0.3371541501976285,
+        "score_b": 0.3371541501976285,
+        "tt_hits_a": 0,
+        "tt_hits_b": 0
+      }
+    ],
+    "score_difference": 0.00010233067820847319
+  },
+  "generated_agent": {
+    "archived_path": "/Users/thinler/Documents/agent/config/archive/strategy_profile_self_play_p16_piece_center_bonus_promote2_001.json",
+    "backend": "profile",
+    "changed": true,
+    "effective_changed_paths": [
+      "piece_activity.center_bonus"
+    ],
+    "path": "agents/candidates/strategy_profile_self_play_p16_piece_center_bonus_promote2_001.json",
+    "promoted": true,
+    "selected_block": "piece_activity.center_bonus",
+    "summary": "Profile candidate for self_play_p16_piece_center_bonus_promote2_001 from block piece_activity.center_bonus using seed 1."
+  },
+  "generation_error": "",
+  "generation_succeeded": true,
+  "historical_profile_pool": {
+    "historical_profiles": [
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_center_bonus_postpromote2_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_piece_center_bonus_postpromote2_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_center_bonus_postpromote2_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_piece_center_bonus_postpromote2_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_piece_center_bonus_promote1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_center_bonus_amp2_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_piece_center_bonus_amp2_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_center_bonus_amp2_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_piece_center_bonus_amp2_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_center_bonus_amp3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_center_bonus_amp3_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_center_bonus_amp3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_center_bonus_amp3_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_center_bonus_amp3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_center_bonus_amp3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_center_bonus3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_center_bonus3_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_center_bonus3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_center_bonus3_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_center_bonus3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_center_bonus3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_activity3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_activity3_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_activity3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_activity3_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_activity3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_activity3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_post_oracle_cache_rotate3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_post_oracle_cache_rotate3_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_post_oracle_cache_rotate3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_post_oracle_cache_rotate3_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_post_oracle_cache_rotate3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_post_oracle_cache_rotate3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_promotion_bonus3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_promotion_bonus3_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_promotion_bonus3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_promotion_bonus3_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_promotion_bonus3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_promotion_bonus3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_stable_oracle3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_stable_oracle3_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_stable_oracle3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_stable_oracle3_002",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_stable_oracle3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_stable_oracle3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_tactical_broad_amp3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_tactical_broad_amp3_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_tactical_broad_amp3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_tactical_broad_amp3_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_tactical_broad_amp3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_tactical_broad_amp3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_tactical_forcing3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_tactical_forcing3_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_tactical_forcing3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_tactical_forcing3_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_tactical_forcing3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_tactical_forcing3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_tactical_capture_base3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_tactical_capture_base3_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_tactical_capture_base3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_tactical_capture_base3_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_tactical_capture_base3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_tactical_capture_base3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_tactical3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_tactical3_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_tactical3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_tactical3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_tactical3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_tactical3_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_early_rook_only3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_early_rook_only3_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_early_rook_only3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_early_rook_only3_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_early_rook_only3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_early_rook_only3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_min_signal3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_min_signal3_003",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_min_signal3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_min_signal3_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_min_signal3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_min_signal3_001",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_step1_3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_step1_3_003",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_step1_3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_step1_3_002",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_step1_3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_step1_3_001",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_penalties3_003/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_development_penalties3_003",
+        "win_rate": 0.4688
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_penalties3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_penalties3_002",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_penalties3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_penalties3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_high_amp3_003/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_development_high_amp3_003",
+        "win_rate": 0.4688
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_high_amp3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_high_amp3_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_high_amp3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_high_amp3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_no_center_pawn3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_no_center_pawn3_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_no_center_pawn3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_no_center_pawn3_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_no_center_pawn3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_no_center_pawn3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_focus2_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_focus2_002",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_focus2_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_focus2_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_multiblock_rotate9_009/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_multiblock_rotate9_009",
+        "win_rate": 0.4375
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_multiblock_rotate9_008/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_multiblock_rotate9_008",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_multiblock_rotate9_007/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_multiblock_rotate9_007",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_multiblock_rotate9_006/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_multiblock_rotate9_006",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_multiblock_rotate9_005/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_multiblock_rotate9_005",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_multiblock_rotate9_004/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_multiblock_rotate9_004",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_multiblock_rotate9_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_multiblock_rotate9_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_multiblock_rotate9_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_multiblock_rotate9_002",
+        "win_rate": 0.5625
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_multiblock_rotate9_001/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_multiblock_rotate9_001",
+        "win_rate": 0.4688
+      }
+    ],
+    "notes": [],
+    "selected_profiles": [
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_center_bonus_postpromote2_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_piece_center_bonus_postpromote2_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_center_bonus_postpromote2_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_piece_center_bonus_postpromote2_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_piece_center_bonus_promote1_001",
+        "win_rate": 0.5
+      }
+    ]
+  },
+  "historical_regression": {
+    "enabled": true,
+    "entries": [
+      {
+        "crashes_a": 0,
+        "crashes_b": 0,
+        "mean_score_a": 0.5,
+        "passed": true,
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_center_bonus_postpromote2_002/strategy_profile_after.json",
+        "round_id": "self_play_p16_piece_center_bonus_postpromote2_002",
+        "timeout_rate_a": 0.0,
+        "timeout_rate_b": 0.0
+      },
+      {
+        "crashes_a": 0,
+        "crashes_b": 0,
+        "mean_score_a": 0.5,
+        "passed": true,
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_center_bonus_postpromote2_001/strategy_profile_after.json",
+        "round_id": "self_play_p16_piece_center_bonus_postpromote2_001",
+        "timeout_rate_a": 0.0,
+        "timeout_rate_b": 0.0
+      },
+      {
+        "crashes_a": 0,
+        "crashes_b": 0,
+        "mean_score_a": 0.5,
+        "passed": true,
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote1_001/strategy_profile_after.json",
+        "round_id": "self_play_p16_piece_center_bonus_promote1_001",
+        "timeout_rate_a": 0.0,
+        "timeout_rate_b": 0.0
+      }
+    ],
+    "failed_profiles": 0,
+    "notes": [],
+    "passed": true,
+    "passed_profiles": 3,
+    "total_profiles": 3
+  },
+  "improvement_summary": "No critical reliability failure detected; continue gated profile-only optimization.",
+  "log_report": {
+    "average_cp": null,
+    "average_depth": null,
+    "average_response_ms": 196.27115743237664,
+    "crashes": 0,
+    "draws": 24,
+    "games": [
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+        ],
+        "moves": 13,
+        "response_times_ms": [
+          196.241292,
+          196.28737499999994,
+          196.54808300000005,
+          196.17895799999997,
+          196.03554200000016,
+          196.35279199999988,
+          196.06595800000014,
+          196.19116699999984,
+          196.77541599999992,
+          196.3051250000001,
+          196.5382499999997,
+          196.3627080000001,
+          196.39387500000004
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_001.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+        ],
+        "moves": 13,
+        "response_times_ms": [
+          196.22004100000012,
+          196.20179199999964,
+          196.0482080000001,
+          196.1649590000003,
+          196.33795900000007,
+          196.40483299999988,
+          196.24849999999984,
+          196.31108300000034,
+          196.4654999999995,
+          196.54475000000016,
+          196.2290830000004,
+          196.35020800000012,
+          196.5002499999997
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_002.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2"
+        ],
+        "moves": 20,
+        "response_times_ms": [
+          196.24545799999993,
+          196.4168750000006,
+          196.27920799999998,
+          196.42054099999928,
+          196.42216699999972,
+          196.1377500000001,
+          196.39641699999987,
+          196.21041600000044,
+          196.30616700000036,
+          196.37233300000022,
+          196.2094580000002,
+          196.0608749999997,
+          196.57729100000054,
+          196.03945800000045,
+          196.06029100000023,
+          196.2629170000003,
+          196.12749999999934,
+          196.21995800000036,
+          196.63183299999963,
+          196.13808299999926
+        ],
+        "result": "loss",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_003.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2"
+        ],
+        "moves": 20,
+        "response_times_ms": [
+          196.1185410000006,
+          196.30679099999958,
+          196.13845800000007,
+          196.05775000000136,
+          196.13983400000023,
+          196.15058399999975,
+          196.16312499999998,
+          196.08312500000125,
+          196.3191250000005,
+          196.08558399999865,
+          196.27158299999968,
+          196.5009170000016,
+          196.18341600000022,
+          196.0865829999996,
+          196.15108400000025,
+          196.0267499999997,
+          196.2629170000003,
+          196.05212500000135,
+          196.75191700000028,
+          196.42937500000102
+        ],
+        "result": "win",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_004.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3"
+        ],
+        "moves": 11,
+        "response_times_ms": [
+          196.46662499999934,
+          196.26345900000075,
+          196.17558400000058,
+          196.12458399999966,
+          196.5016249999998,
+          196.40883300000132,
+          196.26745800000123,
+          196.5643340000014,
+          196.4391660000011,
+          196.12887499999943,
+          196.16454199999998
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_005.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3"
+        ],
+        "moves": 11,
+        "response_times_ms": [
+          196.53091700000047,
+          196.2527079999994,
+          196.13145800000177,
+          196.13483300000036,
+          196.2666249999998,
+          196.16337500000114,
+          196.25291699999892,
+          196.15274999999954,
+          196.2396670000004,
+          196.3959580000001,
+          196.456916999999
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_006.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4"
+        ],
+        "moves": 11,
+        "response_times_ms": [
+          196.23541700000047,
+          196.6220000000014,
+          196.24562499999954,
+          196.31475000000265,
+          196.1107910000024,
+          196.55191700000074,
+          196.23733299999913,
+          196.06662499999672,
+          196.27929099999974,
+          196.34370800000056,
+          196.29229200000253
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_007.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4"
+        ],
+        "moves": 11,
+        "response_times_ms": [
+          196.1564590000009,
+          196.5792499999992,
+          196.1864999999996,
+          196.28075000000322,
+          196.60887499999902,
+          196.27299999999792,
+          196.4492920000005,
+          196.07316700000155,
+          196.42100000000084,
+          196.19608400000033,
+          196.44725000000207
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_008.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnbqkbnr/pp2pppp/3p4/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3"
+        ],
+        "moves": 17,
+        "response_times_ms": [
+          196.29579100000072,
+          196.19600000000048,
+          196.24708399999946,
+          196.11670799999814,
+          196.13341599999856,
+          196.27195800000052,
+          196.3398749999996,
+          196.7204169999981,
+          196.26237499999988,
+          196.1563749999975,
+          196.18670799999904,
+          196.0258330000002,
+          196.59558400000066,
+          196.23975000000016,
+          196.1480420000008,
+          196.38454200000055,
+          196.10441600000073
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_009.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnbqkbnr/pp2pppp/3p4/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3"
+        ],
+        "moves": 17,
+        "response_times_ms": [
+          196.45620800000074,
+          196.42829200000023,
+          196.5262079999981,
+          196.06708300000264,
+          196.1342909999999,
+          196.26370800000004,
+          196.4447079999978,
+          196.35629200000082,
+          196.0398750000003,
+          196.21295900000035,
+          196.17716699999832,
+          196.10033299999685,
+          196.12287500000036,
+          196.5562919999968,
+          196.09149999999786,
+          196.02770799999902,
+          196.54333399999757
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_010.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnbqkbnr/ppp2ppp/4p3/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3"
+        ],
+        "moves": 13,
+        "response_times_ms": [
+          196.39199999999946,
+          196.14045899999866,
+          196.14604199999874,
+          196.55470900000083,
+          196.09354099999976,
+          196.47133300000164,
+          196.1232079999995,
+          196.44429200000246,
+          196.3145829999995,
+          196.31020899999996,
+          196.68337499999922,
+          196.09379200000276,
+          196.1637500000002
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_011.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnbqkbnr/ppp2ppp/4p3/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3"
+        ],
+        "moves": 13,
+        "response_times_ms": [
+          196.1092079999993,
+          196.33637500000134,
+          196.51050000000225,
+          196.6725000000018,
+          196.14954099999693,
+          196.51075000000162,
+          196.15537500000357,
+          196.06716700000248,
+          196.59995800000019,
+          196.6630419999973,
+          196.37725000000472,
+          196.05687500000357,
+          196.219708000001
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_012.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3"
+        ],
+        "moves": 11,
+        "response_times_ms": [
+          196.17679099999918,
+          196.3370409999996,
+          196.36412500000233,
+          196.18508299999604,
+          196.0994590000027,
+          196.19124999999826,
+          196.21962499999768,
+          196.0347079999991,
+          196.183750000003,
+          196.18537499999888,
+          196.2897080000019
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_013.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3"
+        ],
+        "moves": 11,
+        "response_times_ms": [
+          196.73870799999804,
+          196.6723330000022,
+          196.38954099999495,
+          196.24741700000214,
+          196.03683399999738,
+          196.6359159999982,
+          196.41733299999942,
+          196.53645799999708,
+          196.09441699999763,
+          196.08925,
+          196.1419169999985
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_014.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"
+        ],
+        "moves": 12,
+        "response_times_ms": [
+          196.07358300000044,
+          196.05095800000072,
+          196.11816700000162,
+          196.17424999999855,
+          196.09504199999606,
+          196.26083299999664,
+          196.16841700000265,
+          196.03545800000433,
+          196.1884170000019,
+          196.0919160000003,
+          196.22754099999895,
+          196.1208749999983
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_015.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"
+        ],
+        "moves": 12,
+        "response_times_ms": [
+          196.05154099999567,
+          196.22545799999358,
+          196.29929199999907,
+          196.1786670000052,
+          196.186124999997,
+          196.33854199999945,
+          196.65725000000123,
+          196.14174999999534,
+          196.26591699999807,
+          196.50095899999798,
+          196.07829200000282,
+          196.21454199999988
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_016.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnbqkb1r/pppp1ppp/5n2/4p3/2P5/2N5/PP1PPPPP/R1BQKBNR w KQkq - 2 3"
+        ],
+        "moves": 20,
+        "response_times_ms": [
+          196.53737499999835,
+          196.08429200000188,
+          196.1247919999991,
+          196.2301249999996,
+          196.06904200000486,
+          196.38933299999906,
+          196.42812499999707,
+          196.17233399999634,
+          196.28404200000205,
+          196.10183300000017,
+          196.21933299999483,
+          196.45812499999948,
+          196.61204199999816,
+          196.21637499999878,
+          196.1111249999945,
+          196.16745900000154,
+          196.03458299999943,
+          196.44079100000056,
+          196.22458399999942,
+          196.16070800000074
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_017.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnbqkb1r/pppp1ppp/5n2/4p3/2P5/2N5/PP1PPPPP/R1BQKBNR w KQkq - 2 3"
+        ],
+        "moves": 20,
+        "response_times_ms": [
+          196.23275000000007,
+          196.1834170000003,
+          196.16208300000437,
+          196.33712499999945,
+          196.4529169999949,
+          196.2878749999959,
+          196.0485829999996,
+          196.19845900000144,
+          196.1497910000034,
+          196.4419580000012,
+          196.03133300000053,
+          196.12204200000605,
+          196.0364580000018,
+          196.11770899999925,
+          196.0744999999946,
+          196.15370900000073,
+          196.26595900000154,
+          196.2138329999945,
+          196.3937499999986,
+          196.0869580000022
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_018.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnbqk2r/ppppppbp/5np1/8/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4"
+        ],
+        "moves": 17,
+        "response_times_ms": [
+          196.19537500000206,
+          196.6377919999971,
+          196.19083399999937,
+          196.0380000000015,
+          196.59749999999576,
+          196.04766700000198,
+          196.31841700000052,
+          196.23808400000087,
+          196.3565410000001,
+          196.1031250000005,
+          196.17662499999966,
+          196.3445419999985,
+          196.34229100000056,
+          196.51170899999926,
+          196.4817080000003,
+          196.2695409999995,
+          196.13195800000227
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_019.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnbqk2r/ppppppbp/5np1/8/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4"
+        ],
+        "moves": 17,
+        "response_times_ms": [
+          196.26024999999458,
+          196.383541000003,
+          196.25866699999506,
+          196.53795900000404,
+          196.41954100000447,
+          196.1550420000009,
+          196.20183299999638,
+          196.1991250000068,
+          196.4124579999975,
+          196.14337499999834,
+          196.5297079999999,
+          196.36658299999965,
+          196.31433299999657,
+          196.26783300000028,
+          196.54258299999583,
+          196.3157080000002,
+          196.19908299999622
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_020.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnb1kbnr/ppp1pppp/8/3q4/8/2N5/PPPP1PPP/R1BQKBNR b KQkq - 1 3"
+        ],
+        "moves": 15,
+        "response_times_ms": [
+          196.0916250000011,
+          196.11920899999546,
+          196.2192920000021,
+          196.34979100000294,
+          196.0708340000039,
+          196.12041700000304,
+          196.1436670000012,
+          196.03704099999675,
+          196.0800419999984,
+          196.33258300000023,
+          196.24087500000087,
+          196.2317500000026,
+          196.19979099999796,
+          196.19820900000207,
+          196.17595799999776
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_021.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnb1kbnr/ppp1pppp/8/3q4/8/2N5/PPPP1PPP/R1BQKBNR b KQkq - 1 3"
+        ],
+        "moves": 15,
+        "response_times_ms": [
+          196.20283299999386,
+          196.1624170000036,
+          196.41945799999405,
+          196.18541699999525,
+          196.1658329999949,
+          196.128458000004,
+          196.0845830000011,
+          196.07900000000456,
+          196.47687500000188,
+          196.61983400000338,
+          196.16258399999964,
+          196.21066700000256,
+          196.47612499999667,
+          196.2441659999996,
+          196.2771670000052
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_022.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnbqkbnr/pp2pppp/2p5/3p4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3"
+        ],
+        "moves": 11,
+        "response_times_ms": [
+          196.035375000001,
+          196.04766599999834,
+          196.38212499999952,
+          196.11075000000255,
+          196.05583300000262,
+          196.27370800000676,
+          196.26308300000517,
+          196.31670799999767,
+          196.2006249999888,
+          196.09720799999764,
+          196.35404199999584
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_023.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnbqkbnr/pp2pppp/2p5/3p4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3"
+        ],
+        "moves": 11,
+        "response_times_ms": [
+          196.09850000000506,
+          196.73775000001115,
+          196.31004199999325,
+          196.4137920000013,
+          196.36450000000139,
+          196.1124160000054,
+          196.1642909999881,
+          196.5812079999978,
+          196.43904099999077,
+          196.21091700000193,
+          196.3601670000088
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_024.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "r2q1k1r/2pnppb1/pp4pn/3N2Np/3P2bP/4B1P1/PPP1PPB1/R2Q1RK1 w - - 0 11"
+        ],
+        "moves": 20,
+        "response_times_ms": [
+          196.10162499999717,
+          196.344584000002,
+          196.23729199999218,
+          196.0429580000067,
+          196.23699999999644,
+          196.84433300000137,
+          196.63420800000608,
+          196.2105000000065,
+          196.33383299999707,
+          196.06587500000217,
+          196.58474999999953,
+          196.2012919999978,
+          196.14975000000356,
+          196.3228749999928,
+          196.30179199999986,
+          196.41708300000005,
+          196.04008299999975,
+          196.53858299999172,
+          196.03595799999596,
+          196.34949999999662
+        ],
+        "result": "win",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_025.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "r2q1k1r/2pnppb1/pp4pn/3N2Np/3P2bP/4B1P1/PPP1PPB1/R2Q1RK1 w - - 0 11"
+        ],
+        "moves": 20,
+        "response_times_ms": [
+          196.49141699999007,
+          196.38424999999415,
+          196.14349999999092,
+          196.16312499999822,
+          196.21924999999862,
+          196.15591699999868,
+          196.0655000000031,
+          196.63837499999204,
+          196.11974999999404,
+          196.58941699999843,
+          196.44137500000625,
+          196.58874999998943,
+          196.0412500000075,
+          196.0667909999927,
+          196.10579199999734,
+          196.1541670000031,
+          196.16729099999475,
+          196.1372500000067,
+          196.16791599999317,
+          196.12712500000384
+        ],
+        "result": "loss",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_026.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "r1bq1rk1/pp1n1pbp/2pp1np1/4p3/2PPP3/2N1BN1P/PPQ2PP1/R3KB1R w KQ - 2 9"
+        ],
+        "moves": 20,
+        "response_times_ms": [
+          196.19570800000474,
+          196.86441700000046,
+          196.26300000000185,
+          196.53649999999345,
+          196.02154099999325,
+          196.05929200000105,
+          196.20158400000776,
+          196.58850000000427,
+          196.2167919999871,
+          196.13899999998807,
+          196.089917000009,
+          196.08766700000047,
+          196.1072080000008,
+          196.55608299999017,
+          196.18533300000252,
+          196.04400000000055,
+          196.588332999994,
+          196.5599580000088,
+          196.22370899999453,
+          196.31295799999293
+        ],
+        "result": "win",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_027.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "r1bq1rk1/pp1n1pbp/2pp1np1/4p3/2PPP3/2N1BN1P/PPQ2PP1/R3KB1R w KQ - 2 9"
+        ],
+        "moves": 20,
+        "response_times_ms": [
+          196.55137499999853,
+          196.0860829999973,
+          196.34958400000357,
+          196.04270899999676,
+          196.09200000000726,
+          196.24112500000024,
+          196.04124999999328,
+          196.26570799999854,
+          196.23524999998665,
+          196.1954589999948,
+          196.18520800000283,
+          196.21358299998803,
+          196.0934579999929,
+          196.14799999999377,
+          196.2016250000005,
+          196.5388330000053,
+          196.23895899999866,
+          196.13808400001176,
+          196.24079199999755,
+          196.3530829999911
+        ],
+        "result": "loss",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_028.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "2r2rk1/pp1q1ppp/2n1pn2/2bp4/3P4/2NBPN2/PPQ2PPP/2RR2K1 w - - 0 12"
+        ],
+        "moves": 20,
+        "response_times_ms": [
+          196.26145800000927,
+          196.32666700000811,
+          196.21241700001235,
+          198.44058399999653,
+          196.05895799999473,
+          196.06941600000027,
+          196.23070800000164,
+          196.14654199999393,
+          196.08258300000614,
+          196.12883399999248,
+          196.21983300000068,
+          196.19691700000885,
+          196.1424580000113,
+          196.64724999999805,
+          196.21237500000177,
+          196.04454200000987,
+          196.23612499999865,
+          196.11637500000256,
+          196.1909999999989,
+          196.28008300000488
+        ],
+        "result": "win",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_029.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "2r2rk1/pp1q1ppp/2n1pn2/2bp4/3P4/2NBPN2/PPQ2PPP/2RR2K1 w - - 0 12"
+        ],
+        "moves": 20,
+        "response_times_ms": [
+          196.16612500000485,
+          196.25641700000074,
+          196.5173749999991,
+          196.44970900000658,
+          196.45329099999742,
+          196.15062500000136,
+          196.08374999999967,
+          196.09199999999305,
+          196.11387500000887,
+          196.19395799999495,
+          196.20941700000571,
+          196.49458300000333,
+          196.15704199999584,
+          196.12045799999578,
+          196.21591599999988,
+          196.42408299999659,
+          196.1048329999926,
+          196.07354099998986,
+          196.1380000000048,
+          196.1122080000024
+        ],
+        "result": "loss",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_030.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+        ],
+        "moves": 13,
+        "response_times_ms": [
+          196.32108400000448,
+          196.16533299999617,
+          196.94991600000833,
+          196.35316699999805,
+          196.25616700000137,
+          196.21812500000146,
+          196.1263339999988,
+          196.18249999999193,
+          196.07387499999618,
+          196.40474999999924,
+          196.51841699999295,
+          196.2577500000009,
+          196.6308330000004
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_031.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+        ],
+        "moves": 13,
+        "response_times_ms": [
+          196.09616699999322,
+          196.43629200000134,
+          196.06245900000374,
+          196.7258750000127,
+          196.2543749999952,
+          196.37512500000298,
+          196.30908400000635,
+          196.04825000000403,
+          196.38700000000142,
+          196.2869169999948,
+          196.12870800000337,
+          196.22412500000053,
+          196.60395900000083
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_032.json",
+        "timeouts": 0
+      }
+    ],
+    "illegal_moves": 0,
+    "interface_successes": 488,
+    "key_failure_fens": [
+      "2r2rk1/pp1q1ppp/2n1pn2/2bp4/3P4/2NBPN2/PPQ2PPP/2RR2K1 w - - 0 12",
+      "r1bq1rk1/pp1n1pbp/2pp1np1/4p3/2PPP3/2N1BN1P/PPQ2PP1/R3KB1R w KQ - 2 9",
+      "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+      "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+      "r2q1k1r/2pnppb1/pp4pn/3N2Np/3P2bP/4B1P1/PPP1PPB1/R2Q1RK1 w - - 0 11",
+      "rnb1kbnr/ppp1pppp/8/3q4/8/2N5/PPPP1PPP/R1BQKBNR b KQkq - 1 3",
+      "rnbqk2r/ppppppbp/5np1/8/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4",
+      "rnbqkb1r/pppp1ppp/5n2/4p3/2P5/2N5/PP1PPPPP/R1BQKBNR w KQkq - 2 3",
+      "rnbqkbnr/pp2pppp/2p5/3p4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3",
+      "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+      "rnbqkbnr/pp2pppp/3p4/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
+      "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
+      "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
+      "rnbqkbnr/ppp2ppp/4p3/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+      "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+    ],
+    "losses": 4,
+    "raw_files": [
+      "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_001.json",
+      "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_002.json",
+      "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_003.json",
+      "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_004.json",
+      "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_005.json",
+      "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_006.json",
+      "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_007.json",
+      "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_008.json",
+      "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_009.json",
+      "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_010.json",
+      "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_011.json",
+      "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_012.json",
+      "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_013.json",
+      "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_014.json",
+      "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_015.json",
+      "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_016.json",
+      "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_017.json",
+      "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_018.json",
+      "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_019.json",
+      "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_020.json",
+      "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_021.json",
+      "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_022.json",
+      "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_023.json",
+      "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_024.json",
+      "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_025.json",
+      "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_026.json",
+      "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_027.json",
+      "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_028.json",
+      "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_029.json",
+      "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_030.json",
+      "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_031.json",
+      "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/battle_logs/game_032.json"
+    ],
+    "runtime_errors": [],
+    "timeouts": 0,
+    "total_actions": 488,
+    "total_games": 32,
+    "wins": 4
+  },
+  "memory_records_seen": 65,
+  "opponent_report": {
+    "notes": [
+      "opponent path not provided"
+    ],
+    "opponents": []
+  },
+  "patch_plan": "Profile-only revision plan: make one small strategy improvement and validate against fixed FEN set. Runtime tools remain fixed; only strategy-profile parameters may change after passing feedback prescreen and historical regression gates.",
+  "promotion_gate": {
+    "candidate_changed": true,
+    "feedback_prescreen_passed": true,
+    "historical_regression_passed": true,
+    "passed": true,
+    "reasons": [],
+    "tuning_ready": true,
+    "validator_passed": true
+  },
+  "ranking_summary": {
+    "agent_name": "chess_agent",
+    "draws": 24,
+    "games": 32,
+    "losses": 4,
+    "notes": [],
+    "opponent_records": {},
+    "rank": 1,
+    "rank_delta": 0,
+    "source": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/ranking.csv",
+    "win_rate": 0.5,
+    "wins": 4
+  },
+  "reliability_metrics": {
+    "average_response_ms": 196.27115743237664,
+    "error_rate": 0.0,
+    "interface_success_rate": 1.0,
+    "legal_rate": 1.0,
+    "timeout_rate": 0.0
+  },
+  "repair_attempts": 0,
+  "risks": [],
+  "round_id": "self_play_p16_piece_center_bonus_promote2_001",
+  "state_summary": {
+    "average_cp": null,
+    "average_depth": null,
+    "average_response_ms": 196.27115743237664,
+    "current_rank": 1,
+    "current_win_rate": 0.5,
+    "feedback_fen_positions": 15,
+    "historical_profiles_selected": 3,
+    "key_failure_fens": [
+      "2r2rk1/pp1q1ppp/2n1pn2/2bp4/3P4/2NBPN2/PPQ2PPP/2RR2K1 w - - 0 12",
+      "r1bq1rk1/pp1n1pbp/2pp1np1/4p3/2PPP3/2N1BN1P/PPQ2PP1/R3KB1R w KQ - 2 9",
+      "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+      "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+      "r2q1k1r/2pnppb1/pp4pn/3N2Np/3P2bP/4B1P1/PPP1PPB1/R2Q1RK1 w - - 0 11",
+      "rnb1kbnr/ppp1pppp/8/3q4/8/2N5/PPPP1PPP/R1BQKBNR b KQkq - 1 3",
+      "rnbqk2r/ppppppbp/5np1/8/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4",
+      "rnbqkb1r/pppp1ppp/5n2/4p3/2P5/2N5/PP1PPPPP/R1BQKBNR w KQkq - 2 3",
+      "rnbqkbnr/pp2pppp/2p5/3p4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3",
+      "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3"
+    ],
+    "memory_versions_seen": 65,
+    "round_actions": 488,
+    "round_games": 32
+  },
+  "stockfish_diagnostics": {
+    "available": false,
+    "fen": "2r2rk1/pp1q1ppp/2n1pn2/2bp4/3P4/2NBPN2/PPQ2PPP/2RR2K1 w - - 0 12",
+    "reason": "stockfish binary not found"
+  },
+  "tuning_report": {
+    "action": "promote",
+    "archived_profile_path": "/Users/thinler/Documents/agent/config/archive/strategy_profile_self_play_p16_piece_center_bonus_promote2_001.json",
+    "chosen_changed_paths": [
+      "piece_activity.center_bonus"
+    ],
+    "chosen_seed": 1,
+    "consecutive_similar_holds": 0,
+    "enabled": true,
+    "gate_cross_count": 3,
+    "negative_acceptance_prescreen_count": 0,
+    "negative_inner_count": 0,
+    "positive_acceptance_prescreen_count": 3,
+    "positive_inner_count": 3,
+    "promoted_profile_path": "/Users/thinler/Documents/agent/config/strategy_profile.json",
+    "promoted_strategy_profile": true,
+    "reason": "The selected block crossed the discrete gate with stable positive direction and safe acceptance metrics.",
+    "reason_code": "candidate_ready",
+    "safe_seed_count": 3,
+    "seeds": [
+      {
+        "acceptance_mean_score_a": 0.5,
+        "acceptance_prescreen_difference": 0.0003585702139660141,
+        "applied_change_count": 1,
+        "applied_change_paths": [
+          "piece_activity.center_bonus"
+        ],
+        "player_a_crashes": 0,
+        "player_a_timeouts": 0,
+        "player_b_timeouts": 0,
+        "prescreen_score_difference": 0.005720077349919056,
+        "proposed_profile": {
+          "eval": {
+            "draw_score": 0,
+            "king_safety_weight": 1.0,
+            "mate_score": 100000,
+            "material_weight": 1.0,
+            "missing_king_penalty": 500,
+            "mobility_weight": 1.0,
+            "pawn_structure_weight": 1.0,
+            "piece_activity_weight": 1.0
+          },
+          "external_engine": {
+            "enabled": false,
+            "endgame_depth_limit": 5,
+            "endgame_node_limit": 8000000,
+            "low_time_depth_limit": 2,
+            "low_time_node_limit": 250000,
+            "low_time_threshold_ms": 80,
+            "middlegame_depth_limit": 4,
+            "middlegame_node_limit": 4000000,
+            "minimum_external_budget_ms": 60,
+            "opening_depth_limit": 4,
+            "opening_node_limit": 2000000,
+            "time_buffer_ms": 8
+          },
+          "king_safety": {
+            "attacked_king_penalty": 70,
+            "attacked_ring_penalty": 2,
+            "pawn_shield_bonus": 7,
+            "piece_shield_bonus": 3
+          },
+          "move_ordering": {
+            "capture_attacker_penalty": 1,
+            "capture_base_bonus": 1000,
+            "capture_victim_multiplier": 10,
+            "castling_bonus": 150,
+            "center_bonus": 40,
+            "center_pawn_development_bonus": 18,
+            "check_bonus": 300,
+            "early_queen_penalty": 25,
+            "early_rook_penalty": 10,
+            "extended_center_bonus": 15,
+            "minor_development_bonus": 30,
+            "promotion_bonus": 800
+          },
+          "pawn_structure": {
+            "advance_bonus_per_rank": 3,
+            "doubled_penalty": 8,
+            "isolated_penalty": 10
+          },
+          "phase": {
+            "endgame_non_king_piece_threshold": 10,
+            "opening_fullmove_limit": 10
+          },
+          "piece_activity": {
+            "center_bonus": 13,
+            "extended_center_bonus": 6,
+            "minor_base_bonus": 8,
+            "minor_center_distance_penalty": 2,
+            "minor_rank_bonus_weight": 2,
+            "rook_half_open_file_bonus": 9,
+            "rook_open_file_bonus": 18
+          },
+          "piece_values": {
+            "bishop": 330,
+            "knight": 320,
+            "pawn": 100,
+            "queen": 900,
+            "rook": 500
+          },
+          "profile_name": "default",
+          "search": {
+            "default_depth": 3,
+            "history_bonus_power": 2,
+            "history_bonus_scale": 1,
+            "mate_detection_margin": 1000,
+            "max_depth": 4,
+            "min_time_margin_ms": 4,
+            "quiescence_depth": 8,
+            "root_mate_stop_distance": 1,
+            "tt_move_bonus": 50000
+          }
+        },
+        "score_difference": 0.0034320464099514337,
+        "seed": 1,
+        "sprt_decision": "accept_h0"
+      },
+      {
+        "acceptance_mean_score_a": 0.5,
+        "acceptance_prescreen_difference": 0.0003585702139660141,
+        "applied_change_count": 1,
+        "applied_change_paths": [
+          "piece_activity.center_bonus"
+        ],
+        "player_a_crashes": 0,
+        "player_a_timeouts": 0,
+        "player_b_timeouts": 0,
+        "prescreen_score_difference": 0.005720077349919056,
+        "proposed_profile": {
+          "eval": {
+            "draw_score": 0,
+            "king_safety_weight": 1.0,
+            "mate_score": 100000,
+            "material_weight": 1.0,
+            "missing_king_penalty": 500,
+            "mobility_weight": 1.0,
+            "pawn_structure_weight": 1.0,
+            "piece_activity_weight": 1.0
+          },
+          "external_engine": {
+            "enabled": false,
+            "endgame_depth_limit": 5,
+            "endgame_node_limit": 8000000,
+            "low_time_depth_limit": 2,
+            "low_time_node_limit": 250000,
+            "low_time_threshold_ms": 80,
+            "middlegame_depth_limit": 4,
+            "middlegame_node_limit": 4000000,
+            "minimum_external_budget_ms": 60,
+            "opening_depth_limit": 4,
+            "opening_node_limit": 2000000,
+            "time_buffer_ms": 8
+          },
+          "king_safety": {
+            "attacked_king_penalty": 70,
+            "attacked_ring_penalty": 2,
+            "pawn_shield_bonus": 7,
+            "piece_shield_bonus": 3
+          },
+          "move_ordering": {
+            "capture_attacker_penalty": 1,
+            "capture_base_bonus": 1000,
+            "capture_victim_multiplier": 10,
+            "castling_bonus": 150,
+            "center_bonus": 40,
+            "center_pawn_development_bonus": 18,
+            "check_bonus": 300,
+            "early_queen_penalty": 25,
+            "early_rook_penalty": 10,
+            "extended_center_bonus": 15,
+            "minor_development_bonus": 30,
+            "promotion_bonus": 800
+          },
+          "pawn_structure": {
+            "advance_bonus_per_rank": 3,
+            "doubled_penalty": 8,
+            "isolated_penalty": 10
+          },
+          "phase": {
+            "endgame_non_king_piece_threshold": 10,
+            "opening_fullmove_limit": 10
+          },
+          "piece_activity": {
+            "center_bonus": 13,
+            "extended_center_bonus": 6,
+            "minor_base_bonus": 8,
+            "minor_center_distance_penalty": 2,
+            "minor_rank_bonus_weight": 2,
+            "rook_half_open_file_bonus": 9,
+            "rook_open_file_bonus": 18
+          },
+          "piece_values": {
+            "bishop": 330,
+            "knight": 320,
+            "pawn": 100,
+            "queen": 900,
+            "rook": 500
+          },
+          "profile_name": "default",
+          "search": {
+            "default_depth": 3,
+            "history_bonus_power": 2,
+            "history_bonus_scale": 1,
+            "mate_detection_margin": 1000,
+            "max_depth": 4,
+            "min_time_margin_ms": 4,
+            "quiescence_depth": 8,
+            "root_mate_stop_distance": 1,
+            "tt_move_bonus": 50000
+          }
+        },
+        "score_difference": 0.0034320464099514337,
+        "seed": 2,
+        "sprt_decision": "accept_h0"
+      },
+      {
+        "acceptance_mean_score_a": 0.5,
+        "acceptance_prescreen_difference": 0.0003585702139660141,
+        "applied_change_count": 1,
+        "applied_change_paths": [
+          "piece_activity.center_bonus"
+        ],
+        "player_a_crashes": 0,
+        "player_a_timeouts": 0,
+        "player_b_timeouts": 0,
+        "prescreen_score_difference": 0.005720077349919056,
+        "proposed_profile": {
+          "eval": {
+            "draw_score": 0,
+            "king_safety_weight": 1.0,
+            "mate_score": 100000,
+            "material_weight": 1.0,
+            "missing_king_penalty": 500,
+            "mobility_weight": 1.0,
+            "pawn_structure_weight": 1.0,
+            "piece_activity_weight": 1.0
+          },
+          "external_engine": {
+            "enabled": false,
+            "endgame_depth_limit": 5,
+            "endgame_node_limit": 8000000,
+            "low_time_depth_limit": 2,
+            "low_time_node_limit": 250000,
+            "low_time_threshold_ms": 80,
+            "middlegame_depth_limit": 4,
+            "middlegame_node_limit": 4000000,
+            "minimum_external_budget_ms": 60,
+            "opening_depth_limit": 4,
+            "opening_node_limit": 2000000,
+            "time_buffer_ms": 8
+          },
+          "king_safety": {
+            "attacked_king_penalty": 70,
+            "attacked_ring_penalty": 2,
+            "pawn_shield_bonus": 7,
+            "piece_shield_bonus": 3
+          },
+          "move_ordering": {
+            "capture_attacker_penalty": 1,
+            "capture_base_bonus": 1000,
+            "capture_victim_multiplier": 10,
+            "castling_bonus": 150,
+            "center_bonus": 40,
+            "center_pawn_development_bonus": 18,
+            "check_bonus": 300,
+            "early_queen_penalty": 25,
+            "early_rook_penalty": 10,
+            "extended_center_bonus": 15,
+            "minor_development_bonus": 30,
+            "promotion_bonus": 800
+          },
+          "pawn_structure": {
+            "advance_bonus_per_rank": 3,
+            "doubled_penalty": 8,
+            "isolated_penalty": 10
+          },
+          "phase": {
+            "endgame_non_king_piece_threshold": 10,
+            "opening_fullmove_limit": 10
+          },
+          "piece_activity": {
+            "center_bonus": 13,
+            "extended_center_bonus": 6,
+            "minor_base_bonus": 8,
+            "minor_center_distance_penalty": 2,
+            "minor_rank_bonus_weight": 2,
+            "rook_half_open_file_bonus": 9,
+            "rook_open_file_bonus": 18
+          },
+          "piece_values": {
+            "bishop": 330,
+            "knight": 320,
+            "pawn": 100,
+            "queen": 900,
+            "rook": 500
+          },
+          "profile_name": "default",
+          "search": {
+            "default_depth": 3,
+            "history_bonus_power": 2,
+            "history_bonus_scale": 1,
+            "mate_detection_margin": 1000,
+            "max_depth": 4,
+            "min_time_margin_ms": 4,
+            "quiescence_depth": 8,
+            "root_mate_stop_distance": 1,
+            "tt_move_bonus": 50000
+          }
+        },
+        "score_difference": 0.0034320464099514337,
+        "seed": 3,
+        "sprt_decision": "accept_h0"
+      }
+    ],
+    "selected_block": "piece_activity.center_bonus",
+    "selected_block_mode": "active",
+    "selected_block_note": "Online self-play tuning isolates the center activity bonus after calibration showed a clean lower-is-better static-eval direction."
+  },
+  "validator_passed": true
+}

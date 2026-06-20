@@ -78,10 +78,21 @@ AUTONOMOUS_BLOCK_POLICIES: List[AutonomousBlockPolicy] = [
         block_name="search.history_order",
         mode="hold",
         note=(
-            "TT move ordering is held after the latest p8 revisit produced a real "
-            "changed path but negative inner and acceptance-prescreen signals."
+            "TT move ordering is held after a p16 shadow retest failed to reproduce "
+            "the sparse p8 positive changed seed; the only p16 gate-cross was negative."
         ),
         spsa_learning_rate=0.45,
+    ),
+    AutonomousBlockPolicy(
+        block_name="search.mate_threshold",
+        mode="hold",
+        note=(
+            "Broad mate-threshold search block is held after a mixed p8 signal failed "
+            "to reproduce in a same-configuration repeat."
+        ),
+        spsa_learning_rate=8.00,
+        spsa_perturbation=0.50,
+        min_effective_score_difference=0.04,
     ),
     AutonomousBlockPolicy(
         block_name="search.mate_detection_margin",
@@ -110,8 +121,8 @@ AUTONOMOUS_BLOCK_POLICIES: List[AutonomousBlockPolicy] = [
         block_name="eval.king_safety_weight",
         mode="hold",
         note=(
-            "King-safety evaluation weight is held after p8 produced real changed "
-            "paths but repeated negative inner signal."
+            "King-safety evaluation weight is held after the updated-policy p8 retest "
+            "froze on repeated negative inner signal."
         ),
         spsa_learning_rate=0.30,
         spsa_perturbation=0.20,
@@ -121,8 +132,8 @@ AUTONOMOUS_BLOCK_POLICIES: List[AutonomousBlockPolicy] = [
         block_name="eval.piece_activity_weight",
         mode="hold",
         note=(
-            "Piece-activity evaluation weight is held after p8 became positive under "
-            "learning-rate amplification but p16 repeated acceptance-unconfirmed."
+            "Piece-activity evaluation weight is held after the isolated 0.85 -> 0.8 "
+            "candidate produced a p16 rank regression."
         ),
         spsa_learning_rate=0.60,
         spsa_perturbation=0.20,
@@ -132,13 +143,56 @@ AUTONOMOUS_BLOCK_POLICIES: List[AutonomousBlockPolicy] = [
         block_name="eval.pawn_structure_weight",
         mode="hold",
         note=(
-            "Pawn-structure evaluation weight is held after learning-rate amplification "
-            "produced real changed paths but repeated negative inner signal and one "
-            "rank regression."
+            "Pawn-structure evaluation weight is held after p8 produced only "
+            "shadow/acceptance-unconfirmed signal with a very small score difference."
         ),
         spsa_learning_rate=0.60,
         spsa_perturbation=0.20,
         min_effective_score_difference=0.02,
+    ),
+    AutonomousBlockPolicy(
+        block_name="eval.weights",
+        mode="hold",
+        note=(
+            "Broad eval weights are held after the first promotion succeeded but the "
+            "second promotion-confirm degraded from candidate-ready to shadow-ready."
+        ),
+        spsa_learning_rate=0.30,
+        spsa_perturbation=0.20,
+        min_effective_score_difference=0.02,
+    ),
+    AutonomousBlockPolicy(
+        block_name="eval.weights_no_mobility",
+        mode="hold",
+        note=(
+            "Eval weights excluding mobility are held after p8 and p16 stayed shadow-ready "
+            "with a stable negative seed; split into single-parameter tests."
+        ),
+        spsa_learning_rate=0.30,
+        spsa_perturbation=0.20,
+        min_effective_score_difference=0.02,
+    ),
+    AutonomousBlockPolicy(
+        block_name="eval.material_weight",
+        mode="hold",
+        note=(
+            "Material evaluation weight is held after a learning-rate-amplified p8 "
+            "revisit still produced no gate-cross or changed path."
+        ),
+        spsa_learning_rate=0.60,
+        spsa_perturbation=0.20,
+        min_effective_score_difference=0.02,
+    ),
+    AutonomousBlockPolicy(
+        block_name="piece_values.pawn",
+        mode="hold",
+        note=(
+            "Pawn value is held after p8 produced a real 100 to 110 candidate with "
+            "repeated negative inner/static-prescreen signal and rank regression."
+        ),
+        spsa_learning_rate=20.00,
+        spsa_perturbation=0.50,
+        min_effective_score_difference=0.04,
     ),
     AutonomousBlockPolicy(
         block_name="piece_values.knight",
@@ -185,6 +239,28 @@ AUTONOMOUS_BLOCK_POLICIES: List[AutonomousBlockPolicy] = [
         min_effective_score_difference=0.04,
     ),
     AutonomousBlockPolicy(
+        block_name="piece_values",
+        mode="hold",
+        note=(
+            "Broad piece values are held after p8 produced no gate-cross, no changed "
+            "paths, and all-zero static/acceptance signals."
+        ),
+        spsa_learning_rate=20.00,
+        spsa_perturbation=0.50,
+        min_effective_score_difference=0.04,
+    ),
+    AutonomousBlockPolicy(
+        block_name="phase",
+        mode="hold",
+        note=(
+            "Broad phase thresholds are held after p8 produced no gate-cross, no "
+            "changed paths, and all-zero static/acceptance prescreen signal."
+        ),
+        spsa_learning_rate=8.00,
+        spsa_perturbation=0.50,
+        min_effective_score_difference=0.04,
+    ),
+    AutonomousBlockPolicy(
         block_name="phase.opening_fullmove_limit",
         mode="hold",
         note=(
@@ -201,6 +277,18 @@ AUTONOMOUS_BLOCK_POLICIES: List[AutonomousBlockPolicy] = [
         note=(
             "Endgame phase cutoff is held after p8 produced no gate-cross, no changed "
             "paths, and zero static/acceptance prescreen signal."
+        ),
+        spsa_learning_rate=8.00,
+        spsa_perturbation=0.50,
+        min_effective_score_difference=0.04,
+    ),
+    AutonomousBlockPolicy(
+        block_name="eval.constants",
+        mode="hold",
+        note=(
+            "Broad eval constants are held after p8 produced no gate-cross, no "
+            "changed paths, all-zero static/acceptance signals, rank regression, "
+            "and one optimizer acceptance timeout record."
         ),
         spsa_learning_rate=8.00,
         spsa_perturbation=0.50,
@@ -243,8 +331,8 @@ AUTONOMOUS_BLOCK_POLICIES: List[AutonomousBlockPolicy] = [
         block_name="search.root_mate_stop_distance",
         mode="hold",
         note=(
-            "Root mate stop distance is held after p8 produced some nonzero search "
-            "signals but no gate-cross, no changed path, and unstable direction."
+            "Root mate stop distance is held after conservative p8 retest produced "
+            "no gate-cross, no changed paths, and only small mixed score noise."
         ),
         spsa_learning_rate=8.00,
         spsa_perturbation=0.50,
@@ -254,8 +342,8 @@ AUTONOMOUS_BLOCK_POLICIES: List[AutonomousBlockPolicy] = [
         block_name="search.history_bonus_scale",
         mode="hold",
         note=(
-            "History bonus scale is held after p8 produced no gate-cross, no changed "
-            "paths, zero inner/prescreen signal, and one negative acceptance prescreen."
+            "History bonus scale is held after conservative p8 retest produced "
+            "no gate-cross, no changed paths, and only tiny score noise."
         ),
         spsa_learning_rate=8.00,
         spsa_perturbation=0.50,
@@ -265,8 +353,8 @@ AUTONOMOUS_BLOCK_POLICIES: List[AutonomousBlockPolicy] = [
         block_name="search.history_bonus_power",
         mode="hold",
         note=(
-            "History bonus power is held after p8 produced no gate-cross, no changed "
-            "paths, all-zero seed signals, and one outer rank regression."
+            "History bonus power is held after conservative p8 retest produced "
+            "no gate-cross, no changed paths, and small negative score noise."
         ),
         spsa_learning_rate=8.00,
         spsa_perturbation=0.50,
@@ -283,6 +371,50 @@ AUTONOMOUS_BLOCK_POLICIES: List[AutonomousBlockPolicy] = [
         spsa_perturbation=0.30,
     ),
     AutonomousBlockPolicy(
+        block_name="search.quiescence_depth",
+        mode="hold",
+        note=(
+            "Quiescence depth remains held by final shutdown protocol; no further "
+            "internal self-play blocks are active."
+        ),
+        spsa_learning_rate=8.00,
+        spsa_perturbation=0.50,
+        min_effective_score_difference=0.04,
+    ),
+    AutonomousBlockPolicy(
+        block_name="search.min_time_margin_ms",
+        mode="hold",
+        note=(
+            "Minimum time margin is held after p8 produced repeated real changes "
+            "with stable negative line-quality signal and one rank regression."
+        ),
+        spsa_learning_rate=8.00,
+        spsa_perturbation=0.50,
+        min_effective_score_difference=0.04,
+    ),
+    AutonomousBlockPolicy(
+        block_name="search.default_depth",
+        mode="hold",
+        note=(
+            "Default search depth is held after p8 produced no gate-cross, no changed "
+            "paths, and one outer rank regression."
+        ),
+        spsa_learning_rate=8.00,
+        spsa_perturbation=0.50,
+        min_effective_score_difference=0.04,
+    ),
+    AutonomousBlockPolicy(
+        block_name="search.max_depth",
+        mode="hold",
+        note=(
+            "Maximum search depth is held after p8 produced no gate-cross, no changed "
+            "paths, and negative acceptance-prescreen noise."
+        ),
+        spsa_learning_rate=8.00,
+        spsa_perturbation=0.50,
+        min_effective_score_difference=0.04,
+    ),
+    AutonomousBlockPolicy(
         block_name="move_ordering.development",
         mode="hold",
         note=(
@@ -297,8 +429,8 @@ AUTONOMOUS_BLOCK_POLICIES: List[AutonomousBlockPolicy] = [
         block_name="move_ordering.early_rook_penalty",
         mode="hold",
         note=(
-            "Early rook penalty is held after p8 produced no gate-cross, no changed "
-            "paths, and all-zero line-quality/acceptance signals."
+            "Early rook penalty is held after p8 retest produced no gate-cross, "
+            "no changed paths, and all-zero line-quality signals."
         ),
         spsa_learning_rate=8.00,
         spsa_perturbation=0.50,
@@ -308,8 +440,8 @@ AUTONOMOUS_BLOCK_POLICIES: List[AutonomousBlockPolicy] = [
         block_name="move_ordering.minor_development_bonus",
         mode="hold",
         note=(
-            "Minor development bonus is held at the promoted 21 value after p8 and p16 "
-            "showed stable ready evidence and post-promotion p16 returned rank 1."
+            "Minor development bonus is held at 21 after the updated-policy p8 "
+            "candidate 21 to 12 failed stable p16 validation."
         ),
         spsa_learning_rate=8.00,
         spsa_perturbation=0.50,
@@ -319,8 +451,8 @@ AUTONOMOUS_BLOCK_POLICIES: List[AutonomousBlockPolicy] = [
         block_name="move_ordering.center_pawn_development_bonus",
         mode="hold",
         note=(
-            "Center pawn development bonus is held after p8 produced no gate-cross, "
-            "no changed paths, and all-zero line-quality/prescreen signals."
+            "Center pawn development bonus is held after p8 retest produced no "
+            "gate-cross, no changed paths, and all-zero line-quality signals."
         ),
         spsa_learning_rate=8.00,
         spsa_perturbation=0.50,
@@ -330,8 +462,8 @@ AUTONOMOUS_BLOCK_POLICIES: List[AutonomousBlockPolicy] = [
         block_name="move_ordering.early_queen_penalty",
         mode="hold",
         note=(
-            "Early queen penalty is held after p8 produced no gate-cross, no changed "
-            "paths, and all-zero line-quality/prescreen signals."
+            "Early queen penalty is held after p8 retest produced no gate-cross, "
+            "no changed paths, and all-zero line-quality signals."
         ),
         spsa_learning_rate=8.00,
         spsa_perturbation=0.50,
@@ -341,8 +473,8 @@ AUTONOMOUS_BLOCK_POLICIES: List[AutonomousBlockPolicy] = [
         block_name="move_ordering.castling_bonus",
         mode="hold",
         note=(
-            "Castling bonus is held after p8 produced no gate-cross, no changed "
-            "paths, and all-zero line-quality/prescreen signals."
+            "Castling bonus is held after p8 retest produced no gate-cross, no changed "
+            "paths, and one no-change rank regression."
         ),
         spsa_learning_rate=8.00,
         spsa_perturbation=0.50,
@@ -352,8 +484,8 @@ AUTONOMOUS_BLOCK_POLICIES: List[AutonomousBlockPolicy] = [
         block_name="move_ordering.center_bonus",
         mode="hold",
         note=(
-            "Center ordering bonus is held after p8 produced a repeated negative "
-            "signal for the 40 to 50 candidate and autonomous tuning froze the block."
+            "Center ordering bonus is held after p8 retest produced two negative "
+            "rounds and one shadow-ready round with unstable direction."
         ),
         spsa_learning_rate=8.00,
         spsa_perturbation=0.50,
@@ -363,8 +495,8 @@ AUTONOMOUS_BLOCK_POLICIES: List[AutonomousBlockPolicy] = [
         block_name="move_ordering.extended_center_bonus",
         mode="hold",
         note=(
-            "Extended center ordering bonus is held after the 15 to 10 promotion "
-            "passed line-quality gates but repeatedly regressed p16 self-play rank."
+            "Extended center ordering bonus is held at 10 after promotion-confirm "
+            "and post-promotion p16 stability checks passed."
         ),
         spsa_learning_rate=8.00,
         spsa_perturbation=0.50,
@@ -374,8 +506,8 @@ AUTONOMOUS_BLOCK_POLICIES: List[AutonomousBlockPolicy] = [
         block_name="move_ordering.check_bonus",
         mode="hold",
         note=(
-            "Check ordering bonus is held after p8 produced no gate-cross, no changed "
-            "paths, and repeated rank-2 outer self-play."
+            "Check ordering bonus is held after p8 retest produced no gate-cross, "
+            "no changed paths, and one rank regression."
         ),
         spsa_learning_rate=8.00,
         spsa_perturbation=0.50,
@@ -448,6 +580,17 @@ AUTONOMOUS_BLOCK_POLICIES: List[AutonomousBlockPolicy] = [
         min_effective_score_difference=0.04,
     ),
     AutonomousBlockPolicy(
+        block_name="pawn_structure",
+        mode="hold",
+        note=(
+            "Broad pawn structure is held after p8 produced real changed paths but "
+            "repeated negative inner and acceptance-prescreen signals."
+        ),
+        spsa_learning_rate=8.00,
+        spsa_perturbation=0.50,
+        min_effective_score_difference=0.04,
+    ),
+    AutonomousBlockPolicy(
         block_name="pawn_structure.advance_bonus_per_rank",
         mode="hold",
         note=(
@@ -478,6 +621,17 @@ AUTONOMOUS_BLOCK_POLICIES: List[AutonomousBlockPolicy] = [
         ),
         spsa_learning_rate=12.00,
         spsa_perturbation=1.00,
+        min_effective_score_difference=0.04,
+    ),
+    AutonomousBlockPolicy(
+        block_name="king_safety",
+        mode="hold",
+        note=(
+            "Broad king safety is held after p8 produced real changed paths but "
+            "repeated negative inner/static-prescreen signals and froze."
+        ),
+        spsa_learning_rate=8.00,
+        spsa_perturbation=0.50,
         min_effective_score_difference=0.04,
     ),
     AutonomousBlockPolicy(
@@ -528,8 +682,8 @@ AUTONOMOUS_BLOCK_POLICIES: List[AutonomousBlockPolicy] = [
         block_name="move_ordering.promotion_bonus",
         mode="hold",
         note=(
-            "Promotion ordering bonus is held after p8 produced no gate-cross or "
-            "changed paths despite stable outer rank."
+            "Promotion ordering bonus is held after p8 retest produced no gate-cross, "
+            "no changed paths, and one rank regression."
         ),
         spsa_learning_rate=8.00,
         spsa_perturbation=0.50,
@@ -537,11 +691,32 @@ AUTONOMOUS_BLOCK_POLICIES: List[AutonomousBlockPolicy] = [
     ),
     AutonomousBlockPolicy(
         block_name="move_ordering.capture_base_bonus",
-        mode="active",
+        mode="hold",
         note=(
-            "Online self-play tuning tests capture base ordering bonus as the next "
-            "single-parameter tactical ordering block after promotion bonus showed "
-            "no movement."
+            "Capture base ordering bonus is held after updated-policy p8 retest "
+            "produced one negative changed seed and otherwise no effective movement."
+        ),
+        spsa_learning_rate=8.00,
+        spsa_perturbation=0.50,
+        min_effective_score_difference=0.04,
+    ),
+    AutonomousBlockPolicy(
+        block_name="move_ordering.capture_victim_multiplier",
+        mode="hold",
+        note=(
+            "Capture victim ordering multiplier is held at 10 after updated-policy "
+            "p8 retest produced no gate-cross, no changed paths, and all-zero signals."
+        ),
+        spsa_learning_rate=8.00,
+        spsa_perturbation=0.50,
+        min_effective_score_difference=0.04,
+    ),
+    AutonomousBlockPolicy(
+        block_name="move_ordering.capture_attacker_penalty",
+        mode="hold",
+        note=(
+            "Capture attacker penalty is held after updated-policy p8 retest "
+            "reproduced a negative changed seed and direction instability."
         ),
         spsa_learning_rate=8.00,
         spsa_perturbation=0.50,
@@ -551,6 +726,7 @@ AUTONOMOUS_BLOCK_POLICIES: List[AutonomousBlockPolicy] = [
 
 STABILITY_FIRST_FAILURES = {"interface_error", "illegal_move", "timeout"}
 FREEZE_REASON_CODES = {"direction_unstable", "negative_signal"}
+MAX_SHADOW_NEGATIVE_SEEDS = 3
 
 
 def run_autonomous_tuning_round(
@@ -714,8 +890,8 @@ def _select_promising_recent_policy(
 
 def _is_promising_hold(tuning: Dict[str, Any]) -> bool:
     return (
-        str(tuning.get("action", "")) == "hold"
-        and str(tuning.get("reason_code", "")) == "acceptance_unconfirmed"
+        str(tuning.get("action", "")) in {"hold", "shadow_ready"}
+        and str(tuning.get("reason_code", "")) in {"acceptance_unconfirmed", "shadow_ready"}
         and int(tuning.get("gate_cross_count", 0) or 0) > 0
         and int(tuning.get("positive_inner_count", 0) or 0)
         >= int(tuning.get("negative_inner_count", 0) or 0)
@@ -842,6 +1018,11 @@ def _apply_policy_decision(
         and item.acceptance_mean_score_a >= 0.5
         and _seed_is_safe(item)
     ]
+    shadow_promotable = [
+        item
+        for item in promotable
+        if item.prescreen_score_difference >= 0.0
+    ]
     if report.gate_cross_count == 0:
         report.reason_code = "no_gate_cross"
         report.reason = (
@@ -859,6 +1040,8 @@ def _apply_policy_decision(
         _finalize_hold_or_freeze(report, memory_records, policy)
         return
     if report.positive_inner_count == 0 or report.negative_inner_count > 0:
+        if _mark_shadow_ready_if_promising(report, shadow_promotable):
+            return
         report.reason_code = "direction_unstable"
         report.reason = (
             "Seed-to-seed direction is not stable enough for autonomous promotion; keep "
@@ -867,6 +1050,8 @@ def _apply_policy_decision(
         _finalize_hold_or_freeze(report, memory_records, policy)
         return
     if len(promotable) < 2 or report.safe_seed_count < len(report.seeds):
+        if _mark_shadow_ready_if_promising(report, shadow_promotable):
+            return
         report.reason_code = "acceptance_unconfirmed"
         report.reason = (
             "At least one seed crossed the discrete gate, but acceptance evidence is still "
@@ -903,6 +1088,39 @@ def _apply_policy_decision(
         report.archived_profile_path = str(archive_path) if archive_path is not None else ""
         return
     report.action = "ready"
+
+
+def _mark_shadow_ready_if_promising(
+    report: AutonomousTuningReport,
+    shadow_promotable: List[AutonomousTuningSeedResult],
+) -> bool:
+    if (
+        not shadow_promotable
+        or report.negative_inner_count > MAX_SHADOW_NEGATIVE_SEEDS
+        or report.safe_seed_count != len(report.seeds)
+    ):
+        return False
+    chosen = max(
+        shadow_promotable,
+        key=lambda item: (
+            item.score_difference,
+            item.prescreen_score_difference,
+            item.acceptance_prescreen_difference,
+            item.acceptance_mean_score_a,
+            item.applied_change_count,
+        ),
+    )
+    report.action = "shadow_ready"
+    report.reason_code = "shadow_ready"
+    report.reason = (
+        "At least one seed produced a real positive candidate with non-negative prescreen "
+        "and acceptance evidence, but the full multi-seed promotion standard was not met. "
+        "Keep the candidate for larger shadow confirmation instead of writing it to the "
+        "formal profile."
+    )
+    report.chosen_seed = chosen.seed
+    report.chosen_changed_paths = list(chosen.applied_change_paths)
+    return True
 
 
 def _finalize_hold_or_freeze(

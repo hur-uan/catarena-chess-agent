@@ -1,0 +1,83 @@
+{
+  "blocks": [
+    {
+      "block_name": "move_ordering.promotion_bonus",
+      "parameter_count": 1,
+      "parameters": [
+        {
+          "current_value": 800,
+          "frozen": false,
+          "path": "move_ordering.promotion_bonus",
+          "step": 50.0,
+          "summary": {
+            "max_abs_score_difference": 0.0,
+            "max_move_diff_count": 0,
+            "move_diff_variant_count": 0,
+            "nonzero_variant_count": 0,
+            "variant_count": 2
+          },
+          "type": "int",
+          "variants": [
+            {
+              "candidate_value": 700,
+              "current_value": 800,
+              "direction": "minus",
+              "summary": {
+                "differing_positions": [],
+                "line_score_diff_count": 0,
+                "max_abs_position_score_difference": 0.0,
+                "mean_score_a": 0.8843766198318298,
+                "mean_score_b": 0.8843766198318298,
+                "move_diff_count": 0,
+                "nonzero_position_score_count": 0,
+                "positions": 4,
+                "root_score_diff_count": 0,
+                "score_difference": 0.0
+              }
+            },
+            {
+              "candidate_value": 900,
+              "current_value": 800,
+              "direction": "plus",
+              "summary": {
+                "differing_positions": [],
+                "line_score_diff_count": 0,
+                "max_abs_position_score_difference": 0.0,
+                "mean_score_a": 0.8843766198318298,
+                "mean_score_b": 0.8843766198318298,
+                "move_diff_count": 0,
+                "nonzero_position_score_count": 0,
+                "positions": 4,
+                "root_score_diff_count": 0,
+                "score_difference": 0.0
+              }
+            }
+          ]
+        }
+      ],
+      "prescreen_set": "move_ordering.tactical",
+      "signal_mode": "line_quality",
+      "summary": {
+        "max_abs_score_difference": 0.0,
+        "max_move_diff_count": 0,
+        "move_sensitive_parameter_count": 0,
+        "parameter_count": 1,
+        "sensitive_parameter_count": 0
+      }
+    }
+  ],
+  "candidate_time_limit_ms": 40,
+  "include_frozen": false,
+  "oracle_time_limit_ms": 120,
+  "registry_path": "/Users/thinler/Documents/agent/config/tuning_registry.json",
+  "step_multiplier": 2.0,
+  "strategy_profile_path": "/Users/thinler/Documents/agent/config/strategy_profile.json",
+  "summary": {
+    "block_count": 1,
+    "max_abs_score_difference": 0.0,
+    "max_move_diff_count": 0,
+    "move_sensitive_block_count": 0,
+    "sensitive_block_count": 0
+  },
+  "use_external_oracle": false
+}

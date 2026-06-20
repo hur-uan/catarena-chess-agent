@@ -1,0 +1,4661 @@
+{
+  "artifact_paths": {
+    "candidate_profile_path": "agents/candidates/strategy_profile_self_play_p8_move_capture_attacker_penalty_retest2_003.json",
+    "evaluation_record_path": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/evaluation_record.json",
+    "feedback_fen_suite_path": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/feedback_fen_suite.json",
+    "optimization_report_path": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/optimization_report.json",
+    "parameter_candidates_dir": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/parameter_candidates",
+    "parameter_record_path": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/parameter_record.json",
+    "round_record_path": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/round_record.json",
+    "strategy_profile_after_path": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/strategy_profile_after.json",
+    "strategy_profile_before_path": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/strategy_profile_before.json"
+  },
+  "backend": "profile",
+  "catarena_message": "CATArena chessgame checkout is present.",
+  "catarena_missing_required_files": [],
+  "catarena_ready": true,
+  "catarena_source_files_seen": 36,
+  "engine_runtime_config": {
+    "enabled": false,
+    "endgame_depth_limit": 5,
+    "endgame_node_limit": 8000000,
+    "endgame_non_king_piece_threshold": 10,
+    "low_time_depth_limit": 2,
+    "low_time_node_limit": 250000,
+    "low_time_threshold_ms": 80,
+    "middlegame_depth_limit": 4,
+    "middlegame_node_limit": 4000000,
+    "minimum_external_budget_ms": 60,
+    "opening_depth_limit": 4,
+    "opening_fullmove_limit": 10,
+    "opening_node_limit": 2000000,
+    "source": "/Users/thinler/Documents/agent/config/strategy_profile.json",
+    "time_buffer_ms": 8
+  },
+  "evolution_metrics": {
+    "global_scores": [
+      0.4688,
+      0.5625,
+      0.5,
+      0.5,
+      0.5,
+      0.5312,
+      0.5,
+      0.5312,
+      0.4375,
+      0.5,
+      0.5312,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.4688,
+      0.5,
+      0.5312,
+      0.4688,
+      0.5312,
+      0.5312,
+      0.5312,
+      0.5312,
+      0.5,
+      0.5312,
+      0.5,
+      0.5,
+      0.5,
+      0.4688,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5312,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5312,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.4688,
+      0.5312,
+      0.4688,
+      0.5312,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5312,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5312,
+      0.5938,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.4844,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.4844,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.4688,
+      0.5,
+      0.5312,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.4844,
+      0.4844,
+      0.5,
+      0.5312,
+      0.4375,
+      0.5,
+      0.5,
+      0.4688,
+      0.5,
+      0.5,
+      0.5312,
+      0.5312,
+      0.5,
+      0.5,
+      0.5,
+      0.5312,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.4688,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.4844,
+      0.4688,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.4844,
+      0.4688,
+      0.5,
+      0.4688,
+      0.5,
+      0.5312,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.4688,
+      0.5312,
+      0.5312,
+      0.5,
+      0.4688,
+      0.5,
+      0.5,
+      0.5312,
+      0.5,
+      0.5,
+      0.4688,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.4688,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.4688,
+      0.4688,
+      0.5,
+      0.4688,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5312,
+      0.5,
+      0.5312,
+      0.5,
+      0.4688,
+      0.5,
+      0.5,
+      0.4688,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.4844,
+      0.5156,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.4688,
+      0.4375,
+      0.5312,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.4688,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.4688,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.4688,
+      0.5,
+      0.5312,
+      0.5625,
+      0.5,
+      0.5312,
+      0.5,
+      0.5,
+      0.5,
+      0.5156,
+      0.5,
+      0.5312,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5156,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.4844,
+      0.5,
+      0.5,
+      0.5312,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5312,
+      0.4688,
+      0.5,
+      0.5625,
+      0.5,
+      0.5,
+      0.4688,
+      0.5312,
+      0.4688,
+      0.5312,
+      0.5312,
+      0.4688,
+      0.5,
+      0.5,
+      0.5,
+      0.5312,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5312,
+      0.4688,
+      0.5,
+      0.4844,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5938,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "rounds_considered": 465,
+    "same_round_score": 0.5,
+    "sbase": 0.4688,
+    "sevo": -2.3484964218707512e-06
+  },
+  "failure_report": {
+    "evidence": [
+      "no crashes, illegal moves, or timeout signals found"
+    ],
+    "main_failure_type": "no_clear_failure",
+    "next_actions": [
+      "make one small strategy improvement and validate against fixed FEN set"
+    ],
+    "priority": "low"
+  },
+  "feedback_fen_suite": {
+    "default_positions": 6,
+    "duplicates_removed": 0,
+    "feedback_positions": 8,
+    "positions": [
+      {
+        "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+        "name": "feedback_failure_001",
+        "source": "catarena_failure_log"
+      },
+      {
+        "fen": "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+        "name": "feedback_failure_002",
+        "source": "catarena_failure_log"
+      },
+      {
+        "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+        "name": "feedback_failure_003",
+        "source": "catarena_failure_log"
+      },
+      {
+        "fen": "rnbqkbnr/pp2pppp/3p4/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
+        "name": "feedback_failure_004",
+        "source": "catarena_failure_log"
+      },
+      {
+        "fen": "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
+        "name": "feedback_failure_005",
+        "source": "catarena_failure_log"
+      },
+      {
+        "fen": "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
+        "name": "feedback_failure_006",
+        "source": "catarena_failure_log"
+      },
+      {
+        "fen": "rnbqkbnr/ppp2ppp/4p3/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+        "name": "feedback_failure_007",
+        "source": "catarena_failure_log"
+      },
+      {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "name": "feedback_failure_008",
+        "source": "catarena_failure_log"
+      },
+      {
+        "fen": "6k1/5Q2/6K1/8/8/8/8/8 w - - 0 1",
+        "name": "mate_in_one_white",
+        "source": "default_prescreen"
+      },
+      {
+        "fen": "8/8/8/8/8/6k1/5q2/6K1 b - - 0 1",
+        "name": "mate_in_one_black",
+        "source": "default_prescreen"
+      },
+      {
+        "fen": "r2q1k1r/2pnppb1/pp4pn/3N2Np/3P2bP/4B1P1/PPP1PPB1/R2Q1RK1 w - - 0 11",
+        "name": "sharp_midgame_1",
+        "source": "default_prescreen"
+      },
+      {
+        "fen": "r1bq1rk1/pp1n1pbp/2pp1np1/4p3/2PPP3/2N1BN1P/PPQ2PP1/R3KB1R w KQ - 2 9",
+        "name": "sharp_midgame_2",
+        "source": "default_prescreen"
+      },
+      {
+        "fen": "2r2rk1/pp1q1ppp/2n1pn2/2bp4/3P4/2NBPN2/PPQ2PPP/2RR2K1 w - - 0 12",
+        "name": "isolated_pawn_tension",
+        "source": "default_prescreen"
+      },
+      {
+        "fen": "8/5pk1/3p2p1/2pP4/2P1r3/4R1P1/5PK1/8 w - - 0 35",
+        "name": "rook_endgame",
+        "source": "default_prescreen"
+      }
+    ],
+    "total_positions": 14
+  },
+  "feedback_prescreen": {
+    "mean_score_a": 0.811971939918213,
+    "mean_score_b": 0.811971939918213,
+    "positions": 14,
+    "results": [
+      {
+        "calibration_gap_a": 100028,
+        "calibration_gap_b": 100028,
+        "cp_loss_a": -48,
+        "cp_loss_b": -48,
+        "cutoffs_a": 0,
+        "cutoffs_b": 0,
+        "depth_a": 0,
+        "depth_b": 0,
+        "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+        "line_score_a_cp": 28,
+        "line_score_b_cp": 28,
+        "move_a": "c4f7",
+        "move_b": "c4f7",
+        "name": "feedback_failure_001",
+        "nodes_a": 4,
+        "nodes_b": 4,
+        "oracle_line_cp": -20,
+        "oracle_move": "a2a3",
+        "root_score_a_cp": -100000,
+        "root_score_b_cp": -100000,
+        "score_a": 0.7504389114994813,
+        "score_b": 0.7504389114994813,
+        "tt_hits_a": 0,
+        "tt_hits_b": 0
+      },
+      {
+        "calibration_gap_a": 99997,
+        "calibration_gap_b": 99997,
+        "cp_loss_a": -99997,
+        "cp_loss_b": -99997,
+        "cutoffs_a": 0,
+        "cutoffs_b": 0,
+        "depth_a": 0,
+        "depth_b": 0,
+        "fen": "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+        "line_score_a_cp": -3,
+        "line_score_b_cp": -3,
+        "move_a": "g8e7",
+        "move_b": "g8e7",
+        "name": "feedback_failure_002",
+        "nodes_a": 2,
+        "nodes_b": 2,
+        "oracle_line_cp": -100000,
+        "oracle_move": "g8e7",
+        "root_score_a_cp": -100000,
+        "root_score_b_cp": -100000,
+        "score_a": 0.8004390472674298,
+        "score_b": 0.8004390472674298,
+        "tt_hits_a": 0,
+        "tt_hits_b": 0
+      },
+      {
+        "calibration_gap_a": 200000,
+        "calibration_gap_b": 200000,
+        "cp_loss_a": -100083,
+        "cp_loss_b": -100083,
+        "cutoffs_a": 0,
+        "cutoffs_b": 0,
+        "depth_a": 0,
+        "depth_b": 0,
+        "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+        "line_score_a_cp": 100000,
+        "line_score_b_cp": 100000,
+        "move_a": "g1h3",
+        "move_b": "g1h3",
+        "name": "feedback_failure_003",
+        "nodes_a": 13,
+        "nodes_b": 13,
+        "oracle_line_cp": -83,
+        "oracle_move": "b2b4",
+        "root_score_a_cp": -100000,
+        "root_score_b_cp": -100000,
+        "score_a": 0.7502197582659075,
+        "score_b": 0.7502197582659075,
+        "tt_hits_a": 0,
+        "tt_hits_b": 0
+      },
+      {
+        "calibration_gap_a": 30,
+        "calibration_gap_b": 30,
+        "cp_loss_a": 1,
+        "cp_loss_b": 1,
+        "cutoffs_a": 3,
+        "cutoffs_b": 3,
+        "depth_a": 1,
+        "depth_b": 1,
+        "fen": "rnbqkbnr/pp2pppp/3p4/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
+        "line_score_a_cp": 21,
+        "line_score_b_cp": 21,
+        "move_a": "f3g1",
+        "move_b": "f3g1",
+        "name": "feedback_failure_004",
+        "nodes_a": 71,
+        "nodes_b": 71,
+        "oracle_line_cp": 22,
+        "oracle_move": "a2a3",
+        "root_score_a_cp": -9,
+        "root_score_b_cp": -9,
+        "score_a": 0.9213416149068322,
+        "score_b": 0.9213416149068322,
+        "tt_hits_a": 0,
+        "tt_hits_b": 0
+      },
+      {
+        "calibration_gap_a": 200000,
+        "calibration_gap_b": 200000,
+        "cp_loss_a": -200000,
+        "cp_loss_b": -200000,
+        "cutoffs_a": 0,
+        "cutoffs_b": 0,
+        "depth_a": 0,
+        "depth_b": 0,
+        "fen": "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
+        "line_score_a_cp": 100000,
+        "line_score_b_cp": 100000,
+        "move_a": "g8h6",
+        "move_b": "g8h6",
+        "name": "feedback_failure_005",
+        "nodes_a": 2,
+        "nodes_b": 2,
+        "oracle_line_cp": -100000,
+        "oracle_move": "g8h6",
+        "root_score_a_cp": -100000,
+        "root_score_b_cp": -100000,
+        "score_a": 0.8002197582659075,
+        "score_b": 0.8002197582659075,
+        "tt_hits_a": 0,
+        "tt_hits_b": 0
+      },
+      {
+        "calibration_gap_a": 5,
+        "calibration_gap_b": 5,
+        "cp_loss_a": -7,
+        "cp_loss_b": -7,
+        "cutoffs_a": 2,
+        "cutoffs_b": 2,
+        "depth_a": 1,
+        "depth_b": 1,
+        "fen": "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
+        "line_score_a_cp": 1,
+        "line_score_b_cp": 1,
+        "move_a": "e1d2",
+        "move_b": "e1d2",
+        "name": "feedback_failure_006",
+        "nodes_a": 114,
+        "nodes_b": 112,
+        "oracle_line_cp": -6,
+        "oracle_move": "d1d2",
+        "root_score_a_cp": 6,
+        "root_score_b_cp": 6,
+        "score_a": 0.9455555555555556,
+        "score_b": 0.9455555555555556,
+        "tt_hits_a": 0,
+        "tt_hits_b": 0
+      },
+      {
+        "calibration_gap_a": 200000,
+        "calibration_gap_b": 200000,
+        "cp_loss_a": -100038,
+        "cp_loss_b": -100038,
+        "cutoffs_a": 0,
+        "cutoffs_b": 0,
+        "depth_a": 0,
+        "depth_b": 0,
+        "fen": "rnbqkbnr/ppp2ppp/4p3/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+        "line_score_a_cp": 100000,
+        "line_score_b_cp": 100000,
+        "move_a": "g1h3",
+        "move_b": "g1h3",
+        "name": "feedback_failure_007",
+        "nodes_a": 13,
+        "nodes_b": 13,
+        "oracle_line_cp": -38,
+        "oracle_move": "a2a3",
+        "root_score_a_cp": -100000,
+        "root_score_b_cp": -100000,
+        "score_a": 0.7502197582659075,
+        "score_b": 0.7502197582659075,
+        "tt_hits_a": 0,
+        "tt_hits_b": 0
+      },
+      {
+        "calibration_gap_a": 2,
+        "calibration_gap_b": 2,
+        "cp_loss_a": -2,
+        "cp_loss_b": -2,
+        "cutoffs_a": 18,
+        "cutoffs_b": 18,
+        "depth_a": 2,
+        "depth_b": 2,
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "line_score_a_cp": 2,
+        "line_score_b_cp": 2,
+        "move_a": "a2a3",
+        "move_b": "a2a3",
+        "name": "feedback_failure_008",
+        "nodes_a": 101,
+        "nodes_b": 101,
+        "oracle_line_cp": 0,
+        "oracle_move": "a2a3",
+        "root_score_a_cp": 0,
+        "root_score_b_cp": 0,
+        "score_a": 0.9981981981981982,
+        "score_b": 0.9981981981981982,
+        "tt_hits_a": 0,
+        "tt_hits_b": 0
+      },
+      {
+        "calibration_gap_a": 1,
+        "calibration_gap_b": 1,
+        "cp_loss_a": -1,
+        "cp_loss_b": -1,
+        "cutoffs_a": 0,
+        "cutoffs_b": 0,
+        "depth_a": 1,
+        "depth_b": 1,
+        "fen": "6k1/5Q2/6K1/8/8/8/8/8 w - - 0 1",
+        "line_score_a_cp": 100000,
+        "line_score_b_cp": 100000,
+        "move_a": "f7e8",
+        "move_b": "f7e8",
+        "name": "mate_in_one_white",
+        "nodes_a": 26,
+        "nodes_b": 26,
+        "oracle_line_cp": 99999,
+        "oracle_move": "f7e8",
+        "root_score_a_cp": 99999,
+        "root_score_b_cp": 99999,
+        "score_a": 0.9990950226244344,
+        "score_b": 0.9990950226244344,
+        "tt_hits_a": 0,
+        "tt_hits_b": 0
+      },
+      {
+        "calibration_gap_a": 1,
+        "calibration_gap_b": 1,
+        "cp_loss_a": -1,
+        "cp_loss_b": -1,
+        "cutoffs_a": 0,
+        "cutoffs_b": 0,
+        "depth_a": 1,
+        "depth_b": 1,
+        "fen": "8/8/8/8/8/6k1/5q2/6K1 b - - 0 1",
+        "line_score_a_cp": 100000,
+        "line_score_b_cp": 100000,
+        "move_a": "f2e1",
+        "move_b": "f2e1",
+        "name": "mate_in_one_black",
+        "nodes_a": 26,
+        "nodes_b": 26,
+        "oracle_line_cp": 99999,
+        "oracle_move": "f2e1",
+        "root_score_a_cp": 99999,
+        "root_score_b_cp": 99999,
+        "score_a": 0.9990950226244344,
+        "score_b": 0.9990950226244344,
+        "tt_hits_a": 0,
+        "tt_hits_b": 0
+      },
+      {
+        "calibration_gap_a": 100125,
+        "calibration_gap_b": 100125,
+        "cp_loss_a": -100125,
+        "cp_loss_b": -100125,
+        "cutoffs_a": 0,
+        "cutoffs_b": 0,
+        "depth_a": 1,
+        "depth_b": 1,
+        "fen": "r2q1k1r/2pnppb1/pp4pn/3N2Np/3P2bP/4B1P1/PPP1PPB1/R2Q1RK1 w - - 0 11",
+        "line_score_a_cp": 100000,
+        "line_score_b_cp": 100000,
+        "move_a": "d5b4",
+        "move_b": "d5b4",
+        "name": "sharp_midgame_1",
+        "nodes_a": 44,
+        "nodes_b": 45,
+        "oracle_line_cp": -125,
+        "oracle_move": "d5b4",
+        "root_score_a_cp": -125,
+        "root_score_b_cp": -125,
+        "score_a": 0.8004384872190942,
+        "score_b": 0.8004384872190942,
+        "tt_hits_a": 0,
+        "tt_hits_b": 0
+      },
+      {
+        "calibration_gap_a": 200000,
+        "calibration_gap_b": 200000,
+        "cp_loss_a": -200000,
+        "cp_loss_b": -200000,
+        "cutoffs_a": 0,
+        "cutoffs_b": 0,
+        "depth_a": 0,
+        "depth_b": 0,
+        "fen": "r1bq1rk1/pp1n1pbp/2pp1np1/4p3/2PPP3/2N1BN1P/PPQ2PP1/R3KB1R w KQ - 2 9",
+        "line_score_a_cp": 100000,
+        "line_score_b_cp": 100000,
+        "move_a": "f3g5",
+        "move_b": "f3g5",
+        "name": "sharp_midgame_2",
+        "nodes_a": 3,
+        "nodes_b": 3,
+        "oracle_line_cp": -100000,
+        "oracle_move": "f3g5",
+        "root_score_a_cp": -100000,
+        "root_score_b_cp": -100000,
+        "score_a": 0.8002197582659075,
+        "score_b": 0.8002197582659075,
+        "tt_hits_a": 0,
+        "tt_hits_b": 0
+      },
+      {
+        "calibration_gap_a": 200000,
+        "calibration_gap_b": 200000,
+        "cp_loss_a": -200000,
+        "cp_loss_b": -200000,
+        "cutoffs_a": 0,
+        "cutoffs_b": 0,
+        "depth_a": 0,
+        "depth_b": 0,
+        "fen": "2r2rk1/pp1q1ppp/2n1pn2/2bp4/3P4/2NBPN2/PPQ2PPP/2RR2K1 w - - 0 12",
+        "line_score_a_cp": 100000,
+        "line_score_b_cp": 100000,
+        "move_a": "f3g5",
+        "move_b": "f3g5",
+        "name": "isolated_pawn_tension",
+        "nodes_a": 3,
+        "nodes_b": 3,
+        "oracle_line_cp": -100000,
+        "oracle_move": "f3g5",
+        "root_score_a_cp": -100000,
+        "root_score_b_cp": -100000,
+        "score_a": 0.8002197582659075,
+        "score_b": 0.8002197582659075,
+        "tt_hits_a": 0,
+        "tt_hits_b": 0
+      },
+      {
+        "calibration_gap_a": 637,
+        "calibration_gap_b": 637,
+        "cp_loss_a": 637,
+        "cp_loss_b": 637,
+        "cutoffs_a": 16,
+        "cutoffs_b": 16,
+        "depth_a": 2,
+        "depth_b": 2,
+        "fen": "8/5pk1/3p2p1/2pP4/2P1r3/4R1P1/5PK1/8 w - - 0 35",
+        "line_score_a_cp": -79,
+        "line_score_b_cp": -79,
+        "move_a": "e3a3",
+        "move_b": "e3a3",
+        "name": "rook_endgame",
+        "nodes_a": 77,
+        "nodes_b": 76,
+        "oracle_line_cp": 558,
+        "oracle_move": "e3a3",
+        "root_score_a_cp": 558,
+        "root_score_b_cp": 558,
+        "score_a": 0.2519065076299835,
+        "score_b": 0.2519065076299835,
+        "tt_hits_a": 0,
+        "tt_hits_b": 0
+      }
+    ],
+    "score_difference": 0.0
+  },
+  "generated_agent": {
+    "archived_path": "",
+    "backend": "profile",
+    "changed": false,
+    "effective_changed_paths": [],
+    "path": "agents/candidates/strategy_profile_self_play_p8_move_capture_attacker_penalty_retest2_003.json",
+    "promoted": false,
+    "selected_block": "move_ordering.capture_attacker_penalty",
+    "summary": "Profile candidate for self_play_p8_move_capture_attacker_penalty_retest2_003 from block move_ordering.capture_attacker_penalty using seed 3."
+  },
+  "generation_error": "",
+  "generation_succeeded": true,
+  "historical_profile_pool": {
+    "historical_profiles": [
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_capture_attacker_penalty_retest2_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_capture_attacker_penalty_retest2_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_capture_victim_multiplier_retest2_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_capture_victim_multiplier_retest2_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_capture_victim_multiplier_retest2_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_capture_victim_multiplier_retest2_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_capture_victim_multiplier_retest2_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_capture_victim_multiplier_retest2_001",
+        "win_rate": 0.5938
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_move_extended_center_bonus_postpromote2_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_move_extended_center_bonus_postpromote2_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_move_extended_center_bonus_postpromote2_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_move_extended_center_bonus_postpromote2_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_move_extended_center_bonus_promotion_confirm2_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_move_extended_center_bonus_promotion_confirm2_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_move_extended_center_bonus_retest1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_move_extended_center_bonus_retest1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_move_extended_center_bonus_retest1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_move_extended_center_bonus_retest1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_extended_center_bonus_retest1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_extended_center_bonus_retest1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_extended_center_bonus_retest1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_extended_center_bonus_retest1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_extended_center_bonus_retest1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_extended_center_bonus_retest1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_move_minor_development_bonus_retest1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_move_minor_development_bonus_retest1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_move_minor_development_bonus_retest1_001/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p16_move_minor_development_bonus_retest1_001",
+        "win_rate": 0.4844
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_minor_development_bonus_retest1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_minor_development_bonus_retest1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_minor_development_bonus_retest1_002/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_move_minor_development_bonus_retest1_002",
+        "win_rate": 0.4688
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_minor_development_bonus_retest1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_minor_development_bonus_retest1_001",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_capture_base_bonus_retest1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_capture_base_bonus_retest1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_capture_base_bonus_retest1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_capture_base_bonus_retest1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_capture_base_bonus_retest1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_capture_base_bonus_retest1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_early_rook_penalty_retest1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_early_rook_penalty_retest1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_early_rook_penalty_retest1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_early_rook_penalty_retest1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_early_rook_penalty_retest1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_early_rook_penalty_retest1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_early_queen_penalty_retest1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_early_queen_penalty_retest1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_early_queen_penalty_retest1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_early_queen_penalty_retest1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_early_queen_penalty_retest1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_early_queen_penalty_retest1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_center_pawn_development_bonus_retest1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_center_pawn_development_bonus_retest1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_center_pawn_development_bonus_retest1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_center_pawn_development_bonus_retest1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_center_pawn_development_bonus_retest1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_center_pawn_development_bonus_retest1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_center_bonus_retest1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_center_bonus_retest1_003",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_center_bonus_retest1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_center_bonus_retest1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_center_bonus_retest1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_center_bonus_retest1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_castling_bonus_retest1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_castling_bonus_retest1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_castling_bonus_retest1_002/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_move_castling_bonus_retest1_002",
+        "win_rate": 0.4688
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_castling_bonus_retest1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_castling_bonus_retest1_001",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_promotion_bonus_retest1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_promotion_bonus_retest1_003",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_promotion_bonus_retest1_002/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_move_promotion_bonus_retest1_002",
+        "win_rate": 0.4688
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_promotion_bonus_retest1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_promotion_bonus_retest1_001",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_check_bonus_retest1_003/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_move_check_bonus_retest1_003",
+        "win_rate": 0.4688
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_check_bonus_retest1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_check_bonus_retest1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_check_bonus_retest1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_check_bonus_retest1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_capture_attacker_penalty_1_003",
+        "win_rate": 0.5625
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_capture_attacker_penalty_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_1_001/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_move_capture_attacker_penalty_1_001",
+        "win_rate": 0.4688
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_capture_victim_multiplier_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_capture_victim_multiplier_1_003",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_capture_victim_multiplier_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_capture_victim_multiplier_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_capture_victim_multiplier_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_capture_victim_multiplier_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_king_safety_weight_post_eval_weights1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_king_safety_weight_post_eval_weights1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_king_safety_weight_post_eval_weights1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_king_safety_weight_post_eval_weights1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_king_safety_weight_post_eval_weights1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_king_safety_weight_post_eval_weights1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_pawn_structure_weight_post_eval_weights1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_pawn_structure_weight_post_eval_weights1_003",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_pawn_structure_weight_post_eval_weights1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_pawn_structure_weight_post_eval_weights1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_pawn_structure_weight_post_eval_weights1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_pawn_structure_weight_post_eval_weights1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_eval_piece_activity_weight_post_eval_weights1_002/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p16_eval_piece_activity_weight_post_eval_weights1_002",
+        "win_rate": 0.4844
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_eval_piece_activity_weight_post_eval_weights1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_eval_piece_activity_weight_post_eval_weights1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_piece_activity_weight_post_eval_weights1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_piece_activity_weight_post_eval_weights1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_piece_activity_weight_post_eval_weights1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_piece_activity_weight_post_eval_weights1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_piece_activity_weight_post_eval_weights1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_piece_activity_weight_post_eval_weights1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_eval_weights_no_mobility_shadow1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_eval_weights_no_mobility_shadow1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_eval_weights_no_mobility_shadow1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_eval_weights_no_mobility_shadow1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_weights_no_mobility_shadow1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_weights_no_mobility_shadow1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_weights_no_mobility_shadow1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_weights_no_mobility_shadow1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_weights_no_mobility_shadow1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_weights_no_mobility_shadow1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_eval_weights_promotion_confirm2_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_eval_weights_promotion_confirm2_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_eval_weights_postpromote1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_eval_weights_postpromote1_002",
+        "win_rate": 0.5156
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_eval_weights_postpromote1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_eval_weights_postpromote1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_weights_postpromote1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_weights_postpromote1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_weights_postpromote1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_weights_postpromote1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_weights_postpromote1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_weights_postpromote1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_eval_weights_promotion_confirm1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_eval_weights_promotion_confirm1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_eval_weights_shadow1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_eval_weights_shadow1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_eval_weights_shadow1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_eval_weights_shadow1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_weights_shadow1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_weights_shadow1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_weights_shadow1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_weights_shadow1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_weights_shadow1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_weights_shadow1_001",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_search_history_order_shadow1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_search_history_order_shadow1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_search_history_order_shadow1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_search_history_order_shadow1_001",
+        "win_rate": 0.5156
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_history_order_shadow1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_history_order_shadow1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_history_order_shadow1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_history_order_shadow1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_history_order_shadow1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_history_order_shadow1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_root_mate_stop_shadow1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_root_mate_stop_shadow1_003",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_root_mate_stop_shadow1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_root_mate_stop_shadow1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_root_mate_stop_shadow1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_root_mate_stop_shadow1_001",
+        "win_rate": 0.5625
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_capture_victim_multiplier_shadow1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_capture_victim_multiplier_shadow1_003",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_capture_victim_multiplier_shadow1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_capture_victim_multiplier_shadow1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_capture_victim_multiplier_shadow1_001/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_move_capture_victim_multiplier_shadow1_001",
+        "win_rate": 0.4688
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_check_bonus_revisit_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_check_bonus_revisit_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_check_bonus_revisit_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_check_bonus_revisit_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_check_bonus_revisit_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_check_bonus_revisit_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_history_bonus_power_revisit_1_003/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_search_history_bonus_power_revisit_1_003",
+        "win_rate": 0.4688
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_history_bonus_power_revisit_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_history_bonus_power_revisit_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_history_bonus_power_revisit_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_history_bonus_power_revisit_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_history_bonus_scale_revisit_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_history_bonus_scale_revisit_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_history_bonus_scale_revisit_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_history_bonus_scale_revisit_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_history_bonus_scale_revisit_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_history_bonus_scale_revisit_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_root_mate_stop_revisit_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_root_mate_stop_revisit_1_003",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_root_mate_stop_revisit_1_002/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_search_root_mate_stop_revisit_1_002",
+        "win_rate": 0.4375
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_root_mate_stop_revisit_1_001/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_search_root_mate_stop_revisit_1_001",
+        "win_rate": 0.4688
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_material_weight_lr1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_material_weight_lr1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_material_weight_lr1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_material_weight_lr1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_material_weight_lr1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_material_weight_lr1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_weights_no_mobility_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_weights_no_mobility_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_weights_no_mobility_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_weights_no_mobility_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_weights_no_mobility_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_weights_no_mobility_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_eval_weights_reopen_2_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_eval_weights_reopen_2_002",
+        "win_rate": 0.5156
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_eval_weights_reopen_2_001/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p16_eval_weights_reopen_2_001",
+        "win_rate": 0.4844
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_weights_reopen_2_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_weights_reopen_2_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_weights_reopen_2_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_weights_reopen_2_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_weights_reopen_2_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_weights_reopen_2_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_history_order_revisit_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_history_order_revisit_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_history_order_revisit_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_history_order_revisit_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_history_order_revisit_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_history_order_revisit_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_max_depth_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_max_depth_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_max_depth_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_max_depth_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_max_depth_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_max_depth_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_default_depth_1_003/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_search_default_depth_1_003",
+        "win_rate": 0.4688
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_default_depth_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_default_depth_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_default_depth_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_default_depth_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_min_time_margin_1_003/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_search_min_time_margin_1_003",
+        "win_rate": 0.4688
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_min_time_margin_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_min_time_margin_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_min_time_margin_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_min_time_margin_1_001",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_quiescence_depth_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_quiescence_depth_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_quiescence_depth_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_quiescence_depth_1_002",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_quiescence_depth_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_quiescence_depth_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_mate_threshold_reopen_2_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_mate_threshold_reopen_2_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_mate_threshold_reopen_2_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_mate_threshold_reopen_2_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_mate_threshold_reopen_2_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_mate_threshold_reopen_2_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_mate_threshold_reopen_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_mate_threshold_reopen_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_mate_threshold_reopen_1_002/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_search_mate_threshold_reopen_1_002",
+        "win_rate": 0.4688
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_mate_threshold_reopen_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_mate_threshold_reopen_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_constants_reopen_1_003/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_eval_constants_reopen_1_003",
+        "win_rate": 0.4688
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_constants_reopen_1_002/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_eval_constants_reopen_1_002",
+        "win_rate": 0.4688
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_constants_reopen_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_constants_reopen_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_phase_reopen_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_phase_reopen_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_phase_reopen_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_phase_reopen_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_phase_reopen_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_phase_reopen_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_values_reopen_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_values_reopen_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_values_reopen_1_002/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_piece_values_reopen_1_002",
+        "win_rate": 0.4688
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_values_reopen_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_values_reopen_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_king_safety_reopen_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_king_safety_reopen_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_king_safety_reopen_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_king_safety_reopen_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_king_safety_reopen_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_king_safety_reopen_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_pawn_structure_reopen_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_pawn_structure_reopen_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_pawn_structure_reopen_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_pawn_structure_reopen_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_pawn_structure_reopen_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_pawn_structure_reopen_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_weights_reopen_1_003/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_eval_weights_reopen_1_003",
+        "win_rate": 0.4688
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_weights_reopen_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_weights_reopen_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_weights_reopen_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_weights_reopen_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_material_weight_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_material_weight_1_003",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_material_weight_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_material_weight_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_material_weight_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_material_weight_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_values_pawn_1_003/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_piece_values_pawn_1_003",
+        "win_rate": 0.4688
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_values_pawn_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_values_pawn_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_values_pawn_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_values_pawn_1_001",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_capture_base_bonus_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_capture_base_bonus_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_capture_base_bonus_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_capture_base_bonus_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_capture_base_bonus_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_capture_base_bonus_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_promotion_bonus_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_promotion_bonus_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_promotion_bonus_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_promotion_bonus_1_002",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_promotion_bonus_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_promotion_bonus_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_check_bonus_1_003/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_move_check_bonus_1_003",
+        "win_rate": 0.4688
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_check_bonus_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_check_bonus_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_check_bonus_1_001/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_move_check_bonus_1_001",
+        "win_rate": 0.4688
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_move_extended_center_bonus_promote_1_001/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p16_move_extended_center_bonus_promote_1_001",
+        "win_rate": 0.4844
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_move_extended_center_bonus_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_move_extended_center_bonus_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_move_extended_center_bonus_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_move_extended_center_bonus_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_extended_center_bonus_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_extended_center_bonus_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_extended_center_bonus_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_extended_center_bonus_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_extended_center_bonus_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_extended_center_bonus_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_center_bonus_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_center_bonus_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_center_bonus_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_center_bonus_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_center_bonus_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_center_bonus_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_castling_bonus_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_castling_bonus_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_castling_bonus_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_castling_bonus_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_castling_bonus_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_castling_bonus_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_early_queen_penalty_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_early_queen_penalty_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_early_queen_penalty_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_early_queen_penalty_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_early_queen_penalty_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_early_queen_penalty_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_center_pawn_development_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_center_pawn_development_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_center_pawn_development_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_center_pawn_development_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_center_pawn_development_1_001/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_move_center_pawn_development_1_001",
+        "win_rate": 0.4688
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_move_minor_development_promote_1_001/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p16_move_minor_development_promote_1_001",
+        "win_rate": 0.4844
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_move_minor_development_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_move_minor_development_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_move_minor_development_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_move_minor_development_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_minor_development_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_minor_development_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_minor_development_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_minor_development_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_minor_development_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_minor_development_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_early_rook_penalty_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_early_rook_penalty_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_early_rook_penalty_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_early_rook_penalty_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_early_rook_penalty_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_early_rook_penalty_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_history_bonus_power_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_history_bonus_power_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_history_bonus_power_1_002/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_search_history_bonus_power_1_002",
+        "win_rate": 0.4688
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_history_bonus_power_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_history_bonus_power_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_history_bonus_scale_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_history_bonus_scale_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_history_bonus_scale_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_history_bonus_scale_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_history_bonus_scale_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_history_bonus_scale_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_root_mate_stop_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_root_mate_stop_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_root_mate_stop_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_root_mate_stop_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_root_mate_stop_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_root_mate_stop_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_mate_score_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_mate_score_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_mate_score_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_mate_score_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_mate_score_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_mate_score_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_missing_king_penalty_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_missing_king_penalty_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_missing_king_penalty_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_missing_king_penalty_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_missing_king_penalty_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_missing_king_penalty_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_draw_score_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_draw_score_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_draw_score_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_draw_score_1_002",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_draw_score_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_draw_score_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_phase_endgame_threshold_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_phase_endgame_threshold_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_phase_endgame_threshold_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_phase_endgame_threshold_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_phase_endgame_threshold_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_phase_endgame_threshold_1_001",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_phase_opening_limit_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_phase_opening_limit_1_003",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_phase_opening_limit_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_phase_opening_limit_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_phase_opening_limit_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_phase_opening_limit_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_values_queen_1_003/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_piece_values_queen_1_003",
+        "win_rate": 0.4688
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_values_queen_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_values_queen_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_values_queen_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_values_queen_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_values_rook_1_003/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_piece_values_rook_1_003",
+        "win_rate": 0.4375
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_values_rook_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_values_rook_1_002",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_values_rook_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_values_rook_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_values_bishop_1_002/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p16_piece_values_bishop_1_002",
+        "win_rate": 0.4844
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_values_bishop_1_001/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p16_piece_values_bishop_1_001",
+        "win_rate": 0.4844
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_values_bishop_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_values_bishop_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_values_bishop_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_values_bishop_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_values_bishop_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_values_bishop_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_values_knight_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_values_knight_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_values_knight_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_values_knight_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_values_knight_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_values_knight_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_pawn_structure_weight_lr1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_pawn_structure_weight_lr1_003",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_pawn_structure_weight_lr1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_pawn_structure_weight_lr1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_pawn_structure_weight_lr1_001/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_eval_pawn_structure_weight_lr1_001",
+        "win_rate": 0.4688
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_pawn_structure_weight_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_pawn_structure_weight_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_pawn_structure_weight_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_pawn_structure_weight_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_pawn_structure_weight_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_pawn_structure_weight_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_eval_piece_activity_weight_lr1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_eval_piece_activity_weight_lr1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_eval_piece_activity_weight_lr1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_eval_piece_activity_weight_lr1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_piece_activity_weight_lr1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_piece_activity_weight_lr1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_piece_activity_weight_lr1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_piece_activity_weight_lr1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_piece_activity_weight_lr1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_piece_activity_weight_lr1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_piece_activity_weight_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_piece_activity_weight_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_piece_activity_weight_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_piece_activity_weight_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_piece_activity_weight_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_piece_activity_weight_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_king_safety_weight_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_king_safety_weight_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_king_safety_weight_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_king_safety_weight_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_king_safety_weight_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_king_safety_weight_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_eval_mobility_weight_postpromote0_85_1_002/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p16_eval_mobility_weight_postpromote0_85_1_002",
+        "win_rate": 0.4844
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_eval_mobility_weight_postpromote0_85_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_eval_mobility_weight_postpromote0_85_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_mobility_weight_postpromote0_85_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_mobility_weight_postpromote0_85_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_mobility_weight_postpromote0_85_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_mobility_weight_postpromote0_85_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_mobility_weight_postpromote0_85_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_mobility_weight_postpromote0_85_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_eval_mobility_weight_promote1_001/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p16_eval_mobility_weight_promote1_001",
+        "win_rate": 0.4844
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_eval_mobility_weight_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_eval_mobility_weight_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_eval_mobility_weight_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_eval_mobility_weight_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_mobility_weight_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_mobility_weight_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_mobility_weight_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_mobility_weight_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_eval_mobility_weight_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_eval_mobility_weight_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_mate_margin_step50_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_mate_margin_step50_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_mate_margin_step50_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_mate_margin_step50_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_mate_margin_step50_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_mate_margin_step50_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_mate_margin_amp2_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_mate_margin_amp2_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_mate_margin_amp2_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_mate_margin_amp2_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_mate_margin_amp2_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_mate_margin_amp2_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_mate_margin_amp1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_mate_margin_amp1_003",
+        "win_rate": 0.5938
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_mate_margin_amp1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_mate_margin_amp1_002",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_mate_margin_amp1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_mate_margin_amp1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_mate_margin_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_mate_margin_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_mate_margin_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_mate_margin_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_mate_margin_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_mate_margin_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_tactical_resume1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_tactical_resume1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_tactical_resume1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_tactical_resume1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_tactical_resume1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_tactical_resume1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_development_amp1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_development_amp1_003",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_development_amp1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_development_amp1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_development_amp1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_development_amp1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_development_resume1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_development_resume1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_development_resume1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_development_resume1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_development_resume1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_development_resume1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_depth_time_lr1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_depth_time_lr1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_depth_time_lr1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_depth_time_lr1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_depth_time_lr1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_depth_time_lr1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_depth_time_amp1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_depth_time_amp1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_depth_time_amp1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_depth_time_amp1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_depth_time_amp1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_depth_time_amp1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_depth_time_resume1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_depth_time_resume1_003",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_depth_time_resume1_002/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_search_depth_time_resume1_002",
+        "win_rate": 0.4688
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_depth_time_resume1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_depth_time_resume1_001",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_history_order_resume1_003/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_search_history_order_resume1_003",
+        "win_rate": 0.4688
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_history_order_resume1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_history_order_resume1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_search_history_order_resume1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_search_history_order_resume1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_king_attacked_king_step1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_king_attacked_king_step1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_king_attacked_king_step1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_king_attacked_king_step1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_king_attacked_king_step1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_king_attacked_king_step1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_king_attacked_king_amp2_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_king_attacked_king_amp2_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_king_attacked_king_amp2_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_king_attacked_king_amp2_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_king_attacked_king_amp2_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_king_attacked_king_amp2_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_king_attacked_king_amp1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_king_attacked_king_amp1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_king_attacked_king_amp1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_king_attacked_king_amp1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_king_attacked_king_amp1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_king_attacked_king_amp1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_king_attacked_king_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_king_attacked_king_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_king_attacked_king_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_king_attacked_king_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_king_attacked_king_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_king_attacked_king_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_king_piece_shield_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_king_piece_shield_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_king_piece_shield_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_king_piece_shield_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_king_piece_shield_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_king_piece_shield_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_king_pawn_shield_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_king_pawn_shield_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_king_pawn_shield_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_king_pawn_shield_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_king_pawn_shield_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_king_pawn_shield_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_king_ring_promote0_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_king_ring_promote0_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_king_ring_postpromote1_0_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_king_ring_postpromote1_0_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_king_ring_postpromote1_0_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_king_ring_postpromote1_0_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_king_ring_postpromote1_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_king_ring_postpromote1_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_king_ring_postpromote1_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_king_ring_postpromote1_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_king_ring_postpromote1_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_king_ring_postpromote1_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_king_ring_promote1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_king_ring_promote1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_king_ring_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_king_ring_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_king_ring_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_king_ring_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_king_ring_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_king_ring_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_king_ring_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_king_ring_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_king_ring_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_king_ring_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_pawn_doubled_amp1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_pawn_doubled_amp1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_pawn_doubled_amp1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_pawn_doubled_amp1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_pawn_doubled_amp1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_pawn_doubled_amp1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_pawn_doubled_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_pawn_doubled_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_pawn_doubled_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_pawn_doubled_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_pawn_doubled_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_pawn_doubled_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_pawn_isolated_amp1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_pawn_isolated_amp1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_pawn_isolated_amp1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_pawn_isolated_amp1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_pawn_isolated_amp1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_pawn_isolated_amp1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_pawn_isolated_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_pawn_isolated_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_pawn_isolated_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_pawn_isolated_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_pawn_isolated_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_pawn_isolated_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_pawn_advance_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_pawn_advance_1_003",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_pawn_advance_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_pawn_advance_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_pawn_advance_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_pawn_advance_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_minor_center_distance_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_minor_center_distance_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_minor_center_distance_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_minor_center_distance_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_minor_center_distance_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_minor_center_distance_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_minor_rank_amp2_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_minor_rank_amp2_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_minor_rank_amp2_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_minor_rank_amp2_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_minor_rank_amp2_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_minor_rank_amp2_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_minor_rank_amp1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_minor_rank_amp1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_minor_rank_amp1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_minor_rank_amp1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_minor_rank_amp1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_minor_rank_amp1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_minor_rank_1_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_minor_rank_1_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_minor_rank_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_minor_rank_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_minor_rank_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_minor_rank_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_extended_center_promote0_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_piece_extended_center_promote0_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_extended_center_postpromote1_0_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_piece_extended_center_postpromote1_0_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_extended_center_postpromote1_0_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_piece_extended_center_postpromote1_0_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_extended_center_postpromote1_0_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_extended_center_postpromote1_0_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_extended_center_postpromote1_0_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_extended_center_postpromote1_0_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_extended_center_postpromote1_0_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_extended_center_postpromote1_0_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_extended_center_promote1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_piece_extended_center_promote1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_extended_center_postpromote2_1_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_piece_extended_center_postpromote2_1_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_extended_center_postpromote2_1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_piece_extended_center_postpromote2_1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_extended_center_postpromote2_2_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_extended_center_postpromote2_2_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_extended_center_postpromote2_2_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_extended_center_postpromote2_2_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_extended_center_postpromote2_2_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_extended_center_postpromote2_2_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_extended_center_promote2_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_piece_extended_center_promote2_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_extended_center_postpromote3_2_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_piece_extended_center_postpromote3_2_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_extended_center_postpromote3_2_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_piece_extended_center_postpromote3_2_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_extended_center_postpromote3_3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_extended_center_postpromote3_3_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_extended_center_postpromote3_3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_extended_center_postpromote3_3_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_extended_center_postpromote3_3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_extended_center_postpromote3_3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_extended_center_promote3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_piece_extended_center_promote3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_extended_center_postpromote4_2_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_piece_extended_center_postpromote4_2_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_extended_center_postpromote4_2_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_piece_extended_center_postpromote4_2_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_extended_center_postpromote4_3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_extended_center_postpromote4_3_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_extended_center_postpromote4_3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_extended_center_postpromote4_3_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_extended_center_postpromote4_3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_extended_center_postpromote4_3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_extended_center_postpromote5_2_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_piece_extended_center_postpromote5_2_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_extended_center_postpromote5_2_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_piece_extended_center_postpromote5_2_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_extended_center_postpromote5_3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_extended_center_postpromote5_3_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_extended_center_postpromote5_3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_extended_center_postpromote5_3_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_extended_center_postpromote5_3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_extended_center_postpromote5_3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_extended_center_2_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_piece_extended_center_2_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_extended_center_2_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_piece_extended_center_2_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_extended_center_3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_extended_center_3_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_extended_center_3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_extended_center_3_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_extended_center_3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_extended_center_3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_center_bonus_crosscheck13_3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_center_bonus_crosscheck13_3_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_center_bonus_crosscheck13_3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_center_bonus_crosscheck13_3_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_center_bonus_crosscheck13_3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_center_bonus_crosscheck13_3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote2_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_piece_center_bonus_promote2_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_center_bonus_postpromote2_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_piece_center_bonus_postpromote2_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_center_bonus_postpromote2_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_piece_center_bonus_postpromote2_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_center_bonus_promote1_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_piece_center_bonus_promote1_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_center_bonus_amp2_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_piece_center_bonus_amp2_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p16_piece_center_bonus_amp2_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p16_piece_center_bonus_amp2_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_center_bonus_amp3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_center_bonus_amp3_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_center_bonus_amp3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_center_bonus_amp3_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_center_bonus_amp3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_center_bonus_amp3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_center_bonus3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_center_bonus3_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_center_bonus3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_center_bonus3_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_center_bonus3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_center_bonus3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_activity3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_activity3_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_activity3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_activity3_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_piece_activity3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_piece_activity3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_post_oracle_cache_rotate3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_post_oracle_cache_rotate3_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_post_oracle_cache_rotate3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_post_oracle_cache_rotate3_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_post_oracle_cache_rotate3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_post_oracle_cache_rotate3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_promotion_bonus3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_promotion_bonus3_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_promotion_bonus3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_promotion_bonus3_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_promotion_bonus3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_promotion_bonus3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_stable_oracle3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_stable_oracle3_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_stable_oracle3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_stable_oracle3_002",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_stable_oracle3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_stable_oracle3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_tactical_broad_amp3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_tactical_broad_amp3_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_tactical_broad_amp3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_tactical_broad_amp3_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_tactical_broad_amp3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_tactical_broad_amp3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_tactical_forcing3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_tactical_forcing3_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_tactical_forcing3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_tactical_forcing3_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_tactical_forcing3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_tactical_forcing3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_tactical_capture_base3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_tactical_capture_base3_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_tactical_capture_base3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_tactical_capture_base3_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_tactical_capture_base3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_tactical_capture_base3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_tactical3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_tactical3_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_tactical3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_tactical3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_tactical3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_tactical3_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_early_rook_only3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_early_rook_only3_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_early_rook_only3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_early_rook_only3_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_early_rook_only3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_early_rook_only3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_min_signal3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_min_signal3_003",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_min_signal3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_min_signal3_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_min_signal3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_min_signal3_001",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_step1_3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_step1_3_003",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_step1_3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_step1_3_002",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_step1_3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_step1_3_001",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_penalties3_003/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_development_penalties3_003",
+        "win_rate": 0.4688
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_penalties3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_penalties3_002",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_penalties3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_penalties3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_high_amp3_003/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_development_high_amp3_003",
+        "win_rate": 0.4688
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_high_amp3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_high_amp3_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_high_amp3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_high_amp3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_no_center_pawn3_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_no_center_pawn3_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_no_center_pawn3_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_no_center_pawn3_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_no_center_pawn3_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_no_center_pawn3_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_focus2_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_focus2_002",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_development_focus2_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_development_focus2_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_multiblock_rotate9_009/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_multiblock_rotate9_009",
+        "win_rate": 0.4375
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_multiblock_rotate9_008/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_multiblock_rotate9_008",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_multiblock_rotate9_007/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_multiblock_rotate9_007",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_multiblock_rotate9_006/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_multiblock_rotate9_006",
+        "win_rate": 0.5312
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_multiblock_rotate9_005/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_multiblock_rotate9_005",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_multiblock_rotate9_004/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_multiblock_rotate9_004",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_multiblock_rotate9_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_multiblock_rotate9_003",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_multiblock_rotate9_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_multiblock_rotate9_002",
+        "win_rate": 0.5625
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_multiblock_rotate9_001/strategy_profile_after.json",
+        "rank": 2,
+        "round_id": "self_play_p8_multiblock_rotate9_001",
+        "win_rate": 0.4688
+      }
+    ],
+    "notes": [],
+    "selected_profiles": [
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_capture_attacker_penalty_retest2_002",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_capture_attacker_penalty_retest2_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/self_play_profile/self_play_p8_move_capture_victim_multiplier_retest2_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "self_play_p8_move_capture_victim_multiplier_retest2_003",
+        "win_rate": 0.5
+      }
+    ]
+  },
+  "historical_regression": {
+    "enabled": true,
+    "entries": [
+      {
+        "crashes_a": 0,
+        "crashes_b": 0,
+        "mean_score_a": 0.5,
+        "passed": true,
+        "profile_path": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_002/strategy_profile_after.json",
+        "round_id": "self_play_p8_move_capture_attacker_penalty_retest2_002",
+        "timeout_rate_a": 0.0,
+        "timeout_rate_b": 0.0
+      },
+      {
+        "crashes_a": 0,
+        "crashes_b": 0,
+        "mean_score_a": 0.5,
+        "passed": true,
+        "profile_path": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_001/strategy_profile_after.json",
+        "round_id": "self_play_p8_move_capture_attacker_penalty_retest2_001",
+        "timeout_rate_a": 0.0,
+        "timeout_rate_b": 0.0
+      },
+      {
+        "crashes_a": 0,
+        "crashes_b": 0,
+        "mean_score_a": 0.5,
+        "passed": true,
+        "profile_path": "reports/self_play_profile/self_play_p8_move_capture_victim_multiplier_retest2_003/strategy_profile_after.json",
+        "round_id": "self_play_p8_move_capture_victim_multiplier_retest2_003",
+        "timeout_rate_a": 0.0,
+        "timeout_rate_b": 0.0
+      }
+    ],
+    "failed_profiles": 0,
+    "notes": [],
+    "passed": true,
+    "passed_profiles": 3,
+    "total_profiles": 3
+  },
+  "improvement_summary": "No critical reliability failure detected; continue gated profile-only optimization.",
+  "log_report": {
+    "average_cp": null,
+    "average_depth": null,
+    "average_response_ms": 194.848902555085,
+    "crashes": 0,
+    "draws": 10,
+    "games": [
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+        ],
+        "moves": 13,
+        "response_times_ms": [
+          196.40908300002025,
+          196.1813329999984,
+          196.21487499998125,
+          196.24858299999914,
+          196.3634170000148,
+          196.0941250000019,
+          196.3202499999852,
+          196.03766700001302,
+          196.78629199998454,
+          196.62104200000385,
+          196.6140419999931,
+          196.14020800000276,
+          196.4278329999729
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/battle_logs/game_001.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+        ],
+        "moves": 13,
+        "response_times_ms": [
+          196.49866599999655,
+          196.0992909999959,
+          196.04216600001223,
+          196.37524999998845,
+          196.30345900000634,
+          196.16287500002727,
+          196.2694160000069,
+          196.08170799997993,
+          196.31620799998473,
+          196.22683399998664,
+          196.14000000001397,
+          196.04325000000244,
+          196.08495899998957
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/battle_logs/game_002.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2"
+        ],
+        "moves": 20,
+        "response_times_ms": [
+          196.31504200000904,
+          196.26066699999,
+          196.04487499998413,
+          196.0623329999862,
+          196.264541000005,
+          196.3118339999994,
+          196.55612500000075,
+          196.25429100000247,
+          196.2462500000015,
+          196.04462500001318,
+          196.1836250000033,
+          196.09387500000253,
+          196.19187499998247,
+          196.50062500002718,
+          196.58349999997426,
+          196.21599999999262,
+          196.04208300000892,
+          196.4249580000228,
+          196.23104100000432,
+          196.03104099999769
+        ],
+        "result": "loss",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/battle_logs/game_003.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2"
+        ],
+        "moves": 20,
+        "response_times_ms": [
+          196.24479099999803,
+          196.27554199999508,
+          196.19116699999495,
+          196.33162499999912,
+          196.45020900000532,
+          196.24849999999583,
+          196.23470799999154,
+          196.16166699998416,
+          196.3905000000068,
+          196.33908299999803,
+          196.16208299999016,
+          196.22791699998743,
+          196.0607500000151,
+          196.1516670000094,
+          196.0352920000048,
+          196.17087500000707,
+          196.25175000001605,
+          201.0627500000055,
+          196.6874169999926,
+          196.20254200000886
+        ],
+        "result": "win",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/battle_logs/game_004.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3"
+        ],
+        "moves": 15,
+        "response_times_ms": [
+          196.53195899999787,
+          196.12862500000006,
+          196.5432920000012,
+          196.04699999999298,
+          196.20195800001738,
+          196.198250000009,
+          196.41020899999262,
+          196.24149999998508,
+          196.38520800000947,
+          196.18449999998688,
+          196.17104200000313,
+          196.5387079999914,
+          196.04895800000577,
+          196.0575829999982,
+          196.11600000001772
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/battle_logs/game_005.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3"
+        ],
+        "moves": 15,
+        "response_times_ms": [
+          196.37370800001008,
+          196.2825419999774,
+          196.23841699998934,
+          196.348042000011,
+          196.5778329999921,
+          196.54912499999,
+          196.09987499998738,
+          196.53779099999724,
+          196.3199589999931,
+          196.14695900000356,
+          196.0310839999977,
+          196.20208399999228,
+          196.44362500000057,
+          196.14395899998271,
+          196.58254099999795
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/battle_logs/game_006.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4"
+        ],
+        "moves": 10,
+        "response_times_ms": [
+          196.51333400000226,
+          196.0583750000069,
+          196.65666599999554,
+          196.164207999999,
+          196.71908300000496,
+          196.5210409999827,
+          196.1569579999889,
+          196.33162499999912,
+          196.4189579999811,
+          26.527375000000575
+        ],
+        "result": "loss",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/battle_logs/game_007.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4"
+        ],
+        "moves": 10,
+        "response_times_ms": [
+          196.06283299998495,
+          196.0489589999952,
+          196.14141699997845,
+          196.17420900002003,
+          196.05162500002393,
+          196.1380829999939,
+          196.1556669999993,
+          196.4306659999977,
+          196.39920899999197,
+          26.888709000019162
+        ],
+        "result": "win",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/battle_logs/game_008.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnbqkbnr/pp2pppp/3p4/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3"
+        ],
+        "moves": 20,
+        "response_times_ms": [
+          196.06808399998954,
+          196.2440000000072,
+          196.10695899999087,
+          196.73979099999883,
+          196.097041999991,
+          196.14933299999393,
+          196.26029099998732,
+          196.2762919999932,
+          196.39183300000695,
+          196.46295900000155,
+          196.48566699999037,
+          196.31275000000414,
+          196.23049999998443,
+          196.4014589999863,
+          196.13649999999438,
+          196.3748750000036,
+          196.19533400000932,
+          196.19958300000917,
+          196.53562499999566,
+          196.24566699999946
+        ],
+        "result": "win",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/battle_logs/game_009.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnbqkbnr/pp2pppp/3p4/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3"
+        ],
+        "moves": 20,
+        "response_times_ms": [
+          196.12670800000842,
+          196.19062500001405,
+          196.17041700001892,
+          196.28966700000205,
+          196.27108299999918,
+          196.78608300000633,
+          196.4590830000077,
+          196.0875000000044,
+          196.18308299999399,
+          196.04300000000308,
+          196.35233300002142,
+          196.4576660000148,
+          196.39054099999953,
+          196.50425000000382,
+          196.0453750000113,
+          196.11537499997667,
+          196.3073750000035,
+          196.23025000001348,
+          196.22604200000637,
+          196.3309999999865
+        ],
+        "result": "loss",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/battle_logs/game_010.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnbqkbnr/ppp2ppp/4p3/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3"
+        ],
+        "moves": 17,
+        "response_times_ms": [
+          196.2846250000041,
+          196.21995800000036,
+          196.06633399999396,
+          196.05849999999236,
+          196.23908399998413,
+          196.03616599999896,
+          196.0885000000019,
+          196.04974999998603,
+          196.15833299999963,
+          196.0546660000091,
+          196.69658300000492,
+          196.57987499999763,
+          196.36008300000185,
+          196.46779199999287,
+          196.60083299999087,
+          196.13141699997527,
+          196.55904100000043
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/battle_logs/game_011.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnbqkbnr/ppp2ppp/4p3/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3"
+        ],
+        "moves": 17,
+        "response_times_ms": [
+          196.13691700001823,
+          196.17545799999903,
+          198.12045800000533,
+          196.2202500000103,
+          196.12754199999927,
+          196.18662499999573,
+          196.27033300000107,
+          196.12799999998742,
+          196.25904200000832,
+          196.0593330000222,
+          196.25966700002095,
+          196.4866250000057,
+          196.15075000001525,
+          196.47104200001309,
+          196.03112500001885,
+          196.51624999997352,
+          196.1735410000074
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/battle_logs/game_012.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3"
+        ],
+        "moves": 11,
+        "response_times_ms": [
+          196.3631659999976,
+          196.66754200000014,
+          196.03204199998459,
+          196.3212500000111,
+          196.10354200000302,
+          196.04979199999661,
+          196.07874999999808,
+          196.05075000001193,
+          196.02633299999184,
+          196.08958400002052,
+          196.13016700000685
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/battle_logs/game_013.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3"
+        ],
+        "moves": 11,
+        "response_times_ms": [
+          196.25795900000753,
+          196.04633400001603,
+          196.28854100000126,
+          196.62129200000322,
+          196.2506659999974,
+          196.22175000000652,
+          196.14816700001825,
+          196.09587499999748,
+          196.192625000009,
+          196.34037499997703,
+          196.3152090000051
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/battle_logs/game_014.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"
+        ],
+        "moves": 12,
+        "response_times_ms": [
+          196.17112500000644,
+          196.33016699998507,
+          196.08858299997678,
+          196.15933400001495,
+          196.229250000016,
+          196.03120800002216,
+          196.34720799999172,
+          196.1212089999833,
+          196.09495900002116,
+          196.05541699999662,
+          196.06116700001053,
+          196.20199999999954
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/battle_logs/game_015.json",
+        "timeouts": 0
+      },
+      {
+        "cp_scores": [],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"
+        ],
+        "moves": 12,
+        "response_times_ms": [
+          196.13133300001095,
+          196.33550000000355,
+          196.44437499999867,
+          196.03187499998853,
+          196.0897919999809,
+          196.2530000000129,
+          196.22574999999642,
+          196.16166700001259,
+          196.07712499998797,
+          196.42879099998822,
+          196.5590000000077,
+          196.02875000001063
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [],
+        "source": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/battle_logs/game_016.json",
+        "timeouts": 0
+      }
+    ],
+    "illegal_moves": 0,
+    "interface_successes": 236,
+    "key_failure_fens": [
+      "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+      "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+      "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+      "rnbqkbnr/pp2pppp/3p4/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
+      "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
+      "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
+      "rnbqkbnr/ppp2ppp/4p3/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+      "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+    ],
+    "losses": 3,
+    "raw_files": [
+      "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/battle_logs/game_001.json",
+      "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/battle_logs/game_002.json",
+      "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/battle_logs/game_003.json",
+      "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/battle_logs/game_004.json",
+      "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/battle_logs/game_005.json",
+      "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/battle_logs/game_006.json",
+      "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/battle_logs/game_007.json",
+      "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/battle_logs/game_008.json",
+      "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/battle_logs/game_009.json",
+      "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/battle_logs/game_010.json",
+      "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/battle_logs/game_011.json",
+      "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/battle_logs/game_012.json",
+      "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/battle_logs/game_013.json",
+      "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/battle_logs/game_014.json",
+      "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/battle_logs/game_015.json",
+      "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/battle_logs/game_016.json"
+    ],
+    "runtime_errors": [],
+    "timeouts": 0,
+    "total_actions": 236,
+    "total_games": 16,
+    "wins": 3
+  },
+  "memory_records_seen": 464,
+  "opponent_report": {
+    "notes": [
+      "opponent path not provided"
+    ],
+    "opponents": []
+  },
+  "patch_plan": "Profile-only revision plan: make one small strategy improvement and validate against fixed FEN set. Runtime tools remain fixed; only strategy-profile parameters may change after passing feedback prescreen and historical regression gates.",
+  "promotion_gate": {
+    "candidate_changed": false,
+    "feedback_prescreen_passed": true,
+    "historical_regression_passed": true,
+    "passed": false,
+    "reasons": [
+      "candidate profile made no effective change",
+      "tuning policy did not mark candidate ready: hold"
+    ],
+    "tuning_ready": false,
+    "validator_passed": true
+  },
+  "ranking_summary": {
+    "agent_name": "chess_agent",
+    "draws": 10,
+    "games": 16,
+    "losses": 3,
+    "notes": [],
+    "opponent_records": {},
+    "rank": 1,
+    "rank_delta": 0,
+    "source": "reports/self_play_profile/self_play_p8_move_capture_attacker_penalty_retest2_003/ranking.csv",
+    "win_rate": 0.5,
+    "wins": 3
+  },
+  "reliability_metrics": {
+    "average_response_ms": 194.848902555085,
+    "error_rate": 0.0,
+    "interface_success_rate": 1.0,
+    "legal_rate": 1.0,
+    "timeout_rate": 0.0
+  },
+  "repair_attempts": 0,
+  "risks": [],
+  "round_id": "self_play_p8_move_capture_attacker_penalty_retest2_003",
+  "state_summary": {
+    "average_cp": null,
+    "average_depth": null,
+    "average_response_ms": 194.848902555085,
+    "current_rank": 1,
+    "current_win_rate": 0.5,
+    "feedback_fen_positions": 14,
+    "historical_profiles_selected": 3,
+    "key_failure_fens": [
+      "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+      "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+      "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+      "rnbqkbnr/pp2pppp/3p4/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
+      "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
+      "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
+      "rnbqkbnr/ppp2ppp/4p3/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+      "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+    ],
+    "memory_versions_seen": 464,
+    "round_actions": 236,
+    "round_games": 16
+  },
+  "stockfish_diagnostics": {
+    "available": false,
+    "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+    "reason": "stockfish binary not found"
+  },
+  "tuning_report": {
+    "action": "hold",
+    "archived_profile_path": "",
+    "chosen_changed_paths": [],
+    "chosen_seed": 0,
+    "consecutive_similar_holds": 0,
+    "enabled": true,
+    "gate_cross_count": 1,
+    "negative_acceptance_prescreen_count": 0,
+    "negative_inner_count": 1,
+    "positive_acceptance_prescreen_count": 0,
+    "positive_inner_count": 0,
+    "promoted_profile_path": "",
+    "promoted_strategy_profile": false,
+    "reason": "Seed-to-seed direction is not stable enough for autonomous promotion; keep the block active but unpromoted.",
+    "reason_code": "direction_unstable",
+    "safe_seed_count": 3,
+    "seeds": [
+      {
+        "acceptance_mean_score_a": 0.4375,
+        "acceptance_prescreen_difference": 0.0,
+        "applied_change_count": 0,
+        "applied_change_paths": [],
+        "player_a_crashes": 0,
+        "player_a_timeouts": 0,
+        "player_b_timeouts": 0,
+        "prescreen_score_difference": 0.0,
+        "proposed_profile": {
+          "eval": {
+            "draw_score": 0,
+            "king_safety_weight": 1.15,
+            "mate_score": 100000,
+            "material_weight": 1.0,
+            "missing_king_penalty": 500,
+            "mobility_weight": 0.7,
+            "pawn_structure_weight": 1.15,
+            "piece_activity_weight": 0.85
+          },
+          "external_engine": {
+            "enabled": false,
+            "endgame_depth_limit": 5,
+            "endgame_node_limit": 8000000,
+            "low_time_depth_limit": 2,
+            "low_time_node_limit": 250000,
+            "low_time_threshold_ms": 80,
+            "middlegame_depth_limit": 4,
+            "middlegame_node_limit": 4000000,
+            "minimum_external_budget_ms": 60,
+            "opening_depth_limit": 4,
+            "opening_node_limit": 2000000,
+            "time_buffer_ms": 8
+          },
+          "king_safety": {
+            "attacked_king_penalty": 70,
+            "attacked_ring_penalty": 0,
+            "pawn_shield_bonus": 7,
+            "piece_shield_bonus": 3
+          },
+          "move_ordering": {
+            "capture_attacker_penalty": 1,
+            "capture_base_bonus": 1000,
+            "capture_victim_multiplier": 10,
+            "castling_bonus": 150,
+            "center_bonus": 40,
+            "center_pawn_development_bonus": 18,
+            "check_bonus": 300,
+            "early_queen_penalty": 25,
+            "early_rook_penalty": 10,
+            "extended_center_bonus": 10,
+            "minor_development_bonus": 21,
+            "promotion_bonus": 800
+          },
+          "pawn_structure": {
+            "advance_bonus_per_rank": 3,
+            "doubled_penalty": 8,
+            "isolated_penalty": 10
+          },
+          "phase": {
+            "endgame_non_king_piece_threshold": 10,
+            "opening_fullmove_limit": 10
+          },
+          "piece_activity": {
+            "center_bonus": 13,
+            "extended_center_bonus": 0,
+            "minor_base_bonus": 8,
+            "minor_center_distance_penalty": 2,
+            "minor_rank_bonus_weight": 2,
+            "rook_half_open_file_bonus": 9,
+            "rook_open_file_bonus": 18
+          },
+          "piece_values": {
+            "bishop": 330,
+            "knight": 320,
+            "pawn": 100,
+            "queen": 900,
+            "rook": 500
+          },
+          "profile_name": "default",
+          "search": {
+            "default_depth": 3,
+            "history_bonus_power": 2,
+            "history_bonus_scale": 1,
+            "mate_detection_margin": 1000,
+            "max_depth": 4,
+            "min_time_margin_ms": 4,
+            "quiescence_depth": 8,
+            "root_mate_stop_distance": 1,
+            "tt_move_bonus": 50000
+          }
+        },
+        "score_difference": 0.0,
+        "seed": 1,
+        "sprt_decision": "continue"
+      },
+      {
+        "acceptance_mean_score_a": 0.5,
+        "acceptance_prescreen_difference": 0.0,
+        "applied_change_count": 1,
+        "applied_change_paths": [
+          "move_ordering.capture_attacker_penalty"
+        ],
+        "player_a_crashes": 0,
+        "player_a_timeouts": 0,
+        "player_b_timeouts": 0,
+        "prescreen_score_difference": 0.0,
+        "proposed_profile": {
+          "eval": {
+            "draw_score": 0,
+            "king_safety_weight": 1.15,
+            "mate_score": 100000,
+            "material_weight": 1.0,
+            "missing_king_penalty": 500,
+            "mobility_weight": 0.7,
+            "pawn_structure_weight": 1.15,
+            "piece_activity_weight": 0.85
+          },
+          "external_engine": {
+            "enabled": false,
+            "endgame_depth_limit": 5,
+            "endgame_node_limit": 8000000,
+            "low_time_depth_limit": 2,
+            "low_time_node_limit": 250000,
+            "low_time_threshold_ms": 80,
+            "middlegame_depth_limit": 4,
+            "middlegame_node_limit": 4000000,
+            "minimum_external_budget_ms": 60,
+            "opening_depth_limit": 4,
+            "opening_node_limit": 2000000,
+            "time_buffer_ms": 8
+          },
+          "king_safety": {
+            "attacked_king_penalty": 70,
+            "attacked_ring_penalty": 0,
+            "pawn_shield_bonus": 7,
+            "piece_shield_bonus": 3
+          },
+          "move_ordering": {
+            "capture_attacker_penalty": 4,
+            "capture_base_bonus": 1000,
+            "capture_victim_multiplier": 10,
+            "castling_bonus": 150,
+            "center_bonus": 40,
+            "center_pawn_development_bonus": 18,
+            "check_bonus": 300,
+            "early_queen_penalty": 25,
+            "early_rook_penalty": 10,
+            "extended_center_bonus": 10,
+            "minor_development_bonus": 21,
+            "promotion_bonus": 800
+          },
+          "pawn_structure": {
+            "advance_bonus_per_rank": 3,
+            "doubled_penalty": 8,
+            "isolated_penalty": 10
+          },
+          "phase": {
+            "endgame_non_king_piece_threshold": 10,
+            "opening_fullmove_limit": 10
+          },
+          "piece_activity": {
+            "center_bonus": 13,
+            "extended_center_bonus": 0,
+            "minor_base_bonus": 8,
+            "minor_center_distance_penalty": 2,
+            "minor_rank_bonus_weight": 2,
+            "rook_half_open_file_bonus": 9,
+            "rook_open_file_bonus": 18
+          },
+          "piece_values": {
+            "bishop": 330,
+            "knight": 320,
+            "pawn": 100,
+            "queen": 900,
+            "rook": 500
+          },
+          "profile_name": "default",
+          "search": {
+            "default_depth": 3,
+            "history_bonus_power": 2,
+            "history_bonus_scale": 1,
+            "mate_detection_margin": 1000,
+            "max_depth": 4,
+            "min_time_margin_ms": 4,
+            "quiescence_depth": 8,
+            "root_mate_stop_distance": 1,
+            "tt_move_bonus": 50000
+          }
+        },
+        "score_difference": -0.1875,
+        "seed": 2,
+        "sprt_decision": "accept_h0"
+      },
+      {
+        "acceptance_mean_score_a": 0.5,
+        "acceptance_prescreen_difference": 0.0,
+        "applied_change_count": 0,
+        "applied_change_paths": [],
+        "player_a_crashes": 0,
+        "player_a_timeouts": 0,
+        "player_b_timeouts": 0,
+        "prescreen_score_difference": 0.0,
+        "proposed_profile": {
+          "eval": {
+            "draw_score": 0,
+            "king_safety_weight": 1.15,
+            "mate_score": 100000,
+            "material_weight": 1.0,
+            "missing_king_penalty": 500,
+            "mobility_weight": 0.7,
+            "pawn_structure_weight": 1.15,
+            "piece_activity_weight": 0.85
+          },
+          "external_engine": {
+            "enabled": false,
+            "endgame_depth_limit": 5,
+            "endgame_node_limit": 8000000,
+            "low_time_depth_limit": 2,
+            "low_time_node_limit": 250000,
+            "low_time_threshold_ms": 80,
+            "middlegame_depth_limit": 4,
+            "middlegame_node_limit": 4000000,
+            "minimum_external_budget_ms": 60,
+            "opening_depth_limit": 4,
+            "opening_node_limit": 2000000,
+            "time_buffer_ms": 8
+          },
+          "king_safety": {
+            "attacked_king_penalty": 70,
+            "attacked_ring_penalty": 0,
+            "pawn_shield_bonus": 7,
+            "piece_shield_bonus": 3
+          },
+          "move_ordering": {
+            "capture_attacker_penalty": 1,
+            "capture_base_bonus": 1000,
+            "capture_victim_multiplier": 10,
+            "castling_bonus": 150,
+            "center_bonus": 40,
+            "center_pawn_development_bonus": 18,
+            "check_bonus": 300,
+            "early_queen_penalty": 25,
+            "early_rook_penalty": 10,
+            "extended_center_bonus": 10,
+            "minor_development_bonus": 21,
+            "promotion_bonus": 800
+          },
+          "pawn_structure": {
+            "advance_bonus_per_rank": 3,
+            "doubled_penalty": 8,
+            "isolated_penalty": 10
+          },
+          "phase": {
+            "endgame_non_king_piece_threshold": 10,
+            "opening_fullmove_limit": 10
+          },
+          "piece_activity": {
+            "center_bonus": 13,
+            "extended_center_bonus": 0,
+            "minor_base_bonus": 8,
+            "minor_center_distance_penalty": 2,
+            "minor_rank_bonus_weight": 2,
+            "rook_half_open_file_bonus": 9,
+            "rook_open_file_bonus": 18
+          },
+          "piece_values": {
+            "bishop": 330,
+            "knight": 320,
+            "pawn": 100,
+            "queen": 900,
+            "rook": 500
+          },
+          "profile_name": "default",
+          "search": {
+            "default_depth": 3,
+            "history_bonus_power": 2,
+            "history_bonus_scale": 1,
+            "mate_detection_margin": 1000,
+            "max_depth": 4,
+            "min_time_margin_ms": 4,
+            "quiescence_depth": 8,
+            "root_mate_stop_distance": 1,
+            "tt_move_bonus": 50000
+          }
+        },
+        "score_difference": 0.0,
+        "seed": 3,
+        "sprt_decision": "accept_h0"
+      }
+    ],
+    "selected_block": "move_ordering.capture_attacker_penalty",
+    "selected_block_mode": "active",
+    "selected_block_note": "Capture attacker penalty is active for an updated-policy p8 retest under the promoted extended-center baseline."
+  },
+  "validator_passed": true
+}

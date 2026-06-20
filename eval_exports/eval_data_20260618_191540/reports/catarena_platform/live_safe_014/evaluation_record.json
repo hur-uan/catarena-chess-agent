@@ -1,0 +1,183 @@
+{
+  "abnormal_events": {
+    "crashes": 0,
+    "illegal_moves": 0,
+    "risks": [],
+    "runtime_errors": [],
+    "timeouts": 0
+  },
+  "backend": "rule",
+  "core_modification_summary": {
+    "changed": true,
+    "generated_agent_summary": "Generated next-round agent from previous code with rule-template notes.",
+    "improvement_summary": "No critical failure detected; make a small validated strategy improvement.",
+    "patch_plan": "Rule-template patch plan: make one small strategy improvement and validate against fixed FEN set. Do not apply automatically; implement only after validating against the fixed FEN and interface tests."
+  },
+  "evolution_metrics": {
+    "global_scores": [
+      1.0,
+      1.0,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      1.0,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.75,
+      0.5,
+      0.75,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "rounds_considered": 41,
+    "same_round_score": 1.0,
+    "sbase": 1.0,
+    "sevo": 0.012369337979094074
+  },
+  "failure_report": {
+    "evidence": [
+      "no crashes, illegal moves, or timeout signals found"
+    ],
+    "main_failure_type": "no_clear_failure",
+    "next_actions": [
+      "make one small strategy improvement and validate against fixed FEN set"
+    ],
+    "priority": "low"
+  },
+  "feedback_sources": {
+    "logs": "reports/catarena_platform/live_safe_014/battle.log",
+    "opponents": "",
+    "ranking": "reports/catarena_platform/live_safe_014/ranking.csv",
+    "ranking_source": "reports/catarena_platform/live_safe_014/ranking.csv",
+    "raw_log_files": [
+      "reports/catarena_platform/live_safe_014/battle.log"
+    ]
+  },
+  "game_result_statistics": {
+    "agent_name": "chess_agent",
+    "draws": 0,
+    "games": 2,
+    "losses": 0,
+    "notes": [],
+    "opponent_records": {},
+    "rank": 1,
+    "rank_delta": 0,
+    "source": "reports/catarena_platform/live_safe_014/ranking.csv",
+    "win_rate": 1.0,
+    "wins": 2
+  },
+  "key_failure_positions": [
+    "6Q1/p1n2Npp/5k2/8/8/4B3/PPP2PPP/R3KB1R b KQ - 0 18",
+    "6Q1/p4Npp/5k2/3n4/3B4/8/PPP2PPP/R3KB1R b KQ - 2 19",
+    "6Q1/p4Npp/5k2/3n4/8/4B3/PPP2PPP/R3KB1R w KQ - 1 19",
+    "6Q1/p4Npp/6k1/3n4/3B4/8/PPP2PPP/R3KB1R w KQ - 3 20",
+    "8/p4N1p/8/3n2Q1/3B2k1/8/PPP2PPP/R3KB1R b KQ - 4 22",
+    "8/p4N1p/8/3nQ3/3B2k1/8/PPP2PPP/R3KB1R w KQ - 3 22",
+    "8/p4N1p/8/3nQk2/3B4/8/PPP2PPP/R3KB1R b KQ - 2 21",
+    "8/p4NQp/6k1/3n4/3B4/8/PPP2PPP/R3KB1R b KQ - 0 20",
+    "8/p4NQp/8/3n1k2/3B4/8/PPP2PPP/R3KB1R w KQ - 1 21",
+    "Q5n1/p1n2Npp/5k2/8/8/4B3/PPP2PPP/R3KB1R w KQ - 3 18",
+    "Q5n1/p1n2Npp/8/4k3/8/4B3/PPP2PPP/R3KB1R b KQ - 2 17",
+    "Q5nN/p1n3pp/8/4k3/8/4B3/PPP2PPP/R3KB1R w KQ - 1 17",
+    "Q5nN/p5pp/n7/4k3/8/4B3/PPP2PPP/R3KB1R b KQ - 0 16",
+    "r1bqk2r/pppB2pp/4p3/2b5/4n3/8/PPP2PPP/RNB1K1NR b KQkq - 0 7",
+    "r1bqk2r/pppn2pp/4p3/1Bb5/4n3/8/PPP2PPP/RNB1K1NR w KQkq - 2 7",
+    "r1bqkb1r/pppn2pp/4p3/1B6/4n3/8/PPP2PPP/RNB1K1NR b KQkq - 1 6",
+    "r1bqkb1r/pppn2pp/4p3/8/4n3/8/PPP2PPP/RNB1KBNR w KQkq - 0 6",
+    "r2q1rk1/ppBb2pp/4p3/8/2P5/P7/1P2K1PP/RN4bn b - - 0 12",
+    "r2q1rk1/pppb2pp/4p3/8/2P2B2/P7/1P2K1PP/RN4bn w - - 2 12",
+    "r2qk2r/pppb2pp/4p3/2b5/2P5/P7/1P2K1PP/RNB3Nn b kq - 0 10"
+  ],
+  "next_round_revision_plan": {
+    "next_focus": "No critical failure detected; make a small validated strategy improvement.",
+    "patch_plan": "Rule-template patch plan: make one small strategy improvement and validate against fixed FEN set. Do not apply automatically; implement only after validating against the fixed FEN and interface tests.",
+    "tuning_action": "skipped",
+    "tuning_reason_code": "no_active_block"
+  },
+  "opponent_features": {
+    "notes": [
+      "opponent path not provided"
+    ],
+    "opponents": []
+  },
+  "platform": {
+    "catarena_message": "CATArena chessgame checkout is present.",
+    "catarena_missing_required_files": [],
+    "catarena_ready": true,
+    "catarena_source_files_seen": 36
+  },
+  "reliability_metrics": {
+    "average_response_ms": 5.071707317073173,
+    "error_rate": 0.0,
+    "interface_success_rate": 1.0,
+    "legal_rate": 1.0,
+    "timeout_rate": 0.0
+  },
+  "round_id": "live_safe_014",
+  "state_summary": {
+    "average_cp": 4070.390243902439,
+    "average_depth": 4.0,
+    "average_response_ms": 5.071707317073173,
+    "current_rank": 1,
+    "current_win_rate": 1.0,
+    "key_failure_fens": [
+      "6Q1/p1n2Npp/5k2/8/8/4B3/PPP2PPP/R3KB1R b KQ - 0 18",
+      "6Q1/p4Npp/5k2/3n4/3B4/8/PPP2PPP/R3KB1R b KQ - 2 19",
+      "6Q1/p4Npp/5k2/3n4/8/4B3/PPP2PPP/R3KB1R w KQ - 1 19",
+      "6Q1/p4Npp/6k1/3n4/3B4/8/PPP2PPP/R3KB1R w KQ - 3 20",
+      "8/p4N1p/8/3n2Q1/3B2k1/8/PPP2PPP/R3KB1R b KQ - 4 22",
+      "8/p4N1p/8/3nQ3/3B2k1/8/PPP2PPP/R3KB1R w KQ - 3 22",
+      "8/p4N1p/8/3nQk2/3B4/8/PPP2PPP/R3KB1R b KQ - 2 21",
+      "8/p4NQp/6k1/3n4/3B4/8/PPP2PPP/R3KB1R b KQ - 0 20",
+      "8/p4NQp/8/3n1k2/3B4/8/PPP2PPP/R3KB1R w KQ - 1 21",
+      "Q5n1/p1n2Npp/5k2/8/8/4B3/PPP2PPP/R3KB1R w KQ - 3 18"
+    ],
+    "memory_versions_seen": 40,
+    "round_actions": 89,
+    "round_games": 1
+  },
+  "stockfish_diagnostics": {
+    "available": false,
+    "fen": "6Q1/p1n2Npp/5k2/8/8/4B3/PPP2PPP/R3KB1R b KQ - 0 18",
+    "reason": "stockfish binary not found"
+  },
+  "version": {
+    "active_agent_path": "agents/chess_agent.py",
+    "active_agent_sha256": "d697d9b1a00201c99d2fb164fcfa035d57473d993646f23a5381ff49ba87fa8c",
+    "candidate_agent_path": "agents/candidates/chess_agent_live_safe_014.py",
+    "candidate_agent_sha256": "e26e1cca1271a3170cd2073479a9a277d20c0ec92464afcf237481c27d48f104",
+    "candidate_archived_path": "",
+    "candidate_backend": "rule",
+    "candidate_promoted": false,
+    "repair_attempts": 0,
+    "validator_passed": true
+  }
+}

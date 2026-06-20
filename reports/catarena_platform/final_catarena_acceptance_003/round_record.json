@@ -1,0 +1,135 @@
+{
+  "abnormal_events": {
+    "crashes": 0,
+    "illegal_moves": 0,
+    "risks": [],
+    "runtime_errors": [],
+    "timeouts": 0
+  },
+  "artifact_paths": {
+    "candidate_profile_path": "agents/candidates/strategy_profile_final_catarena_acceptance_003.json",
+    "evaluation_record_path": "reports/catarena_platform/final_catarena_acceptance_003/evaluation_record.json",
+    "feedback_fen_suite_path": "reports/catarena_platform/final_catarena_acceptance_003/feedback_fen_suite.json",
+    "optimization_report_path": "reports/catarena_platform/final_catarena_acceptance_003/optimization_report.json",
+    "parameter_record_path": "reports/catarena_platform/final_catarena_acceptance_003/parameter_record.json",
+    "round_record_path": "reports/catarena_platform/final_catarena_acceptance_003/round_record.json",
+    "strategy_profile_after_path": "reports/catarena_platform/final_catarena_acceptance_003/strategy_profile_after.json",
+    "strategy_profile_before_path": "reports/catarena_platform/final_catarena_acceptance_003/strategy_profile_before.json"
+  },
+  "core_modification_summary": {
+    "candidate_profile_summary": "No profile candidate produced by the tuning policy.",
+    "generated_agent_summary": "No profile candidate produced by the tuning policy.",
+    "generation_error": "",
+    "generation_succeeded": true,
+    "improvement_summary": "No critical reliability failure detected; continue gated profile-only optimization.",
+    "patch_plan": "Profile-only revision plan: make one small strategy improvement and validate against fixed FEN set. Runtime tools remain fixed; only strategy-profile parameters may change after passing feedback prescreen and historical regression gates.",
+    "repair_attempts": 0,
+    "tuning_action": "skipped",
+    "tuning_selected_block": "",
+    "validator_passed": true
+  },
+  "feedback_evidence": {
+    "key_failure_positions": [
+      "2B1k1r1/2Bp1p1p/8/3P4/4P3/r7/PPP2PPP/R2QK1NR w KQ - 0 14",
+      "2k4r/2B2p2/8/3PP2p/3Q4/P7/P1P2PPP/R3K1NR w KQ - 4 20",
+      "2k4r/2B2p2/8/3PP2p/4Q3/P7/P1P2PPP/R3K1NR b KQ - 5 20",
+      "4k1r1/2B2p1p/8/3P4/4P3/P7/P1P2PPP/R2QK1NR w KQ - 1 16",
+      "4k1r1/2B2p1p/8/3PP3/8/P7/P1P2PPP/R2QK1NR b KQ - 0 16",
+      "4k1r1/2BB1p1p/8/3P4/4P3/r7/PPP2PPP/R2QK1NR b KQ - 0 14",
+      "4k2r/2B2p1p/8/3PP3/3Q4/P7/P1P2PPP/R3K1NR b KQ - 2 17",
+      "4k2r/2B2p1p/8/3PP3/8/P7/P1P2PPP/R2QK1NR w KQ - 1 17",
+      "4k2r/2B2p2/8/3PP2p/3Q4/P7/P1P2PPP/R3K1NR w KQ - 0 18",
+      "4k2r/2B2p2/8/3PP2p/4Q3/P7/P1P2PPP/R3K1NR b KQ - 1 18",
+      "6r1/2Bk1p1p/8/3P4/4P3/P7/P1P2PPP/R2QK1NR b KQ - 0 15",
+      "6r1/2Bk1p1p/8/3P4/4P3/r7/PPP2PPP/R2QK1NR w KQ - 0 15",
+      "7r/1kB2p2/8/3PP2p/3Q4/P7/P1P2PPP/R3K1NR b KQ - 7 21",
+      "7r/1kB2p2/8/3PP2p/4Q3/P7/P1P2PPP/R3K1NR w KQ - 6 21",
+      "7r/2B2p2/k7/3PP2p/3Q4/P7/P1P2PPP/R3K1NR w KQ - 8 22",
+      "7r/2B2p2/k7/3PP2p/4Q3/P7/P1P2PPP/R3K1NR b KQ - 9 22",
+      "7r/2Bk1p2/8/3PP2p/3Q4/P7/P1P2PPP/R3K1NR b KQ - 3 19",
+      "7r/2Bk1p2/8/3PP2p/4Q3/P7/P1P2PPP/R3K1NR w KQ - 2 19",
+      "8/1kB2p2/8/3PP2p/3Q4/8/P1P2PPP/R3K1NR b KQ - 2 28",
+      "8/1kB2p2/8/3PP2p/3Q4/8/P1P2PPP/R3K1NR w KQ - 11 33"
+    ],
+    "ranking_source": "reports/catarena_platform/final_catarena_acceptance_003/ranking.csv",
+    "raw_log_files": [
+      "reports/catarena_platform/final_catarena_acceptance_003/battle.log"
+    ],
+    "runtime_errors": []
+  },
+  "formal_execution_backend": "internal_engine",
+  "game_result_statistics": {
+    "agent_name": "chess_agent",
+    "draws": 2,
+    "games": 2,
+    "losses": 0,
+    "notes": [],
+    "opponent_records": {},
+    "rank": 1,
+    "rank_delta": 0,
+    "source": "reports/catarena_platform/final_catarena_acceptance_003/ranking.csv",
+    "win_rate": 0.5,
+    "wins": 0
+  },
+  "key_failure_positions": [
+    "2B1k1r1/2Bp1p1p/8/3P4/4P3/r7/PPP2PPP/R2QK1NR w KQ - 0 14",
+    "2k4r/2B2p2/8/3PP2p/3Q4/P7/P1P2PPP/R3K1NR w KQ - 4 20",
+    "2k4r/2B2p2/8/3PP2p/4Q3/P7/P1P2PPP/R3K1NR b KQ - 5 20",
+    "4k1r1/2B2p1p/8/3P4/4P3/P7/P1P2PPP/R2QK1NR w KQ - 1 16",
+    "4k1r1/2B2p1p/8/3PP3/8/P7/P1P2PPP/R2QK1NR b KQ - 0 16",
+    "4k1r1/2BB1p1p/8/3P4/4P3/r7/PPP2PPP/R2QK1NR b KQ - 0 14",
+    "4k2r/2B2p1p/8/3PP3/3Q4/P7/P1P2PPP/R3K1NR b KQ - 2 17",
+    "4k2r/2B2p1p/8/3PP3/8/P7/P1P2PPP/R2QK1NR w KQ - 1 17",
+    "4k2r/2B2p2/8/3PP2p/3Q4/P7/P1P2PPP/R3K1NR w KQ - 0 18",
+    "4k2r/2B2p2/8/3PP2p/4Q3/P7/P1P2PPP/R3K1NR b KQ - 1 18",
+    "6r1/2Bk1p1p/8/3P4/4P3/P7/P1P2PPP/R2QK1NR b KQ - 0 15",
+    "6r1/2Bk1p1p/8/3P4/4P3/r7/PPP2PPP/R2QK1NR w KQ - 0 15",
+    "7r/1kB2p2/8/3PP2p/3Q4/P7/P1P2PPP/R3K1NR b KQ - 7 21",
+    "7r/1kB2p2/8/3PP2p/4Q3/P7/P1P2PPP/R3K1NR w KQ - 6 21",
+    "7r/2B2p2/k7/3PP2p/3Q4/P7/P1P2PPP/R3K1NR w KQ - 8 22",
+    "7r/2B2p2/k7/3PP2p/4Q3/P7/P1P2PPP/R3K1NR b KQ - 9 22",
+    "7r/2Bk1p2/8/3PP2p/3Q4/P7/P1P2PPP/R3K1NR b KQ - 3 19",
+    "7r/2Bk1p2/8/3PP2p/4Q3/P7/P1P2PPP/R3K1NR w KQ - 2 19",
+    "8/1kB2p2/8/3PP2p/3Q4/8/P1P2PPP/R3K1NR b KQ - 2 28",
+    "8/1kB2p2/8/3PP2p/3Q4/8/P1P2PPP/R3K1NR w KQ - 11 33"
+  ],
+  "next_round_revision_plan": {
+    "next_focus": "No critical reliability failure detected; continue gated profile-only optimization.",
+    "patch_plan": "Profile-only revision plan: make one small strategy improvement and validate against fixed FEN set. Runtime tools remain fixed; only strategy-profile parameters may change after passing feedback prescreen and historical regression gates.",
+    "tuning_action": "skipped",
+    "tuning_reason_code": "no_active_block"
+  },
+  "opponent_features": {
+    "notes": [
+      "opponent path not provided"
+    ],
+    "opponents": []
+  },
+  "optimization_mode": "profile_only",
+  "parameter_adjustment_record": {
+    "chosen_changed_paths": [],
+    "effective_changed_paths": [],
+    "selected_block": "",
+    "tuning_action": "skipped",
+    "tuning_reason_code": "no_active_block"
+  },
+  "pipeline_version": "profile_only_v2_internal_runtime",
+  "round_id": "final_catarena_acceptance_003",
+  "runtime_policy": "formal_internal_only",
+  "version_identifier": {
+    "active_agent_path": "agents/chess_agent.py",
+    "candidate_agent_archived_path": "",
+    "candidate_agent_backend": "profile",
+    "candidate_agent_path": "agents/candidates/strategy_profile_final_catarena_acceptance_003.json",
+    "candidate_agent_promoted": false,
+    "candidate_agent_sha256": "37b1dc2b9b24418f059068a81408b6c76bdc8defe292de49158ab97da4638958",
+    "candidate_profile_archived_path": "",
+    "candidate_profile_backend": "profile",
+    "candidate_profile_path": "agents/candidates/strategy_profile_final_catarena_acceptance_003.json",
+    "candidate_profile_promoted": false,
+    "candidate_profile_sha256": "37b1dc2b9b24418f059068a81408b6c76bdc8defe292de49158ab97da4638958",
+    "round_version": "final_catarena_acceptance_003",
+    "strategy_profile_after_sha256": "a0a93c0a55c009325efba75f51032eefcd3fbeb3676cf30324329aec09ac3084",
+    "strategy_profile_before_sha256": "a0a93c0a55c009325efba75f51032eefcd3fbeb3676cf30324329aec09ac3084"
+  }
+}

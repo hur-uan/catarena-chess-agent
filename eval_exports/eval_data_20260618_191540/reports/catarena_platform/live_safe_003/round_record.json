@@ -1,0 +1,121 @@
+{
+  "abnormal_events": {
+    "crashes": 0,
+    "illegal_moves": 0,
+    "risks": [],
+    "runtime_errors": [],
+    "timeouts": 0
+  },
+  "artifact_paths": {
+    "evaluation_record_path": "reports/catarena_platform/live_safe_003/evaluation_record.json",
+    "optimization_report_path": "reports/catarena_platform/live_safe_003/optimization_report.json",
+    "parameter_record_path": "reports/catarena_platform/live_safe_003/parameter_record.json",
+    "round_record_path": "reports/catarena_platform/live_safe_003/round_record.json",
+    "strategy_profile_after_path": "reports/catarena_platform/live_safe_003/strategy_profile_after.json",
+    "strategy_profile_before_path": "reports/catarena_platform/live_safe_003/strategy_profile_before.json"
+  },
+  "core_modification_summary": {
+    "generated_agent_summary": "Generated next-round agent from previous code with rule-template notes.",
+    "improvement_summary": "No critical failure detected; make a small validated strategy improvement.",
+    "patch_plan": "Rule-template patch plan: make one small strategy improvement and validate against fixed FEN set. Do not apply automatically; implement only after validating against the fixed FEN and interface tests.",
+    "repair_attempts": 0,
+    "tuning_action": "skipped",
+    "tuning_selected_block": "",
+    "validator_passed": true
+  },
+  "feedback_evidence": {
+    "key_failure_positions": [
+      "3k1R2/7Q/N2N4/8/2B5/4P3/PPPP2PP/R1B3K1 b - - 4 27",
+      "3k4/7Q/N2N4/8/2B5/4P3/PPPP2PP/R1B2RK1 w - - 3 27",
+      "4k3/5N1Q/N7/8/2B5/4P3/PPPP2PP/R1B2RK1 w - - 1 26",
+      "4k3/7Q/N2N4/8/2B5/4P3/PPPP2PP/R1B2RK1 b - - 2 26",
+      "7N/p1N4Q/8/3k4/8/4P3/PPPP2PP/R1B1KB1R b KQ - 2 21",
+      "7N/p1N4Q/8/4k3/8/4P3/PPPP2PP/R1B1KB1R w KQ - 3 22",
+      "8/2N1kN1Q/p7/8/2B5/4P3/PPPP2PP/R1B2RK1 w - - 2 25",
+      "8/2N2N1Q/p4k2/8/2B5/4P3/PPPP2PP/R1B1K2R w KQ - 0 24",
+      "8/2N2N1Q/p4k2/8/2B5/4P3/PPPP2PP/R1B2RK1 b - - 1 24",
+      "8/4kN1Q/N7/8/2B5/4P3/PPPP2PP/R1B2RK1 b - - 0 25",
+      "8/p1N2N1Q/5k2/8/2B5/4P3/PPPP2PP/R1B1K2R b KQ - 6 23",
+      "8/p1N2N1Q/5k2/8/8/4P3/PPPP2PP/R1B1KB1R w KQ - 5 23",
+      "8/p1N2N1Q/8/4k3/8/4P3/PPPP2PP/R1B1KB1R b KQ - 4 22",
+      "N4Q1N/p5pp/5k2/8/8/4P3/PPPP2PP/R1B1KB1R b KQ - 0 18",
+      "N4Q1N/p5pp/8/4k3/8/4P3/PPPP2PP/R1B1KB1R w KQ - 1 19",
+      "N6N/p5Qp/8/4k3/8/4P3/PPPP2PP/R1B1KB1R b KQ - 0 19",
+      "N6N/p5Qp/8/8/4k3/4P3/PPPP2PP/R1B1KB1R w KQ - 1 20",
+      "N6N/p6Q/8/3k4/8/4P3/PPPP2PP/R1B1KB1R w KQ - 1 21",
+      "N6N/p6Q/8/8/4k3/4P3/PPPP2PP/R1B1KB1R b KQ - 0 20",
+      "NQ2kb1N/p5pp/8/8/8/4n3/PPPP1PPP/R1B1KB1R b KQ - 0 16"
+    ],
+    "ranking_source": "reports/catarena_platform/live_safe_003/ranking.csv",
+    "raw_log_files": [
+      "reports/catarena_platform/live_safe_003/battle.log"
+    ],
+    "runtime_errors": []
+  },
+  "game_result_statistics": {
+    "agent_name": "chess_agent",
+    "draws": 0,
+    "games": 2,
+    "losses": 0,
+    "notes": [],
+    "opponent_records": {},
+    "rank": 1,
+    "rank_delta": 0,
+    "source": "reports/catarena_platform/live_safe_003/ranking.csv",
+    "win_rate": 1.0,
+    "wins": 2
+  },
+  "key_failure_positions": [
+    "3k1R2/7Q/N2N4/8/2B5/4P3/PPPP2PP/R1B3K1 b - - 4 27",
+    "3k4/7Q/N2N4/8/2B5/4P3/PPPP2PP/R1B2RK1 w - - 3 27",
+    "4k3/5N1Q/N7/8/2B5/4P3/PPPP2PP/R1B2RK1 w - - 1 26",
+    "4k3/7Q/N2N4/8/2B5/4P3/PPPP2PP/R1B2RK1 b - - 2 26",
+    "7N/p1N4Q/8/3k4/8/4P3/PPPP2PP/R1B1KB1R b KQ - 2 21",
+    "7N/p1N4Q/8/4k3/8/4P3/PPPP2PP/R1B1KB1R w KQ - 3 22",
+    "8/2N1kN1Q/p7/8/2B5/4P3/PPPP2PP/R1B2RK1 w - - 2 25",
+    "8/2N2N1Q/p4k2/8/2B5/4P3/PPPP2PP/R1B1K2R w KQ - 0 24",
+    "8/2N2N1Q/p4k2/8/2B5/4P3/PPPP2PP/R1B2RK1 b - - 1 24",
+    "8/4kN1Q/N7/8/2B5/4P3/PPPP2PP/R1B2RK1 b - - 0 25",
+    "8/p1N2N1Q/5k2/8/2B5/4P3/PPPP2PP/R1B1K2R b KQ - 6 23",
+    "8/p1N2N1Q/5k2/8/8/4P3/PPPP2PP/R1B1KB1R w KQ - 5 23",
+    "8/p1N2N1Q/8/4k3/8/4P3/PPPP2PP/R1B1KB1R b KQ - 4 22",
+    "N4Q1N/p5pp/5k2/8/8/4P3/PPPP2PP/R1B1KB1R b KQ - 0 18",
+    "N4Q1N/p5pp/8/4k3/8/4P3/PPPP2PP/R1B1KB1R w KQ - 1 19",
+    "N6N/p5Qp/8/4k3/8/4P3/PPPP2PP/R1B1KB1R b KQ - 0 19",
+    "N6N/p5Qp/8/8/4k3/4P3/PPPP2PP/R1B1KB1R w KQ - 1 20",
+    "N6N/p6Q/8/3k4/8/4P3/PPPP2PP/R1B1KB1R w KQ - 1 21",
+    "N6N/p6Q/8/8/4k3/4P3/PPPP2PP/R1B1KB1R b KQ - 0 20",
+    "NQ2kb1N/p5pp/8/8/8/4n3/PPPP1PPP/R1B1KB1R b KQ - 0 16"
+  ],
+  "next_round_revision_plan": {
+    "next_focus": "No critical failure detected; make a small validated strategy improvement.",
+    "patch_plan": "Rule-template patch plan: make one small strategy improvement and validate against fixed FEN set. Do not apply automatically; implement only after validating against the fixed FEN and interface tests.",
+    "tuning_action": "skipped",
+    "tuning_reason_code": "no_active_block"
+  },
+  "opponent_features": {
+    "notes": [
+      "opponent path not provided"
+    ],
+    "opponents": []
+  },
+  "parameter_adjustment_record": {
+    "chosen_changed_paths": [],
+    "effective_changed_paths": [],
+    "selected_block": "",
+    "tuning_action": "skipped",
+    "tuning_reason_code": "no_active_block"
+  },
+  "round_id": "live_safe_003",
+  "version_identifier": {
+    "active_agent_path": "agents/chess_agent.py",
+    "candidate_agent_archived_path": "",
+    "candidate_agent_backend": "rule",
+    "candidate_agent_path": "agents/candidates/chess_agent_live_safe_003.py",
+    "candidate_agent_promoted": false,
+    "candidate_agent_sha256": "e26e1cca1271a3170cd2073479a9a277d20c0ec92464afcf237481c27d48f104",
+    "round_version": "live_safe_003",
+    "strategy_profile_after_sha256": "05bb10f262463e5da16ae94d94f90eb642ad629276e092e61531bb1a83a9b592",
+    "strategy_profile_before_sha256": "05bb10f262463e5da16ae94d94f90eb642ad629276e092e61531bb1a83a9b592"
+  }
+}

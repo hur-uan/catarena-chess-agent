@@ -1,0 +1,125 @@
+{
+  "abnormal_events": {
+    "crashes": 0,
+    "illegal_moves": 0,
+    "risks": [
+      "candidate agent failed validation"
+    ],
+    "runtime_errors": [],
+    "timeouts": 0
+  },
+  "artifact_paths": {
+    "evaluation_record_path": "reports/catarena_platform/live_openai_safe_010/evaluation_record.json",
+    "optimization_report_path": "reports/catarena_platform/live_openai_safe_010/optimization_report.json",
+    "parameter_record_path": "reports/catarena_platform/live_openai_safe_010/parameter_record.json",
+    "round_record_path": "reports/catarena_platform/live_openai_safe_010/round_record.json",
+    "strategy_profile_after_path": "reports/catarena_platform/live_openai_safe_010/strategy_profile_after.json",
+    "strategy_profile_before_path": "reports/catarena_platform/live_openai_safe_010/strategy_profile_before.json"
+  },
+  "core_modification_summary": {
+    "generated_agent_summary": "Generated next-round agent with OpenAI LLM backend.",
+    "generation_error": "",
+    "generation_succeeded": true,
+    "improvement_summary": "No critical failure detected; make a small validated strategy improvement.",
+    "patch_plan": "Rule-template patch plan: make one small strategy improvement and validate against fixed FEN set. Do not apply automatically; implement only after validating against the fixed FEN and interface tests.",
+    "repair_attempts": 2,
+    "tuning_action": "skipped",
+    "tuning_selected_block": "",
+    "validator_passed": false
+  },
+  "feedback_evidence": {
+    "key_failure_positions": [
+      "5Qnr/1p5p/pN4p1/7k/2B5/4P3/RPP2PPP/2B1K2R b K - 1 18",
+      "5Qnr/1p5p/pN6/6pk/2B5/4P3/RPP2PPP/2B1K2R w K - 0 19",
+      "6nQ/1p5p/pN6/7k/2B3p1/4P3/RPP2PPP/2B1K2R b K - 0 20",
+      "6nr/1p4Qp/pN6/6pk/2B5/4P3/RPP2PPP/2B1K2R b K - 1 19",
+      "6nr/1p4Qp/pN6/7k/2B3p1/4P3/RPP2PPP/2B1K2R w K - 0 20",
+      "7Q/1p2n2p/pN6/7k/2B3p1/4P3/RPP2PPP/2B1K2R w K - 1 21",
+      "8/1p2n2Q/pN6/6k1/2B3p1/4P3/RPP2PPP/2B1K2R w K - 1 22",
+      "8/1p2n2Q/pN6/7k/2B3p1/4P3/RPP2PPP/2B1K2R b K - 0 21",
+      "8/1p2n2Q/pN6/R5k1/2B3p1/4P3/1PP2PPP/2B1K2R b K - 2 22",
+      "8/1p5Q/pN3k2/3R4/2B3p1/4P3/1PP2PPP/2B1K2R w K - 1 24",
+      "8/1p5Q/pN3k2/5R2/2B3p1/4P3/1PP2PPP/2B1K2R b K - 2 24",
+      "8/1p5Q/pN6/3R2k1/2B3p1/4P3/1PP2PPP/2B1K2R b K - 0 23",
+      "8/1p5Q/pN6/R2n2k1/2B3p1/4P3/1PP2PPP/2B1K2R w K - 3 23",
+      "N1b2bnr/1p3kpp/p7/3Qn3/8/4P3/PPP2PPP/R1B1KB1R b KQ - 1 12",
+      "N1b2bnr/1p3kpp/p7/4n3/8/4P3/PPP2PPP/R1BQKB1R w KQ - 0 12",
+      "N1b2bnr/pp1n1kpp/8/8/3p4/8/PPPPPPPP/R1BQKB1R b KQ - 0 9",
+      "N1b2bnr/pp3kpp/8/4n3/3p4/4P3/PPPP1PPP/R1BQKB1R b KQ - 0 10",
+      "N1b2bnr/pp3kpp/8/4n3/3p4/8/PPPPPPPP/R1BQKB1R w KQ - 1 10",
+      "N1b2bnr/pp3kpp/8/4n3/8/4P3/PPP2PPP/R1BQKB1R b KQ - 0 11",
+      "N1b2bnr/pp3kpp/8/4n3/8/4p3/PPPP1PPP/R1BQKB1R w KQ - 0 11"
+    ],
+    "ranking_source": "reports/catarena_platform/live_openai_safe_010/ranking.csv",
+    "raw_log_files": [
+      "reports/catarena_platform/live_openai_safe_010/battle.log"
+    ],
+    "runtime_errors": []
+  },
+  "game_result_statistics": {
+    "agent_name": "chess_agent",
+    "draws": 0,
+    "games": 2,
+    "losses": 0,
+    "notes": [],
+    "opponent_records": {},
+    "rank": 1,
+    "rank_delta": 0,
+    "source": "reports/catarena_platform/live_openai_safe_010/ranking.csv",
+    "win_rate": 1.0,
+    "wins": 2
+  },
+  "key_failure_positions": [
+    "5Qnr/1p5p/pN4p1/7k/2B5/4P3/RPP2PPP/2B1K2R b K - 1 18",
+    "5Qnr/1p5p/pN6/6pk/2B5/4P3/RPP2PPP/2B1K2R w K - 0 19",
+    "6nQ/1p5p/pN6/7k/2B3p1/4P3/RPP2PPP/2B1K2R b K - 0 20",
+    "6nr/1p4Qp/pN6/6pk/2B5/4P3/RPP2PPP/2B1K2R b K - 1 19",
+    "6nr/1p4Qp/pN6/7k/2B3p1/4P3/RPP2PPP/2B1K2R w K - 0 20",
+    "7Q/1p2n2p/pN6/7k/2B3p1/4P3/RPP2PPP/2B1K2R w K - 1 21",
+    "8/1p2n2Q/pN6/6k1/2B3p1/4P3/RPP2PPP/2B1K2R w K - 1 22",
+    "8/1p2n2Q/pN6/7k/2B3p1/4P3/RPP2PPP/2B1K2R b K - 0 21",
+    "8/1p2n2Q/pN6/R5k1/2B3p1/4P3/1PP2PPP/2B1K2R b K - 2 22",
+    "8/1p5Q/pN3k2/3R4/2B3p1/4P3/1PP2PPP/2B1K2R w K - 1 24",
+    "8/1p5Q/pN3k2/5R2/2B3p1/4P3/1PP2PPP/2B1K2R b K - 2 24",
+    "8/1p5Q/pN6/3R2k1/2B3p1/4P3/1PP2PPP/2B1K2R b K - 0 23",
+    "8/1p5Q/pN6/R2n2k1/2B3p1/4P3/1PP2PPP/2B1K2R w K - 3 23",
+    "N1b2bnr/1p3kpp/p7/3Qn3/8/4P3/PPP2PPP/R1B1KB1R b KQ - 1 12",
+    "N1b2bnr/1p3kpp/p7/4n3/8/4P3/PPP2PPP/R1BQKB1R w KQ - 0 12",
+    "N1b2bnr/pp1n1kpp/8/8/3p4/8/PPPPPPPP/R1BQKB1R b KQ - 0 9",
+    "N1b2bnr/pp3kpp/8/4n3/3p4/4P3/PPPP1PPP/R1BQKB1R b KQ - 0 10",
+    "N1b2bnr/pp3kpp/8/4n3/3p4/8/PPPPPPPP/R1BQKB1R w KQ - 1 10",
+    "N1b2bnr/pp3kpp/8/4n3/8/4P3/PPP2PPP/R1BQKB1R b KQ - 0 11",
+    "N1b2bnr/pp3kpp/8/4n3/8/4p3/PPPP1PPP/R1BQKB1R w KQ - 0 11"
+  ],
+  "next_round_revision_plan": {
+    "next_focus": "No critical failure detected; make a small validated strategy improvement.",
+    "patch_plan": "Rule-template patch plan: make one small strategy improvement and validate against fixed FEN set. Do not apply automatically; implement only after validating against the fixed FEN and interface tests.",
+    "tuning_action": "skipped",
+    "tuning_reason_code": "no_active_block"
+  },
+  "opponent_features": {
+    "notes": [
+      "opponent path not provided"
+    ],
+    "opponents": []
+  },
+  "parameter_adjustment_record": {
+    "chosen_changed_paths": [],
+    "effective_changed_paths": [],
+    "selected_block": "",
+    "tuning_action": "skipped",
+    "tuning_reason_code": "no_active_block"
+  },
+  "round_id": "live_openai_safe_010",
+  "version_identifier": {
+    "active_agent_path": "agents/chess_agent.py",
+    "candidate_agent_archived_path": "",
+    "candidate_agent_backend": "openai",
+    "candidate_agent_path": "agents/candidates/chess_agent_live_openai_safe_010_repair_2.py",
+    "candidate_agent_promoted": false,
+    "candidate_agent_sha256": "a124550b42307c79db962378e27056163c7d2296f6081986ca111f5ea4433193",
+    "round_version": "live_openai_safe_010",
+    "strategy_profile_after_sha256": "05bb10f262463e5da16ae94d94f90eb642ad629276e092e61531bb1a83a9b592",
+    "strategy_profile_before_sha256": "05bb10f262463e5da16ae94d94f90eb642ad629276e092e61531bb1a83a9b592"
+  }
+}

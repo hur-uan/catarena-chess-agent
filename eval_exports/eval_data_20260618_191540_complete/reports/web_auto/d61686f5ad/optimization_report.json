@@ -1,0 +1,117 @@
+{
+  "backend": "rule",
+  "catarena_message": "CATArena chessgame checkout is present.",
+  "catarena_ready": true,
+  "failure_report": {
+    "evidence": [
+      "no crashes, illegal moves, or timeout signals found"
+    ],
+    "main_failure_type": "no_clear_failure",
+    "next_actions": [
+      "make one small strategy improvement and validate against fixed FEN set"
+    ],
+    "priority": "low"
+  },
+  "generated_agent": {
+    "archived_path": "",
+    "backend": "rule",
+    "changed": true,
+    "path": "agents/candidates/chess_agent_web_auto_d61686f5ad.py",
+    "promoted": false,
+    "summary": "Generated next-round agent from previous code with rule-template notes."
+  },
+  "improvement_summary": "No critical failure detected; make a small validated strategy improvement.",
+  "log_report": {
+    "crashes": 0,
+    "draws": 1,
+    "games": [
+      {
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "rn1q2nr/pppkppb1/6p1/3N3p/3P3P/4B1P1/PPP1PP2/R2QKB1R b KQ - 0 9",
+          "rn1q2nr/pppkppb1/6p1/3N3p/3P3P/4B3/PPP1PPP1/R2QKB1R w KQ - 0 9",
+          "rn1qk1nr/ppp1ppb1/6p1/3N3p/3P3P/4B1P1/PPP1PP2/R2QKB1R w KQ - 1 10",
+          "rn1qk1nr/ppp1ppb1/6p1/3N3p/3P3P/4B1PB/PPP1PP2/R2QK2R b KQ - 2 10",
+          "rn1qk1nr/pppNppb1/6p1/3N3p/3P3P/4B3/PPP1PPP1/R2QKB1R b KQkq - 0 8",
+          "rn1qk1nr/pppbppb1/6p1/3N3p/3P3P/4BN2/PPP1PPP1/R2QKB1R b KQkq - 0 6",
+          "rn1qk1nr/pppbppb1/6p1/3NN2p/3P3P/4B3/PPP1PPP1/R2QKB1R w KQkq - 3 8",
+          "rn1qk1nr/pppbppb1/6p1/3p3p/3P3P/2N1BN2/PPP1PPP1/R2QKB1R w KQkq - 1 6",
+          "rn1qkbnr/pppbpp2/6p1/3N3p/3P3P/4BN2/PPP1PPP1/R2QKB1R w KQkq - 1 7",
+          "rn1qkbnr/pppbpp2/6p1/3NN2p/3P3P/4B3/PPP1PPP1/R2QKB1R b KQkq - 2 7",
+          "rn2k1nr/ppp1ppb1/6p1/3q3p/3P3P/4B1PB/PPP1PP2/R2QK2R w KQ - 0 11",
+          "rnbqk1nr/ppp1ppb1/6p1/3p3p/3P3P/2N1BN2/PPP1PPP1/R2QKB1R b KQkq - 0 5",
+          "rnbqk1nr/ppp1ppb1/6p1/3p3p/3P4/2N1BN2/PPP1PPPP/R2QKB1R w KQkq - 2 5",
+          "rnbqkbnr/ppp1pp2/6p1/3p3p/3P4/2N1B3/PPP1PPPP/R2QKBNR w KQkq - 0 4",
+          "rnbqkbnr/ppp1pp2/6p1/3p3p/3P4/2N1BN2/PPP1PPPP/R2QKB1R b KQkq - 1 4",
+          "rnbqkbnr/ppp1ppp1/8/3p3p/3P4/2N1B3/PPP1PPPP/R2QKBNR b KQkq - 1 3",
+          "rnbqkbnr/ppp1ppp1/8/3p3p/3P4/2N5/PPP1PPPP/R1BQKBNR w KQkq - 0 3",
+          "rnbqkbnr/ppp1pppp/8/3p4/3P4/2N5/PPP1PPPP/R1BQKBNR b KQkq - 1 2",
+          "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
+          "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"
+        ],
+        "moves": 40,
+        "result": "draw",
+        "runtime_errors": [],
+        "source": "reports/web_auto/d61686f5ad/battle.log",
+        "timeouts": 0
+      }
+    ],
+    "illegal_moves": 0,
+    "key_failure_fens": [
+      "rn1q2nr/pppkppb1/6p1/3N3p/3P3P/4B1P1/PPP1PP2/R2QKB1R b KQ - 0 9",
+      "rn1q2nr/pppkppb1/6p1/3N3p/3P3P/4B3/PPP1PPP1/R2QKB1R w KQ - 0 9",
+      "rn1qk1nr/ppp1ppb1/6p1/3N3p/3P3P/4B1P1/PPP1PP2/R2QKB1R w KQ - 1 10",
+      "rn1qk1nr/ppp1ppb1/6p1/3N3p/3P3P/4B1PB/PPP1PP2/R2QK2R b KQ - 2 10",
+      "rn1qk1nr/pppNppb1/6p1/3N3p/3P3P/4B3/PPP1PPP1/R2QKB1R b KQkq - 0 8",
+      "rn1qk1nr/pppbppb1/6p1/3N3p/3P3P/4BN2/PPP1PPP1/R2QKB1R b KQkq - 0 6",
+      "rn1qk1nr/pppbppb1/6p1/3NN2p/3P3P/4B3/PPP1PPP1/R2QKB1R w KQkq - 3 8",
+      "rn1qk1nr/pppbppb1/6p1/3p3p/3P3P/2N1BN2/PPP1PPP1/R2QKB1R w KQkq - 1 6",
+      "rn1qkbnr/pppbpp2/6p1/3N3p/3P3P/4BN2/PPP1PPP1/R2QKB1R w KQkq - 1 7",
+      "rn1qkbnr/pppbpp2/6p1/3NN2p/3P3P/4B3/PPP1PPP1/R2QKB1R b KQkq - 2 7",
+      "rn2k1nr/ppp1ppb1/6p1/3q3p/3P3P/4B1PB/PPP1PP2/R2QK2R w KQ - 0 11",
+      "rnbqk1nr/ppp1ppb1/6p1/3p3p/3P3P/2N1BN2/PPP1PPP1/R2QKB1R b KQkq - 0 5",
+      "rnbqk1nr/ppp1ppb1/6p1/3p3p/3P4/2N1BN2/PPP1PPPP/R2QKB1R w KQkq - 2 5",
+      "rnbqkbnr/ppp1pp2/6p1/3p3p/3P4/2N1B3/PPP1PPPP/R2QKBNR w KQkq - 0 4",
+      "rnbqkbnr/ppp1pp2/6p1/3p3p/3P4/2N1BN2/PPP1PPPP/R2QKB1R b KQkq - 1 4",
+      "rnbqkbnr/ppp1ppp1/8/3p3p/3P4/2N1B3/PPP1PPPP/R2QKBNR b KQkq - 1 3",
+      "rnbqkbnr/ppp1ppp1/8/3p3p/3P4/2N5/PPP1PPPP/R1BQKBNR w KQkq - 0 3",
+      "rnbqkbnr/ppp1pppp/8/3p4/3P4/2N5/PPP1PPPP/R1BQKBNR b KQkq - 1 2",
+      "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
+      "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"
+    ],
+    "losses": 0,
+    "raw_files": [
+      "reports/web_auto/d61686f5ad/battle.log"
+    ],
+    "runtime_errors": [],
+    "timeouts": 0,
+    "total_games": 1,
+    "wins": 0
+  },
+  "memory_records_seen": 9,
+  "opponent_report": {
+    "notes": [
+      "opponent path not provided"
+    ],
+    "opponents": []
+  },
+  "patch_plan": "Rule-template patch plan: make one small strategy improvement and validate against fixed FEN set. Do not apply automatically; implement only after validating against the fixed FEN and interface tests.",
+  "ranking_summary": {
+    "agent_name": "chess_agent",
+    "draws": 1,
+    "games": 1,
+    "losses": 0,
+    "notes": [],
+    "opponent_records": {},
+    "rank": 1,
+    "rank_delta": 0,
+    "source": "reports/web_auto/d61686f5ad/ranking.csv",
+    "win_rate": 0.5,
+    "wins": 0
+  },
+  "repair_attempts": 0,
+  "risks": [],
+  "round_id": "web_auto_d61686f5ad",
+  "validator_passed": true
+}

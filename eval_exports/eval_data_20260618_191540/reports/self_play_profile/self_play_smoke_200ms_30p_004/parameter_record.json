@@ -1,0 +1,77 @@
+{
+  "candidate_artifact": {
+    "archived_path": "",
+    "backend": "profile",
+    "changed": false,
+    "effective_changed_paths": [],
+    "path": "agents/candidates/strategy_profile_self_play_smoke_200ms_30p_004.json",
+    "promoted": false,
+    "selected_block": "",
+    "summary": "No profile candidate produced by the tuning policy."
+  },
+  "effective_changed_paths": [],
+  "effective_changes": [],
+  "feedback_prescreen": {
+    "mean_score_a": 0.5,
+    "mean_score_b": 0.5,
+    "positions": 0,
+    "results": [],
+    "score_difference": 0.0
+  },
+  "formal_execution_backend": "internal_engine",
+  "historical_regression": {
+    "enabled": false,
+    "entries": [],
+    "failed_profiles": 0,
+    "notes": [
+      "no candidate profile produced by tuning policy"
+    ],
+    "passed": true,
+    "passed_profiles": 0,
+    "total_profiles": 0
+  },
+  "optimization_mode": "profile_only",
+  "pipeline_version": "profile_only_v2_internal_runtime",
+  "promotion_gate": {
+    "candidate_changed": false,
+    "feedback_prescreen_passed": true,
+    "historical_regression_passed": true,
+    "passed": false,
+    "reasons": [
+      "candidate profile made no effective change",
+      "tuning policy did not mark candidate ready: skipped"
+    ],
+    "tuning_ready": false,
+    "validator_passed": true
+  },
+  "round_id": "self_play_smoke_200ms_30p_004",
+  "runtime_policy": "formal_internal_only",
+  "seed_records": [],
+  "strategy_profile_after_path": "reports/self_play_profile/self_play_smoke_200ms_30p_004/strategy_profile_after.json",
+  "strategy_profile_after_sha256": "f1e4aa65d76f54249bbe718936b60679333c0db994ffcf20bfdbe644ace221fb",
+  "strategy_profile_after_source": "/Users/thinler/Documents/agent/config/strategy_profile.json",
+  "strategy_profile_before_path": "reports/self_play_profile/self_play_smoke_200ms_30p_004/strategy_profile_before.json",
+  "strategy_profile_before_sha256": "f1e4aa65d76f54249bbe718936b60679333c0db994ffcf20bfdbe644ace221fb",
+  "strategy_profile_before_source": "/Users/thinler/Documents/agent/config/strategy_profile.json",
+  "tuning": {
+    "action": "skipped",
+    "archived_profile_path": "",
+    "chosen_changed_paths": [],
+    "chosen_seed": 0,
+    "consecutive_similar_holds": 0,
+    "enabled": false,
+    "gate_cross_count": 0,
+    "negative_acceptance_prescreen_count": 0,
+    "negative_inner_count": 0,
+    "positive_acceptance_prescreen_count": 0,
+    "positive_inner_count": 0,
+    "promoted_profile_path": "",
+    "promoted_strategy_profile": false,
+    "reason": "Reliability issues take priority; autonomous parameter tuning is disabled.",
+    "reason_code": "stability_first",
+    "safe_seed_count": 0,
+    "selected_block": "",
+    "selected_block_mode": "",
+    "selected_block_note": ""
+  }
+}

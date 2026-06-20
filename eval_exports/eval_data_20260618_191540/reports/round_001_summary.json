@@ -1,0 +1,70 @@
+{
+  "catarena_message": "CATArena chessgame checkout is present.",
+  "catarena_ready": true,
+  "failure_report": {
+    "evidence": [
+      "no crashes, illegal moves, or timeout signals found"
+    ],
+    "main_failure_type": "no_clear_failure",
+    "next_actions": [
+      "make one small strategy improvement and validate against fixed FEN set"
+    ],
+    "priority": "low"
+  },
+  "generated_agent": {
+    "changed": true,
+    "path": "agents/generated/chess_agent_round_001.py",
+    "summary": "Generated next-round agent from previous code with rule-template notes."
+  },
+  "improvement_summary": "No critical failure detected; make a small validated strategy improvement.",
+  "log_report": {
+    "crashes": 0,
+    "draws": 0,
+    "games": [
+      {
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [],
+        "moves": 20,
+        "result": null,
+        "runtime_errors": [],
+        "source": "reports/catarena_dry_run/battle.log",
+        "timeouts": 0
+      }
+    ],
+    "illegal_moves": 0,
+    "key_failure_fens": [],
+    "losses": 0,
+    "raw_files": [
+      "reports/catarena_dry_run/battle.log"
+    ],
+    "runtime_errors": [],
+    "timeouts": 0,
+    "total_games": 1,
+    "wins": 0
+  },
+  "memory_records_seen": 1,
+  "opponent_report": {
+    "notes": [
+      "opponent path not provided"
+    ],
+    "opponents": []
+  },
+  "patch_plan": "Rule-template patch plan: make one small strategy improvement and validate against fixed FEN set. Do not apply automatically; implement only after validating against the fixed FEN and interface tests.",
+  "ranking_summary": {
+    "agent_name": "chess_agent",
+    "draws": 0,
+    "games": 1,
+    "losses": 0,
+    "notes": [],
+    "opponent_records": {},
+    "rank": 1,
+    "rank_delta": 0,
+    "source": "reports/catarena_dry_run/ranking.csv",
+    "win_rate": 1.0,
+    "wins": 1
+  },
+  "risks": [],
+  "round_id": "round_001",
+  "validator_passed": true
+}

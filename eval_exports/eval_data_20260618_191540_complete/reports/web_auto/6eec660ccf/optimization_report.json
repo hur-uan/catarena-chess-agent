@@ -1,0 +1,134 @@
+{
+  "backend": "openai",
+  "catarena_message": "CATArena chessgame checkout is present.",
+  "catarena_ready": true,
+  "failure_report": {
+    "evidence": [
+      "no crashes, illegal moves, or timeout signals found"
+    ],
+    "main_failure_type": "no_clear_failure",
+    "next_actions": [
+      "make one small strategy improvement and validate against fixed FEN set"
+    ],
+    "priority": "low"
+  },
+  "generated_agent": {
+    "archived_path": "agents/archive/chess_agent_web_auto_6eec660ccf.py",
+    "backend": "openai",
+    "changed": true,
+    "diagnosis": "The previous candidate was serialized with literal backslash-n sequences as file text instead of real newlines, causing the entire Python source to appear on line 1 and fail syntax validation. The repaired candidate is a complete, self-contained Python file with normal line structure after JSON decoding.",
+    "expected_improvement": "Validation should pass because the candidate is syntactically normal Python after JSON decoding, avoids unsafe operations, and preserves the required interface while retaining bounded tactical move selection.",
+    "path": "agents/candidates/chess_agent_web_auto_6eec660ccf_repair_1.py",
+    "promoted": true,
+    "risk_notes": [
+      "Self-contained parsing may be less specialized than arena helper parsers for unusual observation shapes, but it supports chess.Board, dict/object fen/board/position fields, and raw FEN strings.",
+      "The agent is shallow and deterministic; it can still miss multi-move tactics under tight time limits.",
+      "If output_format requests a nonstandard format other than san/algebraic, the agent returns UCI."
+    ],
+    "security_report": {
+      "issues": [],
+      "passed": true
+    },
+    "strategy_changes": [
+      "Replaced dependency on local tools helpers with self-contained observation parsing, move formatting, and move validation using python-chess only.",
+      "Kept deterministic shallow tactical scoring with immediate mate detection, capture valuation, promotion bonuses, development heuristics, and bounded opponent reply danger.",
+      "Added robust legal fallback: every selected move is checked against board.legal_moves before formatting.",
+      "Kept runtime bounded by a time guard and reply scan limits."
+    ],
+    "summary": "Generated next-round agent with OpenAI LLM backend."
+  },
+  "improvement_summary": "No critical failure detected; make a small validated strategy improvement.",
+  "log_report": {
+    "crashes": 0,
+    "draws": 0,
+    "games": [
+      {
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "r1b2qk1/pppn4/6p1/8/4K3/8/PP4P1/RNB3b1 b - - 2 17",
+          "r1b2qk1/pppn4/6p1/8/5K2/8/PP4P1/RNB3b1 w - - 1 17",
+          "r1b3k1/pppn4/6p1/5q2/4K3/8/PP4P1/RNB3b1 w - - 3 18",
+          "r1bq1bk1/pppn4/6p1/8/3Ppp2/8/PPP3P1/RNB1K1N1 b Q d3 0 11",
+          "r1bq1bk1/pppn4/6p1/8/4pp2/8/PPPP2P1/RNB1K1N1 w Q - 0 11",
+          "r1bq1bk1/pppn4/6p1/8/5p2/3P4/PP4P1/RNB1K1N1 b Q - 0 12",
+          "r1bq1bk1/pppn4/6p1/8/5p2/3p4/PPP3P1/RNB1K1N1 w Q - 0 12",
+          "r1bq2k1/pppn4/6p1/2b5/3P1p2/8/PP3KP1/RNB3N1 b - - 0 14",
+          "r1bq2k1/pppn4/6p1/2b5/5p2/3P4/PP3KP1/RNB3N1 w - - 3 14",
+          "r1bq2k1/pppn4/6p1/8/1b3p2/3P4/PP3KP1/RNB3N1 b - - 2 13",
+          "r1bq2k1/pppn4/6p1/8/1b3p2/3P4/PP4P1/RNB1K1N1 w Q - 1 13",
+          "r1bq2k1/pppn4/6p1/8/3b1p2/5K2/PP4P1/RNB3N1 b - - 1 15",
+          "r1bq2k1/pppn4/6p1/8/3b1p2/8/PP3KP1/RNB3N1 w - - 0 15",
+          "r1bq2k1/pppn4/6p1/8/5K2/8/PP4P1/RNB3b1 b - - 0 16",
+          "r1bq2k1/pppn4/6p1/8/5p2/5K2/PP4P1/RNB3b1 w - - 0 16",
+          "rnbq1b2/pppp1k1R/6p1/8/4pp2/8/PPPP2P1/RNB1K1N1 b Q - 1 9",
+          "rnbq1b2/pppp1k2/6p1/8/4pp2/8/PPPP2PR/RNB1K1N1 w Q - 0 9",
+          "rnbq1bk1/pppR4/6p1/8/4pp2/8/PPPP2P1/RNB1K1N1 b Q - 0 10",
+          "rnbq1bk1/pppp3R/6p1/8/4pp2/8/PPPP2P1/RNB1K1N1 w Q - 2 10",
+          "rnbqkb2/pppp1B2/6p1/8/4pp2/8/PPPP2PR/RNB1K1N1 b Qq - 1 8"
+        ],
+        "moves": 71,
+        "result": null,
+        "runtime_errors": [],
+        "source": "reports/web_auto/6eec660ccf/battle.log",
+        "timeouts": 0
+      }
+    ],
+    "illegal_moves": 0,
+    "key_failure_fens": [
+      "r1b2qk1/pppn4/6p1/8/4K3/8/PP4P1/RNB3b1 b - - 2 17",
+      "r1b2qk1/pppn4/6p1/8/5K2/8/PP4P1/RNB3b1 w - - 1 17",
+      "r1b3k1/pppn4/6p1/5q2/4K3/8/PP4P1/RNB3b1 w - - 3 18",
+      "r1bq1bk1/pppn4/6p1/8/3Ppp2/8/PPP3P1/RNB1K1N1 b Q d3 0 11",
+      "r1bq1bk1/pppn4/6p1/8/4pp2/8/PPPP2P1/RNB1K1N1 w Q - 0 11",
+      "r1bq1bk1/pppn4/6p1/8/5p2/3P4/PP4P1/RNB1K1N1 b Q - 0 12",
+      "r1bq1bk1/pppn4/6p1/8/5p2/3p4/PPP3P1/RNB1K1N1 w Q - 0 12",
+      "r1bq2k1/pppn4/6p1/2b5/3P1p2/8/PP3KP1/RNB3N1 b - - 0 14",
+      "r1bq2k1/pppn4/6p1/2b5/5p2/3P4/PP3KP1/RNB3N1 w - - 3 14",
+      "r1bq2k1/pppn4/6p1/8/1b3p2/3P4/PP3KP1/RNB3N1 b - - 2 13",
+      "r1bq2k1/pppn4/6p1/8/1b3p2/3P4/PP4P1/RNB1K1N1 w Q - 1 13",
+      "r1bq2k1/pppn4/6p1/8/3b1p2/5K2/PP4P1/RNB3N1 b - - 1 15",
+      "r1bq2k1/pppn4/6p1/8/3b1p2/8/PP3KP1/RNB3N1 w - - 0 15",
+      "r1bq2k1/pppn4/6p1/8/5K2/8/PP4P1/RNB3b1 b - - 0 16",
+      "r1bq2k1/pppn4/6p1/8/5p2/5K2/PP4P1/RNB3b1 w - - 0 16",
+      "rnbq1b2/pppp1k1R/6p1/8/4pp2/8/PPPP2P1/RNB1K1N1 b Q - 1 9",
+      "rnbq1b2/pppp1k2/6p1/8/4pp2/8/PPPP2PR/RNB1K1N1 w Q - 0 9",
+      "rnbq1bk1/pppR4/6p1/8/4pp2/8/PPPP2P1/RNB1K1N1 b Q - 0 10",
+      "rnbq1bk1/pppp3R/6p1/8/4pp2/8/PPPP2P1/RNB1K1N1 w Q - 2 10",
+      "rnbqkb2/pppp1B2/6p1/8/4pp2/8/PPPP2PR/RNB1K1N1 b Qq - 1 8"
+    ],
+    "losses": 0,
+    "raw_files": [
+      "reports/web_auto/6eec660ccf/battle.log"
+    ],
+    "runtime_errors": [],
+    "timeouts": 0,
+    "total_games": 1,
+    "wins": 0
+  },
+  "memory_records_seen": 6,
+  "opponent_report": {
+    "notes": [
+      "opponent path not provided"
+    ],
+    "opponents": []
+  },
+  "patch_plan": "Rule-template patch plan: make one small strategy improvement and validate against fixed FEN set. Do not apply automatically; implement only after validating against the fixed FEN and interface tests.",
+  "ranking_summary": {
+    "agent_name": "chess_agent",
+    "draws": 0,
+    "games": 1,
+    "losses": 0,
+    "notes": [],
+    "opponent_records": {},
+    "rank": 1,
+    "rank_delta": 0,
+    "source": "reports/web_auto/6eec660ccf/ranking.csv",
+    "win_rate": 1.0,
+    "wins": 1
+  },
+  "repair_attempts": 1,
+  "risks": [],
+  "round_id": "web_auto_6eec660ccf",
+  "validator_passed": true
+}

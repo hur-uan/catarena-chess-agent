@@ -35,7 +35,7 @@ def test_collect_block_names_supports_recommended_alias():
     registry = load_tuning_registry()
     names = _collect_block_names(registry, ["recommended"])
     assert names is not None
-    assert names == ["search.history_order"]
+    assert names == []
 
 
 def test_changed_parameter_paths_detects_no_quantized_change():

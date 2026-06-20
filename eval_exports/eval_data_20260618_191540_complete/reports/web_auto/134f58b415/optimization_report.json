@@ -1,0 +1,588 @@
+{
+  "backend": "rule",
+  "catarena_message": "CATArena chessgame checkout is present.",
+  "catarena_missing_required_files": [],
+  "catarena_ready": true,
+  "catarena_source_files_seen": 36,
+  "engine_runtime_config": {
+    "enabled": true,
+    "endgame_depth_limit": 5,
+    "endgame_node_limit": 8000000,
+    "endgame_non_king_piece_threshold": 10,
+    "low_time_depth_limit": 2,
+    "low_time_node_limit": 250000,
+    "low_time_threshold_ms": 80,
+    "middlegame_depth_limit": 4,
+    "middlegame_node_limit": 4000000,
+    "minimum_external_budget_ms": 60,
+    "opening_depth_limit": 4,
+    "opening_fullmove_limit": 10,
+    "opening_node_limit": 2000000,
+    "source": "/Users/thinler/Documents/agent/config/strategy_profile.json",
+    "time_buffer_ms": 8
+  },
+  "evolution_metrics": {
+    "global_scores": [
+      1.0,
+      1.0,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      1.0,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.75,
+      0.5,
+      0.75,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "rounds_considered": 26,
+    "same_round_score": 0.5,
+    "sbase": 1.0,
+    "sevo": -0.007863247863247864
+  },
+  "failure_report": {
+    "evidence": [
+      "no crashes, illegal moves, or timeout signals found"
+    ],
+    "main_failure_type": "no_clear_failure",
+    "next_actions": [
+      "make one small strategy improvement and validate against fixed FEN set"
+    ],
+    "priority": "low"
+  },
+  "generated_agent": {
+    "archived_path": "",
+    "backend": "rule",
+    "changed": true,
+    "path": "agents/candidates/chess_agent_web_auto_134f58b415.py",
+    "promoted": false,
+    "summary": "Generated next-round agent from previous code with rule-template notes."
+  },
+  "improvement_summary": "No critical failure detected; make a small validated strategy improvement.",
+  "log_report": {
+    "average_cp": 511.7,
+    "average_depth": 4.0,
+    "average_response_ms": 12.485500000000002,
+    "crashes": 0,
+    "draws": 1,
+    "games": [
+      {
+        "cp_scores": [
+          0,
+          12,
+          21,
+          36,
+          1000,
+          1088,
+          1124,
+          1147,
+          1256,
+          1371,
+          -17,
+          49,
+          80,
+          83,
+          63,
+          139,
+          594,
+          615,
+          630,
+          943
+        ],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "r1bk3r/ppp2p1p/2n1p2p/8/4n3/1P6/P1P1BbPP/RN1K2NR w - - 2 10",
+          "r1bk3r/ppp2p1p/2n1p2p/8/4n3/1PN5/P1P1BbPP/R2K2NR b - - 3 10",
+          "r1bk3r/ppp2p1p/2n1p2p/8/8/1Pn5/P1P1BbPP/R2K2NR w - - 0 11",
+          "rn3bnr/pp1bkp1p/6p1/2N1N3/3R1B2/3P4/1PP1PPPP/3QKB1R b K - 0 10",
+          "rn3bnr/pp1bkp1p/6p1/2N1N3/R2p1B2/3P4/1PP1PPPP/3QKB1R w K - 1 10",
+          "rn3bnr/pp1bkp2/6p1/2N1N2p/3R1B2/3P4/1PP1PPPP/3QKB1R w K - 0 11",
+          "rnb1kbnr/pp3p1p/6p1/2p1N3/3pNB2/3P4/RPP1PPPP/3QKB1R w Kkq - 0 8",
+          "rnb1kbnr/pp3p1p/6p1/2p1N3/R2pNB2/3P4/1PP1PPPP/3QKB1R b Kkq - 1 8",
+          "rnb1kbnr/ppp1pppp/8/3q4/3pN3/3P1N2/PPP1PPPP/R1BQKB1R b KQkq - 0 4",
+          "rnb1kbnr/ppp1pppp/8/3q4/3pN3/5N2/PPPPPPPP/R1BQKB1R w KQkq - 2 4",
+          "rnb1kbnr/ppp1pppp/8/8/3pN3/3P1N2/RPP1PPPP/2BQKB1R b Kkq - 0 5",
+          "rnb1kbnr/ppp1pppp/8/8/3pN3/3P1N2/qPP1PPPP/R1BQKB1R w KQkq - 0 5",
+          "rnb1kbnr/ppp2p1p/6p1/4N3/3pN3/3P4/RPP1PPPP/2BQKB1R w Kkq - 0 7",
+          "rnb1kbnr/ppp2p1p/6p1/4N3/3pNB2/3P4/RPP1PPPP/3QKB1R b Kkq - 1 7",
+          "rnb1kbnr/ppp2ppp/8/4N3/3pN3/3P4/RPP1PPPP/2BQKB1R b Kkq - 0 6",
+          "rnb1kbnr/ppp2ppp/8/4p3/3pN3/3P1N2/RPP1PPPP/2BQKB1R w Kkq - 0 6",
+          "rnb2bnr/pp2kp1p/6p1/2N1N3/R2p1B2/3P4/1PP1PPPP/3QKB1R b K - 0 9",
+          "rnb2bnr/pp2kp1p/6p1/2p1N3/R2pNB2/3P4/1PP1PPPP/3QKB1R w K - 2 9",
+          "rnbQkb1r/ppp2ppp/4p3/8/4n3/8/PPP2PPP/RNB1KBNR b KQkq - 0 5",
+          "rnbk1b1r/ppp2ppp/4p3/8/4n3/1P6/P1P2PPP/RNB1KBNR b KQ - 0 6"
+        ],
+        "moves": 43,
+        "response_times_ms": [
+          0.392,
+          6.194,
+          8.754,
+          8.924,
+          8.62,
+          6.285,
+          16.66,
+          48.413,
+          18.727,
+          22.007,
+          5.621,
+          3.94,
+          16.166,
+          17.322,
+          24.789,
+          13.285,
+          7.112,
+          3.83,
+          7.537,
+          5.132
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "source": "reports/web_auto/134f58b415/official_catarena/battle.log",
+        "timeouts": 0
+      }
+    ],
+    "illegal_moves": 0,
+    "interface_successes": 43,
+    "key_failure_fens": [
+      "r1bk3r/ppp2p1p/2n1p2p/8/4n3/1P6/P1P1BbPP/RN1K2NR w - - 2 10",
+      "r1bk3r/ppp2p1p/2n1p2p/8/4n3/1PN5/P1P1BbPP/R2K2NR b - - 3 10",
+      "r1bk3r/ppp2p1p/2n1p2p/8/8/1Pn5/P1P1BbPP/R2K2NR w - - 0 11",
+      "rn3bnr/pp1bkp1p/6p1/2N1N3/3R1B2/3P4/1PP1PPPP/3QKB1R b K - 0 10",
+      "rn3bnr/pp1bkp1p/6p1/2N1N3/R2p1B2/3P4/1PP1PPPP/3QKB1R w K - 1 10",
+      "rn3bnr/pp1bkp2/6p1/2N1N2p/3R1B2/3P4/1PP1PPPP/3QKB1R w K - 0 11",
+      "rnb1kbnr/pp3p1p/6p1/2p1N3/3pNB2/3P4/RPP1PPPP/3QKB1R w Kkq - 0 8",
+      "rnb1kbnr/pp3p1p/6p1/2p1N3/R2pNB2/3P4/1PP1PPPP/3QKB1R b Kkq - 1 8",
+      "rnb1kbnr/ppp1pppp/8/3q4/3pN3/3P1N2/PPP1PPPP/R1BQKB1R b KQkq - 0 4",
+      "rnb1kbnr/ppp1pppp/8/3q4/3pN3/5N2/PPPPPPPP/R1BQKB1R w KQkq - 2 4",
+      "rnb1kbnr/ppp1pppp/8/8/3pN3/3P1N2/RPP1PPPP/2BQKB1R b Kkq - 0 5",
+      "rnb1kbnr/ppp1pppp/8/8/3pN3/3P1N2/qPP1PPPP/R1BQKB1R w KQkq - 0 5",
+      "rnb1kbnr/ppp2p1p/6p1/4N3/3pN3/3P4/RPP1PPPP/2BQKB1R w Kkq - 0 7",
+      "rnb1kbnr/ppp2p1p/6p1/4N3/3pNB2/3P4/RPP1PPPP/3QKB1R b Kkq - 1 7",
+      "rnb1kbnr/ppp2ppp/8/4N3/3pN3/3P4/RPP1PPPP/2BQKB1R b Kkq - 0 6",
+      "rnb1kbnr/ppp2ppp/8/4p3/3pN3/3P1N2/RPP1PPPP/2BQKB1R w Kkq - 0 6",
+      "rnb2bnr/pp2kp1p/6p1/2N1N3/R2p1B2/3P4/1PP1PPPP/3QKB1R b K - 0 9",
+      "rnb2bnr/pp2kp1p/6p1/2p1N3/R2pNB2/3P4/1PP1PPPP/3QKB1R w K - 2 9",
+      "rnbQkb1r/ppp2ppp/4p3/8/4n3/8/PPP2PPP/RNB1KBNR b KQkq - 0 5",
+      "rnbk1b1r/ppp2ppp/4p3/8/4n3/1P6/P1P2PPP/RNB1KBNR b KQ - 0 6"
+    ],
+    "losses": 0,
+    "raw_files": [
+      "reports/web_auto/134f58b415/official_catarena/battle.log"
+    ],
+    "runtime_errors": [],
+    "timeouts": 0,
+    "total_actions": 43,
+    "total_games": 1,
+    "wins": 0
+  },
+  "memory_records_seen": 25,
+  "opponent_report": {
+    "notes": [
+      "opponent path not provided"
+    ],
+    "opponents": []
+  },
+  "patch_plan": "Rule-template patch plan: make one small strategy improvement and validate against fixed FEN set. Do not apply automatically; implement only after validating against the fixed FEN and interface tests.",
+  "ranking_summary": {
+    "agent_name": "chess_agent",
+    "draws": 2,
+    "games": 2,
+    "losses": 0,
+    "notes": [],
+    "opponent_records": {},
+    "rank": 1,
+    "rank_delta": 0,
+    "source": "reports/web_auto/134f58b415/official_catarena/ranking.csv",
+    "win_rate": 0.5,
+    "wins": 0
+  },
+  "reliability_metrics": {
+    "average_response_ms": 12.485500000000002,
+    "error_rate": 0.0,
+    "interface_success_rate": 1.0,
+    "legal_rate": 1.0,
+    "timeout_rate": 0.0
+  },
+  "repair_attempts": 0,
+  "risks": [],
+  "round_id": "web_auto_134f58b415",
+  "state_summary": {
+    "average_cp": 511.7,
+    "average_depth": 4.0,
+    "average_response_ms": 12.485500000000002,
+    "current_rank": 1,
+    "current_win_rate": 0.5,
+    "key_failure_fens": [
+      "r1bk3r/ppp2p1p/2n1p2p/8/4n3/1P6/P1P1BbPP/RN1K2NR w - - 2 10",
+      "r1bk3r/ppp2p1p/2n1p2p/8/4n3/1PN5/P1P1BbPP/R2K2NR b - - 3 10",
+      "r1bk3r/ppp2p1p/2n1p2p/8/8/1Pn5/P1P1BbPP/R2K2NR w - - 0 11",
+      "rn3bnr/pp1bkp1p/6p1/2N1N3/3R1B2/3P4/1PP1PPPP/3QKB1R b K - 0 10",
+      "rn3bnr/pp1bkp1p/6p1/2N1N3/R2p1B2/3P4/1PP1PPPP/3QKB1R w K - 1 10",
+      "rn3bnr/pp1bkp2/6p1/2N1N2p/3R1B2/3P4/1PP1PPPP/3QKB1R w K - 0 11",
+      "rnb1kbnr/pp3p1p/6p1/2p1N3/3pNB2/3P4/RPP1PPPP/3QKB1R w Kkq - 0 8",
+      "rnb1kbnr/pp3p1p/6p1/2p1N3/R2pNB2/3P4/1PP1PPPP/3QKB1R b Kkq - 1 8",
+      "rnb1kbnr/ppp1pppp/8/3q4/3pN3/3P1N2/PPP1PPPP/R1BQKB1R b KQkq - 0 4",
+      "rnb1kbnr/ppp1pppp/8/3q4/3pN3/5N2/PPPPPPPP/R1BQKB1R w KQkq - 2 4"
+    ],
+    "memory_versions_seen": 25,
+    "round_actions": 43,
+    "round_games": 1
+  },
+  "stockfish_diagnostics": {
+    "available": false,
+    "fen": "r1bk3r/ppp2p1p/2n1p2p/8/4n3/1P6/P1P1BbPP/RN1K2NR w - - 2 10",
+    "reason": "stockfish binary not found"
+  },
+  "tuning_report": {
+    "action": "hold",
+    "archived_profile_path": "",
+    "chosen_changed_paths": [],
+    "chosen_seed": 0,
+    "consecutive_similar_holds": 0,
+    "enabled": true,
+    "gate_cross_count": 1,
+    "negative_acceptance_prescreen_count": 0,
+    "negative_inner_count": 1,
+    "positive_acceptance_prescreen_count": 3,
+    "positive_inner_count": 2,
+    "promoted_profile_path": "",
+    "promoted_strategy_profile": false,
+    "reason": "Seed-to-seed direction is not stable enough for autonomous promotion; keep the block active but unpromoted.",
+    "reason_code": "direction_unstable",
+    "safe_seed_count": 3,
+    "seeds": [
+      {
+        "acceptance_mean_score_a": 0.5,
+        "acceptance_prescreen_difference": 0.0005388353080595931,
+        "applied_change_count": 0,
+        "applied_change_paths": [],
+        "player_a_crashes": 0,
+        "player_a_timeouts": 0,
+        "player_b_timeouts": 0,
+        "prescreen_score_difference": 0.0001815126050420668,
+        "proposed_profile": {
+          "eval": {
+            "draw_score": 0,
+            "king_safety_weight": 1.0,
+            "mate_score": 100000,
+            "material_weight": 1.0,
+            "missing_king_penalty": 500,
+            "mobility_weight": 1.0,
+            "pawn_structure_weight": 1.0,
+            "piece_activity_weight": 1.0
+          },
+          "external_engine": {
+            "enabled": true,
+            "endgame_depth_limit": 5,
+            "endgame_node_limit": 8000000,
+            "low_time_depth_limit": 2,
+            "low_time_node_limit": 250000,
+            "low_time_threshold_ms": 80,
+            "middlegame_depth_limit": 4,
+            "middlegame_node_limit": 4000000,
+            "minimum_external_budget_ms": 60,
+            "opening_depth_limit": 4,
+            "opening_node_limit": 2000000,
+            "time_buffer_ms": 8
+          },
+          "king_safety": {
+            "attacked_king_penalty": 70,
+            "attacked_ring_penalty": 2,
+            "pawn_shield_bonus": 7,
+            "piece_shield_bonus": 3
+          },
+          "move_ordering": {
+            "capture_attacker_penalty": 1,
+            "capture_base_bonus": 1000,
+            "capture_victim_multiplier": 10,
+            "castling_bonus": 150,
+            "center_bonus": 40,
+            "center_pawn_development_bonus": 20,
+            "check_bonus": 300,
+            "early_queen_penalty": 25,
+            "early_rook_penalty": 10,
+            "extended_center_bonus": 15,
+            "minor_development_bonus": 30,
+            "promotion_bonus": 800
+          },
+          "pawn_structure": {
+            "advance_bonus_per_rank": 3,
+            "doubled_penalty": 8,
+            "isolated_penalty": 10
+          },
+          "phase": {
+            "endgame_non_king_piece_threshold": 10,
+            "opening_fullmove_limit": 10
+          },
+          "piece_activity": {
+            "center_bonus": 15,
+            "extended_center_bonus": 6,
+            "minor_base_bonus": 8,
+            "minor_center_distance_penalty": 2,
+            "minor_rank_bonus_weight": 2,
+            "rook_half_open_file_bonus": 9,
+            "rook_open_file_bonus": 18
+          },
+          "piece_values": {
+            "bishop": 330,
+            "knight": 320,
+            "pawn": 100,
+            "queen": 900,
+            "rook": 500
+          },
+          "profile_name": "default",
+          "search": {
+            "default_depth": 3,
+            "history_bonus_power": 2,
+            "history_bonus_scale": 1,
+            "mate_detection_margin": 1000,
+            "max_depth": 4,
+            "min_time_margin_ms": 4,
+            "quiescence_depth": 8,
+            "root_mate_stop_distance": 1,
+            "tt_move_bonus": 50000
+          }
+        },
+        "score_difference": 0.00010890756302524007,
+        "seed": 1,
+        "sprt_decision": "accept_h0"
+      },
+      {
+        "acceptance_mean_score_a": 0.5,
+        "acceptance_prescreen_difference": 8.219178082186085e-05,
+        "applied_change_count": 0,
+        "applied_change_paths": [],
+        "player_a_crashes": 0,
+        "player_a_timeouts": 0,
+        "player_b_timeouts": 0,
+        "prescreen_score_difference": 0.00017899314042818526,
+        "proposed_profile": {
+          "eval": {
+            "draw_score": 0,
+            "king_safety_weight": 1.0,
+            "mate_score": 100000,
+            "material_weight": 1.0,
+            "missing_king_penalty": 500,
+            "mobility_weight": 1.0,
+            "pawn_structure_weight": 1.0,
+            "piece_activity_weight": 1.0
+          },
+          "external_engine": {
+            "enabled": true,
+            "endgame_depth_limit": 5,
+            "endgame_node_limit": 8000000,
+            "low_time_depth_limit": 2,
+            "low_time_node_limit": 250000,
+            "low_time_threshold_ms": 80,
+            "middlegame_depth_limit": 4,
+            "middlegame_node_limit": 4000000,
+            "minimum_external_budget_ms": 60,
+            "opening_depth_limit": 4,
+            "opening_node_limit": 2000000,
+            "time_buffer_ms": 8
+          },
+          "king_safety": {
+            "attacked_king_penalty": 70,
+            "attacked_ring_penalty": 2,
+            "pawn_shield_bonus": 7,
+            "piece_shield_bonus": 3
+          },
+          "move_ordering": {
+            "capture_attacker_penalty": 1,
+            "capture_base_bonus": 1000,
+            "capture_victim_multiplier": 10,
+            "castling_bonus": 150,
+            "center_bonus": 40,
+            "center_pawn_development_bonus": 20,
+            "check_bonus": 300,
+            "early_queen_penalty": 25,
+            "early_rook_penalty": 10,
+            "extended_center_bonus": 15,
+            "minor_development_bonus": 30,
+            "promotion_bonus": 800
+          },
+          "pawn_structure": {
+            "advance_bonus_per_rank": 3,
+            "doubled_penalty": 8,
+            "isolated_penalty": 10
+          },
+          "phase": {
+            "endgame_non_king_piece_threshold": 10,
+            "opening_fullmove_limit": 10
+          },
+          "piece_activity": {
+            "center_bonus": 15,
+            "extended_center_bonus": 6,
+            "minor_base_bonus": 8,
+            "minor_center_distance_penalty": 2,
+            "minor_rank_bonus_weight": 2,
+            "rook_half_open_file_bonus": 9,
+            "rook_open_file_bonus": 18
+          },
+          "piece_values": {
+            "bishop": 330,
+            "knight": 320,
+            "pawn": 100,
+            "queen": 900,
+            "rook": 500
+          },
+          "profile_name": "default",
+          "search": {
+            "default_depth": 3,
+            "history_bonus_power": 2,
+            "history_bonus_scale": 1,
+            "mate_detection_margin": 1000,
+            "max_depth": 4,
+            "min_time_margin_ms": 4,
+            "quiescence_depth": 8,
+            "root_mate_stop_distance": 1,
+            "tt_move_bonus": 50000
+          }
+        },
+        "score_difference": 0.00010739588425691115,
+        "seed": 2,
+        "sprt_decision": "accept_h0"
+      },
+      {
+        "acceptance_mean_score_a": 0.5,
+        "acceptance_prescreen_difference": 0.021341176470588363,
+        "applied_change_count": 1,
+        "applied_change_paths": [
+          "search.tt_move_bonus"
+        ],
+        "player_a_crashes": 0,
+        "player_a_timeouts": 0,
+        "player_b_timeouts": 0,
+        "prescreen_score_difference": -0.023563636363636398,
+        "proposed_profile": {
+          "eval": {
+            "draw_score": 0,
+            "king_safety_weight": 1.0,
+            "mate_score": 100000,
+            "material_weight": 1.0,
+            "missing_king_penalty": 500,
+            "mobility_weight": 1.0,
+            "pawn_structure_weight": 1.0,
+            "piece_activity_weight": 1.0
+          },
+          "external_engine": {
+            "enabled": true,
+            "endgame_depth_limit": 5,
+            "endgame_node_limit": 8000000,
+            "low_time_depth_limit": 2,
+            "low_time_node_limit": 250000,
+            "low_time_threshold_ms": 80,
+            "middlegame_depth_limit": 4,
+            "middlegame_node_limit": 4000000,
+            "minimum_external_budget_ms": 60,
+            "opening_depth_limit": 4,
+            "opening_node_limit": 2000000,
+            "time_buffer_ms": 8
+          },
+          "king_safety": {
+            "attacked_king_penalty": 70,
+            "attacked_ring_penalty": 2,
+            "pawn_shield_bonus": 7,
+            "piece_shield_bonus": 3
+          },
+          "move_ordering": {
+            "capture_attacker_penalty": 1,
+            "capture_base_bonus": 1000,
+            "capture_victim_multiplier": 10,
+            "castling_bonus": 150,
+            "center_bonus": 40,
+            "center_pawn_development_bonus": 20,
+            "check_bonus": 300,
+            "early_queen_penalty": 25,
+            "early_rook_penalty": 10,
+            "extended_center_bonus": 15,
+            "minor_development_bonus": 30,
+            "promotion_bonus": 800
+          },
+          "pawn_structure": {
+            "advance_bonus_per_rank": 3,
+            "doubled_penalty": 8,
+            "isolated_penalty": 10
+          },
+          "phase": {
+            "endgame_non_king_piece_threshold": 10,
+            "opening_fullmove_limit": 10
+          },
+          "piece_activity": {
+            "center_bonus": 15,
+            "extended_center_bonus": 6,
+            "minor_base_bonus": 8,
+            "minor_center_distance_penalty": 2,
+            "minor_rank_bonus_weight": 2,
+            "rook_half_open_file_bonus": 9,
+            "rook_open_file_bonus": 18
+          },
+          "piece_values": {
+            "bishop": 330,
+            "knight": 320,
+            "pawn": 100,
+            "queen": 900,
+            "rook": 500
+          },
+          "profile_name": "default",
+          "search": {
+            "default_depth": 3,
+            "history_bonus_power": 2,
+            "history_bonus_scale": 1,
+            "mate_detection_margin": 1000,
+            "max_depth": 4,
+            "min_time_margin_ms": 4,
+            "quiescence_depth": 8,
+            "root_mate_stop_distance": 1,
+            "tt_move_bonus": 51000
+          }
+        },
+        "score_difference": -0.014138181818181838,
+        "seed": 3,
+        "sprt_decision": "accept_h0"
+      }
+    ],
+    "selected_block": "search.history_order",
+    "selected_block_mode": "active",
+    "selected_block_note": "Closest to the discrete-step gate; allow online autonomous confirmation with gate-aware checks before any profile promotion."
+  },
+  "validator_passed": true
+}

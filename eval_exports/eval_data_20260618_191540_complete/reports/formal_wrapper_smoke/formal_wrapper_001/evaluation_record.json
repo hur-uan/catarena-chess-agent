@@ -1,0 +1,1091 @@
+{
+  "abnormal_events": {
+    "crashes": 0,
+    "illegal_moves": 0,
+    "risks": [],
+    "runtime_errors": [],
+    "timeouts": 0
+  },
+  "backend": "profile",
+  "core_modification_summary": {
+    "candidate_profile_summary": "No profile candidate produced by the tuning policy.",
+    "changed": false,
+    "generated_agent_summary": "No profile candidate produced by the tuning policy.",
+    "generation_error": "",
+    "generation_succeeded": true,
+    "improvement_summary": "No critical reliability failure detected; continue gated profile-only optimization.",
+    "patch_plan": "Profile-only revision plan: make one small strategy improvement and validate against fixed FEN set. Runtime tools remain fixed; only strategy-profile parameters may change after passing feedback prescreen and historical regression gates."
+  },
+  "evolution_metrics": {
+    "global_scores": [
+      1.0,
+      1.0,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      1.0,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.75,
+      0.5,
+      0.75,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.5,
+      1.0
+    ],
+    "rounds_considered": 150,
+    "same_round_score": 1.0,
+    "sbase": 1.0,
+    "sevo": 0.002253433485932708
+  },
+  "failure_report": {
+    "evidence": [
+      "no crashes, illegal moves, or timeout signals found"
+    ],
+    "main_failure_type": "no_clear_failure",
+    "next_actions": [
+      "make one small strategy improvement and validate against fixed FEN set"
+    ],
+    "priority": "low"
+  },
+  "feedback_prescreen": {
+    "mean_score_a": 0.5,
+    "mean_score_b": 0.5,
+    "positions": 0,
+    "results": [],
+    "score_difference": 0.0
+  },
+  "feedback_sources": {
+    "feedback_fen_suite_path": "reports/formal_wrapper_smoke/formal_wrapper_001/feedback_fen_suite.json",
+    "logs": "reports/formal_wrapper_smoke/formal_wrapper_001/battle.log",
+    "opponents": "",
+    "ranking": "reports/formal_wrapper_smoke/formal_wrapper_001/ranking.csv",
+    "ranking_source": "reports/formal_wrapper_smoke/formal_wrapper_001/ranking.csv",
+    "raw_log_files": [
+      "reports/formal_wrapper_smoke/formal_wrapper_001/battle.log"
+    ]
+  },
+  "game_result_statistics": {
+    "agent_name": "chess_agent",
+    "draws": 0,
+    "games": 2,
+    "losses": 0,
+    "notes": [],
+    "opponent_records": {},
+    "rank": 1,
+    "rank_delta": 0,
+    "source": "reports/formal_wrapper_smoke/formal_wrapper_001/ranking.csv",
+    "win_rate": 1.0,
+    "wins": 2
+  },
+  "historical_profile_pool": {
+    "historical_profiles": [
+      {
+        "profile_path": "reports/catarena_dry_run/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "formal_smoke_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_101/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_101",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_100/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_100",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_099/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_099",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_098/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_098",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_097/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_097",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_096/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_096",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_095/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_095",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_094/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_094",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_093/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_093",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_092/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_092",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_091/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_091",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_090/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_090",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_089/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_089",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_088/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_088",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_087/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_087",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_086/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_086",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_085/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_085",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_084/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_084",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_083/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_083",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_082/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_082",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_081/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_081",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_080/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_080",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_079/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_079",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_078/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_078",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_077/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_077",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_076/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_076",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_075/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_075",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_074/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_074",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_073/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_073",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_072/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_072",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_071/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_071",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_070/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_070",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_069/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_069",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_068/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_068",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_067/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_067",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_066/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_066",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_065/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_065",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_064/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_064",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_063/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_063",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_062/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_062",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_061/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_061",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_060/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_060",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_059/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_059",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_058/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_058",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_057/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_057",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_056/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_056",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_055/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_055",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_054/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_054",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_053/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_053",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_052/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_052",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_051/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_051",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_050/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_050",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_049/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_049",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_048/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_048",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_047/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_047",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_046/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_046",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_045/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_045",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_044/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_044",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_043/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_043",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_042/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_042",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_041/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_041",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_040/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_040",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_039/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_039",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_038/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_038",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_037/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_037",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_036/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_036",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_035/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_035",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_034/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_034",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_033/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_033",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_032/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_032",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_031/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_031",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_030/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_030",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_029/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_029",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_028/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_028",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_027/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_027",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_026/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_026",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_025/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_025",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_024/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_024",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_023/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_023",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_022/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_022",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_021/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_021",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_020/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_020",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_019/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_019",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_018/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_018",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_017/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_017",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_016/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_016",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_015/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_015",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_014/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_014",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_013/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_013",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_012/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_012",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_011/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_011",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_010/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_010",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_009/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_009",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_008/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_008",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_007/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_007",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_006/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_006",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_005/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_005",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_004/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_004",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_003",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_002",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_001",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_safe_020/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_safe_020",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_safe_019/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_safe_019",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_safe_018/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_safe_018",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_safe_017/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_safe_017",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_safe_016/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_safe_016",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_safe_015/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_safe_015",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_safe_014/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_safe_014",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_safe_013/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_safe_013",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_safe_012/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_safe_012",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_safe_011/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_safe_011",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_safe_010/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_safe_010",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_safe_009/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_safe_009",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_safe_008/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_safe_008",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_safe_007/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_safe_007",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_safe_006/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_safe_006",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_safe_005/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_safe_005",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_safe_004/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_safe_004",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_safe_003/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_safe_003",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_safe_002/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_safe_002",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_safe_001/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_safe_001",
+        "win_rate": 1.0
+      }
+    ],
+    "notes": [],
+    "selected_profiles": [
+      {
+        "profile_path": "reports/catarena_dry_run/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "formal_smoke_001",
+        "win_rate": 0.5
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_101/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_101",
+        "win_rate": 1.0
+      },
+      {
+        "profile_path": "reports/catarena_platform/live_openai_safe_100/strategy_profile_after.json",
+        "rank": 1,
+        "round_id": "live_openai_safe_100",
+        "win_rate": 1.0
+      }
+    ]
+  },
+  "historical_regression": {
+    "enabled": false,
+    "entries": [],
+    "failed_profiles": 0,
+    "notes": [
+      "no candidate profile produced by tuning policy"
+    ],
+    "passed": true,
+    "passed_profiles": 0,
+    "total_profiles": 0
+  },
+  "key_failure_positions": [
+    "8/1B6/p2R1k1B/1N5Q/8/8/PPP2PPP/2K1R3 b - - 3 25",
+    "8/1B6/p3k2B/1N5Q/8/8/PPP2PPP/2KR3R w - - 0 24",
+    "8/1B6/p3k2B/1N5Q/8/8/PPP2PPP/2KRR3 b - - 1 24",
+    "8/1B6/p4k1B/1N5Q/8/8/PPP2PPP/2KRR3 w - - 2 25",
+    "8/pB6/4k2B/1N5Q/8/8/PPP2PPP/2KR3R b - - 4 23",
+    "8/pB6/4k2B/1N5Q/8/8/PPP2PPP/R3K2R w KQ - 3 23",
+    "8/pB6/7B/1N2k3/8/8/PPP2PPP/R2QK2R b KQ - 0 21",
+    "8/pB6/7B/1N3k1Q/8/8/PPP2PPP/R3K2R b KQ - 2 22",
+    "8/pB6/7B/1N3k2/8/8/PPP2PPP/R2QK2R w KQ - 1 22",
+    "B1b5/p7/1p5B/4k3/3N4/8/PPP2PPP/R2QK2R b KQ - 0 19",
+    "B1b5/p7/7B/1N2k3/8/8/PPP2PPP/R2QK2R b KQ - 0 20",
+    "B1b5/p7/7B/1p2k3/3N4/8/PPP2PPP/R2QK2R w KQ - 0 20",
+    "B7/pb6/7B/1N2k3/8/8/PPP2PPP/R2QK2R w KQ - 1 21",
+    "r1b2N2/p1kn4/1p5B/5p2/3p4/3P4/PPP1PPPP/R2QKB1R w KQ - 1 14",
+    "r1b5/p1kn4/1p2N2B/5p2/3p4/3P4/PPP1PPPP/R2QKB1R b KQ - 2 14",
+    "r1b5/p2n4/1p1k3B/5p2/3N4/3P4/PPP1PPPP/R2QKB1R b KQ - 0 15",
+    "r1b5/p2n4/1p1kN2B/5p2/3p4/3P4/PPP1PPPP/R2QKB1R w KQ - 3 15",
+    "r1b5/p7/1p1k3B/4np2/3N4/3P4/PPP1PPPP/R2QKB1R w KQ - 1 16",
+    "r1b5/p7/1p1k3B/4np2/3NP3/3P4/PPP2PPP/R2QKB1R b KQ - 0 16",
+    "r1b5/p7/1p1k3B/5p2/3NP3/3B4/PPP2PPP/R2QK2R b KQ - 0 17"
+  ],
+  "next_round_revision_plan": {
+    "next_focus": "No critical reliability failure detected; continue gated profile-only optimization.",
+    "patch_plan": "Profile-only revision plan: make one small strategy improvement and validate against fixed FEN set. Runtime tools remain fixed; only strategy-profile parameters may change after passing feedback prescreen and historical regression gates.",
+    "tuning_action": "skipped",
+    "tuning_reason_code": "no_active_block"
+  },
+  "opponent_features": {
+    "notes": [
+      "opponent path not provided"
+    ],
+    "opponents": []
+  },
+  "platform": {
+    "catarena_message": "CATArena chessgame checkout is present.",
+    "catarena_missing_required_files": [],
+    "catarena_ready": true,
+    "catarena_source_files_seen": 36
+  },
+  "promotion_gate": {
+    "candidate_changed": false,
+    "feedback_prescreen_passed": true,
+    "historical_regression_passed": true,
+    "passed": false,
+    "reasons": [
+      "candidate profile made no effective change",
+      "tuning policy did not mark candidate ready: skipped"
+    ],
+    "tuning_ready": false,
+    "validator_passed": true
+  },
+  "reliability_metrics": {
+    "average_response_ms": 6.432446428571429,
+    "error_rate": 0.0,
+    "interface_success_rate": 1.0,
+    "legal_rate": 1.0,
+    "timeout_rate": 0.0
+  },
+  "round_id": "formal_wrapper_001",
+  "state_summary": {
+    "average_cp": 5048.642857142857,
+    "average_depth": 4.0,
+    "average_response_ms": 6.432446428571429,
+    "current_rank": 1,
+    "current_win_rate": 1.0,
+    "feedback_fen_positions": 18,
+    "historical_profiles_selected": 3,
+    "key_failure_fens": [
+      "8/1B6/p2R1k1B/1N5Q/8/8/PPP2PPP/2K1R3 b - - 3 25",
+      "8/1B6/p3k2B/1N5Q/8/8/PPP2PPP/2KR3R w - - 0 24",
+      "8/1B6/p3k2B/1N5Q/8/8/PPP2PPP/2KRR3 b - - 1 24",
+      "8/1B6/p4k1B/1N5Q/8/8/PPP2PPP/2KRR3 w - - 2 25",
+      "8/pB6/4k2B/1N5Q/8/8/PPP2PPP/2KR3R b - - 4 23",
+      "8/pB6/4k2B/1N5Q/8/8/PPP2PPP/R3K2R w KQ - 3 23",
+      "8/pB6/7B/1N2k3/8/8/PPP2PPP/R2QK2R b KQ - 0 21",
+      "8/pB6/7B/1N3k1Q/8/8/PPP2PPP/R3K2R b KQ - 2 22",
+      "8/pB6/7B/1N3k2/8/8/PPP2PPP/R2QK2R w KQ - 1 22",
+      "B1b5/p7/1p5B/4k3/3N4/8/PPP2PPP/R2QK2R b KQ - 0 19"
+    ],
+    "memory_versions_seen": 149,
+    "round_actions": 118,
+    "round_games": 1
+  },
+  "stockfish_diagnostics": {
+    "available": false,
+    "fen": "8/1B6/p2R1k1B/1N5Q/8/8/PPP2PPP/2K1R3 b - - 3 25",
+    "reason": "stockfish binary not found"
+  },
+  "version": {
+    "active_agent_path": "agents/chess_agent.py",
+    "active_agent_sha256": "941c13937269daf1b88b93b9b551b02627e2a1401ed15030195bb0474d367f27",
+    "candidate_agent_exists": true,
+    "candidate_agent_path": "agents/candidates/strategy_profile_formal_wrapper_001.json",
+    "candidate_agent_sha256": "5972d863b805bed7e0aa4032873e1013c010247be8d6d0bf24076a66ee8a7356",
+    "candidate_archived_path": "",
+    "candidate_backend": "profile",
+    "candidate_profile_exists": true,
+    "candidate_profile_path": "agents/candidates/strategy_profile_formal_wrapper_001.json",
+    "candidate_profile_sha256": "5972d863b805bed7e0aa4032873e1013c010247be8d6d0bf24076a66ee8a7356",
+    "candidate_promoted": false,
+    "generation_error": "",
+    "generation_succeeded": true,
+    "repair_attempts": 0,
+    "validator_passed": true
+  }
+}

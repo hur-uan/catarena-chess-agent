@@ -1,0 +1,51 @@
+{
+  "game_server": {
+    "url": "http://localhost:40000",
+    "timeout": 10,
+    "max_moves": 200
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "logs/arena.log",
+    "console": true
+  },
+  "tournament": {
+    "rounds_per_match": 2,
+    "delay_between_games": 1,
+    "max_games_per_ai": 10,
+    "timeout_per_move": 10,
+    "max_game_duration": 3600
+  },
+  "reports": {
+    "save_json": true,
+    "save_txt": true,
+    "save_csv": true,
+    "output_dir": "reports"
+  },
+  "ais": [
+    {
+      "ai_id": "SimpleAI_1",
+      "ai_name": "Simple Chess AI 1",
+      "port": 40001,
+      "algorithm": "simple",
+      "description": "简单随机AI 1",
+      "enabled": true
+    },
+    {
+      "ai_id": "MinimaxAI_1",
+      "ai_name": "Minimax Chess AI 1",
+      "port": 40002,
+      "algorithm": "minimax",
+      "description": "Minimax算法AI 1",
+      "enabled": true
+    },
+    {
+      "ai_id": "SimpleAI_2",
+      "ai_name": "Simple Chess AI 2",
+      "port": 40003,
+      "algorithm": "simple",
+      "description": "简单随机AI 2",
+      "enabled": true
+    }
+  ]
+}

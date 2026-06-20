@@ -1,0 +1,684 @@
+{
+  "platform": "https://github.com/AGI-Eval-Official/CATArena",
+  "contract": {
+    "repository_url": "https://github.com/AGI-Eval-Official/CATArena",
+    "game": "chess",
+    "game_server_endpoints": {
+      "create_game": "POST /games",
+      "state": "GET /games/{game_id}/state",
+      "move": "POST /games/{game_id}/move",
+      "history": "GET /games/{game_id}/history",
+      "board": "GET /games/{game_id}/board",
+      "legal_moves": "GET /games/{game_id}/legal_moves",
+      "health": "GET /health"
+    },
+    "ai_server_endpoints": {
+      "health": "GET /health",
+      "info": "GET /info",
+      "join_game": "POST /join_game",
+      "leave_game": "POST /leave_game",
+      "move": "POST /move",
+      "get_move": "POST /get_move",
+      "legal_moves": "POST /legal_moves",
+      "evaluate": "POST /evaluate"
+    },
+    "arena_payload": {
+      "ai_move_request": [
+        "fen",
+        "algorithm",
+        "game_id",
+        "current_player"
+      ],
+      "move_response": [
+        "move"
+      ],
+      "game_move_request": [
+        "player",
+        "move"
+      ]
+    },
+    "move_format": "UCI string, for example e2e4 or a7a8q",
+    "observation_format": "JSON payload with fen, algorithm, game_id, and current_player",
+    "report_files": [
+      "battle.log",
+      "ranking.csv",
+      "error_report.json",
+      "official_catarena_report.json",
+      "catarena_manifest.json",
+      "catarena_contract.json"
+    ]
+  },
+  "source_manifest_count": 36,
+  "arena_probe": {
+    "loaded": true,
+    "config_file": "reports/web_auto/bb49917dc1/official_catarena/official_arena_config.json",
+    "arena_class": "ChessArena",
+    "configured_ais": 3
+  },
+  "games": [
+    {
+      "game_id": "chess_bc3ff8fa",
+      "local_color": "white",
+      "result": "draw",
+      "status": "ongoing",
+      "moves_count": 20,
+      "moves": [
+        {
+          "ply": 1,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "g1f3",
+          "fen_after": "rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq - 1 1",
+          "search": {
+            "cp": 0,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.25,
+              "draw": 0.5,
+              "loss": 0.25
+            },
+            "depth": 4,
+            "elapsed_ms": 0.33658300526440144,
+            "nodes": 68,
+            "qnodes": 0,
+            "principal_variation": [
+              "g1f3",
+              "g8f6",
+              "b1c3",
+              "b8c6"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 2,
+          "player": "black",
+          "actor": "official_example",
+          "move": "d7d5",
+          "fen_after": "rnbqkbnr/ppp1pppp/8/3p4/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 0 2",
+          "search": null
+        },
+        {
+          "ply": 3,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "b1c3",
+          "fen_after": "rnbqkbnr/ppp1pppp/8/3p4/8/2N2N2/PPPPPPPP/R1BQKB1R b KQkq - 1 2",
+          "search": {
+            "cp": 12,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.25,
+              "draw": 0.5,
+              "loss": 0.25
+            },
+            "depth": 4,
+            "elapsed_ms": 0.3441659500822425,
+            "nodes": 138,
+            "qnodes": 0,
+            "principal_variation": [
+              "b1c3",
+              "g8f6",
+              "e2e3",
+              "d8d6"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 4,
+          "player": "black",
+          "actor": "official_example",
+          "move": "d5d4",
+          "fen_after": "rnbqkbnr/ppp1pppp/8/8/3p4/2N2N2/PPPPPPPP/R1BQKB1R w KQkq - 0 3",
+          "search": null
+        },
+        {
+          "ply": 5,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "c3e4",
+          "fen_after": "rnbqkbnr/ppp1pppp/8/8/3pN3/5N2/PPPPPPPP/R1BQKB1R b KQkq - 1 3",
+          "search": {
+            "cp": 21,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.25,
+              "draw": 0.5,
+              "loss": 0.25
+            },
+            "depth": 4,
+            "elapsed_ms": 8.193207904696465,
+            "nodes": 3157,
+            "qnodes": 0,
+            "principal_variation": [
+              "c3e4",
+              "b8c6",
+              "d2d3",
+              "g8f6"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 6,
+          "player": "black",
+          "actor": "official_example",
+          "move": "d8d5",
+          "fen_after": "rnb1kbnr/ppp1pppp/8/3q4/3pN3/5N2/PPPPPPPP/R1BQKB1R w KQkq - 2 4",
+          "search": null
+        },
+        {
+          "ply": 7,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "d2d3",
+          "fen_after": "rnb1kbnr/ppp1pppp/8/3q4/3pN3/3P1N2/PPP1PPPP/R1BQKB1R b KQkq - 0 4",
+          "search": {
+            "cp": 36,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.25,
+              "draw": 0.5,
+              "loss": 0.25
+            },
+            "depth": 4,
+            "elapsed_ms": 7.863250095397234,
+            "nodes": 3006,
+            "qnodes": 0,
+            "principal_variation": [
+              "d2d3",
+              "g8f6",
+              "e4f6",
+              "e7f6",
+              "c1f4"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 8,
+          "player": "black",
+          "actor": "official_example",
+          "move": "d5e4",
+          "fen_after": "rnb1kbnr/ppp1pppp/8/8/3pq3/3P1N2/PPP1PPPP/R1BQKB1R w KQkq - 0 5",
+          "search": null
+        },
+        {
+          "ply": 9,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "d3e4",
+          "fen_after": "rnb1kbnr/ppp1pppp/8/8/3pP3/5N2/PPP1PPPP/R1BQKB1R b KQkq - 0 5",
+          "search": {
+            "cp": 764,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.85,
+              "draw": 0.12,
+              "loss": 0.03
+            },
+            "depth": 4,
+            "elapsed_ms": 3.030666965059936,
+            "nodes": 1564,
+            "qnodes": 0,
+            "principal_variation": [
+              "d3e4",
+              "c7c5",
+              "c1f4",
+              "g8f6"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 10,
+          "player": "black",
+          "actor": "official_example",
+          "move": "e7e5",
+          "fen_after": "rnb1kbnr/ppp2ppp/8/4p3/3pP3/5N2/PPP1PPPP/R1BQKB1R w KQkq - 0 6",
+          "search": null
+        },
+        {
+          "ply": 11,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "f3e5",
+          "fen_after": "rnb1kbnr/ppp2ppp/8/4N3/3pP3/8/PPP1PPPP/R1BQKB1R b KQkq - 0 6",
+          "search": {
+            "cp": 829,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.85,
+              "draw": 0.12,
+              "loss": 0.03
+            },
+            "depth": 4,
+            "elapsed_ms": 5.812374991364777,
+            "nodes": 2443,
+            "qnodes": 0,
+            "principal_variation": [
+              "f3e5",
+              "f7f6",
+              "e5f3",
+              "f8b4"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 12,
+          "player": "black",
+          "actor": "official_example",
+          "move": "g8e7",
+          "fen_after": "rnb1kb1r/ppp1nppp/8/4N3/3pP3/8/PPP1PPPP/R1BQKB1R w KQkq - 1 7",
+          "search": null
+        },
+        {
+          "ply": 13,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "d1d4",
+          "fen_after": "rnb1kb1r/ppp1nppp/8/4N3/3QP3/8/PPP1PPPP/R1B1KB1R b KQkq - 0 7",
+          "search": {
+            "cp": 873,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.85,
+              "draw": 0.12,
+              "loss": 0.03
+            },
+            "depth": 4,
+            "elapsed_ms": 6.4388749888166785,
+            "nodes": 2960,
+            "qnodes": 0,
+            "principal_variation": [
+              "d1d4",
+              "b8c6",
+              "e5c6",
+              "e7c6"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 14,
+          "player": "black",
+          "actor": "official_example",
+          "move": "e7d5",
+          "fen_after": "rnb1kb1r/ppp2ppp/8/3nN3/3QP3/8/PPP1PPPP/R1B1KB1R w KQkq - 1 8",
+          "search": null
+        },
+        {
+          "ply": 15,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "d4d5",
+          "fen_after": "rnb1kb1r/ppp2ppp/8/3QN3/4P3/8/PPP1PPPP/R1B1KB1R b KQkq - 0 8",
+          "search": {
+            "cp": 1276,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.85,
+              "draw": 0.12,
+              "loss": 0.03
+            },
+            "depth": 4,
+            "elapsed_ms": 7.510166033171117,
+            "nodes": 4203,
+            "qnodes": 0,
+            "principal_variation": [
+              "d4d5",
+              "f7f6",
+              "d5f7",
+              "e8d8",
+              "f7d5"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 16,
+          "player": "black",
+          "actor": "official_example",
+          "move": "h7h5",
+          "fen_after": "rnb1kb1r/ppp2pp1/8/3QN2p/4P3/8/PPP1PPPP/R1B1KB1R w KQkq - 0 9",
+          "search": null
+        },
+        {
+          "ply": 17,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "d5f7",
+          "fen_after": "rnb1kb1r/ppp2Qp1/8/4N2p/4P3/8/PPP1PPPP/R1B1KB1R b KQkq - 0 9",
+          "search": {
+            "cp": 48995,
+            "mate_distance": 3,
+            "wdl": {
+              "win": 1.0,
+              "draw": 0.0,
+              "loss": 0.0
+            },
+            "depth": 4,
+            "elapsed_ms": 7.226500078104436,
+            "nodes": 4370,
+            "qnodes": 0,
+            "principal_variation": [
+              "d5f7",
+              "e8d8",
+              "c1g5",
+              "f8e7",
+              "g5e7"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 18,
+          "player": "black",
+          "actor": "official_example",
+          "move": "e8d8",
+          "fen_after": "rnbk1b1r/ppp2Qp1/8/4N2p/4P3/8/PPP1PPPP/R1B1KB1R w KQ - 1 10",
+          "search": null
+        },
+        {
+          "ply": 19,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "c1g5",
+          "fen_after": "rnbk1b1r/ppp2Qp1/8/4N1Bp/4P3/8/PPP1PPPP/R3KB1R b KQ - 2 10",
+          "search": {
+            "cp": 48997,
+            "mate_distance": 2,
+            "wdl": {
+              "win": 1.0,
+              "draw": 0.0,
+              "loss": 0.0
+            },
+            "depth": 4,
+            "elapsed_ms": 1.1970410123467445,
+            "nodes": 730,
+            "qnodes": 0,
+            "principal_variation": [
+              "c1g5",
+              "f8e7",
+              "g5e7"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 20,
+          "player": "black",
+          "actor": "official_example",
+          "move": "f8e7",
+          "fen_after": "rnbk3r/ppp1bQp1/8/4N1Bp/4P3/8/PPP1PPPP/R3KB1R w KQ - 3 11",
+          "search": null
+        }
+      ],
+      "final_state": {
+        "current_player": "white",
+        "fen": "rnbk3r/ppp1bQp1/8/4N1Bp/4P3/8/PPP1PPPP/R3KB1R w KQ - 3 11",
+        "game_status": "ongoing",
+        "is_check": false,
+        "is_checkmate": false,
+        "is_stalemate": false,
+        "last_move": "f8e7",
+        "legal_moves": [
+          "f7g8",
+          "f7f8",
+          "f7e8",
+          "f7g7",
+          "f7e7",
+          "f7g6",
+          "f7f6",
+          "f7e6",
+          "f7h5",
+          "f7f5",
+          "f7d5",
+          "f7f4",
+          "f7c4",
+          "f7f3",
+          "f7b3",
+          "g5e7",
+          "g5h6",
+          "g5f6",
+          "g5h4",
+          "g5f4",
+          "g5e3",
+          "g5d2",
+          "g5c1",
+          "e5d7",
+          "e5g6",
+          "e5c6",
+          "e5g4",
+          "e5c4",
+          "e5f3",
+          "e5d3",
+          "h1g1",
+          "e1d2",
+          "e1d1",
+          "a1d1",
+          "a1c1",
+          "a1b1",
+          "e1c1",
+          "h2h3",
+          "g2g3",
+          "f2f3",
+          "e2e3",
+          "c2c3",
+          "b2b3",
+          "a2a3",
+          "h2h4",
+          "g2g4",
+          "f2f4",
+          "c2c4",
+          "b2b4",
+          "a2a4"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "game_id": "chess_e3581755",
+      "local_color": "black",
+      "result": "win",
+      "status": "black_win",
+      "moves_count": 10,
+      "moves": [
+        {
+          "ply": 1,
+          "player": "white",
+          "actor": "official_example",
+          "move": "e2e4",
+          "fen_after": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+          "search": null
+        },
+        {
+          "ply": 2,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "g8f6",
+          "fen_after": "rnbqkb1r/pppppppp/5n2/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 1 2",
+          "search": {
+            "cp": -17,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.25,
+              "draw": 0.5,
+              "loss": 0.25
+            },
+            "depth": 4,
+            "elapsed_ms": 5.2417919505387545,
+            "nodes": 1827,
+            "qnodes": 0,
+            "principal_variation": [
+              "g8f6",
+              "b1c3",
+              "b8c6",
+              "g1f3"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 3,
+          "player": "white",
+          "actor": "official_example",
+          "move": "e4e5",
+          "fen_after": "rnbqkb1r/pppppppp/5n2/4P3/8/8/PPPP1PPP/RNBQKBNR b KQkq - 0 2",
+          "search": null
+        },
+        {
+          "ply": 4,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "f6e4",
+          "fen_after": "rnbqkb1r/pppppppp/8/4P3/4n3/8/PPPP1PPP/RNBQKBNR w KQkq - 1 3",
+          "search": {
+            "cp": -18,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.25,
+              "draw": 0.5,
+              "loss": 0.25
+            },
+            "depth": 4,
+            "elapsed_ms": 4.343000007793307,
+            "nodes": 1784,
+            "qnodes": 0,
+            "principal_variation": [
+              "f6e4",
+              "b1c3",
+              "d7d5",
+              "g1f3"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 5,
+          "player": "white",
+          "actor": "official_example",
+          "move": "d2d4",
+          "fen_after": "rnbqkb1r/pppppppp/8/4P3/3Pn3/8/PPP2PPP/RNBQKBNR b KQkq - 0 3",
+          "search": null
+        },
+        {
+          "ply": 6,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "e7e6",
+          "fen_after": "rnbqkb1r/pppp1ppp/4p3/4P3/3Pn3/8/PPP2PPP/RNBQKBNR w KQkq - 0 4",
+          "search": {
+            "cp": -10,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.25,
+              "draw": 0.5,
+              "loss": 0.25
+            },
+            "depth": 4,
+            "elapsed_ms": 17.10691605694592,
+            "nodes": 5380,
+            "qnodes": 0,
+            "principal_variation": [
+              "e7e6",
+              "b1c3",
+              "f8b4",
+              "d1f3"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 7,
+          "player": "white",
+          "actor": "official_example",
+          "move": "d4d5",
+          "fen_after": "rnbqkb1r/pppp1ppp/4p3/3PP3/4n3/8/PPP2PPP/RNBQKBNR b KQkq - 0 4",
+          "search": null
+        },
+        {
+          "ply": 8,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "d8h4",
+          "fen_after": "rnb1kb1r/pppp1ppp/4p3/3PP3/4n2q/8/PPP2PPP/RNBQKBNR w KQkq - 1 5",
+          "search": {
+            "cp": 48,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.25,
+              "draw": 0.5,
+              "loss": 0.25
+            },
+            "depth": 4,
+            "elapsed_ms": 34.111374989151955,
+            "nodes": 11110,
+            "qnodes": 0,
+            "principal_variation": [
+              "d8h4",
+              "c1e3",
+              "f8b4",
+              "c2c3",
+              "b4e7"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 9,
+          "player": "white",
+          "actor": "official_example",
+          "move": "d5e6",
+          "fen_after": "rnb1kb1r/pppp1ppp/4P3/4P3/4n2q/8/PPP2PPP/RNBQKBNR b KQkq - 0 5",
+          "search": null
+        },
+        {
+          "ply": 10,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "h4f2",
+          "fen_after": "rnb1kb1r/pppp1ppp/4P3/4P3/4n3/8/PPP2qPP/RNBQKBNR w KQkq - 0 6",
+          "search": {
+            "cp": 48999,
+            "mate_distance": 1,
+            "wdl": {
+              "win": 1.0,
+              "draw": 0.0,
+              "loss": 0.0
+            },
+            "depth": 4,
+            "elapsed_ms": 0.9821669664233923,
+            "nodes": 429,
+            "qnodes": 0,
+            "principal_variation": [
+              "h4f2"
+            ],
+            "fallback_used": false
+          }
+        }
+      ],
+      "final_state": {
+        "current_player": "white",
+        "fen": "rnb1kb1r/pppp1ppp/4P3/4P3/4n3/8/PPP2qPP/RNBQKBNR w KQkq - 0 6",
+        "game_status": "black_win",
+        "is_check": true,
+        "is_checkmate": true,
+        "is_stalemate": false,
+        "last_move": "h4f2",
+        "legal_moves": []
+      },
+      "errors": []
+    }
+  ],
+  "stats": {
+    "rank": 1,
+    "games": 2,
+    "wins": 1,
+    "losses": 0,
+    "draws": 1,
+    "win_rate": 0.75
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "abnormal_events": {
+    "crashes": 0,
+    "illegal_moves": 0,
+    "risks": [
+      "candidate generation failed: APIStatusError: Error code: 402 - {'error': 'Usage limit reached, will reset on today at 6:03 AM (UTC+8)'}"
+    ],
+    "runtime_errors": [],
+    "timeouts": 0
+  },
+  "artifact_paths": {
+    "evaluation_record_path": "reports/catarena_platform/live_openai_safe_050/evaluation_record.json",
+    "optimization_report_path": "reports/catarena_platform/live_openai_safe_050/optimization_report.json",
+    "parameter_candidates_dir": "reports/catarena_platform/live_openai_safe_050/parameter_candidates",
+    "parameter_record_path": "reports/catarena_platform/live_openai_safe_050/parameter_record.json",
+    "round_record_path": "reports/catarena_platform/live_openai_safe_050/round_record.json",
+    "strategy_profile_after_path": "reports/catarena_platform/live_openai_safe_050/strategy_profile_after.json",
+    "strategy_profile_before_path": "reports/catarena_platform/live_openai_safe_050/strategy_profile_before.json"
+  },
+  "core_modification_summary": {
+    "generated_agent_summary": "LLM candidate generation failed; baseline kept unchanged.",
+    "generation_error": "APIStatusError: Error code: 402 - {'error': 'Usage limit reached, will reset on today at 6:03 AM (UTC+8)'}",
+    "generation_succeeded": false,
+    "improvement_summary": "No critical failure detected; make a small validated strategy improvement.",
+    "patch_plan": "Rule-template patch plan: make one small strategy improvement and validate against fixed FEN set. Do not apply automatically; implement only after validating against the fixed FEN and interface tests.",
+    "repair_attempts": 0,
+    "tuning_action": "hold",
+    "tuning_selected_block": "search.history_order",
+    "validator_passed": false
+  },
+  "feedback_evidence": {
+    "key_failure_positions": [
+      "r1b1k2r/pppn2pB/4p3/2b5/3q4/8/PPP2nPP/RNB1K2R b kq - 0 11",
+      "r1b1k2r/pppn2pB/4p3/2b5/8/8/PPP2nPP/RNBqK2R w kq - 1 12",
+      "r1b1k2r/pppn2pp/4p3/2b5/3q4/3B4/PPP2nPP/RNB1K2R w kq - 4 11",
+      "r1b1k2r/pppn2pp/4p3/2b5/3qn3/3B4/PPP3PP/RNB1K2R b kq - 3 10",
+      "r1b1k2r/pppn2pp/4p3/2b5/3qn3/8/PPP3PP/RNB1KB1R w kq - 2 10",
+      "r1b1kb1r/pppn2pp/4p3/8/3Nn3/8/PPP2qPP/RNB1KB1R w KQkq - 0 8",
+      "r1b1kb1r/pppn2pp/4p3/8/3Nn3/8/PPP2qPP/RNBK1B1R b kq - 1 8",
+      "r1b1kb1r/pppn2pp/4p3/8/3qn3/8/PPP3PP/RNB1KB1R b kq - 1 9",
+      "r1b1kb1r/pppn2pp/4p3/8/3qn3/8/PPP3PP/RNBK1B1R w kq - 0 9",
+      "r1b1kb1r/pppn2pp/4pq2/8/3Nn3/8/PPP2PPP/RNB1KB1R b KQkq - 3 7",
+      "r1b1kb1r/pppn2pp/4pq2/8/4n3/8/PPP1NPPP/RNB1KB1R w KQkq - 2 7",
+      "r1bqkb1r/pppn2pp/4p3/8/4n3/8/PPP1NPPP/RNB1KB1R b KQkq - 1 6",
+      "r1bqkb1r/pppn2pp/4p3/8/4n3/8/PPP2PPP/RNB1KBNR w KQkq - 0 6",
+      "rn1k1bnr/pp1b1Npp/8/3N4/3p4/8/PPPPPPPP/R1BQKB1R b KQ - 0 7",
+      "rn1k1bnr/pp1b1ppp/8/3NN3/3p4/8/PPPPPPPP/R1BQKB1R w KQ - 1 7",
+      "rnb1kbnr/ppN2ppp/8/3qN3/3p4/8/PPPPPPPP/R1BQKB1R b KQkq - 0 5",
+      "rnb1kbnr/ppp2ppp/8/1N1qN3/3p4/8/PPPPPPPP/R1BQKB1R w KQkq - 2 5",
+      "rnbk1bnr/pp3ppp/8/3NN3/3p4/8/PPPPPPPP/R1BQKB1R b KQ - 0 6",
+      "rnbk1bnr/ppN2ppp/8/3qN3/3p4/8/PPPPPPPP/R1BQKB1R w KQ - 1 6",
+      "rnbqkb1r/pppQ2pp/4p3/8/4n3/8/PPP2PPP/RNB1KBNR b KQkq - 0 5"
+    ],
+    "ranking_source": "reports/catarena_platform/live_openai_safe_050/ranking.csv",
+    "raw_log_files": [
+      "reports/catarena_platform/live_openai_safe_050/battle.log"
+    ],
+    "runtime_errors": []
+  },
+  "game_result_statistics": {
+    "agent_name": "chess_agent",
+    "draws": 0,
+    "games": 2,
+    "losses": 0,
+    "notes": [],
+    "opponent_records": {},
+    "rank": 1,
+    "rank_delta": 0,
+    "source": "reports/catarena_platform/live_openai_safe_050/ranking.csv",
+    "win_rate": 1.0,
+    "wins": 2
+  },
+  "key_failure_positions": [
+    "r1b1k2r/pppn2pB/4p3/2b5/3q4/8/PPP2nPP/RNB1K2R b kq - 0 11",
+    "r1b1k2r/pppn2pB/4p3/2b5/8/8/PPP2nPP/RNBqK2R w kq - 1 12",
+    "r1b1k2r/pppn2pp/4p3/2b5/3q4/3B4/PPP2nPP/RNB1K2R w kq - 4 11",
+    "r1b1k2r/pppn2pp/4p3/2b5/3qn3/3B4/PPP3PP/RNB1K2R b kq - 3 10",
+    "r1b1k2r/pppn2pp/4p3/2b5/3qn3/8/PPP3PP/RNB1KB1R w kq - 2 10",
+    "r1b1kb1r/pppn2pp/4p3/8/3Nn3/8/PPP2qPP/RNB1KB1R w KQkq - 0 8",
+    "r1b1kb1r/pppn2pp/4p3/8/3Nn3/8/PPP2qPP/RNBK1B1R b kq - 1 8",
+    "r1b1kb1r/pppn2pp/4p3/8/3qn3/8/PPP3PP/RNB1KB1R b kq - 1 9",
+    "r1b1kb1r/pppn2pp/4p3/8/3qn3/8/PPP3PP/RNBK1B1R w kq - 0 9",
+    "r1b1kb1r/pppn2pp/4pq2/8/3Nn3/8/PPP2PPP/RNB1KB1R b KQkq - 3 7",
+    "r1b1kb1r/pppn2pp/4pq2/8/4n3/8/PPP1NPPP/RNB1KB1R w KQkq - 2 7",
+    "r1bqkb1r/pppn2pp/4p3/8/4n3/8/PPP1NPPP/RNB1KB1R b KQkq - 1 6",
+    "r1bqkb1r/pppn2pp/4p3/8/4n3/8/PPP2PPP/RNB1KBNR w KQkq - 0 6",
+    "rn1k1bnr/pp1b1Npp/8/3N4/3p4/8/PPPPPPPP/R1BQKB1R b KQ - 0 7",
+    "rn1k1bnr/pp1b1ppp/8/3NN3/3p4/8/PPPPPPPP/R1BQKB1R w KQ - 1 7",
+    "rnb1kbnr/ppN2ppp/8/3qN3/3p4/8/PPPPPPPP/R1BQKB1R b KQkq - 0 5",
+    "rnb1kbnr/ppp2ppp/8/1N1qN3/3p4/8/PPPPPPPP/R1BQKB1R w KQkq - 2 5",
+    "rnbk1bnr/pp3ppp/8/3NN3/3p4/8/PPPPPPPP/R1BQKB1R b KQ - 0 6",
+    "rnbk1bnr/ppN2ppp/8/3qN3/3p4/8/PPPPPPPP/R1BQKB1R w KQ - 1 6",
+    "rnbqkb1r/pppQ2pp/4p3/8/4n3/8/PPP2PPP/RNB1KBNR b KQkq - 0 5"
+  ],
+  "next_round_revision_plan": {
+    "next_focus": "No critical failure detected; make a small validated strategy improvement.",
+    "patch_plan": "Rule-template patch plan: make one small strategy improvement and validate against fixed FEN set. Do not apply automatically; implement only after validating against the fixed FEN and interface tests.",
+    "tuning_action": "hold",
+    "tuning_reason_code": "no_gate_cross"
+  },
+  "opponent_features": {
+    "notes": [
+      "opponent path not provided"
+    ],
+    "opponents": []
+  },
+  "parameter_adjustment_record": {
+    "chosen_changed_paths": [],
+    "effective_changed_paths": [],
+    "selected_block": "search.history_order",
+    "tuning_action": "hold",
+    "tuning_reason_code": "no_gate_cross"
+  },
+  "round_id": "live_openai_safe_050",
+  "version_identifier": {
+    "active_agent_path": "agents/chess_agent.py",
+    "candidate_agent_archived_path": "",
+    "candidate_agent_backend": "openai",
+    "candidate_agent_path": "agents/candidates/chess_agent_live_openai_safe_050.py",
+    "candidate_agent_promoted": false,
+    "candidate_agent_sha256": "",
+    "round_version": "live_openai_safe_050",
+    "strategy_profile_after_sha256": "05bb10f262463e5da16ae94d94f90eb642ad629276e092e61531bb1a83a9b592",
+    "strategy_profile_before_sha256": "05bb10f262463e5da16ae94d94f90eb642ad629276e092e61531bb1a83a9b592"
+  }
+}

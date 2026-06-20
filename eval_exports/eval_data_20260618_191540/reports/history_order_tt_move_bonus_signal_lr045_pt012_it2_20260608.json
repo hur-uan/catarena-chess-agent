@@ -1,0 +1,286 @@
+{
+  "baseline_parameters": {
+    "search.tt_move_bonus": 50000
+  },
+  "block": "search.history_order",
+  "experiment_count": 1,
+  "experiments": [
+    {
+      "block_name": "search.history_order",
+      "combination": {
+        "acceptance_pair_count": 8,
+        "inner_pair_count": 4,
+        "iterations": 2,
+        "learning_rate": 0.45,
+        "max_plies": null,
+        "perturbation": 0.12,
+        "seed_count": 5,
+        "time_limit_ms": null
+      },
+      "preset": "signal",
+      "repro_command": "python3 scripts/sweep_history_order.py --block search.history_order --preset signal --seeds 6,7,8,9,10 --learning-rates 0.45 --perturbations 0.12 --iterations-list 2 --top 1 --parameter-paths search.tt_move_bonus --inner-pairs 4 --acceptance-pairs 8",
+      "seeds": [
+        {
+          "acceptance_mean_score_a": 0.5,
+          "acceptance_prescreen_difference": 0.0,
+          "applied_change_count": 0,
+          "applied_change_paths": [],
+          "match_score_difference": 0.0,
+          "player_a_crashes": 0,
+          "player_a_timeouts": 0,
+          "player_b_timeouts": 1,
+          "prescreen_score_difference": 0.011923,
+          "promotable": false,
+          "safe": true,
+          "score_difference": 0.007154,
+          "seed": 6,
+          "skipped_reason": "",
+          "sprt_decision": "accept_h0"
+        },
+        {
+          "acceptance_mean_score_a": 0.5,
+          "acceptance_prescreen_difference": 0.006171,
+          "applied_change_count": 0,
+          "applied_change_paths": [],
+          "match_score_difference": 0.0,
+          "player_a_crashes": 0,
+          "player_a_timeouts": 0,
+          "player_b_timeouts": 0,
+          "prescreen_score_difference": 0.000254,
+          "promotable": false,
+          "safe": true,
+          "score_difference": 0.000152,
+          "seed": 7,
+          "skipped_reason": "",
+          "sprt_decision": "accept_h0"
+        },
+        {
+          "acceptance_mean_score_a": 0.5,
+          "acceptance_prescreen_difference": 0.0,
+          "applied_change_count": 0,
+          "applied_change_paths": [],
+          "match_score_difference": 0.0,
+          "player_a_crashes": 0,
+          "player_a_timeouts": 0,
+          "player_b_timeouts": 0,
+          "prescreen_score_difference": 0.0,
+          "promotable": false,
+          "safe": true,
+          "score_difference": 0.0,
+          "seed": 8,
+          "skipped_reason": "",
+          "sprt_decision": "accept_h0"
+        },
+        {
+          "acceptance_mean_score_a": 0.5,
+          "acceptance_prescreen_difference": 0.000261,
+          "applied_change_count": 0,
+          "applied_change_paths": [],
+          "match_score_difference": 0.0,
+          "player_a_crashes": 0,
+          "player_a_timeouts": 0,
+          "player_b_timeouts": 0,
+          "prescreen_score_difference": -0.006171,
+          "promotable": false,
+          "safe": true,
+          "score_difference": -0.003703,
+          "seed": 9,
+          "skipped_reason": "",
+          "sprt_decision": "accept_h0"
+        },
+        {
+          "acceptance_mean_score_a": 0.5,
+          "acceptance_prescreen_difference": 0.012701,
+          "applied_change_count": 0,
+          "applied_change_paths": [],
+          "match_score_difference": 0.0,
+          "player_a_crashes": 0,
+          "player_a_timeouts": 0,
+          "player_b_timeouts": 0,
+          "prescreen_score_difference": -8.9e-05,
+          "promotable": false,
+          "safe": true,
+          "score_difference": -5.4e-05,
+          "seed": 10,
+          "skipped_reason": "",
+          "sprt_decision": "accept_h0"
+        }
+      ],
+      "summary": {
+        "all_positive_inner": false,
+        "candidate_ready_proxy": false,
+        "changed_path_counts": {},
+        "gate_cross_count": 0,
+        "gate_cross_rate": 0.0,
+        "mean_acceptance_mean_score_a": 0.5,
+        "mean_acceptance_prescreen_difference": 0.003827,
+        "mean_applied_change_count": 0.0,
+        "mean_match_score_difference": 0.0,
+        "mean_prescreen_score_difference": 0.001183,
+        "mean_score_difference": 0.00071,
+        "negative_acceptance_prescreen_count": 0,
+        "negative_inner_count": 2,
+        "no_negative_inner": false,
+        "positive_acceptance_prescreen_count": 3,
+        "positive_inner_count": 2,
+        "promotable_seed_count": 0,
+        "safe_seed_count": 5
+      }
+    }
+  ],
+  "registry_path": "/private/tmp/search_history_order_qcgtys_c_registry.json",
+  "selected_parameter_paths": [
+    "search.tt_move_bonus"
+  ],
+  "strategy_profile_path": "config/strategy_profile.json",
+  "sweep": {
+    "acceptance_pair_count": 8,
+    "alpha": 0.602,
+    "gamma": 0.101,
+    "inner_pair_count": 4,
+    "iterations_list": [
+      2
+    ],
+    "learning_rates": [
+      0.45
+    ],
+    "max_plies": null,
+    "perturbations": [
+      0.12
+    ],
+    "preset": "signal",
+    "seeds": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "stability_constant": 5.0,
+    "time_limit_ms": null
+  },
+  "top_experiments": [
+    {
+      "block_name": "search.history_order",
+      "combination": {
+        "acceptance_pair_count": 8,
+        "inner_pair_count": 4,
+        "iterations": 2,
+        "learning_rate": 0.45,
+        "max_plies": null,
+        "perturbation": 0.12,
+        "seed_count": 5,
+        "time_limit_ms": null
+      },
+      "preset": "signal",
+      "repro_command": "python3 scripts/sweep_history_order.py --block search.history_order --preset signal --seeds 6,7,8,9,10 --learning-rates 0.45 --perturbations 0.12 --iterations-list 2 --top 1 --parameter-paths search.tt_move_bonus --inner-pairs 4 --acceptance-pairs 8",
+      "seeds": [
+        {
+          "acceptance_mean_score_a": 0.5,
+          "acceptance_prescreen_difference": 0.0,
+          "applied_change_count": 0,
+          "applied_change_paths": [],
+          "match_score_difference": 0.0,
+          "player_a_crashes": 0,
+          "player_a_timeouts": 0,
+          "player_b_timeouts": 1,
+          "prescreen_score_difference": 0.011923,
+          "promotable": false,
+          "safe": true,
+          "score_difference": 0.007154,
+          "seed": 6,
+          "skipped_reason": "",
+          "sprt_decision": "accept_h0"
+        },
+        {
+          "acceptance_mean_score_a": 0.5,
+          "acceptance_prescreen_difference": 0.006171,
+          "applied_change_count": 0,
+          "applied_change_paths": [],
+          "match_score_difference": 0.0,
+          "player_a_crashes": 0,
+          "player_a_timeouts": 0,
+          "player_b_timeouts": 0,
+          "prescreen_score_difference": 0.000254,
+          "promotable": false,
+          "safe": true,
+          "score_difference": 0.000152,
+          "seed": 7,
+          "skipped_reason": "",
+          "sprt_decision": "accept_h0"
+        },
+        {
+          "acceptance_mean_score_a": 0.5,
+          "acceptance_prescreen_difference": 0.0,
+          "applied_change_count": 0,
+          "applied_change_paths": [],
+          "match_score_difference": 0.0,
+          "player_a_crashes": 0,
+          "player_a_timeouts": 0,
+          "player_b_timeouts": 0,
+          "prescreen_score_difference": 0.0,
+          "promotable": false,
+          "safe": true,
+          "score_difference": 0.0,
+          "seed": 8,
+          "skipped_reason": "",
+          "sprt_decision": "accept_h0"
+        },
+        {
+          "acceptance_mean_score_a": 0.5,
+          "acceptance_prescreen_difference": 0.000261,
+          "applied_change_count": 0,
+          "applied_change_paths": [],
+          "match_score_difference": 0.0,
+          "player_a_crashes": 0,
+          "player_a_timeouts": 0,
+          "player_b_timeouts": 0,
+          "prescreen_score_difference": -0.006171,
+          "promotable": false,
+          "safe": true,
+          "score_difference": -0.003703,
+          "seed": 9,
+          "skipped_reason": "",
+          "sprt_decision": "accept_h0"
+        },
+        {
+          "acceptance_mean_score_a": 0.5,
+          "acceptance_prescreen_difference": 0.012701,
+          "applied_change_count": 0,
+          "applied_change_paths": [],
+          "match_score_difference": 0.0,
+          "player_a_crashes": 0,
+          "player_a_timeouts": 0,
+          "player_b_timeouts": 0,
+          "prescreen_score_difference": -8.9e-05,
+          "promotable": false,
+          "safe": true,
+          "score_difference": -5.4e-05,
+          "seed": 10,
+          "skipped_reason": "",
+          "sprt_decision": "accept_h0"
+        }
+      ],
+      "summary": {
+        "all_positive_inner": false,
+        "candidate_ready_proxy": false,
+        "changed_path_counts": {},
+        "gate_cross_count": 0,
+        "gate_cross_rate": 0.0,
+        "mean_acceptance_mean_score_a": 0.5,
+        "mean_acceptance_prescreen_difference": 0.003827,
+        "mean_applied_change_count": 0.0,
+        "mean_match_score_difference": 0.0,
+        "mean_prescreen_score_difference": 0.001183,
+        "mean_score_difference": 0.00071,
+        "negative_acceptance_prescreen_count": 0,
+        "negative_inner_count": 2,
+        "no_negative_inner": false,
+        "positive_acceptance_prescreen_count": 3,
+        "positive_inner_count": 2,
+        "promotable_seed_count": 0,
+        "safe_seed_count": 5
+      }
+    }
+  ]
+}

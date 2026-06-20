@@ -1,0 +1,27 @@
+{
+  "game_server": {
+    "url": "http://localhost:9010"
+  },
+  "tournament": {
+    "max_players": 12,
+    "blind_structure_file": "/path/to/repo/arena/blind_structure.json",
+    "rounds": 100,
+    "initial_chips": 2000,
+    "max_hands_per_round": 720
+  },
+  "timeout": 3,
+  "ais": [
+    {
+      "ai_id": "demo1",
+      "ai_name": "demo1",
+      "port": 51000,
+      "description": "demo1 AI"
+    },
+    {
+      "ai_id": "demo2",
+      "ai_name": "demo2",
+      "port": 51001,
+      "description": "demo2 AI"
+    }
+  ]
+}

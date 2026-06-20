@@ -1,0 +1,83 @@
+{
+  "profile_name": "default",
+  "search": {
+    "default_depth": 3,
+    "max_depth": 4,
+    "min_time_margin_ms": 4,
+    "quiescence_depth": 8,
+    "tt_move_bonus": 50000,
+    "history_bonus_scale": 1,
+    "history_bonus_power": 2,
+    "root_mate_stop_distance": 1,
+    "mate_detection_margin": 1000
+  },
+  "piece_values": {
+    "pawn": 100,
+    "knight": 320,
+    "bishop": 330,
+    "rook": 500,
+    "queen": 900
+  },
+  "eval": {
+    "material_weight": 1.0,
+    "mobility_weight": 1.0,
+    "piece_activity_weight": 1.0,
+    "pawn_structure_weight": 1.0,
+    "king_safety_weight": 1.0,
+    "draw_score": 0,
+    "mate_score": 100000,
+    "missing_king_penalty": 500
+  },
+  "piece_activity": {
+    "center_bonus": 15,
+    "extended_center_bonus": 6,
+    "minor_base_bonus": 8,
+    "minor_rank_bonus_weight": 2,
+    "minor_center_distance_penalty": 2,
+    "rook_open_file_bonus": 18,
+    "rook_half_open_file_bonus": 9
+  },
+  "pawn_structure": {
+    "advance_bonus_per_rank": 3,
+    "doubled_penalty": 8,
+    "isolated_penalty": 10
+  },
+  "king_safety": {
+    "attacked_king_penalty": 70,
+    "pawn_shield_bonus": 7,
+    "piece_shield_bonus": 3,
+    "attacked_ring_penalty": 2
+  },
+  "move_ordering": {
+    "capture_base_bonus": 1000,
+    "capture_victim_multiplier": 10,
+    "capture_attacker_penalty": 1,
+    "promotion_bonus": 800,
+    "check_bonus": 300,
+    "castling_bonus": 150,
+    "center_bonus": 40,
+    "extended_center_bonus": 15,
+    "minor_development_bonus": 30,
+    "center_pawn_development_bonus": 18,
+    "early_queen_penalty": 25,
+    "early_rook_penalty": 10
+  },
+  "phase": {
+    "opening_fullmove_limit": 10,
+    "endgame_non_king_piece_threshold": 10
+  },
+  "external_engine": {
+    "enabled": false,
+    "minimum_external_budget_ms": 60,
+    "time_buffer_ms": 8,
+    "low_time_threshold_ms": 80,
+    "opening_depth_limit": 4,
+    "opening_node_limit": 2000000,
+    "middlegame_depth_limit": 4,
+    "middlegame_node_limit": 4000000,
+    "endgame_depth_limit": 5,
+    "endgame_node_limit": 8000000,
+    "low_time_depth_limit": 2,
+    "low_time_node_limit": 250000
+  }
+}

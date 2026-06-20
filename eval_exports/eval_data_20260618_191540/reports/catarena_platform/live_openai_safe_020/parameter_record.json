@@ -1,0 +1,106 @@
+{
+  "effective_changed_paths": [],
+  "effective_changes": [],
+  "round_id": "live_openai_safe_020",
+  "seed_records": [
+    {
+      "acceptance_mean_score_a": 0.5,
+      "acceptance_prescreen_difference": 7.578947368425126e-05,
+      "applied_change_count": 0,
+      "applied_change_paths": [],
+      "player_a_crashes": 0,
+      "player_a_timeouts": 0,
+      "player_b_timeouts": 0,
+      "prescreen_score_difference": -0.005427140825035537,
+      "proposed_changed_paths": [
+        "move_ordering.center_pawn_development_bonus"
+      ],
+      "proposed_changes": [
+        {
+          "after": 20,
+          "before": 18,
+          "path": "move_ordering.center_pawn_development_bonus"
+        }
+      ],
+      "proposed_profile_path": "reports/catarena_platform/live_openai_safe_020/parameter_candidates/seed_1_proposed_profile.json",
+      "score_difference": -0.003256284495021322,
+      "seed": 1,
+      "sprt_decision": "accept_h0"
+    },
+    {
+      "acceptance_mean_score_a": 0.5,
+      "acceptance_prescreen_difference": -0.006075240632987033,
+      "applied_change_count": 0,
+      "applied_change_paths": [],
+      "player_a_crashes": 0,
+      "player_a_timeouts": 0,
+      "player_b_timeouts": 0,
+      "prescreen_score_difference": 0.0,
+      "proposed_changed_paths": [
+        "move_ordering.center_pawn_development_bonus"
+      ],
+      "proposed_changes": [
+        {
+          "after": 20,
+          "before": 18,
+          "path": "move_ordering.center_pawn_development_bonus"
+        }
+      ],
+      "proposed_profile_path": "reports/catarena_platform/live_openai_safe_020/parameter_candidates/seed_2_proposed_profile.json",
+      "score_difference": 0.0,
+      "seed": 2,
+      "sprt_decision": "accept_h0"
+    },
+    {
+      "acceptance_mean_score_a": 0.5,
+      "acceptance_prescreen_difference": 0.00033117624666911816,
+      "applied_change_count": 0,
+      "applied_change_paths": [],
+      "player_a_crashes": 0,
+      "player_a_timeouts": 0,
+      "player_b_timeouts": 0,
+      "prescreen_score_difference": -0.005840246961219375,
+      "proposed_changed_paths": [
+        "move_ordering.center_pawn_development_bonus"
+      ],
+      "proposed_changes": [
+        {
+          "after": 20,
+          "before": 18,
+          "path": "move_ordering.center_pawn_development_bonus"
+        }
+      ],
+      "proposed_profile_path": "reports/catarena_platform/live_openai_safe_020/parameter_candidates/seed_3_proposed_profile.json",
+      "score_difference": -0.003504148176731625,
+      "seed": 3,
+      "sprt_decision": "accept_h0"
+    }
+  ],
+  "strategy_profile_after_path": "reports/catarena_platform/live_openai_safe_020/strategy_profile_after.json",
+  "strategy_profile_after_sha256": "05bb10f262463e5da16ae94d94f90eb642ad629276e092e61531bb1a83a9b592",
+  "strategy_profile_after_source": "/Users/thinler/Documents/agent/config/strategy_profile.json",
+  "strategy_profile_before_path": "reports/catarena_platform/live_openai_safe_020/strategy_profile_before.json",
+  "strategy_profile_before_sha256": "05bb10f262463e5da16ae94d94f90eb642ad629276e092e61531bb1a83a9b592",
+  "strategy_profile_before_source": "/Users/thinler/Documents/agent/config/strategy_profile.json",
+  "tuning": {
+    "action": "hold",
+    "archived_profile_path": "",
+    "chosen_changed_paths": [],
+    "chosen_seed": 0,
+    "consecutive_similar_holds": 1,
+    "enabled": true,
+    "gate_cross_count": 0,
+    "negative_acceptance_prescreen_count": 1,
+    "negative_inner_count": 2,
+    "positive_acceptance_prescreen_count": 2,
+    "positive_inner_count": 0,
+    "promoted_profile_path": "",
+    "promoted_strategy_profile": false,
+    "reason": "Autonomous tuning produced no real discrete parameter change; keep this block under observation instead of promoting it.",
+    "reason_code": "no_gate_cross",
+    "safe_seed_count": 3,
+    "selected_block": "search.history_order",
+    "selected_block_mode": "active",
+    "selected_block_note": "Closest to the discrete-step gate; allow online autonomous confirmation with gate-aware checks before any profile promotion. After cooldown, retry with a stronger SPSA step to validate the offline amplitude hypothesis."
+  }
+}

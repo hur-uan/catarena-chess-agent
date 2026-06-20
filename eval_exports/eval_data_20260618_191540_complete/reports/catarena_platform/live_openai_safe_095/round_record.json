@@ -1,0 +1,125 @@
+{
+  "abnormal_events": {
+    "crashes": 0,
+    "illegal_moves": 0,
+    "risks": [
+      "candidate generation failed: APIStatusError: Error code: 402 - {'error': 'Usage limit reached, will reset on today at 6:03 AM (UTC+8)'}"
+    ],
+    "runtime_errors": [],
+    "timeouts": 0
+  },
+  "artifact_paths": {
+    "evaluation_record_path": "reports/catarena_platform/live_openai_safe_095/evaluation_record.json",
+    "optimization_report_path": "reports/catarena_platform/live_openai_safe_095/optimization_report.json",
+    "parameter_record_path": "reports/catarena_platform/live_openai_safe_095/parameter_record.json",
+    "round_record_path": "reports/catarena_platform/live_openai_safe_095/round_record.json",
+    "strategy_profile_after_path": "reports/catarena_platform/live_openai_safe_095/strategy_profile_after.json",
+    "strategy_profile_before_path": "reports/catarena_platform/live_openai_safe_095/strategy_profile_before.json"
+  },
+  "core_modification_summary": {
+    "generated_agent_summary": "LLM candidate generation failed; baseline kept unchanged.",
+    "generation_error": "APIStatusError: Error code: 402 - {'error': 'Usage limit reached, will reset on today at 6:03 AM (UTC+8)'}",
+    "generation_succeeded": false,
+    "improvement_summary": "No critical failure detected; make a small validated strategy improvement.",
+    "patch_plan": "Rule-template patch plan: make one small strategy improvement and validate against fixed FEN set. Do not apply automatically; implement only after validating against the fixed FEN and interface tests.",
+    "repair_attempts": 0,
+    "tuning_action": "skipped",
+    "tuning_selected_block": "",
+    "validator_passed": false
+  },
+  "feedback_evidence": {
+    "key_failure_positions": [
+      "2b2bnN/ppN1k1pp/8/4n3/3p4/8/PPPPPPPP/R1BQKB1R b KQ - 2 11",
+      "5bn1/ppNb1Npp/6k1/8/8/3PpQ2/PPP3PP/R1B1KB1R w KQ - 2 18",
+      "5bn1/ppNb1Npp/8/4k3/3p4/8/PPPPP1PP/R1BQKB1R b KQ - 1 14",
+      "5bn1/ppNb1Npp/8/5k2/3p4/3P4/PPP1P1PP/R1BQKB1R w KQ - 1 16",
+      "5bn1/ppNb1Npp/8/5k2/3pP3/3P4/PPP3PP/R1BQKB1R b KQ e3 0 16",
+      "5bn1/ppNb1Npp/8/5k2/8/3Pp3/PPP3PP/R1BQKB1R w KQ - 0 17",
+      "5bn1/ppNb1Npp/8/5k2/8/3PpQ2/PPP3PP/R1B1KB1R b KQ - 1 17",
+      "5bn1/ppNb1Npp/8/8/3pk3/3P4/PPP1P1PP/R1BQKB1R b KQ - 0 15",
+      "5bn1/ppNb1Npp/8/8/3pk3/8/PPPPP1PP/R1BQKB1R w KQ - 2 15",
+      "5bnN/ppNb2pp/5k2/4P3/3p4/8/PPPPP1PP/R1BQKB1R b KQ - 0 13",
+      "5bnN/ppNb2pp/5k2/4n3/3p1P2/8/PPPPP1PP/R1BQKB1R w KQ - 1 13",
+      "5bnN/ppNb2pp/6k1/8/8/3PpQ2/PPP3PP/R1B1KB1R b KQ - 3 18",
+      "5bnN/ppNb2pp/7k/8/8/3PQ3/PPP3PP/R1B1KB1R b KQ - 0 19",
+      "5bnN/ppNb2pp/7k/8/8/3PpQ2/PPP3PP/R1B1KB1R w KQ - 4 19",
+      "5bnN/ppNb2pp/8/4k3/3p4/8/PPPPP1PP/R1BQKB1R w KQ - 0 14",
+      "5bnN/ppNb3p/7k/6Q1/8/3P4/PPP3PP/R1B1KB1R b KQ - 0 20",
+      "5bnN/ppNb3p/7k/6p1/8/3PQ3/PPP3PP/R1B1KB1R w KQ - 0 20",
+      "5bnN/ppNbk1pp/8/4n3/3p1P2/8/PPPPP1PP/R1BQKB1R b KQ - 0 12",
+      "5bnN/ppNbk1pp/8/4n3/3p4/8/PPPPPPPP/R1BQKB1R w KQ - 3 12",
+      "N1b2bnN/pp2k1pp/2n5/8/3p4/8/PPPPPPPP/R1BQKB1R b KQ - 0 10"
+    ],
+    "ranking_source": "reports/catarena_platform/live_openai_safe_095/ranking.csv",
+    "raw_log_files": [
+      "reports/catarena_platform/live_openai_safe_095/battle.log"
+    ],
+    "runtime_errors": []
+  },
+  "game_result_statistics": {
+    "agent_name": "chess_agent",
+    "draws": 0,
+    "games": 2,
+    "losses": 0,
+    "notes": [],
+    "opponent_records": {},
+    "rank": 1,
+    "rank_delta": 0,
+    "source": "reports/catarena_platform/live_openai_safe_095/ranking.csv",
+    "win_rate": 1.0,
+    "wins": 2
+  },
+  "key_failure_positions": [
+    "2b2bnN/ppN1k1pp/8/4n3/3p4/8/PPPPPPPP/R1BQKB1R b KQ - 2 11",
+    "5bn1/ppNb1Npp/6k1/8/8/3PpQ2/PPP3PP/R1B1KB1R w KQ - 2 18",
+    "5bn1/ppNb1Npp/8/4k3/3p4/8/PPPPP1PP/R1BQKB1R b KQ - 1 14",
+    "5bn1/ppNb1Npp/8/5k2/3p4/3P4/PPP1P1PP/R1BQKB1R w KQ - 1 16",
+    "5bn1/ppNb1Npp/8/5k2/3pP3/3P4/PPP3PP/R1BQKB1R b KQ e3 0 16",
+    "5bn1/ppNb1Npp/8/5k2/8/3Pp3/PPP3PP/R1BQKB1R w KQ - 0 17",
+    "5bn1/ppNb1Npp/8/5k2/8/3PpQ2/PPP3PP/R1B1KB1R b KQ - 1 17",
+    "5bn1/ppNb1Npp/8/8/3pk3/3P4/PPP1P1PP/R1BQKB1R b KQ - 0 15",
+    "5bn1/ppNb1Npp/8/8/3pk3/8/PPPPP1PP/R1BQKB1R w KQ - 2 15",
+    "5bnN/ppNb2pp/5k2/4P3/3p4/8/PPPPP1PP/R1BQKB1R b KQ - 0 13",
+    "5bnN/ppNb2pp/5k2/4n3/3p1P2/8/PPPPP1PP/R1BQKB1R w KQ - 1 13",
+    "5bnN/ppNb2pp/6k1/8/8/3PpQ2/PPP3PP/R1B1KB1R b KQ - 3 18",
+    "5bnN/ppNb2pp/7k/8/8/3PQ3/PPP3PP/R1B1KB1R b KQ - 0 19",
+    "5bnN/ppNb2pp/7k/8/8/3PpQ2/PPP3PP/R1B1KB1R w KQ - 4 19",
+    "5bnN/ppNb2pp/8/4k3/3p4/8/PPPPP1PP/R1BQKB1R w KQ - 0 14",
+    "5bnN/ppNb3p/7k/6Q1/8/3P4/PPP3PP/R1B1KB1R b KQ - 0 20",
+    "5bnN/ppNb3p/7k/6p1/8/3PQ3/PPP3PP/R1B1KB1R w KQ - 0 20",
+    "5bnN/ppNbk1pp/8/4n3/3p1P2/8/PPPPP1PP/R1BQKB1R b KQ - 0 12",
+    "5bnN/ppNbk1pp/8/4n3/3p4/8/PPPPPPPP/R1BQKB1R w KQ - 3 12",
+    "N1b2bnN/pp2k1pp/2n5/8/3p4/8/PPPPPPPP/R1BQKB1R b KQ - 0 10"
+  ],
+  "next_round_revision_plan": {
+    "next_focus": "No critical failure detected; make a small validated strategy improvement.",
+    "patch_plan": "Rule-template patch plan: make one small strategy improvement and validate against fixed FEN set. Do not apply automatically; implement only after validating against the fixed FEN and interface tests.",
+    "tuning_action": "skipped",
+    "tuning_reason_code": "no_active_block"
+  },
+  "opponent_features": {
+    "notes": [
+      "opponent path not provided"
+    ],
+    "opponents": []
+  },
+  "parameter_adjustment_record": {
+    "chosen_changed_paths": [],
+    "effective_changed_paths": [],
+    "selected_block": "",
+    "tuning_action": "skipped",
+    "tuning_reason_code": "no_active_block"
+  },
+  "round_id": "live_openai_safe_095",
+  "version_identifier": {
+    "active_agent_path": "agents/chess_agent.py",
+    "candidate_agent_archived_path": "",
+    "candidate_agent_backend": "openai",
+    "candidate_agent_path": "agents/candidates/chess_agent_live_openai_safe_095.py",
+    "candidate_agent_promoted": false,
+    "candidate_agent_sha256": "",
+    "round_version": "live_openai_safe_095",
+    "strategy_profile_after_sha256": "05bb10f262463e5da16ae94d94f90eb642ad629276e092e61531bb1a83a9b592",
+    "strategy_profile_before_sha256": "05bb10f262463e5da16ae94d94f90eb642ad629276e092e61531bb1a83a9b592"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "abnormal_events": {
+    "crashes": 0,
+    "illegal_moves": 0,
+    "risks": [],
+    "runtime_errors": [],
+    "timeouts": 0
+  },
+  "backend": "openai",
+  "core_modification_summary": {
+    "changed": true,
+    "generated_agent_summary": "Generated next-round agent with OpenAI LLM backend.",
+    "generation_error": "",
+    "generation_succeeded": true,
+    "improvement_summary": "No critical failure detected; make a small validated strategy improvement.",
+    "patch_plan": "Rule-template patch plan: make one small strategy improvement and validate against fixed FEN set. Do not apply automatically; implement only after validating against the fixed FEN and interface tests."
+  },
+  "evolution_metrics": {
+    "global_scores": [
+      1.0,
+      1.0,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      1.0,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.75,
+      0.5,
+      0.75,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "rounds_considered": 73,
+    "same_round_score": 1.0,
+    "sbase": 1.0,
+    "sevo": 0.0076206343329631
+  },
+  "failure_report": {
+    "evidence": [
+      "no crashes, illegal moves, or timeout signals found"
+    ],
+    "main_failure_type": "no_clear_failure",
+    "next_actions": [
+      "make one small strategy improvement and validate against fixed FEN set"
+    ],
+    "priority": "low"
+  },
+  "feedback_sources": {
+    "logs": "reports/catarena_platform/live_openai_safe_026/battle.log",
+    "opponents": "",
+    "ranking": "reports/catarena_platform/live_openai_safe_026/ranking.csv",
+    "ranking_source": "reports/catarena_platform/live_openai_safe_026/ranking.csv",
+    "raw_log_files": [
+      "reports/catarena_platform/live_openai_safe_026/battle.log"
+    ]
+  },
+  "game_result_statistics": {
+    "agent_name": "chess_agent",
+    "draws": 0,
+    "games": 2,
+    "losses": 0,
+    "notes": [],
+    "opponent_records": {},
+    "rank": 1,
+    "rank_delta": 0,
+    "source": "reports/catarena_platform/live_openai_safe_026/ranking.csv",
+    "win_rate": 1.0,
+    "wins": 2
+  },
+  "key_failure_positions": [
+    "1n1k1bnr/ppN2N2/6pp/2Q5/3p2P1/8/PP1PPP1P/R1B1KB1R b KQ - 0 13",
+    "1n1k1bnr/ppN2p2/6pp/2Q1N3/3p2P1/8/PP1PPP1P/R1B1KB1R w KQ - 2 13",
+    "1n3Q1N/ppk5/5npp/8/3p2P1/8/PP1PPP1P/R1B1KB1R w KQ - 1 16",
+    "1n3QnN/ppk5/6pp/8/3p2P1/8/PP1PPP1P/R1B1KB1R b KQ - 0 15",
+    "1n3Qnr/ppk2N2/6pp/8/3p2P1/8/PP1PPP1P/R1B1KB1R w KQ - 0 15",
+    "1n3bnr/ppN1kp2/6pp/2Q1N3/3p2P1/8/PP1PPP1P/R1B1KB1R b KQ - 1 12",
+    "1n3bnr/ppN1kp2/6pp/4N3/3p2P1/8/PPQPPP1P/R1B1KB1R w KQ - 0 12",
+    "1n3bnr/ppN1kpp1/7p/4N3/3p2P1/8/PPQPPP1P/R1B1KB1R b KQ - 0 11",
+    "1n3bnr/ppN1kpp1/7p/4N3/3p2P1/8/PPbPPP1P/R1BQKB1R w KQ - 0 11",
+    "1n3bnr/ppN1kpp1/7p/4Nb2/3p2P1/8/PPPPPP1P/R1BQKB1R b KQ - 0 10",
+    "1n3bnr/ppN1kpp1/7p/4Nb2/3p4/8/PPPPPPPP/R1BQKB1R w KQ - 2 10",
+    "1n5N/1pk5/5Qpp/p7/3p2P1/8/PP1PPP1P/R1B1KB1R w KQ - 0 17",
+    "1n5N/ppk5/5Qpp/8/3p2P1/8/PP1PPP1P/R1B1KB1R b KQ - 0 16",
+    "1n6/1pk5/5QNp/p7/3p2P1/8/PP1PPP1P/R1B1KB1R b KQ - 0 17",
+    "1nb2bnr/ppN1kpp1/7p/4N3/3p4/8/PPPPPPPP/R1BQKB1R b KQ - 1 9",
+    "1nk2Qnr/ppN2N2/6pp/8/3p2P1/8/PP1PPP1P/R1B1KB1R b KQ - 0 14",
+    "1nk2bnr/ppN2N2/6pp/2Q5/3p2P1/8/PP1PPP1P/R1B1KB1R w KQ - 1 14",
+    "3k4/4Q3/1p4NB/8/p2P2P1/8/PP2PPBP/2R1K2R b K - 3 24",
+    "3k4/8/1p4NB/4Q3/p2P2P1/8/PP2PPBP/2R1K2R w K - 2 24",
+    "3rkb1r/pp2pppp/2n5/4q3/3N3P/2Pb4/P2B1PP1/R3K2R w KQk - 4 13"
+  ],
+  "next_round_revision_plan": {
+    "next_focus": "No critical failure detected; make a small validated strategy improvement.",
+    "patch_plan": "Rule-template patch plan: make one small strategy improvement and validate against fixed FEN set. Do not apply automatically; implement only after validating against the fixed FEN and interface tests.",
+    "tuning_action": "hold",
+    "tuning_reason_code": "no_gate_cross"
+  },
+  "opponent_features": {
+    "notes": [
+      "opponent path not provided"
+    ],
+    "opponents": []
+  },
+  "platform": {
+    "catarena_message": "CATArena chessgame checkout is present.",
+    "catarena_missing_required_files": [],
+    "catarena_ready": true,
+    "catarena_source_files_seen": 36
+  },
+  "reliability_metrics": {
+    "average_response_ms": 3.9324864864864875,
+    "error_rate": 0.0,
+    "interface_success_rate": 1.0,
+    "legal_rate": 1.0,
+    "timeout_rate": 0.0
+  },
+  "round_id": "live_openai_safe_026",
+  "state_summary": {
+    "average_cp": 4277.351351351352,
+    "average_depth": 4.0,
+    "average_response_ms": 3.9324864864864875,
+    "current_rank": 1,
+    "current_win_rate": 1.0,
+    "key_failure_fens": [
+      "1n1k1bnr/ppN2N2/6pp/2Q5/3p2P1/8/PP1PPP1P/R1B1KB1R b KQ - 0 13",
+      "1n1k1bnr/ppN2p2/6pp/2Q1N3/3p2P1/8/PP1PPP1P/R1B1KB1R w KQ - 2 13",
+      "1n3Q1N/ppk5/5npp/8/3p2P1/8/PP1PPP1P/R1B1KB1R w KQ - 1 16",
+      "1n3QnN/ppk5/6pp/8/3p2P1/8/PP1PPP1P/R1B1KB1R b KQ - 0 15",
+      "1n3Qnr/ppk2N2/6pp/8/3p2P1/8/PP1PPP1P/R1B1KB1R w KQ - 0 15",
+      "1n3bnr/ppN1kp2/6pp/2Q1N3/3p2P1/8/PP1PPP1P/R1B1KB1R b KQ - 1 12",
+      "1n3bnr/ppN1kp2/6pp/4N3/3p2P1/8/PPQPPP1P/R1B1KB1R w KQ - 0 12",
+      "1n3bnr/ppN1kpp1/7p/4N3/3p2P1/8/PPQPPP1P/R1B1KB1R b KQ - 0 11",
+      "1n3bnr/ppN1kpp1/7p/4N3/3p2P1/8/PPbPPP1P/R1BQKB1R w KQ - 0 11",
+      "1n3bnr/ppN1kpp1/7p/4Nb2/3p2P1/8/PPPPPP1P/R1BQKB1R b KQ - 0 10"
+    ],
+    "memory_versions_seen": 72,
+    "round_actions": 75,
+    "round_games": 1
+  },
+  "stockfish_diagnostics": {
+    "available": false,
+    "fen": "1n1k1bnr/ppN2N2/6pp/2Q5/3p2P1/8/PP1PPP1P/R1B1KB1R b KQ - 0 13",
+    "reason": "stockfish binary not found"
+  },
+  "version": {
+    "active_agent_path": "agents/chess_agent.py",
+    "active_agent_sha256": "d697d9b1a00201c99d2fb164fcfa035d57473d993646f23a5381ff49ba87fa8c",
+    "candidate_agent_exists": true,
+    "candidate_agent_path": "agents/candidates/chess_agent_live_openai_safe_026_repair_2.py",
+    "candidate_agent_sha256": "7e4bad43bd8707910cafff2ca38639f80f4b8773b8ba6d26e0a88f9fde21d6d4",
+    "candidate_archived_path": "",
+    "candidate_backend": "openai",
+    "candidate_promoted": false,
+    "generation_error": "",
+    "generation_succeeded": true,
+    "repair_attempts": 2,
+    "validator_passed": true
+  }
+}

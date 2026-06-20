@@ -1,0 +1,229 @@
+{
+  "abnormal_events": {
+    "crashes": 0,
+    "illegal_moves": 0,
+    "risks": [
+      "candidate agent failed validation"
+    ],
+    "runtime_errors": [],
+    "timeouts": 0
+  },
+  "backend": "openai",
+  "core_modification_summary": {
+    "changed": true,
+    "generated_agent_summary": "Generated next-round agent with OpenAI LLM backend.",
+    "generation_error": "",
+    "generation_succeeded": true,
+    "improvement_summary": "No critical failure detected; make a small validated strategy improvement.",
+    "patch_plan": "Rule-template patch plan: make one small strategy improvement and validate against fixed FEN set. Do not apply automatically; implement only after validating against the fixed FEN and interface tests."
+  },
+  "evolution_metrics": {
+    "global_scores": [
+      1.0,
+      1.0,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      1.0,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.75,
+      0.5,
+      0.75,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "rounds_considered": 80,
+    "same_round_score": 1.0,
+    "sbase": 1.0,
+    "sevo": 0.006692451945616503
+  },
+  "failure_report": {
+    "evidence": [
+      "no crashes, illegal moves, or timeout signals found"
+    ],
+    "main_failure_type": "no_clear_failure",
+    "next_actions": [
+      "make one small strategy improvement and validate against fixed FEN set"
+    ],
+    "priority": "low"
+  },
+  "feedback_sources": {
+    "logs": "reports/catarena_platform/live_openai_safe_033/battle.log",
+    "opponents": "",
+    "ranking": "reports/catarena_platform/live_openai_safe_033/ranking.csv",
+    "ranking_source": "reports/catarena_platform/live_openai_safe_033/ranking.csv",
+    "raw_log_files": [
+      "reports/catarena_platform/live_openai_safe_033/battle.log"
+    ]
+  },
+  "game_result_statistics": {
+    "agent_name": "chess_agent",
+    "draws": 0,
+    "games": 2,
+    "losses": 0,
+    "notes": [],
+    "opponent_records": {},
+    "rank": 1,
+    "rank_delta": 0,
+    "source": "reports/catarena_platform/live_openai_safe_033/ranking.csv",
+    "win_rate": 1.0,
+    "wins": 2
+  },
+  "key_failure_positions": [
+    "1Q5N/p5pp/7n/3k4/8/4B3/PPP2PPP/3RKB1R b K - 2 18",
+    "1Q5N/p5pp/7n/3k4/8/4B3/PPP2PPP/R3KB1R w KQ - 1 18",
+    "1Q5N/p5pp/7n/4k3/8/4B3/PPP2PPP/R3KB1R b KQ - 0 17",
+    "1Q5N/p5pp/7n/8/4k3/4B3/PPP2PPP/3RKB1R w K - 3 19",
+    "3rkb1r/pp2pppp/8/4P3/8/3Bq3/b5PP/2NK3R b k - 4 17",
+    "3rkb1r/pp2pppp/8/4P3/8/4q3/b5PP/2NK1B1R w k - 3 17",
+    "4kb1r/pp2pppp/8/4P3/8/1b1Nq3/6PP/3K3R w k - 1 19",
+    "4kb1r/pp2pppp/8/4P3/8/3Nq3/b5PP/3K3R b k - 0 18",
+    "4kb1r/pp2pppp/8/4P3/8/3rq3/b5PP/2NK3R w k - 0 18",
+    "7N/p5pp/7n/8/4kQ2/4B3/PPP2PPP/3RKB1R b K - 4 19",
+    "Qn4nN/p5pp/8/4k3/8/4B3/PPP2PPP/R3KB1R b KQ - 0 16",
+    "Qn5N/p5pp/7n/4k3/8/4B3/PPP2PPP/R3KB1R w KQ - 1 17",
+    "r1bqkb1r/pp1Qpppp/2n2n2/8/8/8/PPP1PPPP/RNB1KBNR b KQkq - 0 4",
+    "r1bqkb1r/pp1ppppp/2n2n2/8/8/8/PPP1PPPP/RNBQKBNR w KQkq - 0 4",
+    "r2qkb1r/pp1bpppp/2n2n2/8/4P3/8/PPP2PPP/RNB1KBNR b KQkq - 0 5",
+    "r2qkb1r/pp1bpppp/2n2n2/8/8/8/PPP1PPPP/RNB1KBNR w KQkq - 0 5",
+    "r2qkb1r/pp1bpppp/2n5/8/4n3/5P2/PPP3PP/RNB1KBNR b KQkq - 0 6",
+    "r2qkb1r/pp1bpppp/2n5/8/4n3/8/PPP2PPP/RNB1KBNR w KQkq - 0 6",
+    "r2qkb1r/pp1bpppp/8/4P3/8/8/PP1K2PP/nNB2BNR b kq - 0 9",
+    "r2qkb1r/pp1bpppp/8/8/3nP3/8/PPP3PP/RNB1KBNR b KQkq - 0 7"
+  ],
+  "next_round_revision_plan": {
+    "next_focus": "No critical failure detected; make a small validated strategy improvement.",
+    "patch_plan": "Rule-template patch plan: make one small strategy improvement and validate against fixed FEN set. Do not apply automatically; implement only after validating against the fixed FEN and interface tests.",
+    "tuning_action": "freeze",
+    "tuning_reason_code": "no_gate_cross"
+  },
+  "opponent_features": {
+    "notes": [
+      "opponent path not provided"
+    ],
+    "opponents": []
+  },
+  "platform": {
+    "catarena_message": "CATArena chessgame checkout is present.",
+    "catarena_missing_required_files": [],
+    "catarena_ready": true,
+    "catarena_source_files_seen": 36
+  },
+  "reliability_metrics": {
+    "average_response_ms": 5.139351351351351,
+    "error_rate": 0.0,
+    "interface_success_rate": 1.0,
+    "legal_rate": 1.0,
+    "timeout_rate": 0.0
+  },
+  "round_id": "live_openai_safe_033",
+  "state_summary": {
+    "average_cp": 5261.7027027027025,
+    "average_depth": 4.0,
+    "average_response_ms": 5.139351351351351,
+    "current_rank": 1,
+    "current_win_rate": 1.0,
+    "key_failure_fens": [
+      "1Q5N/p5pp/7n/3k4/8/4B3/PPP2PPP/3RKB1R b K - 2 18",
+      "1Q5N/p5pp/7n/3k4/8/4B3/PPP2PPP/R3KB1R w KQ - 1 18",
+      "1Q5N/p5pp/7n/4k3/8/4B3/PPP2PPP/R3KB1R b KQ - 0 17",
+      "1Q5N/p5pp/7n/8/4k3/4B3/PPP2PPP/3RKB1R w K - 3 19",
+      "3rkb1r/pp2pppp/8/4P3/8/3Bq3/b5PP/2NK3R b k - 4 17",
+      "3rkb1r/pp2pppp/8/4P3/8/4q3/b5PP/2NK1B1R w k - 3 17",
+      "4kb1r/pp2pppp/8/4P3/8/1b1Nq3/6PP/3K3R w k - 1 19",
+      "4kb1r/pp2pppp/8/4P3/8/3Nq3/b5PP/3K3R b k - 0 18",
+      "4kb1r/pp2pppp/8/4P3/8/3rq3/b5PP/2NK3R w k - 0 18",
+      "7N/p5pp/7n/8/4kQ2/4B3/PPP2PPP/3RKB1R b K - 4 19"
+    ],
+    "memory_versions_seen": 79,
+    "round_actions": 73,
+    "round_games": 1
+  },
+  "stockfish_diagnostics": {
+    "available": false,
+    "fen": "1Q5N/p5pp/7n/3k4/8/4B3/PPP2PPP/3RKB1R b K - 2 18",
+    "reason": "stockfish binary not found"
+  },
+  "version": {
+    "active_agent_path": "agents/chess_agent.py",
+    "active_agent_sha256": "d697d9b1a00201c99d2fb164fcfa035d57473d993646f23a5381ff49ba87fa8c",
+    "candidate_agent_exists": true,
+    "candidate_agent_path": "agents/candidates/chess_agent_live_openai_safe_033_repair_2.py",
+    "candidate_agent_sha256": "73b930acd04ad3bd8bad1895a1a2797bf75e9cafc06a0d5781b0e4e21a87cf2d",
+    "candidate_archived_path": "",
+    "candidate_backend": "openai",
+    "candidate_promoted": false,
+    "generation_error": "",
+    "generation_succeeded": true,
+    "repair_attempts": 2,
+    "validator_passed": false
+  }
+}

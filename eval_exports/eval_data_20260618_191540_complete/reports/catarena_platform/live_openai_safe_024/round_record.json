@@ -1,0 +1,125 @@
+{
+  "abnormal_events": {
+    "crashes": 0,
+    "illegal_moves": 0,
+    "risks": [
+      "candidate agent failed validation"
+    ],
+    "runtime_errors": [],
+    "timeouts": 0
+  },
+  "artifact_paths": {
+    "evaluation_record_path": "reports/catarena_platform/live_openai_safe_024/evaluation_record.json",
+    "optimization_report_path": "reports/catarena_platform/live_openai_safe_024/optimization_report.json",
+    "parameter_record_path": "reports/catarena_platform/live_openai_safe_024/parameter_record.json",
+    "round_record_path": "reports/catarena_platform/live_openai_safe_024/round_record.json",
+    "strategy_profile_after_path": "reports/catarena_platform/live_openai_safe_024/strategy_profile_after.json",
+    "strategy_profile_before_path": "reports/catarena_platform/live_openai_safe_024/strategy_profile_before.json"
+  },
+  "core_modification_summary": {
+    "generated_agent_summary": "Generated next-round agent with OpenAI LLM backend.",
+    "generation_error": "",
+    "generation_succeeded": true,
+    "improvement_summary": "No critical failure detected; make a small validated strategy improvement.",
+    "patch_plan": "Rule-template patch plan: make one small strategy improvement and validate against fixed FEN set. Do not apply automatically; implement only after validating against the fixed FEN and interface tests.",
+    "repair_attempts": 2,
+    "tuning_action": "skipped",
+    "tuning_selected_block": "",
+    "validator_passed": false
+  },
+  "feedback_evidence": {
+    "key_failure_positions": [
+      "2N1kbnr/p1n3pp/2p2p2/1p6/3R4/3P4/1PPBPPPP/3QKB1R w K - 1 16",
+      "2N2bnr/p1n1k1pp/2p2p2/1p6/3R4/3P4/1PPBPPPP/3QKB1R b K - 0 15",
+      "2r2bnr/p1n1k1pp/2pN1p2/1p6/3R4/3P4/1PPBPPPP/3QKB1R w K - 2 15",
+      "2r2bnr/p3k1pp/n1p2p2/1p6/2NR4/3P4/1PPBPPPP/3QKB1R w K - 0 14",
+      "2r2bnr/p3k1pp/n1pN1p2/1p6/3R4/3P4/1PPBPPPP/3QKB1R b K - 1 14",
+      "3Q2nr/5k1p/2N2p2/2R3p1/1P6/2B5/4PPPP/4KB1R b K - 0 24",
+      "3Q2nr/5k1p/2N2p2/2R3p1/8/2B5/1P2PPPP/4KB1R w K - 2 24",
+      "3Q2nr/5k1p/2N5/2R2pp1/1P6/2B5/4PPPP/4KB1R w K - 0 25",
+      "3Q2nr/5k1p/2N5/5Rp1/1P6/2B5/4PPPP/4KB1R b K - 0 25",
+      "3Q3r/5k1p/2N2n2/5Rp1/1P6/2B5/4PPPP/4KB1R w K - 1 26",
+      "3Qk1nr/7p/2N2p2/2R3p1/8/2B5/1P2PPPP/4KB1R b K - 1 23",
+      "3Qk2r/7p/2N5/5Rp1/1P6/2B5/4PPPP/4KB1R b K - 2 27",
+      "4k1nr/6pp/2N2p2/2R5/8/8/1P1BPPPP/3QKB1R b K - 0 21",
+      "4k1nr/6pp/2N2p2/2b5/2R5/8/1P1BPPPP/3QKB1R w K - 1 21",
+      "4k1nr/7p/2N2p2/2R3p1/8/2B5/1P2PPPP/3QKB1R w K - 0 23",
+      "4k1nr/7p/2N2pp1/2R5/8/2B5/1P2PPPP/3QKB1R b K - 1 22",
+      "4k1nr/7p/2N2pp1/2R5/8/8/1P1BPPPP/3QKB1R w K - 0 22",
+      "4k2r/7p/2N2Q2/5Rp1/1P6/2B5/4PPPP/4KB1R w K - 1 27",
+      "4kbnr/6pp/1nN2p2/1p6/2PR4/3P4/1P1BPPPP/3QKB1R b K - 0 18",
+      "4kbnr/6pp/1nN2p2/1p6/3R4/3P4/1PPBPPPP/3QKB1R w K - 1 18"
+    ],
+    "ranking_source": "reports/catarena_platform/live_openai_safe_024/ranking.csv",
+    "raw_log_files": [
+      "reports/catarena_platform/live_openai_safe_024/battle.log"
+    ],
+    "runtime_errors": []
+  },
+  "game_result_statistics": {
+    "agent_name": "chess_agent",
+    "draws": 0,
+    "games": 2,
+    "losses": 0,
+    "notes": [],
+    "opponent_records": {},
+    "rank": 1,
+    "rank_delta": 0,
+    "source": "reports/catarena_platform/live_openai_safe_024/ranking.csv",
+    "win_rate": 1.0,
+    "wins": 2
+  },
+  "key_failure_positions": [
+    "2N1kbnr/p1n3pp/2p2p2/1p6/3R4/3P4/1PPBPPPP/3QKB1R w K - 1 16",
+    "2N2bnr/p1n1k1pp/2p2p2/1p6/3R4/3P4/1PPBPPPP/3QKB1R b K - 0 15",
+    "2r2bnr/p1n1k1pp/2pN1p2/1p6/3R4/3P4/1PPBPPPP/3QKB1R w K - 2 15",
+    "2r2bnr/p3k1pp/n1p2p2/1p6/2NR4/3P4/1PPBPPPP/3QKB1R w K - 0 14",
+    "2r2bnr/p3k1pp/n1pN1p2/1p6/3R4/3P4/1PPBPPPP/3QKB1R b K - 1 14",
+    "3Q2nr/5k1p/2N2p2/2R3p1/1P6/2B5/4PPPP/4KB1R b K - 0 24",
+    "3Q2nr/5k1p/2N2p2/2R3p1/8/2B5/1P2PPPP/4KB1R w K - 2 24",
+    "3Q2nr/5k1p/2N5/2R2pp1/1P6/2B5/4PPPP/4KB1R w K - 0 25",
+    "3Q2nr/5k1p/2N5/5Rp1/1P6/2B5/4PPPP/4KB1R b K - 0 25",
+    "3Q3r/5k1p/2N2n2/5Rp1/1P6/2B5/4PPPP/4KB1R w K - 1 26",
+    "3Qk1nr/7p/2N2p2/2R3p1/8/2B5/1P2PPPP/4KB1R b K - 1 23",
+    "3Qk2r/7p/2N5/5Rp1/1P6/2B5/4PPPP/4KB1R b K - 2 27",
+    "4k1nr/6pp/2N2p2/2R5/8/8/1P1BPPPP/3QKB1R b K - 0 21",
+    "4k1nr/6pp/2N2p2/2b5/2R5/8/1P1BPPPP/3QKB1R w K - 1 21",
+    "4k1nr/7p/2N2p2/2R3p1/8/2B5/1P2PPPP/3QKB1R w K - 0 23",
+    "4k1nr/7p/2N2pp1/2R5/8/2B5/1P2PPPP/3QKB1R b K - 1 22",
+    "4k1nr/7p/2N2pp1/2R5/8/8/1P1BPPPP/3QKB1R w K - 0 22",
+    "4k2r/7p/2N2Q2/5Rp1/1P6/2B5/4PPPP/4KB1R w K - 1 27",
+    "4kbnr/6pp/1nN2p2/1p6/2PR4/3P4/1P1BPPPP/3QKB1R b K - 0 18",
+    "4kbnr/6pp/1nN2p2/1p6/3R4/3P4/1PPBPPPP/3QKB1R w K - 1 18"
+  ],
+  "next_round_revision_plan": {
+    "next_focus": "No critical failure detected; make a small validated strategy improvement.",
+    "patch_plan": "Rule-template patch plan: make one small strategy improvement and validate against fixed FEN set. Do not apply automatically; implement only after validating against the fixed FEN and interface tests.",
+    "tuning_action": "skipped",
+    "tuning_reason_code": "no_active_block"
+  },
+  "opponent_features": {
+    "notes": [
+      "opponent path not provided"
+    ],
+    "opponents": []
+  },
+  "parameter_adjustment_record": {
+    "chosen_changed_paths": [],
+    "effective_changed_paths": [],
+    "selected_block": "",
+    "tuning_action": "skipped",
+    "tuning_reason_code": "no_active_block"
+  },
+  "round_id": "live_openai_safe_024",
+  "version_identifier": {
+    "active_agent_path": "agents/chess_agent.py",
+    "candidate_agent_archived_path": "",
+    "candidate_agent_backend": "openai",
+    "candidate_agent_path": "agents/candidates/chess_agent_live_openai_safe_024_repair_2.py",
+    "candidate_agent_promoted": false,
+    "candidate_agent_sha256": "f3a650432ef51c0c2d5aa591e3eb65fcdbcd342e25fdcf3263ce3306e6c46462",
+    "round_version": "live_openai_safe_024",
+    "strategy_profile_after_sha256": "05bb10f262463e5da16ae94d94f90eb642ad629276e092e61531bb1a83a9b592",
+    "strategy_profile_before_sha256": "05bb10f262463e5da16ae94d94f90eb642ad629276e092e61531bb1a83a9b592"
+  }
+}

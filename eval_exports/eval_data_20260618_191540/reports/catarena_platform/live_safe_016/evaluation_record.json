@@ -1,0 +1,185 @@
+{
+  "abnormal_events": {
+    "crashes": 0,
+    "illegal_moves": 0,
+    "risks": [],
+    "runtime_errors": [],
+    "timeouts": 0
+  },
+  "backend": "rule",
+  "core_modification_summary": {
+    "changed": true,
+    "generated_agent_summary": "Generated next-round agent from previous code with rule-template notes.",
+    "improvement_summary": "No critical failure detected; make a small validated strategy improvement.",
+    "patch_plan": "Rule-template patch plan: make one small strategy improvement and validate against fixed FEN set. Do not apply automatically; implement only after validating against the fixed FEN and interface tests."
+  },
+  "evolution_metrics": {
+    "global_scores": [
+      1.0,
+      1.0,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      1.0,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.75,
+      0.5,
+      0.75,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "rounds_considered": 43,
+    "same_round_score": 1.0,
+    "sbase": 1.0,
+    "sevo": 0.012382965871337966
+  },
+  "failure_report": {
+    "evidence": [
+      "no crashes, illegal moves, or timeout signals found"
+    ],
+    "main_failure_type": "no_clear_failure",
+    "next_actions": [
+      "make one small strategy improvement and validate against fixed FEN set"
+    ],
+    "priority": "low"
+  },
+  "feedback_sources": {
+    "logs": "reports/catarena_platform/live_safe_016/battle.log",
+    "opponents": "",
+    "ranking": "reports/catarena_platform/live_safe_016/ranking.csv",
+    "ranking_source": "reports/catarena_platform/live_safe_016/ranking.csv",
+    "raw_log_files": [
+      "reports/catarena_platform/live_safe_016/battle.log"
+    ]
+  },
+  "game_result_statistics": {
+    "agent_name": "chess_agent",
+    "draws": 0,
+    "games": 2,
+    "losses": 0,
+    "notes": [],
+    "opponent_records": {},
+    "rank": 1,
+    "rank_delta": 0,
+    "source": "reports/catarena_platform/live_safe_016/ranking.csv",
+    "win_rate": 1.0,
+    "wins": 2
+  },
+  "key_failure_positions": [
+    "1R4k1/p1Q5/5p1p/4n3/4P2p/2P5/P3PPPP/2B1KB1R b K - 1 19",
+    "6k1/p1Q5/5p1p/4n2p/4P3/2P5/P3PPPP/1RB1KB1R b K - 2 18",
+    "6k1/p1Q5/5p1p/4n2p/4P3/2P5/P3PPPP/R1B1KB1R w KQ - 1 18",
+    "6k1/p1Q5/5p1p/4n3/4P2p/2P5/P3PPPP/1RB1KB1R w K - 0 19",
+    "8/p1Q2k2/5p1p/4n2p/4P3/2P5/P3PPPP/R1B1KB1R b KQ - 0 17",
+    "8/pQp1k3/5p1p/4n2p/4P3/2P5/P3PPPP/R1B1KB1R b KQ - 0 16",
+    "8/pQp2k2/5p1p/4n2p/4P3/2P5/P3PPPP/R1B1KB1R w KQ - 1 17",
+    "Q7/ppp1k3/5p1p/4n2p/4P3/2P5/P3PPPP/R1B1KB1R w KQ - 1 16",
+    "Q7/pppnk3/5p1p/7p/4P3/2P5/P3PPPP/R1B1KB1R b KQ - 0 15",
+    "r1b1kb1r/pppn3p/4B2p/8/4n3/8/PPP2qPP/RN1K2NR b kq - 1 9",
+    "r1b1kb1r/pppn3p/4B2p/8/4n3/8/PPP2qPP/RN2K1NR w KQkq - 0 9",
+    "r1b1kb1r/pppn3p/4B2p/8/4n3/8/PPP3PP/RN1K1qNR w kq - 2 10",
+    "r1b1kb1r/pppn3p/4Bq1p/8/4n3/8/PPP2PPP/RN2K1NR b KQkq - 0 8",
+    "r1b1kb1r/pppn3p/4pq1p/8/2B1n3/8/PPP2PPP/RN2K1NR w KQkq - 2 8",
+    "r1bqkb1r/pppn2pp/4p2B/8/4n3/8/PPP2PPP/RN2KBNR b KQkq - 1 6",
+    "r1bqkb1r/pppn2pp/4p3/8/4n3/8/PPP2PPP/RNB1KBNR w KQkq - 0 6",
+    "r1bqkb1r/pppn3p/4p2p/8/2B1n3/8/PPP2PPP/RN2K1NR b KQkq - 1 7",
+    "r1bqkb1r/pppn3p/4p2p/8/4n3/8/PPP2PPP/RN2KBNR w KQkq - 0 7",
+    "r3k1Q1/pppn4/5p1p/7p/4P3/2P5/P3PPPP/R1B1KB1R b KQq - 0 14",
+    "r3k1n1/pppn4/5p1p/3Q3p/4P3/2P5/P3PPPP/R1B1KB1R w KQq - 1 14"
+  ],
+  "next_round_revision_plan": {
+    "next_focus": "No critical failure detected; make a small validated strategy improvement.",
+    "patch_plan": "Rule-template patch plan: make one small strategy improvement and validate against fixed FEN set. Do not apply automatically; implement only after validating against the fixed FEN and interface tests.",
+    "tuning_action": "skipped",
+    "tuning_reason_code": "no_active_block"
+  },
+  "opponent_features": {
+    "notes": [
+      "opponent path not provided"
+    ],
+    "opponents": []
+  },
+  "platform": {
+    "catarena_message": "CATArena chessgame checkout is present.",
+    "catarena_missing_required_files": [],
+    "catarena_ready": true,
+    "catarena_source_files_seen": 36
+  },
+  "reliability_metrics": {
+    "average_response_ms": 4.714535714285715,
+    "error_rate": 0.0,
+    "interface_success_rate": 1.0,
+    "legal_rate": 1.0,
+    "timeout_rate": 0.0
+  },
+  "round_id": "live_safe_016",
+  "state_summary": {
+    "average_cp": 6278.035714285715,
+    "average_depth": 4.0,
+    "average_response_ms": 4.714535714285715,
+    "current_rank": 1,
+    "current_win_rate": 1.0,
+    "key_failure_fens": [
+      "1R4k1/p1Q5/5p1p/4n3/4P2p/2P5/P3PPPP/2B1KB1R b K - 1 19",
+      "6k1/p1Q5/5p1p/4n2p/4P3/2P5/P3PPPP/1RB1KB1R b K - 2 18",
+      "6k1/p1Q5/5p1p/4n2p/4P3/2P5/P3PPPP/R1B1KB1R w KQ - 1 18",
+      "6k1/p1Q5/5p1p/4n3/4P2p/2P5/P3PPPP/1RB1KB1R w K - 0 19",
+      "8/p1Q2k2/5p1p/4n2p/4P3/2P5/P3PPPP/R1B1KB1R b KQ - 0 17",
+      "8/pQp1k3/5p1p/4n2p/4P3/2P5/P3PPPP/R1B1KB1R b KQ - 0 16",
+      "8/pQp2k2/5p1p/4n2p/4P3/2P5/P3PPPP/R1B1KB1R w KQ - 1 17",
+      "Q7/ppp1k3/5p1p/4n2p/4P3/2P5/P3PPPP/R1B1KB1R w KQ - 1 16",
+      "Q7/pppnk3/5p1p/7p/4P3/2P5/P3PPPP/R1B1KB1R b KQ - 0 15",
+      "r1b1kb1r/pppn3p/4B2p/8/4n3/8/PPP2qPP/RN1K2NR b kq - 1 9"
+    ],
+    "memory_versions_seen": 42,
+    "round_actions": 57,
+    "round_games": 1
+  },
+  "stockfish_diagnostics": {
+    "available": false,
+    "fen": "1R4k1/p1Q5/5p1p/4n3/4P2p/2P5/P3PPPP/2B1KB1R b K - 1 19",
+    "reason": "stockfish binary not found"
+  },
+  "version": {
+    "active_agent_path": "agents/chess_agent.py",
+    "active_agent_sha256": "d697d9b1a00201c99d2fb164fcfa035d57473d993646f23a5381ff49ba87fa8c",
+    "candidate_agent_path": "agents/candidates/chess_agent_live_safe_016.py",
+    "candidate_agent_sha256": "e26e1cca1271a3170cd2073479a9a277d20c0ec92464afcf237481c27d48f104",
+    "candidate_archived_path": "",
+    "candidate_backend": "rule",
+    "candidate_promoted": false,
+    "repair_attempts": 0,
+    "validator_passed": true
+  }
+}

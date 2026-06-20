@@ -1,0 +1,441 @@
+{
+  "platform": "https://github.com/AGI-Eval-Official/CATArena",
+  "contract": {
+    "repository_url": "https://github.com/AGI-Eval-Official/CATArena",
+    "game": "chess",
+    "game_server_endpoints": {
+      "create_game": "POST /games",
+      "state": "GET /games/{game_id}/state",
+      "move": "POST /games/{game_id}/move",
+      "history": "GET /games/{game_id}/history",
+      "board": "GET /games/{game_id}/board",
+      "legal_moves": "GET /games/{game_id}/legal_moves",
+      "health": "GET /health"
+    },
+    "ai_server_endpoints": {
+      "health": "GET /health",
+      "info": "GET /info",
+      "join_game": "POST /join_game",
+      "leave_game": "POST /leave_game",
+      "move": "POST /move",
+      "get_move": "POST /get_move",
+      "legal_moves": "POST /legal_moves",
+      "evaluate": "POST /evaluate"
+    },
+    "arena_payload": {
+      "ai_move_request": [
+        "fen",
+        "algorithm",
+        "game_id",
+        "current_player"
+      ],
+      "move_response": [
+        "move"
+      ],
+      "game_move_request": [
+        "player",
+        "move"
+      ]
+    },
+    "move_format": "UCI string, for example e2e4 or a7a8q",
+    "observation_format": "JSON payload with fen, algorithm, game_id, and current_player",
+    "report_files": [
+      "battle.log",
+      "ranking.csv",
+      "error_report.json",
+      "official_catarena_report.json",
+      "catarena_manifest.json",
+      "catarena_contract.json"
+    ]
+  },
+  "source_manifest_count": 36,
+  "arena_probe": {
+    "loaded": true,
+    "config_file": "reports/web_auto/eba291a3be/official_catarena/official_arena_config.json",
+    "arena_class": "ChessArena",
+    "configured_ais": 3
+  },
+  "games": [
+    {
+      "game_id": "chess_cd1da2f2",
+      "local_color": "white",
+      "result": "draw",
+      "status": "ongoing",
+      "moves_count": 20,
+      "moves": [
+        {
+          "ply": 1,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "d2d4",
+          "fen_after": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"
+        },
+        {
+          "ply": 2,
+          "player": "black",
+          "actor": "official_example",
+          "move": "d7d5",
+          "fen_after": "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2"
+        },
+        {
+          "ply": 3,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "b1c3",
+          "fen_after": "rnbqkbnr/ppp1pppp/8/3p4/3P4/2N5/PPP1PPPP/R1BQKBNR b KQkq - 1 2"
+        },
+        {
+          "ply": 4,
+          "player": "black",
+          "actor": "official_example",
+          "move": "e7e5",
+          "fen_after": "rnbqkbnr/ppp2ppp/8/3pp3/3P4/2N5/PPP1PPPP/R1BQKBNR w KQkq - 0 3"
+        },
+        {
+          "ply": 5,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "d4e5",
+          "fen_after": "rnbqkbnr/ppp2ppp/8/3pP3/8/2N5/PPP1PPPP/R1BQKBNR b KQkq - 0 3"
+        },
+        {
+          "ply": 6,
+          "player": "black",
+          "actor": "official_example",
+          "move": "d5d4",
+          "fen_after": "rnbqkbnr/ppp2ppp/8/4P3/3p4/2N5/PPP1PPPP/R1BQKBNR w KQkq - 0 4"
+        },
+        {
+          "ply": 7,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "c1d2",
+          "fen_after": "rnbqkbnr/ppp2ppp/8/4P3/3p4/2N5/PPPBPPPP/R2QKBNR b KQkq - 1 4"
+        },
+        {
+          "ply": 8,
+          "player": "black",
+          "actor": "official_example",
+          "move": "d4c3",
+          "fen_after": "rnbqkbnr/ppp2ppp/8/4P3/8/2p5/PPPBPPPP/R2QKBNR w KQkq - 0 5"
+        },
+        {
+          "ply": 9,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "g2g3",
+          "fen_after": "rnbqkbnr/ppp2ppp/8/4P3/8/2p3P1/PPPBPP1P/R2QKBNR b KQkq - 0 5"
+        },
+        {
+          "ply": 10,
+          "player": "black",
+          "actor": "official_example",
+          "move": "d8d2",
+          "fen_after": "rnb1kbnr/ppp2ppp/8/4P3/8/2p3P1/PPPqPP1P/R2QKBNR w KQkq - 0 6"
+        },
+        {
+          "ply": 11,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "d1d2",
+          "fen_after": "rnb1kbnr/ppp2ppp/8/4P3/8/2p3P1/PPPQPP1P/R3KBNR b KQkq - 0 6"
+        },
+        {
+          "ply": 12,
+          "player": "black",
+          "actor": "official_example",
+          "move": "c3b2",
+          "fen_after": "rnb1kbnr/ppp2ppp/8/4P3/8/6P1/PpPQPP1P/R3KBNR w KQkq - 0 7"
+        },
+        {
+          "ply": 13,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "f1g2",
+          "fen_after": "rnb1kbnr/ppp2ppp/8/4P3/8/6P1/PpPQPPBP/R3K1NR b KQkq - 1 7"
+        },
+        {
+          "ply": 14,
+          "player": "black",
+          "actor": "official_example",
+          "move": "b2a1r",
+          "fen_after": "rnb1kbnr/ppp2ppp/8/4P3/8/6P1/P1PQPPBP/r3K1NR w Kkq - 0 8"
+        },
+        {
+          "ply": 15,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "d2d1",
+          "fen_after": "rnb1kbnr/ppp2ppp/8/4P3/8/6P1/P1P1PPBP/r2QK1NR b Kkq - 1 8"
+        },
+        {
+          "ply": 16,
+          "player": "black",
+          "actor": "official_example",
+          "move": "a1d1",
+          "fen_after": "rnb1kbnr/ppp2ppp/8/4P3/8/6P1/P1P1PPBP/3rK1NR w Kkq - 0 9"
+        },
+        {
+          "ply": 17,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "e1d1",
+          "fen_after": "rnb1kbnr/ppp2ppp/8/4P3/8/6P1/P1P1PPBP/3K2NR b kq - 0 9"
+        },
+        {
+          "ply": 18,
+          "player": "black",
+          "actor": "official_example",
+          "move": "f7f5",
+          "fen_after": "rnb1kbnr/ppp3pp/8/4Pp2/8/6P1/P1P1PPBP/3K2NR w kq f6 0 10"
+        },
+        {
+          "ply": 19,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "e5f6",
+          "fen_after": "rnb1kbnr/ppp3pp/5P2/8/8/6P1/P1P1PPBP/3K2NR b kq - 0 10"
+        },
+        {
+          "ply": 20,
+          "player": "black",
+          "actor": "official_example",
+          "move": "g8f6",
+          "fen_after": "rnb1kb1r/ppp3pp/5n2/8/8/6P1/P1P1PPBP/3K2NR w kq - 0 11"
+        }
+      ],
+      "final_state": {
+        "current_player": "white",
+        "fen": "rnb1kb1r/ppp3pp/5n2/8/8/6P1/P1P1PPBP/3K2NR w kq - 0 11",
+        "game_status": "ongoing",
+        "is_check": false,
+        "is_checkmate": false,
+        "is_stalemate": false,
+        "last_move": "g8f6",
+        "legal_moves": [
+          "g2b7",
+          "g2c6",
+          "g2d5",
+          "g2e4",
+          "g2h3",
+          "g2f3",
+          "g2f1",
+          "g1h3",
+          "g1f3",
+          "d1d2",
+          "d1e1",
+          "d1c1",
+          "g3g4",
+          "h2h3",
+          "f2f3",
+          "e2e3",
+          "c2c3",
+          "a2a3",
+          "h2h4",
+          "f2f4",
+          "e2e4",
+          "c2c4",
+          "a2a4"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "game_id": "chess_a43bdf5b",
+      "local_color": "black",
+      "result": "draw",
+      "status": "ongoing",
+      "moves_count": 20,
+      "moves": [
+        {
+          "ply": 1,
+          "player": "white",
+          "actor": "official_example",
+          "move": "e2e4",
+          "fen_after": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"
+        },
+        {
+          "ply": 2,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "e7e5",
+          "fen_after": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"
+        },
+        {
+          "ply": 3,
+          "player": "white",
+          "actor": "official_example",
+          "move": "d2d4",
+          "fen_after": "rnbqkbnr/pppp1ppp/8/4p3/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"
+        },
+        {
+          "ply": 4,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "e5d4",
+          "fen_after": "rnbqkbnr/pppp1ppp/8/8/3pP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3"
+        },
+        {
+          "ply": 5,
+          "player": "white",
+          "actor": "official_example",
+          "move": "d1d4",
+          "fen_after": "rnbqkbnr/pppp1ppp/8/8/3QP3/8/PPP2PPP/RNB1KBNR b KQkq - 0 3"
+        },
+        {
+          "ply": 6,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "g8e7",
+          "fen_after": "rnbqkb1r/ppppnppp/8/8/3QP3/8/PPP2PPP/RNB1KBNR w KQkq - 1 4"
+        },
+        {
+          "ply": 7,
+          "player": "white",
+          "actor": "official_example",
+          "move": "d4g7",
+          "fen_after": "rnbqkb1r/ppppnpQp/8/8/4P3/8/PPP2PPP/RNB1KBNR b KQkq - 0 4"
+        },
+        {
+          "ply": 8,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "f8g7",
+          "fen_after": "rnbqk2r/ppppnpbp/8/8/4P3/8/PPP2PPP/RNB1KBNR w KQkq - 0 5"
+        },
+        {
+          "ply": 9,
+          "player": "white",
+          "actor": "official_example",
+          "move": "e4e5",
+          "fen_after": "rnbqk2r/ppppnpbp/8/4P3/8/8/PPP2PPP/RNB1KBNR b KQkq - 0 5"
+        },
+        {
+          "ply": 10,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "g7e5",
+          "fen_after": "rnbqk2r/ppppnp1p/8/4b3/8/8/PPP2PPP/RNB1KBNR w KQkq - 0 6"
+        },
+        {
+          "ply": 11,
+          "player": "white",
+          "actor": "official_example",
+          "move": "b2b4",
+          "fen_after": "rnbqk2r/ppppnp1p/8/4b3/1P6/8/P1P2PPP/RNB1KBNR b KQkq - 0 6"
+        },
+        {
+          "ply": 12,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "e5a1",
+          "fen_after": "rnbqk2r/ppppnp1p/8/8/1P6/8/P1P2PPP/bNB1KBNR w Kkq - 0 7"
+        },
+        {
+          "ply": 13,
+          "player": "white",
+          "actor": "official_example",
+          "move": "f1c4",
+          "fen_after": "rnbqk2r/ppppnp1p/8/8/1PB5/8/P1P2PPP/bNB1K1NR b Kkq - 1 7"
+        },
+        {
+          "ply": 14,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "e8g8",
+          "fen_after": "rnbq1rk1/ppppnp1p/8/8/1PB5/8/P1P2PPP/bNB1K1NR w K - 2 8"
+        },
+        {
+          "ply": 15,
+          "player": "white",
+          "actor": "official_example",
+          "move": "c4f7",
+          "fen_after": "rnbq1rk1/ppppnB1p/8/8/1P6/8/P1P2PPP/bNB1K1NR b K - 0 8"
+        },
+        {
+          "ply": 16,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "g8f7",
+          "fen_after": "rnbq1r2/ppppnk1p/8/8/1P6/8/P1P2PPP/bNB1K1NR w K - 0 9"
+        },
+        {
+          "ply": 17,
+          "player": "white",
+          "actor": "official_example",
+          "move": "a2a3",
+          "fen_after": "rnbq1r2/ppppnk1p/8/8/1P6/P7/2P2PPP/bNB1K1NR b K - 0 9"
+        },
+        {
+          "ply": 18,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "d7d5",
+          "fen_after": "rnbq1r2/ppp1nk1p/8/3p4/1P6/P7/2P2PPP/bNB1K1NR w K - 0 10"
+        },
+        {
+          "ply": 19,
+          "player": "white",
+          "actor": "official_example",
+          "move": "c1e3",
+          "fen_after": "rnbq1r2/ppp1nk1p/8/3p4/1P6/P3B3/2P2PPP/bN2K1NR b K - 1 10"
+        },
+        {
+          "ply": 20,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "a7a6",
+          "fen_after": "rnbq1r2/1pp1nk1p/p7/3p4/1P6/P3B3/2P2PPP/bN2K1NR w K - 0 11"
+        }
+      ],
+      "final_state": {
+        "current_player": "white",
+        "fen": "rnbq1r2/1pp1nk1p/p7/3p4/1P6/P3B3/2P2PPP/bN2K1NR w K - 0 11",
+        "game_status": "ongoing",
+        "is_check": false,
+        "is_checkmate": false,
+        "is_stalemate": false,
+        "last_move": "a7a6",
+        "legal_moves": [
+          "e3a7",
+          "e3h6",
+          "e3b6",
+          "e3g5",
+          "e3c5",
+          "e3f4",
+          "e3d4",
+          "e3d2",
+          "e3c1",
+          "g1h3",
+          "g1f3",
+          "g1e2",
+          "e1e2",
+          "e1d2",
+          "e1f1",
+          "e1d1",
+          "b1c3",
+          "b1d2",
+          "b4b5",
+          "a3a4",
+          "h2h3",
+          "g2g3",
+          "f2f3",
+          "c2c3",
+          "h2h4",
+          "g2g4",
+          "f2f4",
+          "c2c4"
+        ]
+      },
+      "errors": []
+    }
+  ],
+  "stats": {
+    "rank": 1,
+    "games": 2,
+    "wins": 0,
+    "losses": 0,
+    "draws": 2,
+    "win_rate": 0.5
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "eval": {
+    "draw_score": 0,
+    "king_safety_weight": 1.0,
+    "mate_score": 100000,
+    "material_weight": 1.0,
+    "missing_king_penalty": 500,
+    "mobility_weight": 1.0,
+    "pawn_structure_weight": 1.0,
+    "piece_activity_weight": 1.0
+  },
+  "external_engine": {
+    "enabled": false,
+    "endgame_depth_limit": 5,
+    "endgame_node_limit": 8000000,
+    "low_time_depth_limit": 2,
+    "low_time_node_limit": 250000,
+    "low_time_threshold_ms": 80,
+    "middlegame_depth_limit": 4,
+    "middlegame_node_limit": 4000000,
+    "minimum_external_budget_ms": 60,
+    "opening_depth_limit": 4,
+    "opening_node_limit": 2000000,
+    "time_buffer_ms": 8
+  },
+  "king_safety": {
+    "attacked_king_penalty": 70,
+    "attacked_ring_penalty": 2,
+    "pawn_shield_bonus": 7,
+    "piece_shield_bonus": 3
+  },
+  "move_ordering": {
+    "capture_attacker_penalty": 1,
+    "capture_base_bonus": 1000,
+    "capture_victim_multiplier": 10,
+    "castling_bonus": 150,
+    "center_bonus": 40,
+    "center_pawn_development_bonus": 18,
+    "check_bonus": 300,
+    "early_queen_penalty": 25,
+    "early_rook_penalty": 10,
+    "extended_center_bonus": 15,
+    "minor_development_bonus": 30,
+    "promotion_bonus": 800
+  },
+  "pawn_structure": {
+    "advance_bonus_per_rank": 3,
+    "doubled_penalty": 8,
+    "isolated_penalty": 10
+  },
+  "phase": {
+    "endgame_non_king_piece_threshold": 10,
+    "opening_fullmove_limit": 10
+  },
+  "piece_activity": {
+    "center_bonus": 13,
+    "extended_center_bonus": 5,
+    "minor_base_bonus": 8,
+    "minor_center_distance_penalty": 2,
+    "minor_rank_bonus_weight": 2,
+    "rook_half_open_file_bonus": 9,
+    "rook_open_file_bonus": 18
+  },
+  "piece_values": {
+    "bishop": 330,
+    "knight": 320,
+    "pawn": 100,
+    "queen": 900,
+    "rook": 500
+  },
+  "profile_name": "default",
+  "search": {
+    "default_depth": 3,
+    "history_bonus_power": 2,
+    "history_bonus_scale": 1,
+    "mate_detection_margin": 1000,
+    "max_depth": 4,
+    "min_time_margin_ms": 4,
+    "quiescence_depth": 8,
+    "root_mate_stop_distance": 1,
+    "tt_move_bonus": 50000
+  },
+  "source": "/Users/thinler/Documents/agent/config/strategy_profile.json"
+}

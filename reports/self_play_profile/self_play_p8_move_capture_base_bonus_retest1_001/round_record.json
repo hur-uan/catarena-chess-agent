@@ -1,0 +1,127 @@
+{
+  "abnormal_events": {
+    "crashes": 0,
+    "illegal_moves": 0,
+    "risks": [],
+    "runtime_errors": [],
+    "timeouts": 0
+  },
+  "artifact_paths": {
+    "candidate_profile_path": "agents/candidates/strategy_profile_self_play_p8_move_capture_base_bonus_retest1_001.json",
+    "evaluation_record_path": "reports/self_play_profile/self_play_p8_move_capture_base_bonus_retest1_001/evaluation_record.json",
+    "feedback_fen_suite_path": "reports/self_play_profile/self_play_p8_move_capture_base_bonus_retest1_001/feedback_fen_suite.json",
+    "optimization_report_path": "reports/self_play_profile/self_play_p8_move_capture_base_bonus_retest1_001/optimization_report.json",
+    "parameter_candidates_dir": "reports/self_play_profile/self_play_p8_move_capture_base_bonus_retest1_001/parameter_candidates",
+    "parameter_record_path": "reports/self_play_profile/self_play_p8_move_capture_base_bonus_retest1_001/parameter_record.json",
+    "round_record_path": "reports/self_play_profile/self_play_p8_move_capture_base_bonus_retest1_001/round_record.json",
+    "strategy_profile_after_path": "reports/self_play_profile/self_play_p8_move_capture_base_bonus_retest1_001/strategy_profile_after.json",
+    "strategy_profile_before_path": "reports/self_play_profile/self_play_p8_move_capture_base_bonus_retest1_001/strategy_profile_before.json"
+  },
+  "core_modification_summary": {
+    "candidate_profile_summary": "Profile candidate for self_play_p8_move_capture_base_bonus_retest1_001 from block move_ordering.capture_base_bonus using seed 1.",
+    "generated_agent_summary": "Profile candidate for self_play_p8_move_capture_base_bonus_retest1_001 from block move_ordering.capture_base_bonus using seed 1.",
+    "generation_error": "",
+    "generation_succeeded": true,
+    "improvement_summary": "No critical reliability failure detected; continue gated profile-only optimization.",
+    "patch_plan": "Profile-only revision plan: make one small strategy improvement and validate against fixed FEN set. Runtime tools remain fixed; only strategy-profile parameters may change after passing feedback prescreen and historical regression gates.",
+    "repair_attempts": 0,
+    "tuning_action": "hold",
+    "tuning_selected_block": "move_ordering.capture_base_bonus",
+    "validator_passed": true
+  },
+  "feedback_evidence": {
+    "key_failure_positions": [
+      "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+      "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+      "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+      "rnbqkbnr/pp2pppp/3p4/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
+      "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
+      "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
+      "rnbqkbnr/ppp2ppp/4p3/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+      "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+    ],
+    "ranking_source": "reports/self_play_profile/self_play_p8_move_capture_base_bonus_retest1_001/ranking.csv",
+    "raw_log_files": [
+      "reports/self_play_profile/self_play_p8_move_capture_base_bonus_retest1_001/battle_logs/game_001.json",
+      "reports/self_play_profile/self_play_p8_move_capture_base_bonus_retest1_001/battle_logs/game_002.json",
+      "reports/self_play_profile/self_play_p8_move_capture_base_bonus_retest1_001/battle_logs/game_003.json",
+      "reports/self_play_profile/self_play_p8_move_capture_base_bonus_retest1_001/battle_logs/game_004.json",
+      "reports/self_play_profile/self_play_p8_move_capture_base_bonus_retest1_001/battle_logs/game_005.json",
+      "reports/self_play_profile/self_play_p8_move_capture_base_bonus_retest1_001/battle_logs/game_006.json",
+      "reports/self_play_profile/self_play_p8_move_capture_base_bonus_retest1_001/battle_logs/game_007.json",
+      "reports/self_play_profile/self_play_p8_move_capture_base_bonus_retest1_001/battle_logs/game_008.json",
+      "reports/self_play_profile/self_play_p8_move_capture_base_bonus_retest1_001/battle_logs/game_009.json",
+      "reports/self_play_profile/self_play_p8_move_capture_base_bonus_retest1_001/battle_logs/game_010.json",
+      "reports/self_play_profile/self_play_p8_move_capture_base_bonus_retest1_001/battle_logs/game_011.json",
+      "reports/self_play_profile/self_play_p8_move_capture_base_bonus_retest1_001/battle_logs/game_012.json",
+      "reports/self_play_profile/self_play_p8_move_capture_base_bonus_retest1_001/battle_logs/game_013.json",
+      "reports/self_play_profile/self_play_p8_move_capture_base_bonus_retest1_001/battle_logs/game_014.json",
+      "reports/self_play_profile/self_play_p8_move_capture_base_bonus_retest1_001/battle_logs/game_015.json",
+      "reports/self_play_profile/self_play_p8_move_capture_base_bonus_retest1_001/battle_logs/game_016.json"
+    ],
+    "runtime_errors": []
+  },
+  "formal_execution_backend": "internal_engine",
+  "game_result_statistics": {
+    "agent_name": "chess_agent",
+    "draws": 10,
+    "games": 16,
+    "losses": 3,
+    "notes": [],
+    "opponent_records": {},
+    "rank": 1,
+    "rank_delta": 0,
+    "source": "reports/self_play_profile/self_play_p8_move_capture_base_bonus_retest1_001/ranking.csv",
+    "win_rate": 0.5,
+    "wins": 3
+  },
+  "key_failure_positions": [
+    "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+    "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+    "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+    "rnbqkbnr/pp2pppp/3p4/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
+    "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
+    "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
+    "rnbqkbnr/ppp2ppp/4p3/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+    "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+  ],
+  "next_round_revision_plan": {
+    "next_focus": "No critical reliability failure detected; continue gated profile-only optimization.",
+    "patch_plan": "Profile-only revision plan: make one small strategy improvement and validate against fixed FEN set. Runtime tools remain fixed; only strategy-profile parameters may change after passing feedback prescreen and historical regression gates.",
+    "tuning_action": "hold",
+    "tuning_reason_code": "no_gate_cross"
+  },
+  "opponent_features": {
+    "notes": [
+      "opponent path not provided"
+    ],
+    "opponents": []
+  },
+  "optimization_mode": "profile_only",
+  "parameter_adjustment_record": {
+    "chosen_changed_paths": [],
+    "effective_changed_paths": [],
+    "selected_block": "move_ordering.capture_base_bonus",
+    "tuning_action": "hold",
+    "tuning_reason_code": "no_gate_cross"
+  },
+  "pipeline_version": "profile_only_v2_internal_runtime",
+  "round_id": "self_play_p8_move_capture_base_bonus_retest1_001",
+  "runtime_policy": "formal_internal_only",
+  "version_identifier": {
+    "active_agent_path": "agents/chess_agent.py",
+    "candidate_agent_archived_path": "",
+    "candidate_agent_backend": "profile",
+    "candidate_agent_path": "agents/candidates/strategy_profile_self_play_p8_move_capture_base_bonus_retest1_001.json",
+    "candidate_agent_promoted": false,
+    "candidate_agent_sha256": "07a8555b3f10e2b1ab99903fdfdc08171bbfdb920b9b91679a04c8edd8a828d4",
+    "candidate_profile_archived_path": "",
+    "candidate_profile_backend": "profile",
+    "candidate_profile_path": "agents/candidates/strategy_profile_self_play_p8_move_capture_base_bonus_retest1_001.json",
+    "candidate_profile_promoted": false,
+    "candidate_profile_sha256": "07a8555b3f10e2b1ab99903fdfdc08171bbfdb920b9b91679a04c8edd8a828d4",
+    "round_version": "self_play_p8_move_capture_base_bonus_retest1_001",
+    "strategy_profile_after_sha256": "bd86380240185165720c9af5effcd6efb9cc6c5ac80a7a3c3a6e20db927540a8",
+    "strategy_profile_before_sha256": "bd86380240185165720c9af5effcd6efb9cc6c5ac80a7a3c3a6e20db927540a8"
+  }
+}
