@@ -1,0 +1,944 @@
+{
+  "platform": "https://github.com/AGI-Eval-Official/CATArena",
+  "contract": {
+    "repository_url": "https://github.com/AGI-Eval-Official/CATArena",
+    "game": "chess",
+    "game_server_endpoints": {
+      "create_game": "POST /games",
+      "state": "GET /games/{game_id}/state",
+      "move": "POST /games/{game_id}/move",
+      "history": "GET /games/{game_id}/history",
+      "board": "GET /games/{game_id}/board",
+      "legal_moves": "GET /games/{game_id}/legal_moves",
+      "health": "GET /health"
+    },
+    "ai_server_endpoints": {
+      "health": "GET /health",
+      "info": "GET /info",
+      "join_game": "POST /join_game",
+      "leave_game": "POST /leave_game",
+      "move": "POST /move",
+      "get_move": "POST /get_move",
+      "legal_moves": "POST /legal_moves",
+      "evaluate": "POST /evaluate"
+    },
+    "arena_payload": {
+      "ai_move_request": [
+        "fen",
+        "algorithm",
+        "game_id",
+        "current_player"
+      ],
+      "move_response": [
+        "move"
+      ],
+      "game_move_request": [
+        "player",
+        "move"
+      ]
+    },
+    "move_format": "UCI string, for example e2e4 or a7a8q",
+    "observation_format": "JSON payload with fen, algorithm, game_id, and current_player",
+    "report_files": [
+      "battle.log",
+      "ranking.csv",
+      "error_report.json",
+      "official_catarena_report.json",
+      "catarena_manifest.json",
+      "catarena_contract.json"
+    ]
+  },
+  "source_manifest_count": 36,
+  "arena_probe": {
+    "loaded": true,
+    "config_file": "reports/catarena_platform/candidate_qstm_priors_catarena_acceptance_002/official_arena_config.json",
+    "arena_class": "ChessArena",
+    "configured_ais": 3
+  },
+  "games": [
+    {
+      "game_id": "chess_ad7cc565",
+      "local_color": "white",
+      "result": "draw",
+      "status": "ongoing",
+      "moves_count": 20,
+      "moves": [
+        {
+          "ply": 1,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "b2b3",
+          "fen_after": "rnbqkbnr/pppppppp/8/8/8/1P6/P1PPPPPP/RNBQKBNR b KQkq - 0 1",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "candidate_qstm_priors",
+              "strategy_source": "reports/performance_ab/candidate_qstm_priors_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 253,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.85,
+              "draw": 0.12,
+              "loss": 0.03
+            },
+            "depth": 2,
+            "elapsed_ms": 96.12162499999988,
+            "nodes": 137,
+            "qnodes": 190,
+            "principal_variation": [
+              "b2b3"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 2,
+          "player": "black",
+          "actor": "official_example",
+          "move": "d7d5",
+          "fen_after": "rnbqkbnr/ppp1pppp/8/3p4/8/1P6/P1PPPPPP/RNBQKBNR w KQkq - 0 2",
+          "search": null
+        },
+        {
+          "ply": 3,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "b3b4",
+          "fen_after": "rnbqkbnr/ppp1pppp/8/3p4/1P6/8/P1PPPPPP/RNBQKBNR b KQkq - 0 2",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "candidate_qstm_priors",
+              "strategy_source": "reports/performance_ab/candidate_qstm_priors_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 307,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.85,
+              "draw": 0.12,
+              "loss": 0.03
+            },
+            "depth": 2,
+            "elapsed_ms": 96.683042,
+            "nodes": 119,
+            "qnodes": 196,
+            "principal_variation": [
+              "b3b4"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 4,
+          "player": "black",
+          "actor": "official_example",
+          "move": "e7e5",
+          "fen_after": "rnbqkbnr/ppp2ppp/8/3pp3/1P6/8/P1PPPPPP/RNBQKBNR w KQkq - 0 3",
+          "search": null
+        },
+        {
+          "ply": 5,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "e2e4",
+          "fen_after": "rnbqkbnr/ppp2ppp/8/3pp3/1P2P3/8/P1PP1PPP/RNBQKBNR b KQkq - 0 3",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "candidate_qstm_priors",
+              "strategy_source": "reports/performance_ab/candidate_qstm_priors_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 31,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.25,
+              "draw": 0.5,
+              "loss": 0.25
+            },
+            "depth": 1,
+            "elapsed_ms": 96.52879200000042,
+            "nodes": 117,
+            "qnodes": 224,
+            "principal_variation": [
+              "e2e4"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 6,
+          "player": "black",
+          "actor": "official_example",
+          "move": "d5e4",
+          "fen_after": "rnbqkbnr/ppp2ppp/8/4p3/1P2p3/8/P1PP1PPP/RNBQKBNR w KQkq - 0 4",
+          "search": null
+        },
+        {
+          "ply": 7,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "b4b5",
+          "fen_after": "rnbqkbnr/ppp2ppp/8/1P2p3/4p3/8/P1PP1PPP/RNBQKBNR b KQkq - 0 4",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "candidate_qstm_priors",
+              "strategy_source": "reports/performance_ab/candidate_qstm_priors_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 341,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.85,
+              "draw": 0.12,
+              "loss": 0.03
+            },
+            "depth": 2,
+            "elapsed_ms": 96.21262500000016,
+            "nodes": 105,
+            "qnodes": 179,
+            "principal_variation": [
+              "b4b5"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 8,
+          "player": "black",
+          "actor": "official_example",
+          "move": "d8d2",
+          "fen_after": "rnb1kbnr/ppp2ppp/8/1P2p3/4p3/8/P1Pq1PPP/RNBQKBNR w KQkq - 0 5",
+          "search": null
+        },
+        {
+          "ply": 9,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "c1d2",
+          "fen_after": "rnb1kbnr/ppp2ppp/8/1P2p3/4p3/8/P1PB1PPP/RN1QKBNR b KQkq - 0 5",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "candidate_qstm_priors",
+              "strategy_source": "reports/performance_ab/candidate_qstm_priors_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 685,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.85,
+              "draw": 0.12,
+              "loss": 0.03
+            },
+            "depth": 2,
+            "elapsed_ms": 96.30466599999998,
+            "nodes": 132,
+            "qnodes": 231,
+            "principal_variation": [
+              "c1d2"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 10,
+          "player": "black",
+          "actor": "official_example",
+          "move": "c7c5",
+          "fen_after": "rnb1kbnr/pp3ppp/8/1Pp1p3/4p3/8/P1PB1PPP/RN1QKBNR w KQkq c6 0 6",
+          "search": null
+        },
+        {
+          "ply": 11,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "f1c4",
+          "fen_after": "rnb1kbnr/pp3ppp/8/1Pp1p3/2B1p3/8/P1PB1PPP/RN1QK1NR b KQkq - 1 6",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "candidate_qstm_priors",
+              "strategy_source": "reports/performance_ab/candidate_qstm_priors_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 742,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.85,
+              "draw": 0.12,
+              "loss": 0.03
+            },
+            "depth": 1,
+            "elapsed_ms": 96.35275000000033,
+            "nodes": 161,
+            "qnodes": 204,
+            "principal_variation": [
+              "f1c4"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 12,
+          "player": "black",
+          "actor": "official_example",
+          "move": "b7b6",
+          "fen_after": "rnb1kbnr/p4ppp/1p6/1Pp1p3/2B1p3/8/P1PB1PPP/RN1QK1NR w KQkq - 0 7",
+          "search": null
+        },
+        {
+          "ply": 13,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "b1c3",
+          "fen_after": "rnb1kbnr/p4ppp/1p6/1Pp1p3/2B1p3/2N5/P1PB1PPP/R2QK1NR b KQkq - 1 7",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "candidate_qstm_priors",
+              "strategy_source": "reports/performance_ab/candidate_qstm_priors_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 744,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.85,
+              "draw": 0.12,
+              "loss": 0.03
+            },
+            "depth": 1,
+            "elapsed_ms": 96.03445900000018,
+            "nodes": 110,
+            "qnodes": 198,
+            "principal_variation": [
+              "b1c3"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 14,
+          "player": "black",
+          "actor": "official_example",
+          "move": "c8h3",
+          "fen_after": "rn2kbnr/p4ppp/1p6/1Pp1p3/2B1p3/2N4b/P1PB1PPP/R2QK1NR w KQkq - 2 8",
+          "search": null
+        },
+        {
+          "ply": 15,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "g1h3",
+          "fen_after": "rn2kbnr/p4ppp/1p6/1Pp1p3/2B1p3/2N4N/P1PB1PPP/R2QK2R b KQkq - 0 8",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "candidate_qstm_priors",
+              "strategy_source": "reports/performance_ab/candidate_qstm_priors_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 1052,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.85,
+              "draw": 0.12,
+              "loss": 0.03
+            },
+            "depth": 1,
+            "elapsed_ms": 96.06404200000007,
+            "nodes": 107,
+            "qnodes": 251,
+            "principal_variation": [
+              "g1h3"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 16,
+          "player": "black",
+          "actor": "official_example",
+          "move": "b8a6",
+          "fen_after": "r3kbnr/p4ppp/np6/1Pp1p3/2B1p3/2N4N/P1PB1PPP/R2QK2R w KQkq - 1 9",
+          "search": null
+        },
+        {
+          "ply": 17,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "b5a6",
+          "fen_after": "r3kbnr/p4ppp/Pp6/2p1p3/2B1p3/2N4N/P1PB1PPP/R2QK2R b KQkq - 0 9",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "candidate_qstm_priors",
+              "strategy_source": "reports/performance_ab/candidate_qstm_priors_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 1328,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.85,
+              "draw": 0.12,
+              "loss": 0.03
+            },
+            "depth": 1,
+            "elapsed_ms": 96.2087920000001,
+            "nodes": 71,
+            "qnodes": 229,
+            "principal_variation": [
+              "b5a6"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 18,
+          "player": "black",
+          "actor": "official_example",
+          "move": "f7f5",
+          "fen_after": "r3kbnr/p5pp/Pp6/2p1pp2/2B1p3/2N4N/P1PB1PPP/R2QK2R w KQkq - 0 10",
+          "search": null
+        },
+        {
+          "ply": 19,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "d1h5",
+          "fen_after": "r3kbnr/p5pp/Pp6/2p1pp1Q/2B1p3/2N4N/P1PB1PPP/R3K2R b KQkq - 1 10",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "candidate_qstm_priors",
+              "strategy_source": "reports/performance_ab/candidate_qstm_priors_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 1444,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.85,
+              "draw": 0.12,
+              "loss": 0.03
+            },
+            "depth": 1,
+            "elapsed_ms": 96.16245800000023,
+            "nodes": 74,
+            "qnodes": 267,
+            "principal_variation": [
+              "d1h5"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 20,
+          "player": "black",
+          "actor": "official_example",
+          "move": "e8e7",
+          "fen_after": "r4bnr/p3k1pp/Pp6/2p1pp1Q/2B1p3/2N4N/P1PB1PPP/R3K2R w KQ - 2 11",
+          "search": null
+        }
+      ],
+      "final_state": {
+        "current_player": "white",
+        "fen": "r4bnr/p3k1pp/Pp6/2p1pp1Q/2B1p3/2N4N/P1PB1PPP/R3K2R w KQ - 2 11",
+        "game_status": "ongoing",
+        "is_check": false,
+        "is_checkmate": false,
+        "is_stalemate": false,
+        "last_move": "e8e7",
+        "legal_moves": [
+          "h5e8",
+          "h5h7",
+          "h5f7",
+          "h5h6",
+          "h5g6",
+          "h5g5",
+          "h5f5",
+          "h5h4",
+          "h5g4",
+          "h5f3",
+          "h5e2",
+          "h5d1",
+          "c4g8",
+          "c4f7",
+          "c4e6",
+          "c4d5",
+          "c4b5",
+          "c4d3",
+          "c4b3",
+          "c4e2",
+          "c4f1",
+          "h3g5",
+          "h3f4",
+          "h3g1",
+          "c3d5",
+          "c3b5",
+          "c3e4",
+          "c3a4",
+          "c3e2",
+          "c3d1",
+          "c3b1",
+          "d2h6",
+          "d2g5",
+          "d2f4",
+          "d2e3",
+          "d2c1",
+          "h1g1",
+          "h1f1",
+          "e1e2",
+          "e1f1",
+          "e1d1",
+          "a1d1",
+          "a1c1",
+          "a1b1",
+          "e1g1",
+          "e1c1",
+          "g2g3",
+          "f2f3",
+          "a2a3",
+          "g2g4",
+          "f2f4",
+          "a2a4"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "game_id": "chess_e3090901",
+      "local_color": "black",
+      "result": "draw",
+      "status": "ongoing",
+      "moves_count": 20,
+      "moves": [
+        {
+          "ply": 1,
+          "player": "white",
+          "actor": "official_example",
+          "move": "e2e4",
+          "fen_after": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+          "search": null
+        },
+        {
+          "ply": 2,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "b7b5",
+          "fen_after": "rnbqkbnr/p1pppppp/8/1p6/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "candidate_qstm_priors",
+              "strategy_source": "reports/performance_ab/candidate_qstm_priors_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 199,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.58,
+              "draw": 0.3,
+              "loss": 0.12
+            },
+            "depth": 2,
+            "elapsed_ms": 96.79879199999952,
+            "nodes": 144,
+            "qnodes": 206,
+            "principal_variation": [
+              "b7b5"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 3,
+          "player": "white",
+          "actor": "official_example",
+          "move": "f1b5",
+          "fen_after": "rnbqkbnr/p1pppppp/8/1B6/4P3/8/PPPP1PPP/RNBQK1NR b KQkq - 0 2",
+          "search": null
+        },
+        {
+          "ply": 4,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "f7f6",
+          "fen_after": "rnbqkbnr/p1ppp1pp/5p2/1B6/4P3/8/PPPP1PPP/RNBQK1NR w KQkq - 0 3",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "candidate_qstm_priors",
+              "strategy_source": "reports/performance_ab/candidate_qstm_priors_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 140,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.58,
+              "draw": 0.3,
+              "loss": 0.12
+            },
+            "depth": 2,
+            "elapsed_ms": 96.48791600000007,
+            "nodes": 101,
+            "qnodes": 236,
+            "principal_variation": [
+              "f7f6"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 5,
+          "player": "white",
+          "actor": "official_example",
+          "move": "b5d7",
+          "fen_after": "rnbqkbnr/p1pBp1pp/5p2/8/4P3/8/PPPP1PPP/RNBQK1NR b KQkq - 0 3",
+          "search": null
+        },
+        {
+          "ply": 6,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "b8d7",
+          "fen_after": "r1bqkbnr/p1pnp1pp/5p2/8/4P3/8/PPPP1PPP/RNBQK1NR w KQkq - 0 4",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "candidate_qstm_priors",
+              "strategy_source": "reports/performance_ab/candidate_qstm_priors_profile.json",
+              "external_engine_available": true
+            },
+            "cp": -27,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.25,
+              "draw": 0.5,
+              "loss": 0.25
+            },
+            "depth": 2,
+            "elapsed_ms": 96.12458299999993,
+            "nodes": 80,
+            "qnodes": 235,
+            "principal_variation": [
+              "b8d7"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 7,
+          "player": "white",
+          "actor": "official_example",
+          "move": "d2d4",
+          "fen_after": "r1bqkbnr/p1pnp1pp/5p2/8/3PP3/8/PPP2PPP/RNBQK1NR b KQkq - 0 4",
+          "search": null
+        },
+        {
+          "ply": 8,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "d7b6",
+          "fen_after": "r1bqkbnr/p1p1p1pp/1n3p2/8/3PP3/8/PPP2PPP/RNBQK1NR w KQkq - 1 5",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "candidate_qstm_priors",
+              "strategy_source": "reports/performance_ab/candidate_qstm_priors_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 138,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.58,
+              "draw": 0.3,
+              "loss": 0.12
+            },
+            "depth": 2,
+            "elapsed_ms": 96.13787500000015,
+            "nodes": 110,
+            "qnodes": 208,
+            "principal_variation": [
+              "d7b6"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 9,
+          "player": "white",
+          "actor": "official_example",
+          "move": "e4e5",
+          "fen_after": "r1bqkbnr/p1p1p1pp/1n3p2/4P3/3P4/8/PPP2PPP/RNBQK1NR b KQkq - 0 5",
+          "search": null
+        },
+        {
+          "ply": 10,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "c8g4",
+          "fen_after": "r2qkbnr/p1p1p1pp/1n3p2/4P3/3P2b1/8/PPP2PPP/RNBQK1NR w KQkq - 1 6",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "candidate_qstm_priors",
+              "strategy_source": "reports/performance_ab/candidate_qstm_priors_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 121,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.58,
+              "draw": 0.3,
+              "loss": 0.12
+            },
+            "depth": 1,
+            "elapsed_ms": 96.20304099999987,
+            "nodes": 110,
+            "qnodes": 231,
+            "principal_variation": [
+              "c8g4"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 11,
+          "player": "white",
+          "actor": "official_example",
+          "move": "d1g4",
+          "fen_after": "r2qkbnr/p1p1p1pp/1n3p2/4P3/3P2Q1/8/PPP2PPP/RNB1K1NR b KQkq - 0 6",
+          "search": null
+        },
+        {
+          "ply": 12,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "g8h6",
+          "fen_after": "r2qkb1r/p1p1p1pp/1n3p1n/4P3/3P2Q1/8/PPP2PPP/RNB1K1NR w KQkq - 1 7",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "candidate_qstm_priors",
+              "strategy_source": "reports/performance_ab/candidate_qstm_priors_profile.json",
+              "external_engine_available": true
+            },
+            "cp": -248,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.12,
+              "draw": 0.3,
+              "loss": 0.58
+            },
+            "depth": 1,
+            "elapsed_ms": 96.36558299999987,
+            "nodes": 83,
+            "qnodes": 224,
+            "principal_variation": [
+              "g8h6"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 13,
+          "player": "white",
+          "actor": "official_example",
+          "move": "g4g7",
+          "fen_after": "r2qkb1r/p1p1p1Qp/1n3p1n/4P3/3P4/8/PPP2PPP/RNB1K1NR b KQkq - 0 7",
+          "search": null
+        },
+        {
+          "ply": 14,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "f8g7",
+          "fen_after": "r2qk2r/p1p1p1bp/1n3p1n/4P3/3P4/8/PPP2PPP/RNB1K1NR w KQkq - 0 8",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "candidate_qstm_priors",
+              "strategy_source": "reports/performance_ab/candidate_qstm_priors_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 529,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.85,
+              "draw": 0.12,
+              "loss": 0.03
+            },
+            "depth": 1,
+            "elapsed_ms": 96.22925000000038,
+            "nodes": 40,
+            "qnodes": 225,
+            "principal_variation": [
+              "f8g7"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 15,
+          "player": "white",
+          "actor": "official_example",
+          "move": "c1h6",
+          "fen_after": "r2qk2r/p1p1p1bp/1n3p1B/4P3/3P4/8/PPP2PPP/RN2K1NR b KQkq - 0 8",
+          "search": null
+        },
+        {
+          "ply": 16,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "g7h6",
+          "fen_after": "r2qk2r/p1p1p2p/1n3p1b/4P3/3P4/8/PPP2PPP/RN2K1NR w KQkq - 0 9",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "candidate_qstm_priors",
+              "strategy_source": "reports/performance_ab/candidate_qstm_priors_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 550,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.85,
+              "draw": 0.12,
+              "loss": 0.03
+            },
+            "depth": 1,
+            "elapsed_ms": 96.19779099999981,
+            "nodes": 105,
+            "qnodes": 222,
+            "principal_variation": [
+              "g7h6"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 17,
+          "player": "white",
+          "actor": "official_example",
+          "move": "e5f6",
+          "fen_after": "r2qk2r/p1p1p2p/1n3P1b/8/3P4/8/PPP2PPP/RN2K1NR b KQkq - 0 9",
+          "search": null
+        },
+        {
+          "ply": 18,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "d8d4",
+          "fen_after": "r3k2r/p1p1p2p/1n3P1b/8/3q4/8/PPP2PPP/RN2K1NR w KQkq - 0 10",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "candidate_qstm_priors",
+              "strategy_source": "reports/performance_ab/candidate_qstm_priors_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 615,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.85,
+              "draw": 0.12,
+              "loss": 0.03
+            },
+            "depth": 1,
+            "elapsed_ms": 96.21420900000021,
+            "nodes": 93,
+            "qnodes": 223,
+            "principal_variation": [
+              "d8d4"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 19,
+          "player": "white",
+          "actor": "official_example",
+          "move": "f6e7",
+          "fen_after": "r3k2r/p1p1P2p/1n5b/8/3q4/8/PPP2PPP/RN2K1NR b KQkq - 0 10",
+          "search": null
+        },
+        {
+          "ply": 20,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "d4f2",
+          "fen_after": "r3k2r/p1p1P2p/1n5b/8/8/8/PPP2qPP/RN2K1NR w KQkq - 0 11",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "candidate_qstm_priors",
+              "strategy_source": "reports/performance_ab/candidate_qstm_priors_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 626,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.85,
+              "draw": 0.12,
+              "loss": 0.03
+            },
+            "depth": 1,
+            "elapsed_ms": 96.16524999999942,
+            "nodes": 78,
+            "qnodes": 241,
+            "principal_variation": [
+              "d4f2"
+            ],
+            "fallback_used": false
+          }
+        }
+      ],
+      "final_state": {
+        "current_player": "white",
+        "fen": "r3k2r/p1p1P2p/1n5b/8/8/8/PPP2qPP/RN2K1NR w KQkq - 0 11",
+        "game_status": "ongoing",
+        "is_check": true,
+        "is_checkmate": false,
+        "is_stalemate": false,
+        "last_move": "d4f2",
+        "legal_moves": [
+          "e1f2",
+          "e1d1"
+        ]
+      },
+      "errors": []
+    }
+  ],
+  "stats": {
+    "rank": 1,
+    "games": 2,
+    "wins": 0,
+    "losses": 0,
+    "draws": 2,
+    "win_rate": 0.5
+  }
+}

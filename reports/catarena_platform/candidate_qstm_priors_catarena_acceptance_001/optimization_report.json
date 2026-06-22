@@ -1,0 +1,423 @@
+{
+  "artifact_paths": {
+    "candidate_profile_path": "agents/candidates/strategy_profile_candidate_qstm_priors_catarena_acceptance_001.json",
+    "evaluation_record_path": "reports/catarena_platform/candidate_qstm_priors_catarena_acceptance_001/evaluation_record.json",
+    "feedback_fen_suite_path": "reports/catarena_platform/candidate_qstm_priors_catarena_acceptance_001/feedback_fen_suite.json",
+    "optimization_report_path": "reports/catarena_platform/candidate_qstm_priors_catarena_acceptance_001/optimization_report.json",
+    "parameter_record_path": "reports/catarena_platform/candidate_qstm_priors_catarena_acceptance_001/parameter_record.json",
+    "round_record_path": "reports/catarena_platform/candidate_qstm_priors_catarena_acceptance_001/round_record.json",
+    "strategy_profile_after_path": "reports/catarena_platform/candidate_qstm_priors_catarena_acceptance_001/strategy_profile_after.json",
+    "strategy_profile_before_path": "reports/catarena_platform/candidate_qstm_priors_catarena_acceptance_001/strategy_profile_before.json"
+  },
+  "backend": "profile",
+  "catarena_message": "CATArena chessgame checkout is present.",
+  "catarena_missing_required_files": [],
+  "catarena_ready": true,
+  "catarena_source_files_seen": 36,
+  "engine_runtime_config": {
+    "enabled": false,
+    "endgame_depth_limit": 5,
+    "endgame_node_limit": 8000000,
+    "endgame_non_king_piece_threshold": 10,
+    "low_time_depth_limit": 2,
+    "low_time_node_limit": 250000,
+    "low_time_threshold_ms": 80,
+    "middlegame_depth_limit": 4,
+    "middlegame_node_limit": 4000000,
+    "minimum_external_budget_ms": 60,
+    "opening_depth_limit": 4,
+    "opening_fullmove_limit": 10,
+    "opening_node_limit": 2000000,
+    "source": "reports/performance_ab/candidate_qstm_priors_profile.json",
+    "time_buffer_ms": 8
+  },
+  "evolution_metrics": {
+    "global_scores": [
+      0.5
+    ],
+    "rounds_considered": 1,
+    "same_round_score": 0.5,
+    "sbase": 0.5,
+    "sevo": null
+  },
+  "failure_report": {
+    "evidence": [
+      "no crashes, illegal moves, or timeout signals found"
+    ],
+    "main_failure_type": "no_clear_failure",
+    "next_actions": [
+      "make one small strategy improvement and validate against fixed FEN set"
+    ],
+    "priority": "low"
+  },
+  "feedback_fen_suite": {
+    "default_positions": 6,
+    "duplicates_removed": 0,
+    "feedback_positions": 12,
+    "positions": [
+      {
+        "fen": "3qk1nr/r1p2ppp/8/4n3/1bP1P1b1/1P6/1P1N1P1P/2B1KBNR w Kk - 0 11",
+        "name": "feedback_failure_001",
+        "source": "catarena_failure_log"
+      },
+      {
+        "fen": "3qk1nr/r1pb1ppp/2n5/4P3/1b2P3/1P4P1/1PPN1P1P/2B1KBNR w Kk - 0 9",
+        "name": "feedback_failure_002",
+        "source": "catarena_failure_log"
+      },
+      {
+        "fen": "3qk1nr/r1pb1ppp/2n5/4P3/1bP1P3/1P4P1/1P1N1P1P/2B1KBNR b Kk - 0 9",
+        "name": "feedback_failure_003",
+        "source": "catarena_failure_log"
+      },
+      {
+        "fen": "3qk1nr/r1pb1ppp/8/4n3/1bP1P1P1/1P6/1P1N1P1P/2B1KBNR b Kk - 0 10",
+        "name": "feedback_failure_004",
+        "source": "catarena_failure_log"
+      },
+      {
+        "fen": "3qk1nr/r1pb1ppp/8/4n3/1bP1P3/1P4P1/1P1N1P1P/2B1KBNR w Kk - 0 10",
+        "name": "feedback_failure_005",
+        "source": "catarena_failure_log"
+      },
+      {
+        "fen": "r2qk1nr/R1pb1ppp/2n5/4P3/1b2P3/1P4P1/1PPN1P1P/2B1KBNR b Kkq - 0 8",
+        "name": "feedback_failure_006",
+        "source": "catarena_failure_log"
+      },
+      {
+        "fen": "r2qk1nr/p1pb1ppp/2n5/4P3/1b2P3/1P4P1/1PPN1P1P/R1B1KBNR w KQkq - 3 8",
+        "name": "feedback_failure_007",
+        "source": "catarena_failure_log"
+      },
+      {
+        "fen": "rn1qk1nr/p1pb1ppp/8/4P3/1b2P3/1P4P1/1PP2P1P/RNB1KBNR w KQkq - 1 7",
+        "name": "feedback_failure_008",
+        "source": "catarena_failure_log"
+      },
+      {
+        "fen": "rn1qk1nr/p1pb1ppp/8/4P3/1b2P3/1P4P1/1PPN1P1P/R1B1KBNR b KQkq - 2 7",
+        "name": "feedback_failure_009",
+        "source": "catarena_failure_log"
+      },
+      {
+        "fen": "rn1qkbnr/p1pb1ppp/8/4P3/1p2P3/6P1/PPP2P1P/RNB1KBNR b KQkq - 0 5",
+        "name": "feedback_failure_010",
+        "source": "catarena_failure_log"
+      },
+      {
+        "fen": "rn1qkbnr/p1pb1ppp/8/4P3/1p2P3/8/PPP2PPP/RNB1KBNR w KQkq - 0 5",
+        "name": "feedback_failure_011",
+        "source": "catarena_failure_log"
+      },
+      {
+        "fen": "rn1qkbnr/p1pb1ppp/8/4P3/4P3/1P4P1/1PP2P1P/RNB1KBNR b KQkq - 0 6",
+        "name": "feedback_failure_012",
+        "source": "catarena_failure_log"
+      },
+      {
+        "fen": "6k1/5Q2/6K1/8/8/8/8/8 w - - 0 1",
+        "name": "mate_in_one_white",
+        "source": "default_prescreen"
+      },
+      {
+        "fen": "8/8/8/8/8/6k1/5q2/6K1 b - - 0 1",
+        "name": "mate_in_one_black",
+        "source": "default_prescreen"
+      },
+      {
+        "fen": "r2q1k1r/2pnppb1/pp4pn/3N2Np/3P2bP/4B1P1/PPP1PPB1/R2Q1RK1 w - - 0 11",
+        "name": "sharp_midgame_1",
+        "source": "default_prescreen"
+      },
+      {
+        "fen": "r1bq1rk1/pp1n1pbp/2pp1np1/4p3/2PPP3/2N1BN1P/PPQ2PP1/R3KB1R w KQ - 2 9",
+        "name": "sharp_midgame_2",
+        "source": "default_prescreen"
+      },
+      {
+        "fen": "2r2rk1/pp1q1ppp/2n1pn2/2bp4/3P4/2NBPN2/PPQ2PPP/2RR2K1 w - - 0 12",
+        "name": "isolated_pawn_tension",
+        "source": "default_prescreen"
+      },
+      {
+        "fen": "8/5pk1/3p2p1/2pP4/2P1r3/4R1P1/5PK1/8 w - - 0 35",
+        "name": "rook_endgame",
+        "source": "default_prescreen"
+      }
+    ],
+    "total_positions": 18
+  },
+  "feedback_prescreen": {
+    "mean_score_a": 0.5,
+    "mean_score_b": 0.5,
+    "positions": 0,
+    "results": [],
+    "score_difference": 0.0
+  },
+  "generated_agent": {
+    "archived_path": "",
+    "backend": "profile",
+    "changed": false,
+    "effective_changed_paths": [],
+    "path": "agents/candidates/strategy_profile_candidate_qstm_priors_catarena_acceptance_001.json",
+    "promoted": false,
+    "selected_block": "",
+    "summary": "No profile candidate produced by the tuning policy."
+  },
+  "generation_error": "",
+  "generation_succeeded": true,
+  "historical_profile_pool": {
+    "historical_profiles": [],
+    "notes": [
+      "no historical profile artifacts available"
+    ],
+    "selected_profiles": []
+  },
+  "historical_regression": {
+    "enabled": false,
+    "entries": [],
+    "failed_profiles": 0,
+    "notes": [
+      "no candidate profile produced by tuning policy"
+    ],
+    "passed": true,
+    "passed_profiles": 0,
+    "total_profiles": 0
+  },
+  "improvement_summary": "No critical reliability failure detected; continue gated profile-only optimization.",
+  "log_report": {
+    "average_cp": 317.6,
+    "average_depth": 1.45,
+    "average_response_ms": 96.28515000000002,
+    "crashes": 0,
+    "draws": 1,
+    "games": [
+      {
+        "cp_scores": [
+          253,
+          274,
+          140,
+          -185,
+          -3,
+          97,
+          -585,
+          -895,
+          40,
+          151,
+          232,
+          31,
+          341,
+          685,
+          1015,
+          688,
+          614,
+          1023,
+          1152,
+          1284
+        ],
+        "crashes": 0,
+        "illegal_moves": 0,
+        "key_fens": [
+          "3qk1nr/r1p2ppp/8/4n3/1bP1P1b1/1P6/1P1N1P1P/2B1KBNR w Kk - 0 11",
+          "3qk1nr/r1pb1ppp/2n5/4P3/1b2P3/1P4P1/1PPN1P1P/2B1KBNR w Kk - 0 9",
+          "3qk1nr/r1pb1ppp/2n5/4P3/1bP1P3/1P4P1/1P1N1P1P/2B1KBNR b Kk - 0 9",
+          "3qk1nr/r1pb1ppp/8/4n3/1bP1P1P1/1P6/1P1N1P1P/2B1KBNR b Kk - 0 10",
+          "3qk1nr/r1pb1ppp/8/4n3/1bP1P3/1P4P1/1P1N1P1P/2B1KBNR w Kk - 0 10",
+          "r2qk1nr/R1pb1ppp/2n5/4P3/1b2P3/1P4P1/1PPN1P1P/2B1KBNR b Kkq - 0 8",
+          "r2qk1nr/p1pb1ppp/2n5/4P3/1b2P3/1P4P1/1PPN1P1P/R1B1KBNR w KQkq - 3 8",
+          "rn1qk1nr/p1pb1ppp/8/4P3/1b2P3/1P4P1/1PP2P1P/RNB1KBNR w KQkq - 1 7",
+          "rn1qk1nr/p1pb1ppp/8/4P3/1b2P3/1P4P1/1PPN1P1P/R1B1KBNR b KQkq - 2 7",
+          "rn1qkbnr/p1pb1ppp/8/4P3/1p2P3/6P1/PPP2P1P/RNB1KBNR b KQkq - 0 5",
+          "rn1qkbnr/p1pb1ppp/8/4P3/1p2P3/8/PPP2PPP/RNB1KBNR w KQkq - 0 5",
+          "rn1qkbnr/p1pb1ppp/8/4P3/4P3/1P4P1/1PP2P1P/RNB1KBNR b KQkq - 0 6",
+          "rn1qkbnr/p1pb1ppp/8/4P3/4P3/1p4P1/PPP2P1P/RNB1KBNR w KQkq - 0 6",
+          "rnb1k1nr/p1p2pBp/1p6/8/2p5/5N2/P3P1PP/RN2KB1R b KQkq - 0 10",
+          "rnb1k1nr/p1p2ppp/1p6/8/2pB4/5N2/P3P1PP/RN2KB1R w KQkq - 0 10",
+          "rnb1k1nr/ppp2ppp/8/8/2pB4/5N2/P3P1PP/RN2KB1R b KQkq - 0 9",
+          "rnb1k1nr/ppp2ppp/8/8/2pq4/4BN2/P3P1PP/RN2KB1R w KQkq - 1 9",
+          "rnb1k2r/p1p2pBp/1p5n/8/2p5/5N2/P3P1PP/RN2KB1R w KQkq - 1 11",
+          "rnbqk1nr/ppp2ppp/8/3p4/2P5/4pN2/P3P1PP/RNB1KB1R b KQkq - 0 7",
+          "rnbqk1nr/ppp2ppp/8/3p4/5p2/4QN2/P1P1P1PP/RNB1KB1R b KQkq - 1 6"
+        ],
+        "moves": 41,
+        "response_times_ms": [
+          96.21,
+          96.157,
+          96.729,
+          96.043,
+          96.313,
+          96.147,
+          96.513,
+          96.132,
+          96.523,
+          96.45,
+          96.283,
+          96.039,
+          96.56,
+          96.475,
+          96.392,
+          96.161,
+          96.298,
+          96.076,
+          96.177,
+          96.025
+        ],
+        "result": "draw",
+        "runtime_errors": [],
+        "search_depths": [
+          2,
+          2,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          1,
+          1,
+          2,
+          1,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "source": "reports/catarena_platform/candidate_qstm_priors_catarena_acceptance_001/battle.log",
+        "timeouts": 0
+      }
+    ],
+    "illegal_moves": 0,
+    "interface_successes": 41,
+    "key_failure_fens": [
+      "3qk1nr/r1p2ppp/8/4n3/1bP1P1b1/1P6/1P1N1P1P/2B1KBNR w Kk - 0 11",
+      "3qk1nr/r1pb1ppp/2n5/4P3/1b2P3/1P4P1/1PPN1P1P/2B1KBNR w Kk - 0 9",
+      "3qk1nr/r1pb1ppp/2n5/4P3/1bP1P3/1P4P1/1P1N1P1P/2B1KBNR b Kk - 0 9",
+      "3qk1nr/r1pb1ppp/8/4n3/1bP1P1P1/1P6/1P1N1P1P/2B1KBNR b Kk - 0 10",
+      "3qk1nr/r1pb1ppp/8/4n3/1bP1P3/1P4P1/1P1N1P1P/2B1KBNR w Kk - 0 10",
+      "r2qk1nr/R1pb1ppp/2n5/4P3/1b2P3/1P4P1/1PPN1P1P/2B1KBNR b Kkq - 0 8",
+      "r2qk1nr/p1pb1ppp/2n5/4P3/1b2P3/1P4P1/1PPN1P1P/R1B1KBNR w KQkq - 3 8",
+      "rn1qk1nr/p1pb1ppp/8/4P3/1b2P3/1P4P1/1PP2P1P/RNB1KBNR w KQkq - 1 7",
+      "rn1qk1nr/p1pb1ppp/8/4P3/1b2P3/1P4P1/1PPN1P1P/R1B1KBNR b KQkq - 2 7",
+      "rn1qkbnr/p1pb1ppp/8/4P3/1p2P3/6P1/PPP2P1P/RNB1KBNR b KQkq - 0 5",
+      "rn1qkbnr/p1pb1ppp/8/4P3/1p2P3/8/PPP2PPP/RNB1KBNR w KQkq - 0 5",
+      "rn1qkbnr/p1pb1ppp/8/4P3/4P3/1P4P1/1PP2P1P/RNB1KBNR b KQkq - 0 6",
+      "rn1qkbnr/p1pb1ppp/8/4P3/4P3/1p4P1/PPP2P1P/RNB1KBNR w KQkq - 0 6",
+      "rnb1k1nr/p1p2pBp/1p6/8/2p5/5N2/P3P1PP/RN2KB1R b KQkq - 0 10",
+      "rnb1k1nr/p1p2ppp/1p6/8/2pB4/5N2/P3P1PP/RN2KB1R w KQkq - 0 10",
+      "rnb1k1nr/ppp2ppp/8/8/2pB4/5N2/P3P1PP/RN2KB1R b KQkq - 0 9",
+      "rnb1k1nr/ppp2ppp/8/8/2pq4/4BN2/P3P1PP/RN2KB1R w KQkq - 1 9",
+      "rnb1k2r/p1p2pBp/1p5n/8/2p5/5N2/P3P1PP/RN2KB1R w KQkq - 1 11",
+      "rnbqk1nr/ppp2ppp/8/3p4/2P5/4pN2/P3P1PP/RNB1KB1R b KQkq - 0 7",
+      "rnbqk1nr/ppp2ppp/8/3p4/5p2/4QN2/P1P1P1PP/RNB1KB1R b KQkq - 1 6"
+    ],
+    "losses": 0,
+    "raw_files": [
+      "reports/catarena_platform/candidate_qstm_priors_catarena_acceptance_001/battle.log"
+    ],
+    "runtime_errors": [],
+    "timeouts": 0,
+    "total_actions": 41,
+    "total_games": 1,
+    "wins": 0
+  },
+  "memory_records_seen": 0,
+  "opponent_report": {
+    "notes": [
+      "opponent path not provided"
+    ],
+    "opponents": []
+  },
+  "patch_plan": "Profile-only revision plan: make one small strategy improvement and validate against fixed FEN set. Runtime tools remain fixed; only strategy-profile parameters may change after passing feedback prescreen and historical regression gates.",
+  "promotion_gate": {
+    "candidate_changed": false,
+    "feedback_prescreen_passed": true,
+    "historical_regression_passed": true,
+    "passed": false,
+    "reasons": [
+      "candidate profile made no effective change",
+      "tuning policy did not mark candidate ready: skipped"
+    ],
+    "tuning_ready": false,
+    "validator_passed": true
+  },
+  "ranking_summary": {
+    "agent_name": "chess_agent",
+    "draws": 2,
+    "games": 2,
+    "losses": 0,
+    "notes": [],
+    "opponent_records": {},
+    "rank": 1,
+    "rank_delta": null,
+    "source": "reports/catarena_platform/candidate_qstm_priors_catarena_acceptance_001/ranking.csv",
+    "win_rate": 0.5,
+    "wins": 0
+  },
+  "reliability_metrics": {
+    "average_response_ms": 96.28515000000002,
+    "error_rate": 0.0,
+    "interface_success_rate": 1.0,
+    "legal_rate": 1.0,
+    "timeout_rate": 0.0
+  },
+  "repair_attempts": 0,
+  "risks": [],
+  "round_id": "candidate_qstm_priors_catarena_acceptance_001",
+  "state_summary": {
+    "average_cp": 317.6,
+    "average_depth": 1.45,
+    "average_response_ms": 96.28515000000002,
+    "current_rank": 1,
+    "current_win_rate": 0.5,
+    "feedback_fen_positions": 18,
+    "historical_profiles_selected": 0,
+    "key_failure_fens": [
+      "3qk1nr/r1p2ppp/8/4n3/1bP1P1b1/1P6/1P1N1P1P/2B1KBNR w Kk - 0 11",
+      "3qk1nr/r1pb1ppp/2n5/4P3/1b2P3/1P4P1/1PPN1P1P/2B1KBNR w Kk - 0 9",
+      "3qk1nr/r1pb1ppp/2n5/4P3/1bP1P3/1P4P1/1P1N1P1P/2B1KBNR b Kk - 0 9",
+      "3qk1nr/r1pb1ppp/8/4n3/1bP1P1P1/1P6/1P1N1P1P/2B1KBNR b Kk - 0 10",
+      "3qk1nr/r1pb1ppp/8/4n3/1bP1P3/1P4P1/1P1N1P1P/2B1KBNR w Kk - 0 10",
+      "r2qk1nr/R1pb1ppp/2n5/4P3/1b2P3/1P4P1/1PPN1P1P/2B1KBNR b Kkq - 0 8",
+      "r2qk1nr/p1pb1ppp/2n5/4P3/1b2P3/1P4P1/1PPN1P1P/R1B1KBNR w KQkq - 3 8",
+      "rn1qk1nr/p1pb1ppp/8/4P3/1b2P3/1P4P1/1PP2P1P/RNB1KBNR w KQkq - 1 7",
+      "rn1qk1nr/p1pb1ppp/8/4P3/1b2P3/1P4P1/1PPN1P1P/R1B1KBNR b KQkq - 2 7",
+      "rn1qkbnr/p1pb1ppp/8/4P3/1p2P3/6P1/PPP2P1P/RNB1KBNR b KQkq - 0 5"
+    ],
+    "memory_versions_seen": 0,
+    "round_actions": 41,
+    "round_games": 1
+  },
+  "stockfish_diagnostics": {
+    "available": false,
+    "fen": "3qk1nr/r1p2ppp/8/4n3/1bP1P1b1/1P6/1P1N1P1P/2B1KBNR w Kk - 0 11",
+    "reason": "stockfish binary not found"
+  },
+  "tuning_report": {
+    "action": "skipped",
+    "archived_profile_path": "",
+    "chosen_changed_paths": [],
+    "chosen_seed": 0,
+    "consecutive_similar_holds": 0,
+    "enabled": false,
+    "gate_cross_count": 0,
+    "negative_acceptance_prescreen_count": 0,
+    "negative_inner_count": 0,
+    "positive_acceptance_prescreen_count": 0,
+    "positive_inner_count": 0,
+    "promoted_profile_path": "",
+    "promoted_strategy_profile": false,
+    "reason": "No online-ready tuning block is currently available; keep using offline research until a block is unfrozen or newly promoted to active.",
+    "reason_code": "no_active_block",
+    "safe_seed_count": 0,
+    "seeds": [],
+    "selected_block": "",
+    "selected_block_mode": "",
+    "selected_block_note": ""
+  },
+  "validator_passed": true
+}

@@ -273,11 +273,13 @@ class _SearchEngine:
 
         for move in ordered:
             self._check_time()
+            root_prior = root_move_prior_score(board, move, self.config.strategy_profile)
             board.push(move)
             try:
                 score = -self._alpha_beta(board, depth - 1, -beta, -alpha, ply=1)
             finally:
                 board.pop()
+            score += root_prior
             if score > best_score or (
                 score == best_score and best_move is not None and move.uci() < best_move.uci()
             ):
@@ -376,7 +378,12 @@ class _SearchEngine:
     ) -> int:
         self._check_time()
         self.stats.qnodes += 1
-        stand_pat = evaluate_board(board, self.side, self.config.strategy_profile)
+        q_eval_side = (
+            board.turn
+            if self.config.strategy_profile.search.use_side_to_move_quiescence
+            else self.side
+        )
+        stand_pat = evaluate_board(board, q_eval_side, self.config.strategy_profile)
         if stand_pat >= beta:
             return stand_pat
         if stand_pat > alpha:
@@ -481,6 +488,11 @@ def evaluate_board(
     score += piece_activity_score(board, side, profile) * profile.eval.piece_activity_weight
     score += pawn_structure_score(board, side, profile) * profile.eval.pawn_structure_weight
     score += king_safety_score(board, side, profile) * profile.eval.king_safety_weight
+    if should_apply_tactical_vulnerability(board, profile):
+        score += (
+            tactical_vulnerability_score(board, side, profile)
+            * profile.eval.tactical_vulnerability_weight
+        )
     score += mobility_score(board, side, profile) * profile.eval.mobility_weight
     return int(round(score))
 
@@ -521,6 +533,50 @@ def pawn_structure_score(board: chess.Board, side: bool, profile: StrategyProfil
 
 def king_safety_score(board: chess.Board, side: bool, profile: StrategyProfile) -> int:
     return king_safety_for(board, side, profile) - king_safety_for(board, not side, profile)
+
+
+def should_apply_tactical_vulnerability(board: chess.Board, profile: StrategyProfile) -> bool:
+    if not profile.eval.use_tactical_vulnerability:
+        return False
+    max_fullmove = profile.eval.tactical_vulnerability_max_fullmove
+    return max_fullmove <= 0 or board.fullmove_number <= max_fullmove
+
+
+def tactical_vulnerability_score(board: chess.Board, side: bool, profile: StrategyProfile) -> int:
+    return tactical_vulnerability_for(board, not side, profile) - tactical_vulnerability_for(
+        board,
+        side,
+        profile,
+    )
+
+
+def tactical_vulnerability_for(
+    board: chess.Board,
+    color: bool,
+    profile: StrategyProfile,
+) -> int:
+    values = _piece_values(profile)
+    penalty = 0
+    for square, piece in board.piece_map().items():
+        if piece.color != color or piece.piece_type == chess.KING:
+            continue
+        attackers = board.attackers(not color, square)
+        if not attackers:
+            continue
+        victim_value = values.get(piece.piece_type, 0)
+        attacker_values = [
+            values.get(board.piece_type_at(attacker_square), 0)
+            for attacker_square in attackers
+        ]
+        cheapest_attacker = min((value for value in attacker_values if value > 0), default=0)
+        defended = bool(board.attackers(color, square))
+        if cheapest_attacker and cheapest_attacker < victim_value:
+            penalty += victim_value // 4
+        elif not defended:
+            penalty += victim_value // 6
+        else:
+            penalty += victim_value // 14
+    return penalty
 
 
 def pawn_score_for(board: chess.Board, color: bool, profile: StrategyProfile) -> int:
@@ -625,6 +681,43 @@ def move_order_score(board: chess.Board, move: chess.Move, profile: StrategyProf
         score += ordering.extended_center_bonus
     if attacker is not None:
         score += development_bonus(board, move, attacker, profile)
+    return score
+
+
+def root_move_prior_score(board: chess.Board, move: chess.Move, profile: StrategyProfile) -> int:
+    if not profile.search.use_root_opening_priors:
+        return 0
+    if board.fullmove_number > profile.phase.opening_fullmove_limit:
+        return 0
+    moving_piece = board.piece_at(move.from_square)
+    if moving_piece is None:
+        return 0
+    if board.is_capture(move) or move.promotion or board.gives_check(move):
+        return 0
+
+    score = 0
+    piece_type = moving_piece.piece_type
+    color = moving_piece.color
+    from_rank = chess.square_rank(move.from_square)
+    home_rank = 0 if color == chess.WHITE else 7
+    pawn_home_rank = 1 if color == chess.WHITE else 6
+
+    if board.is_castling(move):
+        score += 60
+    if piece_type in (chess.KNIGHT, chess.BISHOP) and from_rank == home_rank:
+        score += 35
+    if piece_type == chess.PAWN and from_rank == pawn_home_rank and move.to_square in CENTER:
+        score += 30
+    if move.to_square in CENTER:
+        score += 12
+    elif move.to_square in EXTENDED_CENTER:
+        score += 4
+    if piece_type == chess.QUEEN:
+        score -= 45
+    if piece_type == chess.ROOK and not board.is_castling(move):
+        score -= 80
+    if piece_type == chess.PAWN and chess.square_file(move.from_square) in (0, 7):
+        score -= 20
     return score
 
 

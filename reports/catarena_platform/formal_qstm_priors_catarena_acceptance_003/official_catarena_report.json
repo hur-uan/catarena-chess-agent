@@ -1,0 +1,974 @@
+{
+  "platform": "https://github.com/AGI-Eval-Official/CATArena",
+  "contract": {
+    "repository_url": "https://github.com/AGI-Eval-Official/CATArena",
+    "game": "chess",
+    "game_server_endpoints": {
+      "create_game": "POST /games",
+      "state": "GET /games/{game_id}/state",
+      "move": "POST /games/{game_id}/move",
+      "history": "GET /games/{game_id}/history",
+      "board": "GET /games/{game_id}/board",
+      "legal_moves": "GET /games/{game_id}/legal_moves",
+      "health": "GET /health"
+    },
+    "ai_server_endpoints": {
+      "health": "GET /health",
+      "info": "GET /info",
+      "join_game": "POST /join_game",
+      "leave_game": "POST /leave_game",
+      "move": "POST /move",
+      "get_move": "POST /get_move",
+      "legal_moves": "POST /legal_moves",
+      "evaluate": "POST /evaluate"
+    },
+    "arena_payload": {
+      "ai_move_request": [
+        "fen",
+        "algorithm",
+        "game_id",
+        "current_player"
+      ],
+      "move_response": [
+        "move"
+      ],
+      "game_move_request": [
+        "player",
+        "move"
+      ]
+    },
+    "move_format": "UCI string, for example e2e4 or a7a8q",
+    "observation_format": "JSON payload with fen, algorithm, game_id, and current_player",
+    "report_files": [
+      "battle.log",
+      "ranking.csv",
+      "error_report.json",
+      "official_catarena_report.json",
+      "catarena_manifest.json",
+      "catarena_contract.json"
+    ]
+  },
+  "source_manifest_count": 36,
+  "arena_probe": {
+    "loaded": true,
+    "config_file": "reports/catarena_platform/formal_qstm_priors_catarena_acceptance_003/official_arena_config.json",
+    "arena_class": "ChessArena",
+    "configured_ais": 3
+  },
+  "games": [
+    {
+      "game_id": "chess_395d2eb7",
+      "local_color": "white",
+      "result": "draw",
+      "status": "ongoing",
+      "moves_count": 20,
+      "moves": [
+        {
+          "ply": 1,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "b2b3",
+          "fen_after": "rnbqkbnr/pppppppp/8/8/8/1P6/P1PPPPPP/RNBQKBNR b KQkq - 0 1",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "default",
+              "strategy_source": "/Users/thinler/Documents/agent/config/strategy_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 253,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.85,
+              "draw": 0.12,
+              "loss": 0.03
+            },
+            "depth": 2,
+            "elapsed_ms": 96.26129199999944,
+            "nodes": 140,
+            "qnodes": 195,
+            "principal_variation": [
+              "b2b3"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 2,
+          "player": "black",
+          "actor": "official_example",
+          "move": "d7d5",
+          "fen_after": "rnbqkbnr/ppp1pppp/8/3p4/8/1P6/P1PPPPPP/RNBQKBNR w KQkq - 0 2",
+          "search": null
+        },
+        {
+          "ply": 3,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "b3b4",
+          "fen_after": "rnbqkbnr/ppp1pppp/8/3p4/1P6/8/P1PPPPPP/RNBQKBNR b KQkq - 0 2",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "default",
+              "strategy_source": "/Users/thinler/Documents/agent/config/strategy_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 307,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.85,
+              "draw": 0.12,
+              "loss": 0.03
+            },
+            "depth": 2,
+            "elapsed_ms": 96.57162500000015,
+            "nodes": 122,
+            "qnodes": 202,
+            "principal_variation": [
+              "b3b4"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 4,
+          "player": "black",
+          "actor": "official_example",
+          "move": "e7e5",
+          "fen_after": "rnbqkbnr/ppp2ppp/8/3pp3/1P6/8/P1PPPPPP/RNBQKBNR w KQkq - 0 3",
+          "search": null
+        },
+        {
+          "ply": 5,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "e2e4",
+          "fen_after": "rnbqkbnr/ppp2ppp/8/3pp3/1P2P3/8/P1PP1PPP/RNBQKBNR b KQkq - 0 3",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "default",
+              "strategy_source": "/Users/thinler/Documents/agent/config/strategy_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 31,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.25,
+              "draw": 0.5,
+              "loss": 0.25
+            },
+            "depth": 1,
+            "elapsed_ms": 96.32295800000001,
+            "nodes": 118,
+            "qnodes": 225,
+            "principal_variation": [
+              "e2e4"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 6,
+          "player": "black",
+          "actor": "official_example",
+          "move": "d5e4",
+          "fen_after": "rnbqkbnr/ppp2ppp/8/4p3/1P2p3/8/P1PP1PPP/RNBQKBNR w KQkq - 0 4",
+          "search": null
+        },
+        {
+          "ply": 7,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "b4b5",
+          "fen_after": "rnbqkbnr/ppp2ppp/8/1P2p3/4p3/8/P1PP1PPP/RNBQKBNR b KQkq - 0 4",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "default",
+              "strategy_source": "/Users/thinler/Documents/agent/config/strategy_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 341,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.85,
+              "draw": 0.12,
+              "loss": 0.03
+            },
+            "depth": 2,
+            "elapsed_ms": 96.59279200000003,
+            "nodes": 105,
+            "qnodes": 184,
+            "principal_variation": [
+              "b4b5"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 8,
+          "player": "black",
+          "actor": "official_example",
+          "move": "d8d2",
+          "fen_after": "rnb1kbnr/ppp2ppp/8/1P2p3/4p3/8/P1Pq1PPP/RNBQKBNR w KQkq - 0 5",
+          "search": null
+        },
+        {
+          "ply": 9,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "c1d2",
+          "fen_after": "rnb1kbnr/ppp2ppp/8/1P2p3/4p3/8/P1PB1PPP/RN1QKBNR b KQkq - 0 5",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "default",
+              "strategy_source": "/Users/thinler/Documents/agent/config/strategy_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 685,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.85,
+              "draw": 0.12,
+              "loss": 0.03
+            },
+            "depth": 2,
+            "elapsed_ms": 96.04762499999975,
+            "nodes": 133,
+            "qnodes": 233,
+            "principal_variation": [
+              "c1d2"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 10,
+          "player": "black",
+          "actor": "official_example",
+          "move": "a7a6",
+          "fen_after": "rnb1kbnr/1pp2ppp/p7/1P2p3/4p3/8/P1PB1PPP/RN1QKBNR w KQkq - 0 6",
+          "search": null
+        },
+        {
+          "ply": 11,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "f1c4",
+          "fen_after": "rnb1kbnr/1pp2ppp/p7/1P2p3/2B1p3/8/P1PB1PPP/RN1QK1NR b KQkq - 1 6",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "default",
+              "strategy_source": "/Users/thinler/Documents/agent/config/strategy_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 740,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.85,
+              "draw": 0.12,
+              "loss": 0.03
+            },
+            "depth": 1,
+            "elapsed_ms": 96.33608299999975,
+            "nodes": 78,
+            "qnodes": 223,
+            "principal_variation": [
+              "f1c4"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 12,
+          "player": "black",
+          "actor": "official_example",
+          "move": "a6b5",
+          "fen_after": "rnb1kbnr/1pp2ppp/8/1p2p3/2B1p3/8/P1PB1PPP/RN1QK1NR w KQkq - 0 7",
+          "search": null
+        },
+        {
+          "ply": 13,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "c4b5",
+          "fen_after": "rnb1kbnr/1pp2ppp/8/1B2p3/4p3/8/P1PB1PPP/RN1QK1NR b KQkq - 0 7",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "default",
+              "strategy_source": "/Users/thinler/Documents/agent/config/strategy_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 780,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.85,
+              "draw": 0.12,
+              "loss": 0.03
+            },
+            "depth": 1,
+            "elapsed_ms": 96.09875000000034,
+            "nodes": 124,
+            "qnodes": 184,
+            "principal_variation": [
+              "c4b5"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 14,
+          "player": "black",
+          "actor": "official_example",
+          "move": "c8d7",
+          "fen_after": "rn2kbnr/1ppb1ppp/8/1B2p3/4p3/8/P1PB1PPP/RN1QK1NR w KQkq - 1 8",
+          "search": null
+        },
+        {
+          "ply": 15,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "b1c3",
+          "fen_after": "rn2kbnr/1ppb1ppp/8/1B2p3/4p3/2N5/P1PB1PPP/R2QK1NR b KQkq - 2 8",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "default",
+              "strategy_source": "/Users/thinler/Documents/agent/config/strategy_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 703,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.85,
+              "draw": 0.12,
+              "loss": 0.03
+            },
+            "depth": 1,
+            "elapsed_ms": 96.1064580000004,
+            "nodes": 85,
+            "qnodes": 227,
+            "principal_variation": [
+              "b1c3"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 16,
+          "player": "black",
+          "actor": "official_example",
+          "move": "a8a2",
+          "fen_after": "1n2kbnr/1ppb1ppp/8/1B2p3/4p3/2N5/r1PB1PPP/R2QK1NR w KQk - 0 9",
+          "search": null
+        },
+        {
+          "ply": 17,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "a1a2",
+          "fen_after": "1n2kbnr/1ppb1ppp/8/1B2p3/4p3/2N5/R1PB1PPP/3QK1NR b Kk - 0 9",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "default",
+              "strategy_source": "/Users/thinler/Documents/agent/config/strategy_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 1111,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.85,
+              "draw": 0.12,
+              "loss": 0.03
+            },
+            "depth": 1,
+            "elapsed_ms": 96.38925000000054,
+            "nodes": 102,
+            "qnodes": 231,
+            "principal_variation": [
+              "a1a2"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 18,
+          "player": "black",
+          "actor": "official_example",
+          "move": "d7b5",
+          "fen_after": "1n2kbnr/1pp2ppp/8/1b2p3/4p3/2N5/R1PB1PPP/3QK1NR w Kk - 0 10",
+          "search": null
+        },
+        {
+          "ply": 19,
+          "player": "white",
+          "actor": "chess_agent",
+          "move": "c3b5",
+          "fen_after": "1n2kbnr/1pp2ppp/8/1N2p3/4p3/8/R1PB1PPP/3QK1NR b Kk - 0 10",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "default",
+              "strategy_source": "/Users/thinler/Documents/agent/config/strategy_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 1111,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.85,
+              "draw": 0.12,
+              "loss": 0.03
+            },
+            "depth": 1,
+            "elapsed_ms": 96.136875,
+            "nodes": 117,
+            "qnodes": 220,
+            "principal_variation": [
+              "c3b5"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 20,
+          "player": "black",
+          "actor": "official_example",
+          "move": "c7c6",
+          "fen_after": "1n2kbnr/1p3ppp/2p5/1N2p3/4p3/8/R1PB1PPP/3QK1NR w Kk - 0 11",
+          "search": null
+        }
+      ],
+      "final_state": {
+        "current_player": "white",
+        "fen": "1n2kbnr/1p3ppp/2p5/1N2p3/4p3/8/R1PB1PPP/3QK1NR w Kk - 0 11",
+        "game_status": "ongoing",
+        "is_check": false,
+        "is_checkmate": false,
+        "is_stalemate": false,
+        "last_move": "c7c6",
+        "legal_moves": [
+          "b5c7",
+          "b5a7",
+          "b5d6",
+          "b5d4",
+          "b5c3",
+          "b5a3",
+          "d2h6",
+          "d2g5",
+          "d2a5",
+          "d2f4",
+          "d2b4",
+          "d2e3",
+          "d2c3",
+          "d2c1",
+          "a2a8",
+          "a2a7",
+          "a2a6",
+          "a2a5",
+          "a2a4",
+          "a2a3",
+          "a2b2",
+          "a2a1",
+          "g1h3",
+          "g1f3",
+          "g1e2",
+          "e1e2",
+          "e1f1",
+          "d1h5",
+          "d1g4",
+          "d1f3",
+          "d1e2",
+          "d1c1",
+          "d1b1",
+          "d1a1",
+          "h2h3",
+          "g2g3",
+          "f2f3",
+          "c2c3",
+          "h2h4",
+          "g2g4",
+          "f2f4",
+          "c2c4"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "game_id": "chess_837a147a",
+      "local_color": "black",
+      "result": "draw",
+      "status": "ongoing",
+      "moves_count": 20,
+      "moves": [
+        {
+          "ply": 1,
+          "player": "white",
+          "actor": "official_example",
+          "move": "e2e4",
+          "fen_after": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+          "search": null
+        },
+        {
+          "ply": 2,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "b7b5",
+          "fen_after": "rnbqkbnr/p1pppppp/8/1p6/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "default",
+              "strategy_source": "/Users/thinler/Documents/agent/config/strategy_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 199,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.58,
+              "draw": 0.3,
+              "loss": 0.12
+            },
+            "depth": 2,
+            "elapsed_ms": 96.20379200000073,
+            "nodes": 144,
+            "qnodes": 209,
+            "principal_variation": [
+              "b7b5"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 3,
+          "player": "white",
+          "actor": "official_example",
+          "move": "f1b5",
+          "fen_after": "rnbqkbnr/p1pppppp/8/1B6/4P3/8/PPPP1PPP/RNBQK1NR b KQkq - 0 2",
+          "search": null
+        },
+        {
+          "ply": 4,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "f7f6",
+          "fen_after": "rnbqkbnr/p1ppp1pp/5p2/1B6/4P3/8/PPPP1PPP/RNBQK1NR w KQkq - 0 3",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "default",
+              "strategy_source": "/Users/thinler/Documents/agent/config/strategy_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 140,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.58,
+              "draw": 0.3,
+              "loss": 0.12
+            },
+            "depth": 2,
+            "elapsed_ms": 96.09120799999982,
+            "nodes": 101,
+            "qnodes": 241,
+            "principal_variation": [
+              "f7f6"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 5,
+          "player": "white",
+          "actor": "official_example",
+          "move": "b5d7",
+          "fen_after": "rnbqkbnr/p1pBp1pp/5p2/8/4P3/8/PPPP1PPP/RNBQK1NR b KQkq - 0 3",
+          "search": null
+        },
+        {
+          "ply": 6,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "b8d7",
+          "fen_after": "r1bqkbnr/p1pnp1pp/5p2/8/4P3/8/PPPP1PPP/RNBQK1NR w KQkq - 0 4",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "default",
+              "strategy_source": "/Users/thinler/Documents/agent/config/strategy_profile.json",
+              "external_engine_available": true
+            },
+            "cp": -27,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.25,
+              "draw": 0.5,
+              "loss": 0.25
+            },
+            "depth": 2,
+            "elapsed_ms": 96.05395799999971,
+            "nodes": 82,
+            "qnodes": 241,
+            "principal_variation": [
+              "b8d7"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 7,
+          "player": "white",
+          "actor": "official_example",
+          "move": "e4e5",
+          "fen_after": "r1bqkbnr/p1pnp1pp/5p2/4P3/8/8/PPPP1PPP/RNBQK1NR b KQkq - 0 4",
+          "search": null
+        },
+        {
+          "ply": 8,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "d7b6",
+          "fen_after": "r1bqkbnr/p1p1p1pp/1n3p2/4P3/8/8/PPPP1PPP/RNBQK1NR w KQkq - 1 5",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "default",
+              "strategy_source": "/Users/thinler/Documents/agent/config/strategy_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 229,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.58,
+              "draw": 0.3,
+              "loss": 0.12
+            },
+            "depth": 2,
+            "elapsed_ms": 96.06158300000001,
+            "nodes": 130,
+            "qnodes": 263,
+            "principal_variation": [
+              "d7b6"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 9,
+          "player": "white",
+          "actor": "official_example",
+          "move": "e5f6",
+          "fen_after": "r1bqkbnr/p1p1p1pp/1n3P2/8/8/8/PPPP1PPP/RNBQK1NR b KQkq - 0 5",
+          "search": null
+        },
+        {
+          "ply": 10,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "b6a4",
+          "fen_after": "r1bqkbnr/p1p1p1pp/5P2/8/n7/8/PPPP1PPP/RNBQK1NR w KQkq - 1 6",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "default",
+              "strategy_source": "/Users/thinler/Documents/agent/config/strategy_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 448,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.85,
+              "draw": 0.12,
+              "loss": 0.03
+            },
+            "depth": 2,
+            "elapsed_ms": 96.32283300000033,
+            "nodes": 155,
+            "qnodes": 247,
+            "principal_variation": [
+              "b6a4"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 11,
+          "player": "white",
+          "actor": "official_example",
+          "move": "f6g7",
+          "fen_after": "r1bqkbnr/p1p1p1Pp/8/8/n7/8/PPPP1PPP/RNBQK1NR b KQkq - 0 6",
+          "search": null
+        },
+        {
+          "ply": 12,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "a4b6",
+          "fen_after": "r1bqkbnr/p1p1p1Pp/1n6/8/8/8/PPPP1PPP/RNBQK1NR w KQkq - 1 7",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "default",
+              "strategy_source": "/Users/thinler/Documents/agent/config/strategy_profile.json",
+              "external_engine_available": true
+            },
+            "cp": 235,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.58,
+              "draw": 0.3,
+              "loss": 0.12
+            },
+            "depth": 2,
+            "elapsed_ms": 96.45812499999984,
+            "nodes": 134,
+            "qnodes": 218,
+            "principal_variation": [
+              "a4b6"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 13,
+          "player": "white",
+          "actor": "official_example",
+          "move": "g7h8r",
+          "fen_after": "r1bqkbnR/p1p1p2p/1n6/8/8/8/PPPP1PPP/RNBQK1NR b KQq - 0 7",
+          "search": null
+        },
+        {
+          "ply": 14,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "c8g4",
+          "fen_after": "r2qkbnR/p1p1p2p/1n6/8/6b1/8/PPPP1PPP/RNBQK1NR w KQq - 1 8",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "default",
+              "strategy_source": "/Users/thinler/Documents/agent/config/strategy_profile.json",
+              "external_engine_available": true
+            },
+            "cp": -964,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.03,
+              "draw": 0.12,
+              "loss": 0.85
+            },
+            "depth": 1,
+            "elapsed_ms": 96.3494589999998,
+            "nodes": 164,
+            "qnodes": 259,
+            "principal_variation": [
+              "c8g4"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 15,
+          "player": "white",
+          "actor": "official_example",
+          "move": "d1g4",
+          "fen_after": "r2qkbnR/p1p1p2p/1n6/8/6Q1/8/PPPP1PPP/RNB1K1NR b KQq - 0 8",
+          "search": null
+        },
+        {
+          "ply": 16,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "g8f6",
+          "fen_after": "r2qkb1R/p1p1p2p/1n3n2/8/6Q1/8/PPPP1PPP/RNB1K1NR w KQq - 1 9",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "default",
+              "strategy_source": "/Users/thinler/Documents/agent/config/strategy_profile.json",
+              "external_engine_available": true
+            },
+            "cp": -1331,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.03,
+              "draw": 0.12,
+              "loss": 0.85
+            },
+            "depth": 1,
+            "elapsed_ms": 96.42291700000084,
+            "nodes": 113,
+            "qnodes": 270,
+            "principal_variation": [
+              "g8f6"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 17,
+          "player": "white",
+          "actor": "official_example",
+          "move": "h8f8",
+          "fen_after": "r2qkR2/p1p1p2p/1n3n2/8/6Q1/8/PPPP1PPP/RNB1K1NR b KQq - 0 9",
+          "search": null
+        },
+        {
+          "ply": 18,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "e8f8",
+          "fen_after": "r2q1k2/p1p1p2p/1n3n2/8/6Q1/8/PPPP1PPP/RNB1K1NR w KQ - 0 10",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "default",
+              "strategy_source": "/Users/thinler/Documents/agent/config/strategy_profile.json",
+              "external_engine_available": true
+            },
+            "cp": -1208,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.03,
+              "draw": 0.12,
+              "loss": 0.85
+            },
+            "depth": 2,
+            "elapsed_ms": 96.05212500000081,
+            "nodes": 128,
+            "qnodes": 202,
+            "principal_variation": [
+              "e8f8"
+            ],
+            "fallback_used": false
+          }
+        },
+        {
+          "ply": 19,
+          "player": "white",
+          "actor": "official_example",
+          "move": "g4e4",
+          "fen_after": "r2q1k2/p1p1p2p/1n3n2/8/4Q3/8/PPPP1PPP/RNB1K1NR b KQ - 1 10",
+          "search": null
+        },
+        {
+          "ply": 20,
+          "player": "black",
+          "actor": "chess_agent",
+          "move": "b6a4",
+          "fen_after": "r2q1k2/p1p1p2p/5n2/8/n3Q3/8/PPPP1PPP/RNB1K1NR w KQ - 2 11",
+          "search": {
+            "backend": "internal",
+            "engine_config": {
+              "router_backend": "internal",
+              "profile_name": "default",
+              "strategy_source": "/Users/thinler/Documents/agent/config/strategy_profile.json",
+              "external_engine_available": true
+            },
+            "cp": -187,
+            "mate_distance": null,
+            "wdl": {
+              "win": 0.12,
+              "draw": 0.3,
+              "loss": 0.58
+            },
+            "depth": 2,
+            "elapsed_ms": 96.09537499999999,
+            "nodes": 165,
+            "qnodes": 235,
+            "principal_variation": [
+              "b6a4"
+            ],
+            "fallback_used": false
+          }
+        }
+      ],
+      "final_state": {
+        "current_player": "white",
+        "fen": "r2q1k2/p1p1p2p/5n2/8/n3Q3/8/PPPP1PPP/RNB1K1NR w KQ - 2 11",
+        "game_status": "ongoing",
+        "is_check": false,
+        "is_checkmate": false,
+        "is_stalemate": false,
+        "last_move": "b6a4",
+        "legal_moves": [
+          "e4a8",
+          "e4h7",
+          "e4e7",
+          "e4b7",
+          "e4g6",
+          "e4e6",
+          "e4c6",
+          "e4f5",
+          "e4e5",
+          "e4d5",
+          "e4h4",
+          "e4g4",
+          "e4f4",
+          "e4d4",
+          "e4c4",
+          "e4b4",
+          "e4a4",
+          "e4f3",
+          "e4e3",
+          "e4d3",
+          "e4e2",
+          "g1h3",
+          "g1f3",
+          "g1e2",
+          "e1e2",
+          "e1f1",
+          "e1d1",
+          "b1c3",
+          "b1a3",
+          "h2h3",
+          "g2g3",
+          "f2f3",
+          "d2d3",
+          "c2c3",
+          "b2b3",
+          "a2a3",
+          "h2h4",
+          "g2g4",
+          "f2f4",
+          "d2d4",
+          "c2c4",
+          "b2b4"
+        ]
+      },
+      "errors": []
+    }
+  ],
+  "stats": {
+    "rank": 1,
+    "games": 2,
+    "wins": 0,
+    "losses": 0,
+    "draws": 2,
+    "win_rate": 0.5
+  }
+}

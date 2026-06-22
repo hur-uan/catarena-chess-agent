@@ -23,6 +23,8 @@ class SearchProfile(BaseModel):
     history_bonus_power: int = 2
     root_mate_stop_distance: int = 1
     mate_detection_margin: int = 1_000
+    use_side_to_move_quiescence: bool = False
+    use_root_opening_priors: bool = False
 
 
 class PieceValuesProfile(BaseModel):
@@ -42,6 +44,9 @@ class EvalProfile(BaseModel):
     draw_score: int = 0
     mate_score: int = 100_000
     missing_king_penalty: int = 500
+    use_tactical_vulnerability: bool = False
+    tactical_vulnerability_weight: float = 1.0
+    tactical_vulnerability_max_fullmove: int = 0
 
 
 class PieceActivityProfile(BaseModel):
